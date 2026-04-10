@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>個人英文字典</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Main Content Area -->
+        <main id="view-container">
+            <!-- Views will be injected here -->
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-view="daily">
+                <span class="icon">📅</span>
+                <span class="label">Daily</span>
+            </button>
+            <button class="nav-item" data-view="search">
+                <span class="icon">🔍</span>
+                <span class="label">查詢</span>
+            </button>
+            <button class="nav-item" data-view="collection">
+                <span class="icon">📚</span>
+                <span class="label">我的單字</span>
+            </button>
+            <button class="nav-item" data-view="flashcards">
+                <span class="icon">🎴</span>
+                <span class="label">複習</span>
+            </button>
+            <button class="nav-item" data-view="music">
+                <span class="icon">🎵</span>
+                <span class="label">音樂術語</span>
+            </button>
+            <button class="nav-item" data-view="listening">
+                <span class="icon">🎧</span>
+                <span class="label">Listening</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Templates -->
+    <template id="view-daily">
+        <div class="view daily-view">
+            <div class="view-header">
+                <h1>Today's Learning</h1>
+                <div id="daily-date" class="date-display"></div>
+            </div>
+            
+            <div id="daily-card-container" class="flashcard-container">
+                <!-- Word card will be injected here -->
+            </div>
+
+            <div id="daily-actions" class="flashcard-actions hidden">
+                <button class="btn btn-hard" data-rank="0">不會</button>
+                <button class="btn btn-normal" data-rank="1">普通</button>
+                <button class="btn btn-easy" data-rank="2">會</button>
+            </div>
+
+            <div id="daily-progress-footer" class="progress-footer">
+                <div class="progress-text">已完成 <span id="daily-count">0/8</span></div>
+            </div>
+        </div>
+    </template>
+
+    <template id="view-search">
+        <div class="view search-view">
+            <div class="search-header">
+                <h1>個人英文字典</h1>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="輸入英文單字..." autocomplete="off">
+                    <button id="clear-search">✕</button>
+                </div>
+            </div>
+            <div id="search-results" class="results-container">
+                <div class="empty-state">
+                    <p>開始查詢單字吧！</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="view-collection">
+        <div class="view collection-view">
+            <div class="view-header">
+                <h1>我的單字庫</h1>
+                <span id="collection-count" class="badge">0</span>
+            </div>
+            <div id="collection-list" class="item-list"></div>
+        </div>
+    </template>
+
+    <template id="view-flashcards">
+        <div class="view flashcards-view">
+            <div class="view-header">
+                <h1>卡片複習</h1>
+                <div class="progress-bar-container">
+                    <div id="review-progress" class="progress-bar"></div>
+                </div>
+            </div>
+            <div id="flashcard-container" class="flashcard-container">
+                <!-- Card will be injected here -->
+            </div>
+            <div id="flashcard-actions" class="flashcard-actions hidden">
+                <button class="btn btn-hard" data-rank="0">不會</button>
+                <button class="btn btn-normal" data-rank="1">普通</button>
+                <button class="btn btn-easy" data-rank="2">簡單</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="view-music">
+        <div class="view music-view">
+            <div class="view-header">
+                <h1>音樂專業術語</h1>
+            </div>
+            <div id="music-terminology-list" class="item-list"></div>
+        </div>
+    </template>
+
+    <template id="view-listening">
+        <div class="view listening-view">
+            <div class="view-header" style="justify-content: space-between; display: flex; align-items: center;">
+                <h1>Listening</h1>
+                <div class="streak-badge">Streak: <span id="listening-streak">0</span></div>
+            </div>
+
+            <div class="listening-box">
+                <div class="play-container">
+                    <button id="listening-play-btn" class="play-main-btn">▶</button>
+                    <p id="listening-status">What word did you hear?</p>
+                </div>
+
+                <div id="listening-options" class="options-grid">
+                    <!-- 4 options will be here -->
+                </div>
+
+                <div id="listening-feedback" class="feedback-panel hidden">
+                    <!-- Result shown here -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Global Components -->
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

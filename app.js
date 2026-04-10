@@ -1126,7 +1126,10 @@ const initSearchView = () => {
             <div class="word-card">
                 <div class="word-header">
                     <div class="word-title">
-                        <h2>${wordData.word}</h2>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <h2>${wordData.word}</h2>
+                            ${wordData.pos ? `<span class="pos-badge">${wordData.pos}</span>` : ''}
+                        </div>
                         <div class="word-phonetic">${wordData.phonetic || ''}</div>
                     </div>
                     <button class="pronounce-btn" onclick="speak('${wordData.word}')">🔊</button>
@@ -1215,6 +1218,7 @@ const initSearchView = () => {
                 const apiWord = {
                     word: entry.word,
                     phonetic: entry.phonetic || (entry.phonetics[0] ? entry.phonetics[0].text : ''),
+                    pos: meaning.partOfSpeech || '',
                     definition_en: meaning.definitions[0].definition,
                     definition_zh: translatedZh,
                     examples: examples,

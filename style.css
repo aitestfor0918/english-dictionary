@@ -396,6 +396,18 @@ h1 {
 
 .notification.hidden { opacity: 0; transform: translateY(-50px); pointer-events: none; }
 
+.pos-badge {
+    background: var(--secondary);
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-style: italic;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: lowercase;
+    border: 1px solid var(--border);
+}
+
 .badge {
     background: var(--secondary);
     padding: 4px 10px;

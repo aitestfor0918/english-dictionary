@@ -1119,6 +1119,9 @@ const initSearchView = () => {
     const renderResult = (wordData, isFromApi = false) => {
         const isCollected = state.collection.some(w => w.word.toLowerCase() === wordData.word.toLowerCase());
         
+        // Normalize examples to always be an array
+        const examples = Array.isArray(wordData.examples) ? wordData.examples : (wordData.example ? [wordData.example] : []);
+
         results.innerHTML = `
             <div class="word-card">
                 <div class="word-header">
@@ -1132,7 +1135,19 @@ const initSearchView = () => {
                     <div class="meaning-zh">${wordData.definition_zh}</div>
                     <div class="meaning-en">${wordData.definition_en}</div>
                 </div>
-                ${wordData.example ? `<div class="word-example">"${wordData.example}"</div>` : ''}
+                
+                ${examples.length > 0 ? `
+                <div class="examples-section">
+                    <h4>Examples</h4>
+                    ${examples.map(ex => `
+                        <div class="example-item">
+                            <span class="example-text">"${ex}"</span>
+                            <button class="mini-pronounce" onclick="speak(\`${ex.replace(/'/g, "\\'")}\`)">🔊</button>
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+
                 ${wordData.music_context ? `<div class="music-context"><strong>音樂情境:</strong> ${wordData.music_context}</div>` : ''}
                 
                 <button class="add-btn ${isCollected ? 'added' : ''}" id="add-to-card">
@@ -1166,19 +1181,43 @@ const initSearchView = () => {
 
             // 2. Fetch from API
             try {
-                const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${query}`);
-                if (!response.ok) throw new Error('Not found');
-                const data = await response.json();
+                // Fetch English definition
+                const dictResponse = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${query}`);
+                if (!dictResponse.ok) throw new Error('Not found');
+                const dictData = await dictResponse.json();
                 
-                // Map API data to our format
-                const entry = data[0];
+                // Fetch Chinese translation (MyMemory API)
+                let translatedZh = '查無中文翻譯';
+                try {
+                    const transResponse = await fetch(`https://api.mymemory.translated.net/get?q=${query}&langpair=en|zh-TW`);
+                    if (transResponse.ok) {
+                        const transData = await transResponse.json();
+                        translatedZh = transData.responseData.translatedText;
+                    }
+                } catch (e) {
+                    console.warn('Translation failed', e);
+                }
+
+                // Map data
+                const entry = dictData[0];
                 const meaning = entry.meanings[0];
+                
+                // Collect up to 3 examples
+                const examples = [];
+                entry.meanings.forEach(m => {
+                    m.definitions.forEach(d => {
+                        if (d.example && examples.length < 3) {
+                            examples.push(d.example);
+                        }
+                    });
+                });
+
                 const apiWord = {
                     word: entry.word,
                     phonetic: entry.phonetic || (entry.phonetics[0] ? entry.phonetics[0].text : ''),
                     definition_en: meaning.definitions[0].definition,
-                    definition_zh: '查無本地翻譯，請參考英文解釋', // Simple fallback or use translation API if needed
-                    example: meaning.definitions[0].example || '',
+                    definition_zh: translatedZh,
+                    examples: examples,
                     type: 'api'
                 };
 

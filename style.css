@@ -200,6 +200,57 @@ h1 {
     color: #444;
 }
 
+/* Examples Section */
+.examples-section {
+    margin-top: 24px;
+    padding: 16px;
+    background: var(--secondary);
+    border-radius: 12px;
+}
+
+.examples-section h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+}
+
+.example-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    gap: 12px;
+}
+
+.example-item:last-child {
+    border-bottom: none;
+}
+
+.example-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #444;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.mini-pronounce {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 4px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.mini-pronounce:hover {
+    opacity: 1;
+}
+
 .music-context {
     margin-top: 12px;
     font-size: 0.85rem;

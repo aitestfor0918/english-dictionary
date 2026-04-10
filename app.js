@@ -1382,6 +1382,15 @@ const initMusicView = () => {
             </div>
             <div class="meaning-zh">${item.definition_zh}</div>
             <div class="music-context"><strong>白話解析:</strong> ${item.music_context}</div>
+            
+            ${item.example ? `
+            <div class="examples-section" style="margin-top:12px; padding: 10px; background: rgba(0,0,0,0.02);">
+                <div class="example-item" style="border:none; padding:0;">
+                    <span class="example-text" style="font-size:0.85rem;">"${item.example}"</span>
+                    <button class="mini-pronounce" style="font-size:0.8rem;" onclick="speak(\`${item.example.replace(/'/g, "\\'")}\`)">🔊</button>
+                </div>
+            </div>` : ''}
+
             <button class="add-btn ${isCollected ? 'added' : ''}" style="margin-top:16px; padding: 12px; font-size:0.9rem;">
                 ${isCollected ? '已在單字卡中' : '加入單字卡'}
             </button>

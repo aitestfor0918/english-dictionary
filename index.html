@@ -55,51 +55,50 @@
 
             <!-- Header Section -->
             <div class="home-header">
-                <h1>Today Learning</h1>
+                <h1>Pro Review Mode</h1>
                 <div class="home-stats">
-                    <div class="stat-pill">今日完成：<span id="home-today-count">0 / 10</span></div>
-                    <div class="stat-pill">學習天數：<span id="home-streak-days">0 days</span></div>
+                    <div class="stat-pill">今日完成：<span id="home-today-count">0</span></div>
+                    <div class="stat-pill">剩餘弱點：<span id="home-weakness-count">0</span></div>
                 </div>
             </div>
 
-            <!-- One-Tap Start Button -->
-            <div class="one-tap-start-container">
-                <button id="main-start-btn" class="main-start-btn">
+            <!-- Pro Review Setup Panel -->
+            <div class="pro-setup-panel" style="background:var(--surface); border-radius:16px; padding:20px; margin:20px; border:1px solid var(--border);">
+                <div class="setup-row" style="margin-bottom:15px;">
+                    <h4 style="margin-bottom:10px;font-size:0.9rem;color:var(--muted);">練習模式</h4>
+                    <div class="section-tabs" id="pro-setup-mode" style="background:var(--bg); border:1px solid var(--border);">
+                        <button class="tab-btn active" data-val="smart">智慧</button>
+                        <button class="tab-btn" data-val="weak">弱點</button>
+                        <button class="tab-btn" data-val="free">自由</button>
+                    </div>
+                </div>
+                <div class="setup-row" style="margin-bottom:15px;">
+                    <h4 style="margin-bottom:10px;font-size:0.9rem;color:var(--muted);">長度</h4>
+                    <div class="section-tabs" id="pro-setup-length" style="background:var(--bg); border:1px solid var(--border);">
+                        <button class="tab-btn active" data-val="5">快 (1m)</button>
+                        <button class="tab-btn" data-val="10">中 (5m)</button>
+                        <button class="tab-btn" data-val="20">深 (10m)</button>
+                    </div>
+                </div>
+                <div class="setup-row" style="margin-bottom:20px;">
+                    <h4 style="margin-bottom:10px;font-size:0.9rem;color:var(--muted);">發聲情境</h4>
+                    <div class="section-tabs" id="pro-setup-context" style="background:var(--bg); border:1px solid var(--border);">
+                        <button class="tab-btn active" data-val="full">🔊 完整 (發聲)</button>
+                        <button class="tab-btn" data-val="silent">🔇 靜音 (心中默讀)</button>
+                    </div>
+                </div>
+
+                <button id="main-start-btn" class="main-start-btn" style="width:100%; border-radius:12px;">
                     <div class="btn-content">
-                        <span class="btn-title">立即開始學習</span>
-                        <span class="btn-subtitle" id="main-start-status">點擊啟動今日任務</span>
+                        <span class="btn-title">啟動 Pro 引擎</span>
+                        <span class="btn-subtitle">進入高強度循環訓練</span>
                     </div>
                     <span class="btn-arrow">🚀</span>
                 </button>
             </div>
-
-            <!-- Learning Mode Grid -->
-            <div class="learning-grid">
-                <button class="mode-card" data-mode="daily">
-                    <span class="mode-icon">📆</span>
-                    <div class="mode-info">
-                        <span class="mode-label">Daily</span>
-                        <span class="mode-desc">每日任務</span>
-                    </div>
-                </button>
-                <button class="mode-card" data-mode="listening">
-                    <span class="mode-icon">🎧</span>
-                    <div class="mode-info">
-                        <span class="mode-label">Listening</span>
-                        <span class="mode-desc">聽力測驗</span>
-                    </div>
-                </button>
-                <button class="mode-card" data-mode="shadowing">
-                    <span class="mode-icon">🗣</span>
-                    <div class="mode-info">
-                        <span class="mode-label">Shadowing</span>
-                        <span class="mode-desc">影子跟讀</span>
-                    </div>
-                </button>
-            </div>
             
             <div class="home-footer-hint">
-                💡 每天進步一點點，累積成強大的音樂英文力！
+                💡 最強複習模式：字卡 ➔ 聽力 ➔ 跟讀，打造肌肉記憶！
             </div>
         </div>
     </template>
@@ -151,6 +150,10 @@
         <div class="view words-view">
             <div class="view-header">
                 <h1>單字工具</h1>
+                <div class="free-practice-ctas" style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 10px;">
+                    <button class="btn btn-primary shadow-btn" id="start-free-practice-btn" style="flex: 1; padding: 10px; font-size: 0.95rem;">開始複習</button>
+                    <button class="btn btn-secondary shadow-btn" id="start-free-weakness-btn" style="flex: 1; padding: 10px; font-size: 0.95rem;">弱點單字練習</button>
+                </div>
                 <div class="search-tab-bar">
                     <div class="search-box-global">
                         <span class="search-icon">🔍</span>
@@ -283,6 +286,11 @@
                 <button class="btn btn-hard" data-rank="0">不會</button>
                 <button class="btn btn-normal" data-rank="1">普通</button>
                 <button class="btn btn-easy" data-rank="2">簡單</button>
+            </div>
+            <div id="free-practice-actions" class="flashcard-actions hidden">
+                <button class="btn btn-normal" id="free-next-btn" style="background:var(--secondary);color:var(--text);">➡ 下一張</button>
+                <button class="btn btn-hard" id="free-weak-btn">😅 有點不熟</button>
+                <button class="btn btn-easy" id="free-master-btn">✅ 我已掌握</button>
             </div>
         </div>
     </template>
@@ -488,6 +496,46 @@
                 <button class="btn btn-primary shadow-btn" id="weakness-focus-flash">針對性複習</button>
                 <button class="btn btn-secondary shadow-btn" id="weakness-focus-listen">針對性聽力</button>
                 <button class="btn btn-secondary shadow-btn" id="weakness-focus-shadow" style="grid-column: span 2;">針對性跟讀</button>
+            </div>
+        </div>
+    </template>
+    <template id="view-pro-review">
+        <div class="view pro-review-view">
+            <div class="view-header" style="flex-direction:row;justify-content:space-between;align-items:center;">
+                <div style="flex:1;">
+                    <h1 id="pro-review-title" style="font-size:1.5rem; margin-bottom:0;">Pro Review</h1>
+                    <p class="subtitle" id="pro-review-subtitle" style="margin-top:2px;">Word 1 / 10</p>
+                </div>
+                <button class="btn btn-secondary shadow-btn" id="pro-review-quit-btn" style="padding:5px 12px; font-size:0.85rem;">Quit</button>
+            </div>
+            
+            <div class="progress-bar-container" style="margin-top:10px;">
+                <div id="pro-review-progress" class="progress-bar" style="width:0%;"></div>
+            </div>
+
+            <!-- Dynamic DOM container for the sub-views (Flashcard / Listen / Shadow) -->
+            <div id="pro-review-stage-container" style="flex:1; display:flex; flex-direction:column; align-items:stretch; margin-top:20px; overflow-y:auto; overflow-x:hidden;">
+                <!-- Stage content generated via JS -->
+            </div>
+            
+            <div id="pro-review-completion" class="completion-screen hidden" style="margin-top:20px;">
+                <div class="check-mark" style="font-size:4rem; margin-bottom:10px;">🏆</div>
+                <h2>訓練完成！</h2>
+                <div id="pro-review-results" style="margin-top:20px; text-align:left; background:var(--surface); padding:20px; border-radius:12px; border:1px solid var(--border);">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                        <span>單字完成數:</span>
+                        <strong id="res-completed" style="color:var(--primary); font-size:1.2rem;">0</strong>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                        <span>弱點強化次數:</span>
+                        <strong id="res-reinforced" style="color:var(--accent); font-size:1.2rem;">0</strong>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                        <span>剩餘弱點單字:</span>
+                        <strong id="res-weakness" style="color:var(--error); font-size:1.2rem;">0</strong>
+                    </div>
+                </div>
+                <button class="btn btn-primary shadow-btn" id="pro-review-finish-btn" style="width:100%; margin-top:30px; font-size:1.1rem; padding:15px;">返回首頁</button>
             </div>
         </div>
     </template>

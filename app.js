@@ -2478,25 +2478,128 @@ const adjustAdaptiveScore = (delta) => {
 };
 
 // --- Statistics & Progress Logic ---
-const calculateWeaknessScore = (word) => {
-    const prog = state.progress[word] || { familiarity: 0 };
-    let score = 0;
+// --- Word Lifecycle System Helpers ---
+const initWordProgress = (word) => {
+    const now = new Date();
+    const tomorrow = new Date(now);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(0, 0, 0, 0);
+
+    return {
+        status: 'new',
+        addedDate: now.toISOString(),
+        lastReviewDate: null,
+        lastErrorDate: null,
+        nextReviewDate: tomorrow.toISOString(),
+        correctCount: 0,
+        wrongCount: 0,
+        consecutiveCorrect: 0,
+        consecutiveWrong: 0,
+        shadowQualityLowCount: 0,
+        masteredLevel: 0,
+        lastFamiliarity: 1
+    };
+};
+
+const checkStateTransitions = (wordStr) => {
+    const prog = state.progress[wordStr];
+    if (!prog) return;
+
+    const now = new Date();
+    const totalAnswers = (prog.correctCount || 0) + (prog.wrongCount || 0);
+    const correctRate = totalAnswers > 0 ? (prog.correctCount / totalAnswers) : 0;
+
+    if (prog.status === 'learning') {
+        if (prog.consecutiveWrong >= 2 || (totalAnswers > 2 && correctRate < 0.60)) {
+            prog.status = 'weak';
+        } else if (prog.correctCount >= 3 && correctRate >= 0.80) {
+            prog.status = 'mastered';
+        }
+    } else if (prog.status === 'weak') {
+        if (prog.consecutiveCorrect >= 2) {
+            prog.status = 'learning';
+        } else if (prog.correctCount >= 4 && correctRate >= 0.85) {
+            prog.status = 'mastered';
+        }
+    } else if (prog.status === 'mastered') {
+        if (prog.lastReviewDate) {
+            const lastReview = new Date(prog.lastReviewDate);
+            const daysSince = (now - lastReview) / (1000 * 60 * 60 * 24);
+            if (daysSince >= 14 || prog.consecutiveWrong >= 2) {
+                prog.status = 'weak';
+                prog.masteredLevel = 0; // reset
+            }
+        }
+    }
+};
+
+const calculateNextReviewDate = (prog, isCorrect, rank) => {
+    const now = new Date();
+    let daysToAdd = 1;
     
-    // +3 for SRS errors
-    score += (prog.wrongCount || 0) * 3;
-    
-    // +2 for unfamiliar
-    if (!state.progress[word] || prog.familiarity === 0) score += 2;
-    
-    // +2 for memory (久未複習 > 7 days)
-    if (prog.lastReviewDate) {
-        const last = new Date(prog.lastReviewDate);
-        const days = (new Date() - last) / (1000 * 60 * 60 * 24);
-        if (days > 7) score += 2;
+    if (prog.status === 'learning') {
+        if (!isCorrect || rank === 0) daysToAdd = 1;
+        else if (rank === 1) daysToAdd = 2;
+        else daysToAdd = 3;
+    } else if (prog.status === 'weak') {
+        daysToAdd = 1;
+    } else if (prog.status === 'mastered') {
+        if (!isCorrect) daysToAdd = 1;
+        else {
+            const tiers = [7, 14, 30];
+            daysToAdd = tiers[Math.min(prog.masteredLevel || 0, 2)];
+            prog.masteredLevel = (prog.masteredLevel || 0) + 1;
+        }
+    } else { // new
+        daysToAdd = 1;
     }
     
-    // +1 for listening errors
-    score += (prog.listenWrongCount || 0) * 1;
+    const nextDate = new Date(now);
+    nextDate.setDate(nextDate.getDate() + daysToAdd);
+    nextDate.setHours(0, 0, 0, 0);
+    return nextDate.toISOString();
+};
+
+const calculateWeaknessScore = (word) => {
+    const prog = state.progress[word];
+    if (!prog) return 0;
+
+    const now = new Date();
+    const added = new Date(prog.addedDate || now);
+    const msSinceAdded = now - added;
+    
+    // Constraints: new or <24h -> 0 points
+    if (prog.status === 'new' || msSinceAdded < 24 * 60 * 60 * 1000) return 0;
+
+    let score = 0;
+    
+    // Mistakes capped at +9 (3 mistakes)
+    score += Math.min((prog.wrongCount || 0) * 3, 9);
+    
+    // Shadowing low quality capped at +5
+    score += Math.min((prog.shadowQualityLowCount || 0) * 1, 5);
+    
+    // Familiarity (+2 if hard/wrong)
+    if ((prog.lastFamiliarity ?? 1) <= 1) score += 2;
+    
+    // Long no review (+2 if > 7 days)
+    if (prog.lastReviewDate) {
+        const last = new Date(prog.lastReviewDate);
+        if ((now - last) / (1000 * 60 * 60 * 24) > 7) score += 2;
+    }
+    
+    // Time decay: -2 per 3 days since last error
+    if (prog.lastErrorDate) {
+        const lastError = new Date(prog.lastErrorDate);
+        const daysSinceError = (now - lastError) / (1000 * 60 * 60 * 24);
+        const decayAmount = Math.floor(daysSinceError / 3) * 2;
+        score = Math.max(0, score - decayAmount);
+    }
+    
+    // Weakness trigger
+    if (score >= 5 && prog.status !== 'weak' && prog.status !== 'new') {
+        prog.status = 'weak';
+    }
     
     return score;
 };
@@ -2606,13 +2709,19 @@ const getAdaptivePool = (count, typeFilter = null) => {
     
     const selectFromSubPool = (subPool, targetCount) => {
         return subPool
+            .filter(w => {
+                const prog = state.progress[w.word];
+                // Do not re-test words whose nextReviewDate is in the future
+                if (prog && prog.nextReviewDate && new Date(prog.nextReviewDate) > now) return false;
+                return true;
+            })
             .map(w => {
-                const prog = state.progress[w.word] || { familiarity: 0, nextReviewDate: 0 };
+                const prog = state.progress[w.word];
                 const weaknessScore = calculateWeaknessScore(w.word);
                 
                 let priority = 0;
-                if (prog.familiarity === 0) priority += 100; // New
-                if (prog.nextReviewDate && new Date(prog.nextReviewDate) <= now) priority += 50; // Due
+                if (!prog) priority += 100; // Brand new
+                else if (prog.nextReviewDate && new Date(prog.nextReviewDate) <= now) priority += 50; // Due
                 
                 // Add Weakness Boost
                 priority += weaknessScore * 5;
@@ -2728,7 +2837,7 @@ const initDailyView = () => {
             else card.classList.add('swipe-right');
 
             setTimeout(() => {
-                updateSRSGlobal(itemData.word, rank);
+                updateSRSGlobal(itemData.word, rank, rank > 0);
                 // Mark current day item as done
                 const dailyIndex = state.daily.items.findIndex(it => it.word === itemData.word);
                 state.daily.items[dailyIndex].status = 'done';
@@ -2754,17 +2863,39 @@ const generateDailySet = (dateStr) => {
     saveToStorage();
 };
 
-const updateSRSGlobal = (word, rank) => {
-    const intervals = [1, 3, 7];
-    const daysToAdd = intervals[rank];
-    const nextReview = new Date();
-    nextReview.setDate(nextReview.getDate() + daysToAdd);
-    nextReview.setHours(0, 0, 0, 0);
+const updateSRSGlobal = (wordStr, rank, isCorrect = true) => {
+    let prog = state.progress[wordStr];
+    const now = new Date();
+    
+    if (!prog || typeof prog.status === 'undefined') {
+        prog = initWordProgress(wordStr);
+        state.progress[wordStr] = prog;
+    }
 
-    state.progress[word] = {
-        familiarity: rank,
-        nextReviewDate: nextReview.toISOString()
-    };
+    if (prog.status === 'new') {
+        const added = new Date(prog.addedDate || now);
+        if ((now - added) >= 24 * 60 * 60 * 1000) {
+            prog.status = 'learning';
+        }
+    }
+    
+    if (isCorrect) {
+        prog.correctCount = (prog.correctCount || 0) + 1;
+        prog.consecutiveCorrect = (prog.consecutiveCorrect || 0) + 1;
+        prog.consecutiveWrong = 0;
+    } else {
+        prog.wrongCount = (prog.wrongCount || 0) + 1;
+        prog.consecutiveWrong = (prog.consecutiveWrong || 0) + 1;
+        prog.consecutiveCorrect = 0;
+        prog.lastErrorDate = now.toISOString();
+    }
+    
+    prog.lastReviewDate = now.toISOString();
+    prog.lastFamiliarity = rank;
+    
+    checkStateTransitions(wordStr);
+    
+    prog.nextReviewDate = calculateNextReviewDate(prog, isCorrect, rank);
 
     // Adaptive Feedback
     if (rank === 2) adjustAdaptiveScore(2); // Easy success
@@ -2848,14 +2979,14 @@ const initListeningView = () => {
             state.listeningSessionCount++;
             saveToStorage(); // Persist progress globally
             
-            updateSRSGlobal(currentTarget.word, 2); // Rank 2 = Easy
+            updateSRSGlobal(currentTarget.word, 2, true); // Rank 2 = Easy
             adjustAdaptiveScore(1); // Small boost
             showFeedback(true);
             setTimeout(startNewQuestion, 2000);
         } else {
             btn.classList.add('wrong');
             state.streak = 0;
-            updateSRSGlobal(currentTarget.word, 0); // Rank 0 = Hard
+            updateSRSGlobal(currentTarget.word, 0, false); // Rank 0 = Hard
             
             // Track Listening Error specifically
             if (!state.progress[currentTarget.word]) {
@@ -2982,52 +3113,54 @@ const switchView = (viewName) => {
     if (viewName === 'search') initSearchView();
     if (viewName === 'collection') initCollectionView();
     if (viewName === 'weakness') initWeaknessView();
+    if (viewName === 'flashcards') initFlashcardsView();
+    if (viewName === 'pro-review') initProReviewView();
 };
 
 // --- 🏠 Home View Logic ---
 const initHomeView = () => {
     const searchInput = document.getElementById('home-search-input');
+    const weaknessCount = document.getElementById('home-weakness-count');
     const todayCount = document.getElementById('home-today-count');
-    const streakDays = document.getElementById('home-streak-days');
     const mainStartBtn = document.getElementById('main-start-btn');
-    const mainStartStatus = document.getElementById('main-start-status');
-    const modeCards = document.querySelectorAll('.mode-card');
 
     // 1. Update Stats
     const stats = getLearningStats();
-    todayCount.textContent = `${stats.todayDone} / 10`;
-    streakDays.textContent = `${stats.totalDays} days`;
-
-    // 2. One-Tap Start Logic
-    const dailyItems = state.daily?.items || [];
-    const dailyRemaining = dailyItems.filter(i => i.status === 'pending').length;
-
-    if (dailyRemaining > 0) {
-        mainStartStatus.textContent = `今日 Daily 還有 ${dailyRemaining} 個目標`;
-        mainStartBtn.onclick = () => switchView('daily');
-    } else {
-        mainStartStatus.textContent = `Daily 已達成！切換至聽力挑戰`;
-        mainStartBtn.onclick = () => switchView('listening');
-    }
-
-    // 3. Search Integration
-    searchInput.onkeypress = (e) => {
-        if (e.key === 'Enter' && searchInput.value.trim()) {
-            const query = searchInput.value.trim();
-            switchView('search');
-            const globalSearchInput = document.getElementById('search-input');
-            if (globalSearchInput) {
-                globalSearchInput.value = query;
-                // Dispatch event to trigger search in search view
-                globalSearchInput.dispatchEvent(new Event('input'));
-            }
-        }
-    };
-
-    // 4. Mode Cards Routing
-    modeCards.forEach(card => {
-        card.onclick = () => switchView(card.dataset.mode);
+    let weakSum = 0;
+    Object.values(state.progress).forEach(p => {
+        if (p.status === 'weak') weakSum++;
     });
+    
+    if (todayCount) todayCount.textContent = `${stats.todayDone}`;
+    if (weaknessCount) weaknessCount.textContent = `${weakSum}`;
+
+    // 2. Setup Tabs Handlers
+    const installTabs = (containerId, stateKey) => {
+        const tabs = document.querySelectorAll(`#${containerId} .tab-btn`);
+        tabs.forEach(tab => {
+            tab.onclick = () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                state.proReviewConfig = state.proReviewConfig || { mode: 'smart', length: 5, context: 'full' };
+                state.proReviewConfig[stateKey] = tab.dataset.val;
+            };
+        });
+    };
+    
+    state.proReviewConfig = state.proReviewConfig || { mode: 'smart', length: 5, context: 'full' };
+    
+    installTabs('pro-setup-mode', 'mode');
+    installTabs('pro-setup-length', 'length');
+    installTabs('pro-setup-context', 'context');
+
+    // 3. Start Logic
+    if (mainStartBtn) {
+        mainStartBtn.onclick = () => {
+            // Need to write startProReview()
+            generateProReviewPool();
+            switchView('pro-review');
+        };
+    }
 };
 
 // --- 📖 Learn View Logic ---
@@ -3703,9 +3836,21 @@ const initShadowingView = () => {
                 state.shadowingStats.tryAgain++;
                 // Reinforcement: Add to collection/review if poor quality
                 if (currentSentence.word) {
-                    const prog = state.progress[currentSentence.word] || { familiarity: 0 };
-                    prog.shadowingWeak = true;
-                    state.progress[currentSentence.word] = prog;
+                    let prog = state.progress[currentSentence.word];
+                    if (!prog || typeof prog.status === 'undefined') {
+                        prog = initWordProgress(currentSentence.word);
+                        state.progress[currentSentence.word] = prog;
+                    }
+                    
+                    prog.shadowQualityLowCount = (prog.shadowQualityLowCount || 0) + 1;
+                    
+                    const now = new Date();
+                    if (prog.status === 'new') {
+                        const added = new Date(prog.addedDate || now);
+                        if ((now - added) >= 24 * 60 * 60 * 1000) prog.status = 'learning';
+                    }
+                    
+                    checkStateTransitions(currentSentence.word);
                     saveToStorage();
                 }
             }
@@ -3791,38 +3936,37 @@ const initShadowingView = () => {
 
 // --- 📉 Weakness Page Logic ---
 const initWeaknessView = (containerId = 'weakness-top-list') => {
-    const counts = { gap: 0, error: 0, memory: 0, listen: 0 };
+    const counts = { gap: 0, weak: 0, memory: 0, mastered: 0 };
     const now = new Date();
 
     // 1. Calculate Summary Counts
     INITIAL_DATA.forEach(w => {
         const prog = state.progress[w.word];
-        const score = calculateWeaknessScore(w.word);
-        
-        if (!prog || prog.familiarity === 0) counts.gap++;
-        if (prog && prog.wrongCount > 0) counts.error++;
-        if (prog && prog.lastReviewDate) {
-            const days = (now - new Date(prog.lastReviewDate)) / (1000 * 60 * 60 * 24);
-            if (days > 7) counts.memory++;
-        }
-        if (prog && prog.listenWrongCount > 0) counts.listen++;
+        if (!prog || prog.status === 'new') counts.gap++;
+        else if (prog.status === 'weak') counts.weak++;
+        else if (prog.status === 'learning') counts.memory++;
+        else if (prog.status === 'mastered') counts.mastered++;
     });
 
     // Update Dashboard UI (if present)
     const gapEl = document.getElementById('count-gap');
     if (gapEl) {
         gapEl.textContent = counts.gap;
-        document.getElementById('count-error').textContent = counts.error;
+        document.getElementById('count-error').textContent = counts.weak;
         document.getElementById('count-memory').textContent = counts.memory;
-        document.getElementById('count-listen').textContent = counts.listen;
+        document.getElementById('count-listen').textContent = counts.mastered;
     }
 
     // 2. Generate Top 10 List
     const topWords = INITIAL_DATA
-        .map(w => ({ ...w, weaknessScore: calculateWeaknessScore(w.word) }))
+        .map(w => {
+            const score = calculateWeaknessScore(w.word);
+            const status = state.progress[w.word]?.status || 'new';
+            return { ...w, weaknessScore: score, status };
+        })
+        .filter(w => w.weaknessScore > 0 && w.status !== 'new')
         .sort((a, b) => b.weaknessScore - a.weaknessScore)
-        .slice(0, 10)
-        .filter(w => w.weaknessScore > 0);
+        .slice(0, 10);
 
     const listContainer = document.getElementById(containerId);
     if (!listContainer) return;
@@ -3834,9 +3978,9 @@ const initWeaknessView = (containerId = 'weakness-top-list') => {
         el.innerHTML = `
             <div class="weakness-word-info">
                 <span class="weakness-word-text">${w.word}</span>
-                <span class="weakness-type-tag">${w.category || w.type}</span>
+                <span class="weakness-type-tag">${w.status}</span>
             </div>
-            <div class="weakness-score-pill">${w.weaknessScore} pts</div>
+            <div class="weakness-score-pill">🔥 ${w.weaknessScore}</div>
         `;
         listContainer.appendChild(el);
     });
@@ -3904,6 +4048,286 @@ const globalMeBtn = document.getElementById('global-me-btn');
 if (globalMeBtn) {
     globalMeBtn.addEventListener('click', () => switchView('me'));
 }
+
+// --- 🏆 Pro Review Engine ---
+
+const generateProReviewPool = () => {
+    const config = state.proReviewConfig || { mode: 'smart', length: 5, context: 'full' };
+    const maxCount = parseInt(config.length) || 5;
+    
+    let pool = [];
+    const now = new Date();
+    
+    // Assign Priority Score
+    const scoredWords = INITIAL_DATA.map(w => {
+        let score = 0;
+        const prog = state.progress[w.word];
+        
+        if (config.mode === 'free') {
+            // Random free mode
+            score = Math.random() * 10;
+        } else if (!prog || prog.status === 'new') {
+            score = 1;
+        } else {
+            if (prog.status === 'weak') score += 5;
+            if (new Date(prog.nextReviewDate) <= now) score += 4;
+            if (prog.lastErrorDate && (now - new Date(prog.lastErrorDate)) < 24*60*60*1000) score += 3;
+            if (prog.lastReviewDate && (now - new Date(prog.lastReviewDate)) > 7*24*60*60*1000) score += 2;
+        }
+        
+        return { wordData: w, score, prog };
+    });
+    
+    if (config.mode === 'weak') {
+        const weakPool = scoredWords.filter(item => item.prog && (item.prog.status === 'weak' || calculateWeaknessScore(item.wordData.word) >= 5));
+        pool = weakPool.sort((a, b) => b.score - a.score).slice(0, maxCount).map(i => i.wordData);
+    } else if (config.mode === 'free') {
+        pool = scoredWords.sort((a, b) => b.score - a.score).slice(0, maxCount).map(i => i.wordData);
+    } else {
+        // Smart mode
+        pool = scoredWords.sort((a, b) => b.score - a.score).slice(0, maxCount).map(i => i.wordData);
+    }
+    
+    // Fallback if empty
+    if (pool.length === 0) pool = INITIAL_DATA.slice(0, maxCount);
+    
+    let initialWeakCount = 0;
+    pool.forEach(w => {
+        const p = state.progress[w.word];
+        if (p && p.status === 'weak') initialWeakCount++;
+    });
+
+    state.proReviewState = {
+        queue: pool,
+        currentIndex: 0,
+        currentStage: 'flashcard', // 'flashcard', 'listening', 'shadowing'
+        stats: { completed: 0, reinforced: 0, initialWeak: initialWeakCount },
+        wordScore: 0 // Track correctness streak across stages to end early
+    };
+};
+
+const initProReviewView = () => {
+    const prState = state.proReviewState;
+    if (!prState) return;
+    
+    const title = document.getElementById('pro-review-title');
+    const subtitle = document.getElementById('pro-review-subtitle');
+    const progress = document.getElementById('pro-review-progress');
+    const stageContainer = document.getElementById('pro-review-stage-container');
+    const completionUI = document.getElementById('pro-review-completion');
+    const quitBtn = document.getElementById('pro-review-quit-btn');
+    
+    // End of Queue
+    if (prState.currentIndex >= prState.queue.length) {
+        stageContainer.innerHTML = '';
+        completionUI.classList.remove('hidden');
+        document.getElementById('res-completed').textContent = prState.stats.completed;
+        document.getElementById('res-reinforced').textContent = prState.stats.reinforced;
+        document.getElementById('res-weakness').textContent = Math.max(0, prState.stats.initialWeak - prState.stats.reinforced);
+        
+        document.getElementById('pro-review-finish-btn').onclick = () => switchView('home');
+        return;
+    }
+    
+    const wordData = prState.queue[prState.currentIndex];
+    const config = state.proReviewConfig || { mode: 'smart', length: 5, context: 'full' };
+    
+    subtitle.textContent = `Word ${prState.currentIndex + 1} / ${prState.queue.length}`;
+    progress.style.width = `${(prState.currentIndex / prState.queue.length) * 100}%`;
+    
+    // Handlers
+    const enforceQueueBack = () => { // Move back 3 places
+        prState.queue.splice(prState.currentIndex, 1);
+        const insertPos = Math.min(prState.currentIndex + 3, prState.queue.length);
+        prState.queue.splice(insertPos, 0, wordData);
+        prState.wordScore = 0; // Reset
+    };
+
+    const nextStageOrWord = (passed) => {
+        if (!passed) {
+            // Failed stage
+            enforceQueueBack();
+            prState.currentStage = 'flashcard'; // Start from flashcard again
+            initProReviewView();
+            return;
+        }
+        
+        prState.wordScore++;
+        
+        if (prState.currentStage === 'flashcard') {
+            prState.currentStage = 'listening';
+            initProReviewView();
+        } else if (prState.currentStage === 'listening') {
+            // Early exit if 2 consecutive perfects in Smart
+            if (prState.wordScore === 2 && config.mode !== 'free') {
+                finalizeWord(wordData);
+            } else {
+                prState.currentStage = 'shadowing';
+                initProReviewView();
+            }
+        } else if (prState.currentStage === 'shadowing') {
+            finalizeWord(wordData);
+        }
+    };
+    
+    const finalizeWord = (w) => {
+        prState.stats.completed++;
+        // Update Actual Progress
+        const prog = state.progress[w.word];
+        if (config.mode !== 'free') {
+            if (prog && prog.status === 'weak') prState.stats.reinforced++;
+            updateSRSGlobal(w.word, 2); // Pass
+            checkStateTransitions(w.word);
+            saveToStorage();
+        }
+        
+        prState.currentStage = 'flashcard';
+        prState.wordScore = 0;
+        prState.currentIndex++;
+        initProReviewView();
+    };
+    
+    // Render Stages
+    stageContainer.innerHTML = '';
+    
+    if (prState.currentStage === 'flashcard') {
+        stageContainer.innerHTML = `
+            <div style="display:flex; justify-content:center; align-items:center; height:100%; flex-direction:column;">
+                <h3 style="color:var(--muted); margin-bottom:10px;">階段一：字卡辨識</h3>
+                <div class="flashcard" id="pr-flash" style="width:100%;">
+                    <div class="card-face front">
+                    <button class="pronounce-btn" id="pr-flash-pron-front" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
+                        <h2>${wordData.word}</h2>
+                        <p style="margin-top:20px; color:var(--muted)">點擊翻面</p>
+                    </div>
+                    <div class="card-face back">
+                        <button class="pronounce-btn" id="pr-flash-pron-back" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
+                        <h3>${wordData.definition_zh}</h3>
+                        <p>${wordData.definition_en}</p>
+                    </div>
+                </div>
+                <div id="pr-flash-actions" class="flashcard-actions hidden" style="width:100%;">
+                    <button class="btn btn-hard" id="pr-flash-fail">忘記 / 錯誤</button>
+                    <button class="btn btn-easy" id="pr-flash-pass">記得 / 正確</button>
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('pr-flash-pron-front').onclick = (e) => { e.stopPropagation(); speak(wordData.word); };
+        document.getElementById('pr-flash-pron-back').onclick = (e) => { e.stopPropagation(); speak(wordData.word); };
+
+        document.getElementById('pr-flash').onclick = (e) => {
+            e.currentTarget.classList.add('flipped');
+            document.getElementById('pr-flash-actions').classList.remove('hidden');
+        };
+        document.getElementById('pr-flash-fail').onclick = () => {
+            if (config.mode !== 'free') {
+                const prog = initWordProgress(wordData.word);
+                prog.wrongCount = (prog.wrongCount || 0) + 1;
+                saveToStorage();
+            }
+            nextStageOrWord(false);
+        };
+        document.getElementById('pr-flash-pass').onclick = () => nextStageOrWord(true);
+        
+    } else if (prState.currentStage === 'listening') {
+        const distractors = INITIAL_DATA.filter(x => x.word !== wordData.word).sort(() => 0.5 - Math.random()).slice(0, 3);
+        const options = [wordData, ...distractors].sort(() => 0.5 - Math.random());
+        
+        stageContainer.innerHTML = `
+            <div style="display:flex; justify-content:center; align-items:center; height:100%; flex-direction:column; gap:20px;">
+                <h3 style="color:var(--muted); margin-bottom:10px;">階段二：聽力測驗</h3>
+                <button id="pr-listen-play" class="play-main-btn" style="width:100px; height:100px; font-size:3rem; margin-bottom:20px;">▶</button>
+                <div class="options-grid" id="pr-listen-opts" style="width:100%; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                    ${options.map((o, idx) => `<button class="option-btn" data-val="${o.word}" style="width:100%; height:auto; padding:15px; font-size:0.95rem; border:1px solid var(--border); border-radius:12px; background:var(--surface);">${o.definition_zh}</button>`).join('')}
+                </div>
+            </div>
+        `;
+        
+        let played = false;
+        const playBtn = document.getElementById('pr-listen-play');
+        playBtn.onclick = () => {
+            speak(wordData.word);
+            played = true;
+        };
+        
+        setTimeout(() => { if (!played) speak(wordData.word); played = true; }, 500);
+        
+        document.querySelectorAll('#pr-listen-opts .option-btn').forEach(btn => {
+            btn.onclick = () => {
+                if (btn.dataset.val === wordData.word) {
+                    btn.style.background = 'var(--success)';
+                    btn.style.color = 'white';
+                    setTimeout(() => nextStageOrWord(true), 800);
+                } else {
+                    btn.style.background = 'var(--error)';
+                    btn.style.color = 'white';
+                    Array.from(document.querySelectorAll('#pr-listen-opts .option-btn')).forEach(b => {
+                        if (b.dataset.val === wordData.word) {
+                            b.style.background = 'var(--success)';
+                            b.style.color = 'white';
+                        }
+                    });
+                    if (config.mode !== 'free') {
+                        const prog = initWordProgress(wordData.word);
+                        prog.listenWrongCount = (prog.listenWrongCount || 0) + 1;
+                        saveToStorage();
+                    }
+                    setTimeout(() => nextStageOrWord(false), 1500);
+                }
+            };
+        });
+        
+    } else if (prState.currentStage === 'shadowing') {
+        const sentence = wordData.example || "No context sentence available.";
+        if (config.context === 'silent') {
+            stageContainer.innerHTML = `
+                <div style="display:flex; justify-content:center; align-items:center; height:100%; flex-direction:column; gap:20px; text-align:center;">
+                    <h3 style="color:var(--muted); margin-bottom:10px;">階段三：靜音默讀</h3>
+                    <div style="font-size:1.5rem; font-weight:bold; margin:20px 0;">${sentence}</div>
+                    <p style="color:var(--muted);">請在心中跟讀，並思考其意義。</p>
+                    <button class="btn btn-primary" id="pr-silent-done" style="margin-top:40px; width:100%;">✅ 已完成默讀</button>
+                </div>
+            `;
+            document.getElementById('pr-silent-done').onclick = () => nextStageOrWord(true);
+        } else {
+            stageContainer.innerHTML = `
+                <div style="display:flex; justify-content:center; align-items:center; height:100%; flex-direction:column; gap:20px; text-align:center;">
+                    <h3 style="color:var(--muted); margin-bottom:10px;">階段三：聲音跟讀演練</h3>
+                    <div style="font-size:1.5rem; font-weight:bold; margin:20px 0;">${sentence}</div>
+                    <button id="pr-shadow-play" class="shadow-btn secondary" style="padding:10px 20px;"><span class="icon">🔊</span> 播放句子</button>
+                    
+                    <div style="display:flex; gap:10px; width:100%; margin-top:30px;">
+                        <button class="btn btn-hard" id="pr-shadow-fail" style="flex:1;">很不順 (重試)</button>
+                        <button class="btn btn-easy" id="pr-shadow-pass" style="flex:1;">流暢發音 (通過)</button>
+                    </div>
+                </div>
+            `;
+            document.getElementById('pr-shadow-play').onclick = () => speak(sentence);
+            document.getElementById('pr-shadow-fail').onclick = () => {
+                if (config.mode !== 'free') {
+                    const prog = initWordProgress(wordData.word);
+                    prog.shadowQualityLowCount = (prog.shadowQualityLowCount || 0) + 1;
+                    saveToStorage();
+                }
+                showNotification('重新排入練習...');
+                nextStageOrWord(false);
+            };
+            document.getElementById('pr-shadow-pass').onclick = () => nextStageOrWord(true);
+            
+            setTimeout(() => speak(sentence), 500);
+        }
+    }
+    
+    if (quitBtn) {
+        quitBtn.onclick = () => {
+            if (confirm('確定要退出 Pro Review 嗎？進度將不會保留。')) {
+                stageContainer.innerHTML = '';
+                switchView('home');
+            }
+        };
+    }
+};
 
 // Start with Home View
 switchView('home');

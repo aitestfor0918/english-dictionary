@@ -2367,6 +2367,7 @@ const state = {
     shadowingSpeed: parseFloat(localStorage.getItem('shadowing_speed') || '0.75'),
     activeShadowingMode: 'daily',
     shadowingSessionCount: parseInt(localStorage.getItem('shadowing_session_count') || '0'),
+    listeningSessionCount: parseInt(localStorage.getItem('listening_session_count') || '0'),
     lastShadowingDate: localStorage.getItem('last_shadowing_date') || new Date().toDateString(),
     shadowingStats: JSON.parse(localStorage.getItem('shadowing_stats') || '{"completed": 0, "good": 0, "tryAgain": 0}')
 };
@@ -2375,9 +2376,11 @@ const state = {
 const today = new Date().toDateString();
 if (state.lastShadowingDate !== today) {
     state.shadowingSessionCount = 0;
+    state.listeningSessionCount = 0;
     state.lastShadowingDate = today;
     state.shadowingStats = { completed: 0, good: 0, tryAgain: 0 };
     localStorage.setItem('shadowing_session_count', '0');
+    localStorage.setItem('listening_session_count', '0');
     localStorage.setItem('last_shadowing_date', today);
     localStorage.setItem('shadowing_stats', JSON.stringify(state.shadowingStats));
 }
@@ -2396,6 +2399,7 @@ const saveToStorage = () => {
     localStorage.setItem('shadowing_speed', state.shadowingSpeed.toString());
     localStorage.setItem('adaptive_score', state.adaptiveScore.toString());
     localStorage.setItem('shadowing_session_count', state.shadowingSessionCount.toString());
+    localStorage.setItem('listening_session_count', state.listeningSessionCount.toString());
     localStorage.setItem('last_shadowing_date', state.lastShadowingDate);
     localStorage.setItem('shadowing_stats', JSON.stringify(state.shadowingStats));
 };
@@ -2513,9 +2517,13 @@ const getLearningStats = () => {
         return Math.round((masteredInPool / typePool.length) * 100);
     };
 
+    const vocabularyDone = state.daily?.items.filter(i => i.status === 'done').length || 0;
+    const listeningDone = (state.listeningSessionCount >= 10) ? 1 : 0;
+    const shadowingDone = (state.shadowingSessionCount >= 5) ? 1 : 0;
+
     return {
-        todayDone: state.daily?.items.filter(i => i.status === 'done').length || 0,
-        todayTotal: state.daily?.items.length || 0,
+        todayDone: vocabularyDone + listeningDone + shadowingDone,
+        todayTotal: 10,
         totalDays,
         masteredCount,
         wordProgress: getProgressForType('word'),
@@ -2784,8 +2792,9 @@ const initListeningView = () => {
     let currentTarget = null;
     let isAnswering = false;
 
-    // Initialize session state
-    state.listeningSessionCount = 0;
+    // Initialize session state - REMOVED hard reset to allow daily persistence
+    // state.listeningSessionCount = 0; 
+
 
     const startNewQuestion = () => {
         // Check for Daily Goal completion
@@ -2837,6 +2846,7 @@ const initListeningView = () => {
             btn.classList.add('correct');
             state.streak++;
             state.listeningSessionCount++;
+            saveToStorage(); // Persist progress globally
             
             updateSRSGlobal(currentTarget.word, 2); // Rank 2 = Easy
             adjustAdaptiveScore(1); // Small boost

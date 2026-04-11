@@ -2364,8 +2364,23 @@ const state = {
     listeningSessionCount: 0,
     // Shadowing Settings
     shadowingLoop: parseInt(localStorage.getItem('shadowing_loop') || '3'),
-    shadowingSpeed: parseFloat(localStorage.getItem('shadowing_speed') || '0.75')
+    shadowingSpeed: parseFloat(localStorage.getItem('shadowing_speed') || '0.75'),
+    activeShadowingMode: 'daily',
+    shadowingSessionCount: parseInt(localStorage.getItem('shadowing_session_count') || '0'),
+    lastShadowingDate: localStorage.getItem('last_shadowing_date') || new Date().toDateString(),
+    shadowingStats: JSON.parse(localStorage.getItem('shadowing_stats') || '{"completed": 0, "good": 0, "tryAgain": 0}')
 };
+
+// --- Daily State Reset Logic ---
+const today = new Date().toDateString();
+if (state.lastShadowingDate !== today) {
+    state.shadowingSessionCount = 0;
+    state.lastShadowingDate = today;
+    state.shadowingStats = { completed: 0, good: 0, tryAgain: 0 };
+    localStorage.setItem('shadowing_session_count', '0');
+    localStorage.setItem('last_shadowing_date', today);
+    localStorage.setItem('shadowing_stats', JSON.stringify(state.shadowingStats));
+}
 
 // Ensure first login is saved
 if (!localStorage.getItem('first_login_date')) {
@@ -2380,6 +2395,9 @@ const saveToStorage = () => {
     localStorage.setItem('shadowing_loop', state.shadowingLoop.toString());
     localStorage.setItem('shadowing_speed', state.shadowingSpeed.toString());
     localStorage.setItem('adaptive_score', state.adaptiveScore.toString());
+    localStorage.setItem('shadowing_session_count', state.shadowingSessionCount.toString());
+    localStorage.setItem('last_shadowing_date', state.lastShadowingDate);
+    localStorage.setItem('shadowing_stats', JSON.stringify(state.shadowingStats));
 };
 
 // --- DOM References ---
@@ -2925,6 +2943,7 @@ const generateDistractors = (target) => {
 // --- View Router ---
 const switchView = (viewName) => {
     state.currentView = viewName;
+    window.speechSynthesis.cancel(); // Stop any current speaking when switching views
     
     // Update Nav UI
     navItems.forEach(item => {
@@ -3364,6 +3383,10 @@ const initMusicView = () => {
     
     const renderMusicList = (category) => {
         list.innerHTML = '';
+        list.style.animation = 'none';
+        list.offsetHeight; // Trigger reflow
+        list.style.animation = 'fadeIn 0.3s ease-out';
+        
         const filtered = INITIAL_DATA.filter(w => 
             w.type === 'music' && (category === 'all' || w.category === category)
         );
@@ -3451,6 +3474,10 @@ const initDailyEnglishView = () => {
     
     const renderDailyList = (category) => {
         list.innerHTML = '';
+        list.style.animation = 'none';
+        list.offsetHeight; // Trigger reflow
+        list.style.animation = 'fadeIn 0.3s ease-out';
+        
         const filtered = INITIAL_DATA.filter(w => 
             w.type === 'daily' && (category === 'all' || w.category === category)
         );
@@ -3546,6 +3573,45 @@ const initShadowingView = () => {
     const loopBtns = document.querySelectorAll('.loop-btn');
     const speedTabs = document.querySelectorAll('#shadowing-speed-switcher .tab-btn');
 
+    const modeTabs = document.querySelectorAll('#shadowing-mode-switcher .tab-btn');
+    const completionScreen = document.getElementById('shadowing-completion');
+    const continueBtn = document.getElementById('shadowing-continue-btn');
+    const endBtn = document.getElementById('shadowing-end-btn');
+
+    // Quality Tracking Variables
+    let currentSessionSentences = 0;
+    let currentSentenceStartTime = 0;
+    let currentSentenceReplays = 0;
+    let currentSentencePlayedFully = false;
+    let currentSentenceScore = 0;
+
+    const updateMiniStats = () => {
+        const doneEl = document.getElementById('shadow-stat-done');
+        const goodEl = document.getElementById('shadow-stat-good');
+        const tryEl = document.getElementById('shadow-stat-try');
+        if (doneEl) {
+            doneEl.textContent = state.shadowingStats.completed;
+            goodEl.textContent = state.shadowingStats.good;
+            tryEl.textContent = state.shadowingStats.tryAgain;
+        }
+    };
+
+    const showQualityBadge = (score) => {
+        const badge = document.getElementById('shadowing-quality-badge');
+        if (!badge) return;
+        
+        badge.classList.remove('hidden', 'good', 'try');
+        if (score >= 70) {
+            badge.textContent = '👍 Good Practice';
+            badge.classList.add('good');
+        } else {
+            badge.textContent = '⚠️ Try Again';
+            badge.classList.add('try');
+        }
+        
+        setTimeout(() => badge.classList.add('hidden'), 2500);
+    };
+
     let currentSentence = null;
     let isPlaying = false;
     let sentencePool = [];
@@ -3570,20 +3636,28 @@ const initShadowingView = () => {
             stepIndicator.textContent = `Step ${i + 1}: Focus Chunk`;
             activeChunkEl.innerHTML = applyStress(chunk);
             
-            for (let j = 0; j < 2; j++) {
+            const chunkLoops = Math.max(2, state.shadowingLoop); // At least 2 for zero-pressure
+            for (let j = 0; j < chunkLoops; j++) {
                 speak(chunk, speed);
-                await new Promise(r => setTimeout(r, (chunk.split(' ').length * 400 + 400) / speed));
-                if (j === 0) await new Promise(r => setTimeout(r, 800)); // 0.8s internal delay
+                // Wait for chunk duration + 2.5s interval
+                await new Promise(r => setTimeout(r, (chunk.split(' ').length * 450 + 400) / speed));
+                await new Promise(r => setTimeout(r, 2500));
             }
         }
 
         // Step 3: Full Sentence
         stepIndicator.textContent = `Step 3: Full Sentence`;
         activeChunkEl.innerHTML = applyStress(currentSentence.sentence);
-        speak(currentSentence.sentence, speed);
-        await new Promise(r => setTimeout(r, (currentSentence.sentence.split(' ').length * 400 + 500) / speed));
+        const sentenceLoops = Math.max(3, state.shadowingLoop + 1); // At least 3 for zero-pressure
+        for (let j = 0; j < sentenceLoops; j++) {
+            status.textContent = j === (sentenceLoops - 1) ? 'Final challenge!' : `Full Sentence (${j + 1}/${sentenceLoops})`;
+            speak(currentSentence.sentence, speed);
+            await new Promise(r => setTimeout(r, (currentSentence.sentence.split(' ').length * 450 + 500) / speed));
+            await new Promise(r => setTimeout(r, 3500)); // 3.5s interval
+        }
 
         isPlaying = false;
+        currentSentencePlayedFully = true;
         status.textContent = 'Now you try!';
         textContainer.classList.remove('hidden');
         ghostSentenceEl.classList.remove('hidden');
@@ -3602,13 +3676,79 @@ const initShadowingView = () => {
     };
 
     const loadNext = () => {
+        // 1. Evaluate previous sentence quality (if exists)
+        if (currentSentence) {
+            const stayTime = (Date.now() - currentSentenceStartTime) / 1000;
+            let score = 0;
+            
+            if (currentSentencePlayedFully) score += 40;
+            if (stayTime >= 1.0) score += 30;
+            if (currentSentenceReplays >= 2) score += 20;
+            if (state.shadowingSpeed < 1.0) score += 10;
+            
+            currentSentenceScore = score;
+            state.shadowingStats.completed++;
+            if (score >= 70) state.shadowingStats.good++;
+            else {
+                state.shadowingStats.tryAgain++;
+                // Reinforcement: Add to collection/review if poor quality
+                if (currentSentence.word) {
+                    const prog = state.progress[currentSentence.word] || { familiarity: 0 };
+                    prog.shadowingWeak = true;
+                    state.progress[currentSentence.word] = prog;
+                    saveToStorage();
+                }
+            }
+            
+            showQualityBadge(score);
+            updateMiniStats();
+        }
+
+        // 2. Load New Sentence
+        if (state.activeShadowingMode === 'daily' && state.shadowingSessionCount >= 5) {
+            completionScreen.classList.remove('hidden');
+            return;
+        }
+
         if (sentencePool.length === 0) sentencePool = getSentencePool();
         currentSentence = sentencePool[poolIndex % sentencePool.length];
         poolIndex++;
+        
+        // Reset tracking for new sentence
+        currentSentenceStartTime = Date.now();
+        currentSentenceReplays = 0;
+        currentSentencePlayedFully = false;
+
+        if (state.activeShadowingMode === 'daily') {
+            state.shadowingSessionCount++;
+            saveToStorage(); // Persist daily progress
+        }
+        
         playSequence();
     };
 
     // UI Listeners
+    modeTabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.mode === state.activeShadowingMode);
+        tab.onclick = () => {
+            state.activeShadowingMode = tab.dataset.mode;
+            // No need to reset count here, we want it to persist for the day
+            completionScreen.classList.add('hidden');
+            modeTabs.forEach(t => t.classList.toggle('active', t === tab));
+            loadNext();
+        };
+    });
+
+    continueBtn.onclick = () => {
+        state.activeShadowingMode = 'practice'; // Auto-switch to practice to continue
+        completionScreen.classList.add('hidden');
+        modeTabs.forEach(t => t.classList.toggle('active', t.dataset.mode === 'practice'));
+        loadNext();
+    };
+
+    endBtn.onclick = () => {
+        switchView('learn');
+    };
     loopBtns.forEach(btn => {
         btn.classList.toggle('active', parseInt(btn.dataset.count) === state.shadowingLoop);
         btn.onclick = () => {
@@ -3628,10 +3768,14 @@ const initShadowingView = () => {
         };
     });
 
-    replayBtn.onclick = () => playSequence();
+    replayBtn.onclick = () => {
+        currentSentenceReplays++;
+        playSequence();
+    };
     nextBtn.onclick = () => loadNext();
 
     // Initial Load
+    updateMiniStats();
     loadNext();
 };
 

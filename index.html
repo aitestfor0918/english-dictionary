@@ -367,28 +367,46 @@
     
     <template id="view-shadowing">
         <div class="view shadowing-view">
-            <div class="view-header" style="justify-content: space-between; display: flex; align-items: center;">
-                <h1>Shadowing</h1>
-                <div class="header-settings" style="display: flex; gap: 10px; align-items: center;">
-                    <div class="loop-selector">
-                        <span style="font-size: 0.7rem; color: var(--muted); margin-right: 5px;">Loop:</span>
-                        <button class="loop-btn active" data-count="1">1x</button>
-                        <button class="loop-btn" data-count="3">3x</button>
-                        <button class="loop-btn" data-count="5">5x</button>
+            <div class="view-header" style="flex-direction: column; align-items: stretch; gap: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h1>Shadowing</h1>
+                    <div class="header-settings" style="display: flex; gap: 10px; align-items: center;">
+                        <div class="loop-selector">
+                            <span style="font-size: 0.7rem; color: var(--muted); margin-right: 5px;">Loop:</span>
+                            <button class="loop-btn active" data-count="1">1x</button>
+                            <button class="loop-btn" data-count="3">3x</button>
+                            <button class="loop-btn" data-count="5">5x</button>
+                        </div>
                     </div>
                 </div>
+
+                <div class="section-tabs" id="shadowing-mode-switcher">
+                    <button class="tab-btn active" data-mode="daily">Daily Target (5)</button>
+                    <button class="tab-btn" data-mode="practice">Unlimited Practice</button>
+                </div>
+                
+                <p style="font-size: 0.8rem; color: var(--muted); text-align: center; font-style: italic; margin-top: -5px;">
+                    💡 跟讀品質比數量更重要
+                </p>
+            </div>
+
+            <div class="shadowing-stats-mini" id="shadowing-stats-mini">
+                <div class="stat-mini-item">Done: <span id="shadow-stat-done">0</span></div>
+                <div class="stat-mini-item">Good: 🌱 <span id="shadow-stat-good">0</span></div>
+                <div class="stat-mini-item">Try: ⚠️ <span id="shadow-stat-try">0</span></div>
             </div>
 
             <div class="speed-control-container" style="padding: 10px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 15px;">
                 <span style="font-size: 0.9rem; font-weight: 600;">Speed:</span>
                 <div class="section-tabs" id="shadowing-speed-switcher" style="padding: 0; background: none; box-shadow: none;">
+                    <button class="tab-btn small" data-speed="0.65">0.65x</button>
                     <button class="tab-btn small" data-speed="0.75">0.75x</button>
                     <button class="tab-btn small" data-speed="1.0">1.0x</button>
-                    <button class="tab-btn small" data-speed="1.25">1.25x</button>
                 </div>
             </div>
 
-            <div class="shadowing-main" style="min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="shadowing-main" style="min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+                <div id="shadowing-quality-badge" class="quality-badge hidden"></div>
                 <div id="shadowing-step-indicator" class="step-indicator hidden">Step 1</div>
                 <div id="shadowing-active-chunk" class="shadowing-active-chunk">Ready?</div>
                 <div id="shadowing-ghost-sentence" class="shadowing-ghost-sentence hidden">...</div>
@@ -408,6 +426,17 @@
                 <button id="shadowing-next" class="shadow-btn primary">
                     Next <span class="icon">➡</span>
                 </button>
+            </div>
+
+            <!-- Shadowing Goal Completion UI -->
+            <div id="shadowing-completion" class="completion-screen hidden">
+                <div class="check-mark">🎉</div>
+                <h2>今日跟讀完成！</h2>
+                <p>建議休息讓大腦吸收，是否繼續？</p>
+                <div class="flashcard-actions" style="margin-top: 30px;">
+                    <button class="btn btn-easy" id="shadowing-continue-btn">繼續練習</button>
+                    <button class="btn btn-normal" id="shadowing-end-btn" style="background: var(--secondary); color: var(--text);">今日結束</button>
+                </div>
             </div>
         </div>
     </template>

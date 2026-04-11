@@ -18,9 +18,9 @@
 
         <!-- Bottom Navigation -->
         <nav class="bottom-nav">
-            <button class="nav-item active" data-view="daily">
-                <span class="icon">📅</span>
-                <span class="label">Daily</span>
+            <button class="nav-item active" data-view="home">
+                <span class="icon">🏠</span>
+                <span class="label">首頁</span>
             </button>
             <button class="nav-item" data-view="search">
                 <span class="icon">🔍</span>
@@ -58,6 +58,66 @@
     </div>
 
     <!-- Templates -->
+    <template id="view-home">
+        <div class="view home-view">
+            <!-- Top Search Bar -->
+            <div class="home-search-container">
+                <div class="home-search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="home-search-input" placeholder="查詢單字或表達..." autocomplete="off">
+                </div>
+            </div>
+
+            <!-- Header Section -->
+            <div class="home-header">
+                <h1>Today Learning</h1>
+                <div class="home-stats">
+                    <div class="stat-pill">今日完成：<span id="home-today-count">0 / 10</span></div>
+                    <div class="stat-pill">學習天數：<span id="home-streak-days">0 days</span></div>
+                </div>
+            </div>
+
+            <!-- One-Tap Start Button -->
+            <div class="one-tap-start-container">
+                <button id="main-start-btn" class="main-start-btn">
+                    <div class="btn-content">
+                        <span class="btn-title">立即開始學習</span>
+                        <span class="btn-subtitle" id="main-start-status">點擊啟動今日任務</span>
+                    </div>
+                    <span class="btn-arrow">🚀</span>
+                </button>
+            </div>
+
+            <!-- Learning Mode Grid -->
+            <div class="learning-grid">
+                <button class="mode-card" data-mode="daily">
+                    <span class="mode-icon">📆</span>
+                    <div class="mode-info">
+                        <span class="mode-label">Daily</span>
+                        <span class="mode-desc">每日任務</span>
+                    </div>
+                </button>
+                <button class="mode-card" data-mode="listening">
+                    <span class="mode-icon">🎧</span>
+                    <div class="mode-info">
+                        <span class="mode-label">Listening</span>
+                        <span class="mode-desc">聽力測驗</span>
+                    </div>
+                </button>
+                <button class="mode-card" data-mode="shadowing">
+                    <span class="mode-icon">🗣</span>
+                    <div class="mode-info">
+                        <span class="mode-label">Shadowing</span>
+                        <span class="mode-desc">影子跟讀</span>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="home-footer-hint">
+                💡 每天進步一點點，累積成強大的音樂英文力！
+            </div>
+        </div>
+    </template>
     <template id="view-daily">
         <div class="view daily-view">
             <div class="view-header">

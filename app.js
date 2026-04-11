@@ -2844,6 +2844,7 @@ const switchView = (viewName) => {
     viewContainer.appendChild(template.content.cloneNode(true));
 
     // Initialize View Logic
+    if (viewName === 'home') initHomeView();
     if (viewName === 'daily') initDailyView();
     if (viewName === 'search') initSearchView();
     if (viewName === 'collection') initCollectionView();
@@ -2853,6 +2854,52 @@ const switchView = (viewName) => {
     if (viewName === 'listening') initListeningView();
     if (viewName === 'shadowing') initShadowingView();
     if (viewName === 'weakness') initWeaknessView();
+};
+
+// --- 🏠 Home View Logic ---
+const initHomeView = () => {
+    const searchInput = document.getElementById('home-search-input');
+    const todayCount = document.getElementById('home-today-count');
+    const streakDays = document.getElementById('home-streak-days');
+    const mainStartBtn = document.getElementById('main-start-btn');
+    const mainStartStatus = document.getElementById('main-start-status');
+    const modeCards = document.querySelectorAll('.mode-card');
+
+    // 1. Update Stats
+    const stats = getLearningStats();
+    todayCount.textContent = `${stats.todayDone} / 10`;
+    streakDays.textContent = `${stats.totalDays} days`;
+
+    // 2. One-Tap Start Logic
+    const dailyItems = state.daily?.items || [];
+    const dailyRemaining = dailyItems.filter(i => i.status === 'pending').length;
+
+    if (dailyRemaining > 0) {
+        mainStartStatus.textContent = `今日 Daily 還有 ${dailyRemaining} 個目標`;
+        mainStartBtn.onclick = () => switchView('daily');
+    } else {
+        mainStartStatus.textContent = `Daily 已達成！切換至聽力挑戰`;
+        mainStartBtn.onclick = () => switchView('listening');
+    }
+
+    // 3. Search Integration
+    searchInput.onkeypress = (e) => {
+        if (e.key === 'Enter' && searchInput.value.trim()) {
+            const query = searchInput.value.trim();
+            switchView('search');
+            const globalSearchInput = document.getElementById('search-input');
+            if (globalSearchInput) {
+                globalSearchInput.value = query;
+                // Dispatch event to trigger search in search view
+                globalSearchInput.dispatchEvent(new Event('input'));
+            }
+        }
+    };
+
+    // 4. Mode Cards Routing
+    modeCards.forEach(card => {
+        card.onclick = () => switchView(card.dataset.mode);
+    });
 };
 
 // --- 🔍 Search View Logic ---
@@ -3470,5 +3517,5 @@ navItems.forEach(item => {
     item.addEventListener('click', () => switchView(item.dataset.view));
 });
 
-// Start with Search View
-switchView('search');
+// Start with Home View
+switchView('home');

@@ -46,6 +46,14 @@
                 <span class="icon">🎧</span>
                 <span class="label">Listening</span>
             </button>
+            <button class="nav-item" data-view="shadowing">
+                <span class="icon">👥</span>
+                <span class="label">Shadowing</span>
+            </button>
+            <button class="nav-item" data-view="weakness">
+                <span class="icon">📉</span>
+                <span class="label">Weakness</span>
+            </button>
         </nav>
     </div>
 
@@ -55,6 +63,10 @@
             <div class="view-header">
                 <h1>Today's Learning</h1>
                 <div id="daily-date" class="date-display"></div>
+            </div>
+
+            <div id="daily-stats-dashboard" class="stats-dashboard">
+                <!-- Data injected via JS -->
             </div>
             
             <div id="daily-card-container" class="flashcard-container">
@@ -179,10 +191,86 @@
             <div id="daily-english-list" class="item-list"></div>
         </div>
     </template>
+    
+    <template id="view-shadowing">
+        <div class="view shadowing-view">
+            <div class="view-header" style="justify-content: space-between; display: flex; align-items: center;">
+                <h1>Shadowing</h1>
+                <div class="loop-selector">
+                    <button class="loop-btn active" data-count="1">1x</button>
+                    <button class="loop-btn" data-count="3">3x</button>
+                    <button class="loop-btn" data-count="5">5x</button>
+                </div>
+            </div>
+
+            <div class="shadowing-main">
+                <div id="shadowing-status" class="listening-status">Listen carefully...</div>
+                <div id="shadowing-text-container" class="shadowing-text-container hidden">
+                    <div id="shadowing-text" class="shadowing-text"></div>
+                    <div id="shadowing-meaning" class="shadowing-meaning"></div>
+                    <div id="shadowing-info" class="shadowing-info"></div>
+                </div>
+            </div>
+
+            <div class="shadowing-actions">
+                <button id="shadowing-replay" class="shadow-btn secondary">
+                    <span class="icon">🔄</span> Replay
+                </button>
+                <button id="shadowing-next" class="shadow-btn primary">
+                    Next <span class="icon">➡</span>
+                </button>
+            </div>
+        </div>
+    </template>
 
     <!-- Global Components -->
     <div id="notification" class="notification hidden"></div>
 
     <script src="app.js"></script>
+    <template id="view-weakness">
+        <div class="view weakness-view">
+            <div class="view-header">
+                <h1>弱點分析</h1>
+                <p class="subtitle">Focus on your learning gaps</p>
+            </div>
+
+            <!-- Summary Dashboard -->
+            <div id="weakness-summary" class="stats-dashboard">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value" id="count-gap">-</span>
+                        <span class="stat-label">未學單字</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="count-error">-</span>
+                        <span class="stat-label">複習錯誤</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="count-memory">-</span>
+                        <span class="stat-label">久未複習</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="count-listen">-</span>
+                        <span class="stat-label">聽力弱標</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top 10 List -->
+            <div class="weakness-section">
+                <h3>最弱單字 Top 10</h3>
+                <div id="weakness-top-list" class="weakness-list">
+                    <!-- Top words injected here -->
+                </div>
+            </div>
+
+            <!-- Targeted Learning CTA -->
+            <div class="targeted-ctas">
+                <button class="btn btn-primary shadow-btn" id="weakness-focus-flash">針對性複習</button>
+                <button class="btn btn-secondary shadow-btn" id="weakness-focus-listen">針對性聽力</button>
+                <button class="btn btn-secondary shadow-btn" id="weakness-focus-shadow" style="grid-column: span 2;">針對性跟讀</button>
+            </div>
+        </div>
+    </template>
 </body>
 </html>

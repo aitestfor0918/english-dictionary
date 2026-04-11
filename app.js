@@ -778,10 +778,10 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Conversation",
       "phonetic": "/ˈæk.tʃu.ə.li/",
-      "definition_zh": "實際上 / 其實",
+      "definition_zh": "其實",
       "definition_en": "in fact",
       "explanation": "用來表示真實情況，常用於糾正誤解或是強調驚訝的事實。比如：『他看起來很隨性，但實際上（actually）他是每天練琴八小時的苦行僧。』",
-      "example": "I thought the song was in G, but it's actually in E minor.",
+      "example": "I actually like this.",
       "level": "easy"
     },
     {
@@ -789,10 +789,10 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Conversation",
       "phonetic": "/ˈbeɪ.sɪ.kəl.i/",
-      "definition_zh": "基本上 / 簡單來說",
+      "definition_zh": "基本上",
       "definition_en": "in general",
       "explanation": "用來概括核心重點，省略細枝末節。當你想簡單解釋一個複雜的和弦理論或樂理概念時，可以用它開頭。",
-      "example": "Basically, you're just playing a blues scale over a major chord to get that tension.",
+      "example": "Basically, it's done.",
       "level": "easy"
     },
     {
@@ -800,10 +800,10 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Daily Life",
       "phonetic": "/ˈfɪɡ.ər aʊt/",
-      "definition_zh": "弄清楚 / 搞懂",
-      "definition_en": "to understand or solve",
+      "definition_zh": "搞懂",
+      "definition_en": "understand",
       "explanation": "指透過思考或實驗來搞懂某件事。例如：『我終於搞通（figured out）這段複雜的切分音是怎麼數的了！』",
-      "example": "It took me all afternoon to figure out the chord changes for that fusion track.",
+      "example": "I can't figure it out.",
       "level": "easy"
     },
     {
@@ -811,10 +811,10 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Conversation",
       "phonetic": "/hæŋ aʊt/",
-      "definition_zh": "聚會 / 閒晃",
-      "definition_en": "spend time socially",
+      "definition_zh": "出去玩",
+      "definition_en": "spend time",
       "explanation": "指非正式的消磨時間。對樂手來說，這通常發生在排練後的聚餐或是俱樂部的後台，是交流情報與培養感情的重要時刻。",
-      "example": "The whole band decided to hang out at the jazz club after our rehearsal.",
+      "example": "Let's hang out.",
       "level": "easy"
     },
     {
@@ -833,10 +833,10 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Work",
       "phonetic": "/diːl wɪð/",
-      "definition_zh": "處理 / 應付",
-      "definition_en": "handle something",
+      "definition_zh": "處理",
+      "definition_en": "handle",
       "explanation": "處理棘手或必須面對的問題。比如解決舞台上的回授（feedback）或是應付遲到的團員。",
-      "example": "We had to deal with some technical issues during the soundcheck.",
+      "example": "Deal with it.",
       "level": "easy"
     },
     {
@@ -855,10 +855,10 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Daily Life",
       "phonetic": "/kʌm ʌp wɪð/",
-      "definition_zh": "想出 / 構思",
-      "definition_en": "create or invent",
+      "definition_zh": "想出",
+      "definition_en": "create idea",
       "explanation": "想出新點子、創運用新東西。在即興或創作過程中，不斷產出新的動機（motifs）就是 'come up with ideas'。",
-      "example": "Our drummer came up with a really interesting groove for the intro.",
+      "example": "Come up with something.",
       "level": "easy"
     },
     {
@@ -877,21 +877,21 @@ const INITIAL_DATA = [
       "type": "word",
       "category": "Conversation",
       "phonetic": "/meɪk sens/",
-      "definition_zh": "有道理 / 合理",
-      "definition_en": "be logical",
+      "definition_zh": "有道理",
+      "definition_en": "logical",
       "explanation": "指某個觀念或做法符合邏輯、聽起來合理。比如：『這段旋律接在這裡非常和諧，很有道理（makes sense）。』",
-      "example": "The chord progression didn't make sense at first, but now I see how it works.",
+      "example": "That makes sense.",
       "level": "easy"
     },
     {
       "word": "What's up?",
       "type": "daily",
       "category": "Conversation",
-      "definition_zh": "最近怎麼樣？ / 你好",
-      "definition_en": "A casual greeting to ask how someone is.",
-      "explanation": "這是美國人最常用的打招呼方式。回答時通常不用真的說你在幹嘛，只要回 'Not much' 或 'Just hanging out' 就可以了。",
-      "context": "遇到熟人、朋友或同事時的輕鬆開場。",
-      "example": "Hey man, what's up? — Not much, just heading to class.",
+      "definition_zh": "最近怎樣",
+      "definition_en": "how are you",
+      "explanation": "最常見的非正式問候。對樂手來說，這常用於見面時的寒暄。回答通常是 'Not much' 或是直接回一句 'What's up?'。",
+      "context": "跟團員或是樂團經理見面首選。",
+      "example": "Hey, what's up?",
       "level": "easy"
     },
     {
@@ -987,11 +987,1363 @@ const INITIAL_DATA = [
       "type": "daily",
       "category": "Communication",
       "definition_zh": "斷掉關聯 / 取消訂閱",
-      "definition_en": "To stop using a service (like cable TV) or to end a dependent relationship.",
+      "definition_en": "To stop using a service or to end a dependent relationship.",
       "explanation": "原本指剪掉電視線改看串流平台，現在也常用來指斷絕關係或獨立。在現代通訊情境很常見。",
       "context": "討論要不要取消家裡的第四台，或是決定不再依賴某人。",
       "example": "We finally decided to cut the cord and just use Netflix.",
       "level": "medium"
+    },
+    {
+      "word": "obviously",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/ˈɑːb.vi.əs.li/",
+      "definition_zh": "很明顯",
+      "definition_en": "clearly",
+      "explanation": "用來強調某件事顯而易見。如果你在排練時彈錯了，你自己知道，團員也知道，你就可以說 'Obviously, that was the wrong chord'。",
+      "example": "It's obviously wrong.",
+      "level": "easy"
+    },
+    {
+      "word": "seriously",
+      "type": "word",
+      "category": "Emotion",
+      "phonetic": "/ˈsɪr.i.əs.li/",
+      "definition_zh": "認真地",
+      "definition_en": "in a serious way",
+      "explanation": "表示『認真、不開玩笑』或是『非常、極度』。比如稱讚一個樂手的技巧時，說 'He is seriously talented' 比 'He is very talented' 聽起來更專業且有崇拜感。",
+      "example": "I'm seriously tired.",
+      "level": "easy"
+    },
+    {
+      "word": "literally",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/ˈlɪt̬.ɚ.əl.i/",
+      "definition_zh": "真的",
+      "definition_en": "actually",
+      "explanation": "原本指字面上的意思，但現在常用作強烈的誇張修飾語。例如：『這首歌節奏快到我手指真的（literally）快斷了！』。",
+      "example": "I literally can't move.",
+      "level": "easy"
+    },
+    {
+      "word": "find out",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/faɪnd aʊt/",
+      "definition_zh": "發現",
+      "definition_en": "discover",
+      "explanation": "指獲取原本不知道的資訊。比如查明某首歌的調性、或是發現某個樂理網站。",
+      "example": "Find out the answer.",
+      "level": "easy"
+    },
+    {
+      "word": "go through",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/ɡoʊ θruː/",
+      "definition_zh": "經歷",
+      "definition_en": "experience",
+      "explanation": "指度過一段艱辛時期或是逐一檢查某件事。排練時我們常說 'Let's go through the chart one more time'（讓我們再過一遍譜）。",
+      "example": "I went through a lot.",
+      "level": "easy"
+    },
+    {
+      "word": "get over",
+      "type": "word",
+      "category": "Emotion",
+      "phonetic": "/ɡet ˈoʊ.vər/",
+      "definition_zh": "克服",
+      "definition_en": "recover",
+      "explanation": "指從負面情緒或失敗中恢復。如果演砸了，別灰心，'Get over it and keep practicing'。",
+      "example": "Get over it.",
+      "level": "easy"
+    },
+    {
+      "word": "chill",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/tʃɪl/",
+      "definition_zh": "放鬆",
+      "definition_en": "relax",
+      "explanation": "放鬆、冷靜。同時也可以指音樂風格很放鬆（Chilled out music）。",
+      "example": "Just chill.",
+      "level": "easy"
+    },
+    {
+      "word": "catch up",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/kætʃ ʌp/",
+      "definition_zh": "敘舊",
+      "definition_en": "talk after time",
+      "explanation": "跟很久不見的朋友聊聊近況，或是趕上進度。例如：『我們太久沒見了，一定要找時間敘舊（catch up）。』",
+      "example": "Let's catch up.",
+      "level": "easy"
+    },
+    {
+      "word": "show up",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/ʃoʊ ʌp/",
+      "definition_zh": "出現",
+      "definition_en": "arrive",
+      "explanation": "露面、到場。如果團員常不準時出席（doesn't show up on time），那是很讓人頭痛的事。",
+      "example": "He didn't show up.",
+      "level": "easy"
+    },
+    {
+      "word": "turn out",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/tɜːrn aʊt/",
+      "definition_zh": "結果是",
+      "definition_en": "result",
+      "explanation": "描述事情最後的發展。比如：『本來以為錄音會不順利，結果（turned out）效果超級好！』",
+      "example": "It turned out fine.",
+      "level": "easy"
+    },
+    {
+      "word": "work on",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/wɜːrk ɑːn/",
+      "definition_zh": "努力做",
+      "definition_en": "improve",
+      "explanation": "指專注於改進、處理某個特定的事物。比如：『我這星期都在努力練習（working on）我的觸鍵技巧。』",
+      "example": "Work on this.",
+      "level": "easy"
+    },
+    {
+      "word": "focus on",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/ˈfoʊ.kəs ɑːn/",
+      "definition_zh": "專注",
+      "definition_en": "concentrate",
+      "explanation": "集中注意力。在錄音或表演時，你需要全神貫注（focus on）在聽力與節奏上。",
+      "example": "Focus on it.",
+      "level": "easy"
+    },
+    {
+      "word": "keep going",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/kiːp ˈɡoʊ.ɪŋ/",
+      "definition_zh": "繼續",
+      "definition_en": "continue",
+      "explanation": "不要停下來。如果在表演中彈錯一兩個音，千萬不要停下，要 'Keep going' 保持整體的 groove。",
+      "example": "Keep going.",
+      "level": "easy"
+    },
+    {
+      "word": "give up",
+      "type": "word",
+      "category": "Emotion",
+      "phonetic": "/ɡɪv ʌp/",
+      "definition_zh": "放棄",
+      "definition_en": "quit",
+      "explanation": "終止努力。學音樂很累，但千萬別輕言放棄（Don't give up）。",
+      "example": "Don't give up.",
+      "level": "easy"
+    },
+    {
+      "word": "kind of",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/kaɪnd əv/",
+      "definition_zh": "有點",
+      "definition_en": "a little",
+      "explanation": "一種委婉的說法，表示『有點、大概』。常縮寫成 kinda。比如：『這首歌聽起來有點（kinda）爵士味。』",
+      "example": "I'm kind of tired.",
+      "level": "easy"
+    },
+    {
+      "word": "sort of",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/sɔːrt əv/",
+      "definition_zh": "某種程度",
+      "definition_en": "somewhat",
+      "explanation": "介於『是』與『不是』之間，表示『算是吧』。語氣比 kinda 稍微正式一點點。",
+      "example": "Sort of true.",
+      "level": "easy"
+    },
+    {
+      "word": "a bit",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/ə bɪt/",
+      "definition_zh": "一點",
+      "definition_en": "slightly",
+      "explanation": "指程度輕微。在混音中常用到：『把音量調高一點（a bit louder）。』",
+      "example": "A bit tired.",
+      "level": "easy"
+    },
+    {
+      "word": "pretty",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/ˈprɪt.i/",
+      "definition_zh": "相當",
+      "definition_en": "quite",
+      "explanation": "作為副詞，表示『相當、挺...的』。比如：『這支吉他聲音相當（pretty）不錯。』",
+      "example": "Pretty good.",
+      "level": "easy"
+    },
+    {
+      "word": "super",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/ˈsuː.pər/",
+      "definition_zh": "超級",
+      "definition_en": "very",
+      "explanation": "表示極大程度，非常口語。比 very 更有強調感。例如：『那場表演超級（super）酷！』",
+      "example": "Super easy.",
+      "level": "easy"
+    },
+    {
+      "word": "no way",
+      "type": "word",
+      "category": "Emotion",
+      "phonetic": "/noʊ weɪ/",
+      "definition_zh": "不可能",
+      "definition_en": "impossible",
+      "explanation": "表達強烈的驚訝或拒絕。當你聽到一個不可思議的獨奏時可以說 'No way! How did he play that?'。",
+      "example": "No way!",
+      "level": "easy"
+    },
+    {
+      "word": "for sure",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/fər ʃʊr/",
+      "definition_zh": "一定",
+      "definition_en": "definitely",
+      "explanation": "表示語氣肯定的『沒錯、當然』。常用來回應用對方的提問或觀點。",
+      "example": "For sure.",
+      "level": "easy"
+    },
+    {
+      "word": "I mean",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/aɪ miːn/",
+      "definition_zh": "我是說",
+      "definition_en": "clarify",
+      "explanation": "用來澄清、強調或細化你剛說的話。在解釋複雜的音樂想法時非常好用。",
+      "example": "I mean, it's fine.",
+      "level": "easy"
+    },
+    {
+      "word": "you know",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/juː noʊ/",
+      "definition_zh": "你懂的",
+      "definition_en": "filler",
+      "explanation": "一種口語發語詞，用來確認對方的理解，或是填補思考的空隙（filler word）。",
+      "example": "You know what I mean.",
+      "level": "easy"
+    },
+    {
+      "word": "I'm down",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/aɪm daʊn/",
+      "definition_zh": "我可以",
+      "definition_en": "I'm interested",
+      "explanation": "表示同意某個提議或計畫。比如團員問：『今晚要不要去聽 Live？』你可以回 'I'm down!' 表示你有興趣且會參加。",
+      "context": "討論演出、聚餐或練習計畫時使用。",
+      "example": "I'm down for that.",
+      "level": "easy"
+    },
+    {
+      "word": "No worries",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/noʊ ˈwɜːr.iz/",
+      "definition_zh": "沒關係",
+      "definition_en": "it's okay",
+      "explanation": "用來回對方的道歉或感謝，語氣非常輕鬆。比如團員不小心彈錯音道歉時，你可以說 'No worries'。",
+      "context": "處理小失誤或是輕鬆的回禮。",
+      "example": "No worries.",
+      "level": "easy"
+    },
+    {
+      "word": "That works",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/ðæt wɜːrks/",
+      "definition_zh": "可以這樣",
+      "definition_en": "it's fine",
+      "explanation": "表示某個安排或方案是可以接受的。常用於討論排練時間或編曲細節時。",
+      "context": "達成共識、確認行程。",
+      "example": "That works for me.",
+      "level": "easy"
+    },
+    {
+      "word": "I'm good",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/aɪm ɡʊd/",
+      "definition_zh": "不用了/我很好",
+      "definition_en": "I'm fine",
+      "explanation": "有兩種用法：一是指『我很好』，二是禮貌地拒絕（例如拒絕別人遞過來的飲料）。要在對話中根據情境判斷。",
+      "context": "拒絕額外的服務或在寒暄中回答。",
+      "example": "I'm good, thanks.",
+      "level": "easy"
+    },
+    {
+      "word": "voicing",
+      "type": "music",
+      "category": "Harmony",
+      "phonetic": "/ˈvɔɪ.sɪŋ/",
+      "definition_zh": "和弦配置",
+      "definition_en": "note arrangement",
+      "explanation": "指和弦中各個音符的排列順序與間距。同樣一個 Cmaj7 和弦，不同的 voicing（如：密集排列 vs. 開放排列）會產生完全不同的音色與情緒張力。",
+      "example": "Nice voicing.",
+      "level": "medium"
+    },
+    {
+      "word": "substitution",
+      "type": "music",
+      "category": "Jazz",
+      "phonetic": "/ˌsʌb.stəˈtuː.ʃən/",
+      "definition_zh": "替代和弦",
+      "definition_en": "chord replacement",
+      "explanation": "指在樂曲中使用另一個和弦來替換原有的和弦，以增加色彩或張力。最常見的是『三全音替代』（Tritone Substitution），能讓和聲聽起來更有層次感。",
+      "example": "Use substitution.",
+      "level": "hard"
+    },
+    {
+      "word": "tight",
+      "type": "music",
+      "category": "Performance",
+      "phonetic": "/taɪt/",
+      "definition_zh": "很齊",
+      "definition_en": "well coordinated",
+      "explanation": "形容樂團成員之間的配合極度精確、同步。當大家在同一個 groove 上，節奏整齊劃一，我們就會說這個 band 真的很 'tight'。",
+      "example": "The band is tight.",
+      "level": "easy"
+    },
+    {
+      "word": "in the pocket",
+      "type": "music",
+      "category": "Rhythm",
+      "phonetic": "/ɪn ðə ˈpɑː.kɪt/",
+      "definition_zh": "在節奏裡",
+      "definition_en": "perfect groove",
+      "explanation": "這是對樂手（特別是貝斯手和鼓手）的最高讚美。指演奏時節奏極度穩定且富有靈魂感，讓人聽了忍不住想跟著點頭，與大家完美融合在律動中。",
+      "level": "medium"
+    },
+    {
+      "word": "bring up",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/brɪŋ ʌp/",
+      "definition_zh": "提出",
+      "definition_en": "mention",
+      "explanation": "在討論中提出一個話題。排練時如果你覺得某段速度不對，可以 'bring up the issue'。",
+      "example": "Bring it up.",
+      "level": "easy"
+    },
+    {
+      "word": "call off",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/kɔːl ɒf/",
+      "definition_zh": "取消",
+      "definition_en": "cancel",
+      "explanation": "取消計畫好的活動。如果場地出問題，我們可能必須 'call off the gig'。",
+      "example": "Call it off.",
+      "level": "easy"
+    },
+    {
+      "word": "carry on",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/ˈkær.i ɒn/",
+      "definition_zh": "繼續",
+      "definition_en": "continue",
+      "explanation": "即使遇到困難也持續進行。表演中即便有雜音，也要 'carry on playing'。",
+      "example": "Carry on.",
+      "level": "easy"
+    },
+    {
+      "word": "cut down",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/kʌt daʊn/",
+      "definition_zh": "減少",
+      "definition_en": "reduce",
+      "explanation": "減少數量。錄音時，如果混響太重，工程師會說 'cut down the reverb'。",
+      "example": "Cut down sugar.",
+      "level": "easy"
+    },
+    {
+      "word": "end up",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/end ʌp/",
+      "definition_zh": "最後變成",
+      "definition_en": "finally become",
+      "explanation": "描述最終意想不到的結果。例如：『本來只想練半小時，結果（ended up）練了一整晚。』",
+      "example": "I ended up staying.",
+      "level": "easy"
+    },
+    {
+      "word": "get along",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/ɡet əˈlɒŋ/",
+      "definition_zh": "相處",
+      "definition_en": "have good relationship",
+      "explanation": "與人關係和諧。一個團能走得遠，成員之間能不能 'get along' 比技術更重要。",
+      "example": "We get along.",
+      "level": "easy"
+    },
+    {
+      "word": "get back",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ɡet bæk/",
+      "definition_zh": "回來",
+      "definition_en": "return",
+      "explanation": "返回某地。巡演結束後，最重要的就是趕快回家（get back home）休息。",
+      "example": "Get back home.",
+      "level": "easy"
+    },
+    {
+      "word": "get in",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ɡet ɪn/",
+      "definition_zh": "進入",
+      "definition_en": "enter",
+      "explanation": "進去建築物或交通工具。在裝修器材時，我們要確保設備能進得去（get in）門口。",
+      "example": "Get in the car.",
+      "level": "easy"
+    },
+    {
+      "word": "get out",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ɡet aʊt/",
+      "definition_zh": "出去",
+      "definition_en": "leave",
+      "explanation": "離開。表演結束後，撤場（get out）的效率決定了大家能多早回家。",
+      "example": "Get out now.",
+      "level": "easy"
+    },
+    {
+      "word": "get together",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/ɡet təˈɡeð.ər/",
+      "definition_zh": "聚會",
+      "definition_en": "meet socially",
+      "explanation": "大家聚在一起。對樂手來說，這通常指為了編新歌而約的排練（jam session）。",
+      "example": "Let's get together.",
+      "level": "easy"
+    },
+    {
+      "word": "go ahead",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/ɡoʊ əˈhed/",
+      "definition_zh": "去做吧",
+      "definition_en": "proceed",
+      "explanation": "給予許可或鼓勵開始。如果你問團長能不能加一段獨奏，他可能會說 'Go ahead'。",
+      "example": "Go ahead.",
+      "level": "easy"
+    },
+    {
+      "word": "go back",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ɡoʊ bæk/",
+      "definition_zh": "回去",
+      "definition_en": "return",
+      "explanation": "回到之前的狀態或地方。如果編曲改壞了，我們會說 'Let's go back to the original version'。",
+      "example": "Go back.",
+      "level": "easy"
+    },
+    {
+      "word": "go out",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/ɡoʊ aʊt/",
+      "definition_zh": "出去",
+      "definition_en": "leave home",
+      "explanation": "出門交際或演出。例如：『今晚我們要出城去表演（going out to gig）。』",
+      "example": "Let's go out.",
+      "level": "easy"
+    },
+    {
+      "word": "go over",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/ɡoʊ ˈoʊ.vər/",
+      "definition_zh": "檢查",
+      "definition_en": "review",
+      "explanation": "仔細檢查。正式錄音前，我們會再過一遍（go over）和弦表以防出錯。",
+      "example": "Go over it.",
+      "level": "easy"
+    },
+    {
+      "word": "hold on",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/hoʊld ɒn/",
+      "definition_zh": "等一下",
+      "definition_en": "wait",
+      "explanation": "請對方稍候。排練時有人斷弦了，他會喊 'Hold on' 請大家停一下。",
+      "example": "Hold on.",
+      "level": "easy"
+    },
+    {
+      "word": "keep up",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/kiːp ʌp/",
+      "definition_zh": "跟上",
+      "definition_en": "maintain pace",
+      "explanation": "保持同樣的速度或水準。如果鼓手加速了，其他人必須努力跟上（keep up with the tempo）。",
+      "example": "Keep up.",
+      "level": "easy"
+    },
+    {
+      "word": "look for",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/lʊk fər/",
+      "definition_zh": "尋找",
+      "definition_en": "search",
+      "explanation": "尋找某物。樂手永遠在找（looking for）那個完美的音色或那把夢想中的吉他。",
+      "example": "Look for it.",
+      "level": "easy"
+    },
+    {
+      "word": "look into",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/lʊk ˈɪn.tuː/",
+      "definition_zh": "調查",
+      "definition_en": "investigate",
+      "explanation": "研究或檢查細節。如果音頻介面有雜音，我們需要調查一下（look into it）。",
+      "example": "Look into it.",
+      "level": "easy"
+    },
+    {
+      "word": "make up",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/meɪk ʌp/",
+      "definition_zh": "編造/和好",
+      "definition_en": "invent or reconcile",
+      "explanation": "可以指編造一段旋律（make up a melody），或是補償錯失的練習時間。",
+      "example": "Make up story.",
+      "level": "easy"
+    },
+    {
+      "word": "pass out",
+      "type": "word",
+      "category": "Emotion",
+      "phonetic": "/pæs aʊt/",
+      "definition_zh": "昏倒",
+      "definition_en": "faint",
+      "explanation": "昏迷或發放。例如：表演太激烈差點昏倒，或者發放（passing out）宣傳單。",
+      "example": "He passed out.",
+      "level": "easy"
+    },
+    {
+      "word": "point out",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/pɔɪnt aʊt/",
+      "definition_zh": "指出",
+      "definition_en": "indicate",
+      "explanation": "指明某個事實。製作人可能會指出（point out）歌聲中有點走音的地方。",
+      "example": "Point it out.",
+      "level": "easy"
+    },
+    {
+      "word": "set up",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/set ʌp/",
+      "definition_zh": "設置",
+      "definition_en": "arrange",
+      "explanation": "架設器材。對樂手來說，'set up' 鼓組或音箱是每場演出的必經流程。",
+      "example": "Set it up.",
+      "level": "easy"
+    },
+    {
+      "word": "take off",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/teɪk ɒf/",
+      "definition_zh": "起飛/脫下",
+      "definition_en": "remove or depart",
+      "explanation": "脫掉衣服或起步成功。如果一首歌突然變得很受歡迎，我們會說 'The song really took off'。",
+      "example": "Take off shoes.",
+      "level": "easy"
+    },
+    {
+      "word": "try out",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/traɪ aʊt/",
+      "definition_zh": "試試看",
+      "definition_en": "test",
+      "explanation": "測試新事物。在買新效果器前，一定要親自試聽看看（try it out）。",
+      "example": "Try it out.",
+      "level": "easy"
+    },
+    {
+      "word": "turn on",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/tɜːrn ɒn/",
+      "definition_zh": "打開",
+      "definition_en": "activate",
+      "explanation": "開啟電源。演出前第一件事就是把音箱打開（turn on the amp）。",
+      "example": "Turn it on.",
+      "level": "easy"
+    },
+    {
+      "word": "turn off",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/tɜːrn ɒf/",
+      "definition_zh": "關掉",
+      "definition_en": "deactivate",
+      "explanation": "關閉電源。記得把沒用的效果器關掉（turn it off）以減少雜訊。",
+      "example": "Turn it off.",
+      "level": "easy"
+    },
+    {
+      "word": "work out",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/wɜːrk aʊt/",
+      "definition_zh": "解決/運動",
+      "definition_en": "solve or exercise",
+      "explanation": "找到解決方案。如果編曲卡住了，我們得花時間把它理順（work it out）。",
+      "example": "Work it out.",
+      "level": "easy"
+    },
+    {
+      "word": "comping",
+      "type": "music",
+      "category": "Performance",
+      "phonetic": "/ˈkɑːm.pɪŋ/",
+      "definition_zh": "伴奏",
+      "definition_en": "chord support",
+      "explanation": "源自 'accompanying'。指鋼琴或吉他手在樂團中為獨奏者提供和聲背景與節奏脈絡的過程，好的 comping 應該像是在跟獨奏者對話。",
+      "example": "Good comping.",
+      "level": "medium"
+    },
+    {
+      "word": "swing feel",
+      "type": "music",
+      "category": "Rhythm",
+      "phonetic": "/swɪŋ fiːl/",
+      "definition_zh": "搖擺感",
+      "definition_en": "swing rhythm",
+      "explanation": "爵士樂與藍調的靈魂。指將連續的八分音符演奏成『長-短』的律動（類似三連音），讓音樂產生一種跳躍、搖擺的推動力。",
+      "example": "Feel the swing.",
+      "level": "medium"
+    },
+    {
+      "word": "laid-back",
+      "type": "music",
+      "category": "Rhythm",
+      "phonetic": "/ˌleɪdˈbæk/",
+      "definition_zh": "後拍",
+      "definition_en": "behind the beat",
+      "explanation": "指演奏時故意稍微落在節拍器的『正後方』，讓音樂聽起來更放鬆、更懶散。這不是掉節奏，而是一種精確的律動掌控（常見於 R&B、Jazz）。",
+      "example": "Play laid-back.",
+      "level": "medium"
+    },
+    {
+      "word": "ahead of the beat",
+      "type": "music",
+      "category": "Rhythm",
+      "phonetic": "/əˈhed əv ðə biːt/",
+      "definition_zh": "前拍",
+      "definition_en": "before beat",
+      "explanation": "指演奏時位置稍微比節拍器的『正點』前面一點點。常用於增加音樂的能量感與急迫感，讓音樂聽起來更積極、更有衝勁。",
+      "example": "Play ahead.",
+      "level": "medium"
+    },
+    {
+      "word": "chromatic",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/kroʊˈmætɪk/",
+      "definition_zh": "半音階",
+      "definition_en": "using all notes",
+      "explanation": "指使用半音階（所有 12 個音符）進行創作或演奏。半音階的樂句能增加音樂的張力與色彩感，打破調性的單調。",
+      "example": "Chromatic line.",
+      "level": "medium"
+    },
+    {
+      "word": "passing tone",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/ˈpæsɪŋ toʊn/",
+      "definition_zh": "經過音",
+      "definition_en": "connecting note",
+      "explanation": "指連接兩個穩定和弦音（chord tones）之間的非和弦音。它像是橋樑一樣，讓旋律與旋律之間的過度更平滑、更有方向感。",
+      "example": "Use passing tone.",
+      "level": "medium"
+    },
+    {
+      "word": "target note",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/ˈtɑːr.ɡɪt noʊt/",
+      "definition_zh": "目標音",
+      "definition_en": "important note",
+      "explanation": "在即興或旋律創作中，預先設定好要落在的『關鍵音』（通常是強拍上的和弦音）。這是讓樂句聽起來有目的感與合理性的關鍵。",
+      "example": "Hit target note.",
+      "level": "medium"
+    },
+    {
+      "word": "enclosure",
+      "type": "music",
+      "category": "Jazz",
+      "phonetic": "/ɪnˈkloʊ.ʒər/",
+      "definition_zh": "包圍音",
+      "definition_en": "note surrounding",
+      "explanation": "一種爵士樂的修飾技巧。指用目標音上方半音與下方半音（或其他組合）來『包圍』該目標音，最後才落在目標音上，增加旋律的層次感。",
+      "example": "Use enclosure.",
+      "level": "hard"
+    },
+    {
+      "word": "Sounds good",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/saʊndz ɡʊd/",
+      "definition_zh": "聽起來不錯",
+      "definition_en": "okay",
+      "explanation": "用來表示贊同對方的提議。例如：『我們約六點排練，可以嗎？』回 'Sounds good' 簡潔有力。",
+      "context": "達成共識或同意提議。",
+      "example": "Sounds good to me.",
+      "level": "easy"
+    },
+    {
+      "word": "I'm in",
+      "type": "daily",
+      "category": "Social",
+      "phonetic": "/aɪm ɪn/",
+      "definition_zh": "我加入",
+      "definition_en": "I'm interested",
+      "explanation": "表示要參與某個計畫。如果有人揪團去聽表演或是去聚餐，說 'I'm in!' 表示你也包含在內。",
+      "context": "表示參與意願。",
+      "example": "I'm in!",
+      "level": "easy"
+    },
+    {
+      "word": "I'm out",
+      "type": "daily",
+      "category": "Social",
+      "phonetic": "/aɪm aʊt/",
+      "definition_zh": "我不參加",
+      "definition_en": "I'm not joining",
+      "explanation": "表示退出計畫，或是有時候在搞笑中表示受不了某事而離開。例如：『這段獨奏太難了，我不行（I'm out）。』",
+      "context": "表示拒絕或退出。",
+      "example": "I'm out.",
+      "level": "easy"
+    },
+    {
+      "word": "That sucks",
+      "type": "daily",
+      "category": "Emotion",
+      "phonetic": "/ðæt sʌks/",
+      "definition_zh": "真糟",
+      "definition_en": "that's bad",
+      "explanation": "用來同情對方的壞運氣或是抱怨某事。如果效果器壞了，或是表演被取消，這是最直接的反應。",
+      "context": "同情或抱怨糟糕的情況。",
+      "example": "That sucks.",
+      "level": "easy"
+    },
+    {
+      "word": "No big deal",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/noʊ bɪɡ diːl/",
+      "definition_zh": "沒什麼",
+      "definition_en": "not important",
+      "explanation": "表示事情沒那麼嚴重。當你彈錯一個音或是遲到了幾分鐘，對方說 'No big deal' 表示他們不在意。",
+      "context": "安慰對方或表示不在意。",
+      "example": "No big deal.",
+      "level": "easy"
+    },
+    {
+      "word": "Give me a sec",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/ɡɪv mi ə sek/",
+      "definition_zh": "等我一下",
+      "definition_en": "wait a moment",
+      "explanation": "口語的 'Give me a second'。在調音或是插導線時最常用到這句話。",
+      "context": "請求對方稍候。",
+      "example": "Give me a sec.",
+      "level": "easy"
+    },
+    {
+      "word": "My bad",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/maɪ bæd/",
+      "definition_zh": "我的錯",
+      "definition_en": "my mistake",
+      "explanation": "承認錯誤的非常口語說法（而非 formal 的 I apologize）。排練中如果搶拍了，拍一下胸口說 'My bad' 就行了。",
+      "context": "口語化的道歉。",
+      "example": "My bad.",
+      "level": "easy"
+    },
+    {
+      "word": "I got you",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/aɪ ɡɑːt ju/",
+      "definition_zh": "我幫你",
+      "definition_en": "I understand/help",
+      "explanation": "可以指『我懂你的意思』，也可以指『我會支持你/幫你』。比如鼓手說這段節奏換不動，貝斯手說 'I got you'（我會穩住節奏）。",
+      "context": "表示理解、支持或提供幫助。",
+      "example": "I got you.",
+      "level": "easy"
+    },
+    {
+      "word": "You're good",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/jʊr ɡʊd/",
+      "definition_zh": "你沒問題",
+      "definition_en": "it's fine",
+      "explanation": "用來安慰對方不用擔心。如果有人道歉，回 'You're good' 意思是『沒關係，你做得很好』。",
+      "context": "表示沒關係或肯定對方。",
+      "example": "You're good.",
+      "level": "easy"
+    },
+    {
+      "word": "Let's go",
+      "type": "daily",
+      "category": "Social",
+      "phonetic": "/lets ɡoʊ/",
+      "definition_zh": "走吧",
+      "definition_en": "let's start",
+      "explanation": "除了指離開某地，在現代口語中也常用來表示興奮或給予精神上的鼓勵，就像日文的『加油（Yoshi!）』或是中文的『衝啊！』。",
+      "context": "出發、開始或激勵。",
+      "level": "easy"
+    },
+    {
+      "word": "allow",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/əˈlaʊ/",
+      "definition_zh": "允許",
+      "definition_en": "let happen",
+      "explanation": "給予許可。錄音室通常不『允許』（allow）飲食，以保護昂貴的器材。",
+      "example": "I allow it.",
+      "level": "easy"
+    },
+    {
+      "word": "avoid",
+      "type": "word",
+      "category": "Performance",
+      "phonetic": "/əˈvɔɪd/",
+      "definition_zh": "避免",
+      "definition_en": "stay away",
+      "explanation": "避開不想要的情況。在台上要『避免』（avoid）踩到導線，以免造成斷音或跌倒。",
+      "example": "Avoid mistakes.",
+      "level": "easy"
+    },
+    {
+      "word": "belong",
+      "type": "word",
+      "category": "Theory",
+      "phonetic": "/bɪˈlɒŋ/",
+      "definition_zh": "屬於",
+      "definition_en": "be part of",
+      "explanation": "指某個音符或元素是否屬於當下的調性或和弦。例如：『這顆音不屬於（doesn't belong）這組和弦。』",
+      "example": "It belongs here.",
+      "level": "easy"
+    },
+    {
+      "word": "compare",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/kəmˈpɛər/",
+      "definition_zh": "比較",
+      "definition_en": "examine differences",
+      "explanation": "對比兩者。混音時，我們會『比較』（compare）有無效果器處理前後的差異。",
+      "example": "Compare both.",
+      "level": "easy"
+    },
+    {
+      "word": "consider",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/kənˈsɪdər/",
+      "definition_zh": "考慮",
+      "definition_en": "think about",
+      "explanation": "思考某個選擇。編曲時，我們會『考慮』（consider）是否要在這段加入鼓的獨奏。",
+      "example": "Consider it.",
+      "level": "easy"
+    },
+    {
+      "word": "depend",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/dɪˈpend/",
+      "definition_zh": "依賴",
+      "definition_en": "rely on",
+      "explanation": "視情況而定。演出效果好不好，往往『取決於』（depends on）現場的音響工程師。",
+      "example": "It depends.",
+      "level": "easy"
+    },
+    {
+      "word": "explain",
+      "type": "word",
+      "category": "Theory",
+      "phonetic": "/ɪkˈspleɪn/",
+      "definition_zh": "解釋",
+      "definition_en": "make clear",
+      "explanation": "釐清概念。老師正在『解釋』（explain）如何運用利底亞（Lydian）調性進行即興。",
+      "example": "Explain it.",
+      "level": "easy"
+    },
+    {
+      "word": "improve",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ɪmˈpruːv/",
+      "definition_zh": "改善",
+      "definition_en": "get better",
+      "explanation": "提升水準。每天規律練習音階能顯著『改善』（improve）你的手指靈巧度。",
+      "example": "Improve skills.",
+      "level": "easy"
+    },
+    {
+      "word": "increase",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/ɪnˈkriːs/",
+      "definition_zh": "增加",
+      "definition_en": "grow",
+      "explanation": "調高或增長。如果吉他聽不清楚，我們可以『增加』（increase）一點中頻音量。",
+      "example": "Increase speed.",
+      "level": "easy"
+    },
+    {
+      "word": "reduce",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/rɪˈdjuːs/",
+      "definition_zh": "減少",
+      "definition_en": "make smaller",
+      "explanation": "調低或縮減。錄音時如果發現底噪太重，需要『減少』（reduce）增益（gain）的大小。",
+      "example": "Reduce noise.",
+      "level": "easy"
+    },
+    {
+      "word": "realize",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ˈriː.ə.laɪz/",
+      "definition_zh": "意識到",
+      "definition_en": "become aware",
+      "explanation": "突然明白。表演完聽側錄，我才『意識到』（realized）我整首歌都彈快了。",
+      "example": "I realize now.",
+      "level": "easy"
+    },
+    {
+      "word": "recognize",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/ˈrek.əɡ.naɪz/",
+      "definition_zh": "辨認",
+      "definition_en": "identify",
+      "explanation": "聽出或認出。身為樂手，我們需要能快速『辨認出』（recognize）聽到的和弦進行。",
+      "example": "Recognize sound.",
+      "level": "easy"
+    },
+    {
+      "word": "remember",
+      "type": "word",
+      "category": "Daily Life",
+      "phonetic": "/rɪˈmem.bər/",
+      "definition_zh": "記得",
+      "definition_en": "recall",
+      "explanation": "想起。要在台上不看譜，你必須『背下』（remember）整首曲子的結構。",
+      "example": "Remember this.",
+      "level": "easy"
+    },
+    {
+      "word": "remind",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/rɪˈmaɪnd/",
+      "definition_zh": "提醒",
+      "definition_en": "help remember",
+      "explanation": "告知。演出前，團長會『提醒』（reminds）大家要帶備用琴弦。",
+      "example": "Remind me.",
+      "level": "easy"
+    },
+    {
+      "word": "suggest",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/səˈdʒest/",
+      "definition_zh": "建議",
+      "definition_en": "propose",
+      "explanation": "提出想法。製作人『建議』（suggests）在副歌加入一點合唱，增加層次感。",
+      "example": "I suggest this.",
+      "level": "easy"
+    },
+    {
+      "word": "suppose",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/səˈpoʊz/",
+      "definition_zh": "假設",
+      "definition_en": "assume",
+      "explanation": "常用於『原本應該...』的情況。例如：我們『本來應該』（were supposed to）七點準時試音。",
+      "example": "Suppose it's true.",
+      "level": "medium"
+    },
+    {
+      "word": "require",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/rɪˈkwaɪər/",
+      "definition_zh": "需要",
+      "definition_en": "need",
+      "explanation": "必須具備的條件。這段高難度獨奏『需要』（requires）極強的點擊（tapping）技巧。",
+      "example": "It requires effort.",
+      "level": "medium"
+    },
+    {
+      "word": "provide",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/prəˈvaɪd/",
+      "definition_zh": "提供",
+      "definition_en": "give",
+      "explanation": "供應。主辦單位通常會『提供』（provide）音箱與鼓組等背板（backline）。",
+      "example": "Provide help.",
+      "level": "easy"
+    },
+    {
+      "word": "receive",
+      "type": "word",
+      "category": "Work",
+      "phonetic": "/rɪˈsiːv/",
+      "definition_zh": "收到",
+      "definition_en": "get",
+      "explanation": "得到。演出結束後，我們會『收到』（receive）這次的車馬費或酬勞。",
+      "example": "Receive message.",
+      "level": "easy"
+    },
+    {
+      "word": "respond",
+      "type": "word",
+      "category": "Performance",
+      "phonetic": "/rɪˈspɑːnd/",
+      "definition_zh": "回應",
+      "definition_en": "reply",
+      "explanation": "反應應對。在即興對話中，你需要觀察並『回應』（respond to）其他樂手的樂句。",
+      "example": "Respond quickly.",
+      "level": "easy"
+    },
+    {
+      "word": "stay",
+      "type": "word",
+      "category": "Performance",
+      "phonetic": "/steɪ/",
+      "definition_zh": "保持",
+      "definition_en": "remain",
+      "explanation": "維持狀態。在快節奏中，樂手需要努力『保持』（stay）在拍點上不趕拍。",
+      "example": "Stay calm.",
+      "level": "easy"
+    },
+    {
+      "word": "remain",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/rɪˈmeɪn/",
+      "definition_zh": "仍然",
+      "definition_en": "continue to be",
+      "explanation": "持續處於某種狀態。即便演出出意外，也要『保持』（remain）冷靜並繼續彈奏。",
+      "example": "Remain quiet.",
+      "level": "easy"
+    },
+    {
+      "word": "seem",
+      "type": "word",
+      "category": "Conversation",
+      "phonetic": "/siːm/",
+      "definition_zh": "似乎",
+      "definition_en": "appear",
+      "explanation": "看起來。這台二手琴『似乎』（seems）保養得很好，聲音很亮。",
+      "example": "It seems right.",
+      "level": "easy"
+    },
+    {
+      "word": "appear",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/əˈpɪər/",
+      "definition_zh": "出現",
+      "definition_en": "become visible",
+      "explanation": "在台上現身。當燈光亮起，主唱在舞台中央『出現』（appears），全場歡呼。",
+      "example": "It appears suddenly.",
+      "level": "easy"
+    },
+    {
+      "word": "happen",
+      "type": "word",
+      "category": "Social",
+      "phonetic": "/ˈhæp.ən/",
+      "definition_zh": "發生",
+      "definition_en": "take place",
+      "explanation": "出乎意料的事件。現場演出總會『發生』（happen）一些器材失靈的意外，需要變通。",
+      "example": "It happens.",
+      "level": "easy"
+    },
+    {
+      "word": "I'm all set",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/aɪm ɔːl set/",
+      "definition_zh": "我準備好了",
+      "definition_en": "I'm ready",
+      "explanation": "表示準備就緒，或者在別人詢問是否需要幫助時表示『我已經弄好了』。例如：調音完成後對團員說 'I'm all set'。",
+      "context": "準備就緒或表示不需要更多幫助。",
+      "example": "I'm all set.",
+      "level": "easy"
+    },
+    {
+      "word": "That makes sense",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/ðæt meɪks sens/",
+      "definition_zh": "有道理",
+      "definition_en": "logical",
+      "explanation": "表示理解對方的邏輯。如果製作人解釋為什麼要調整段落順序，你可以用這句話表示認同。",
+      "context": "認同對方的邏輯或解釋。",
+      "example": "That makes sense.",
+      "level": "easy"
+    },
+    {
+      "word": "I feel you",
+      "type": "daily",
+      "category": "Emotion",
+      "phonetic": "/aɪ fiːl ju/",
+      "definition_zh": "我懂你",
+      "definition_en": "I understand",
+      "explanation": "比 I understand 更感性的說法，表示能體會對方的感受。如果團員抱怨練習很累，說 'I feel you' 表示感同身受。",
+      "context": "對他人的感受表示共鳴。",
+      "example": "I feel you.",
+      "level": "easy"
+    },
+    {
+      "word": "It's up to you",
+      "type": "daily",
+      "category": "Social",
+      "phonetic": "/ɪts ʌp tu ju/",
+      "definition_zh": "看你決定",
+      "definition_en": "your choice",
+      "explanation": "將決定權交給對方。例如：獨奏要彈幾小節？'It's up to you'。",
+      "context": "交付決定權。",
+      "example": "It's up to you.",
+      "level": "easy"
+    },
+    {
+      "word": "I'm just saying",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/aɪm dʒʌst ˈseɪ.ɪŋ/",
+      "definition_zh": "我只是說",
+      "definition_en": "just opinion",
+      "explanation": "用來緩和語氣，表示這只是個人意見，不想引起爭執。通常放在給出建議或批評之後。",
+      "context": "緩和語氣，強調這只是個人觀點。",
+      "example": "I'm just saying.",
+      "level": "easy"
+    },
+    {
+      "word": "Let's call it a day",
+      "type": "daily",
+      "category": "Work",
+      "phonetic": "/lets kɔːl ɪt ə deɪ/",
+      "definition_zh": "今天就到這",
+      "definition_en": "stop working",
+      "explanation": "提議結束當天的工作或練習。排練室時間快到了，或是大家累了，就說 'Let's call it a day'。",
+      "context": "結束當天工作的提議。",
+      "example": "Let's call it a day.",
+      "level": "easy"
+    },
+    {
+      "word": "I'm not sure",
+      "type": "daily",
+      "category": "Conversation",
+      "phonetic": "/aɪm nɑːt ʃʊr/",
+      "definition_zh": "我不確定",
+      "definition_en": "uncertain",
+      "explanation": "表達不確定性。如果被問到某個複雜的和弦，或是某次演出的日期，可以用這句話緩衝。",
+      "context": "表達不確定或委婉拒絕回答。",
+      "example": "I'm not sure.",
+      "level": "easy"
+    },
+    {
+      "word": "Give it a try",
+      "type": "daily",
+      "category": "Social",
+      "phonetic": "/ɡɪv ɪt ə traɪ/",
+      "definition_zh": "試試看",
+      "definition_en": "try it",
+      "explanation": "鼓勵對方嘗試新事物。如果吉他手不確定新的效果設定好不好，你可以回 'Give it a try'。",
+      "context": "鼓勵他人行動。",
+      "example": "Give it a try.",
+      "level": "easy"
+    },
+    {
+      "word": "That sounds right",
+      "type": "daily",
+      "category": "Performance",
+      "phonetic": "/ðæt saʊndz raɪt/",
+      "definition_zh": "聽起來對",
+      "definition_en": "seems correct",
+      "explanation": "確認聲音或邏輯正確。在對譜或是檢查旋律時，這句話非常常用。",
+      "context": "確認聲音、音準或邏輯的正確性。",
+      "example": "That sounds right.",
+      "level": "easy"
+    },
+    {
+      "word": "I don't mind",
+      "type": "daily",
+      "category": "Social",
+      "phonetic": "/aɪ doʊnt maɪnd/",
+      "definition_zh": "我不介意",
+      "definition_en": "it's fine",
+      "explanation": "表示隨和，沒什麼特別偏好。例如：排練完要吃什麼？'I don't mind'。",
+      "context": "表示隨和、無特別意見。",
+      "level": "easy"
+    },
+    {
+      "word": "motif",
+      "type": "music",
+      "category": "Composition",
+      "phonetic": "/moʊˈtiːf/",
+      "definition_zh": "動機發展",
+      "definition_en": "small idea",
+      "explanation": "指一段短小、具有辨識度的旋律或節奏片段。它是作曲與即興發展的種子，透過變奏、模仿等手段可以演變成完整的曲子。",
+      "example": "Develop motif.",
+      "level": "medium"
+    },
+    {
+      "word": "sequence",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/ˈsiː.kwəns/",
+      "definition_zh": "序列",
+      "definition_en": "repeat pattern",
+      "explanation": "指將同一個音樂動機（motif）在不同的音高位置重複出現。這是讓旋律聽起來有邏輯、有規律感的一種重要技巧。",
+      "example": "Use sequence.",
+      "level": "medium"
+    },
+    {
+      "word": "resolution",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/ˌrez.əˈluː.ʃən/",
+      "definition_zh": "解決",
+      "definition_en": "note resolution",
+      "explanation": "指從不穩定、有張力的和弦或非和弦音，過渡到穩定、平衡的目標音（通常是和弦音）。這是音樂產生「釋放感」的關鍵。",
+      "example": "Resolve tension.",
+      "level": "medium"
+    },
+    {
+      "word": "tension",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/ˈten.ʃən/",
+      "definition_zh": "張力",
+      "definition_en": "harmonic tension",
+      "explanation": "指音樂中產生的不穩定感或急迫感（如屬和弦或延伸音）。張力累積得越多，後續的『解決』（resolution）就會顯得越有力。",
+      "example": "Create tension.",
+      "level": "medium"
+    },
+    {
+      "word": "outside playing",
+      "type": "music",
+      "category": "Jazz",
+      "phonetic": "/ˌaʊtˈsaɪd ˈpleɪ.ɪŋ/",
+      "definition_zh": "外音演奏",
+      "definition_en": "outside harmony",
+      "explanation": "爵士樂的高階技巧。指在即興時故意演奏與當下和弦完全無關、甚至衝突的音階或音程，之後再帶回內音，產生強烈的能量對比。",
+      "example": "Play outside.",
+      "level": "hard"
+    },
+    {
+      "word": "inside playing",
+      "type": "music",
+      "category": "Jazz",
+      "phonetic": "/ˌɪnˈsaɪd ˈpleɪ.ɪŋ/",
+      "definition_zh": "內音演奏",
+      "definition_en": "inside harmony",
+      "explanation": "指演奏完全符合當下和弦與調性的音符。這是初學即興的基礎，也是為了跟『外音演奏』（outside playing）做出區別的基準。",
+      "example": "Stay inside.",
+      "level": "easy"
+    },
+    {
+      "word": "bebop line",
+      "type": "music",
+      "category": "Jazz",
+      "phonetic": "/ˈbiː.bɑːp laɪn/",
+      "definition_zh": "bebop句型",
+      "definition_en": "jazz phrase",
+      "explanation": "指典型的咆哮樂（Bebop）風格旋律句型。通常包含大量的半音趨近（chromaticism）、包圍音（enclosures）與快速的律動。",
+      "example": "Play bebop line.",
+      "level": "medium"
+    },
+    {
+      "word": "approach note",
+      "type": "music",
+      "category": "Theory",
+      "phonetic": "/əˈproʊtʃ noʊt/",
+      "definition_zh": "接近音",
+      "definition_en": "lead note",
+      "explanation": "指用來引導、趨近到目標音（target note）的過渡音。它可以是調內的，也可以是半音階（chromatic）的趨近音。",
+      "example": "Use approach note.",
+      "level": "medium"
+    },
+    {
+      "word": "double time",
+      "type": "music",
+      "category": "Rhythm",
+      "phonetic": "/ˌdʌb.əl ˈtaɪm/",
+      "definition_zh": "倍速",
+      "definition_en": "double speed",
+      "explanation": "指在維持原有節拍長度的同時，將音符穿插的密度增加一倍（例如把四分音符當成二分音符在感覺）。常見於即興中突然加快節奏感的段落。",
+      "example": "Play double time.",
+      "level": "medium"
+    },
+    {
+      "word": "space",
+      "type": "music",
+      "category": "Performance",
+      "phonetic": "/speɪs/",
+      "definition_zh": "留白",
+      "definition_en": "use silence",
+      "explanation": "指演奏中的沈默或短暫停頓。在即興中『留白』是非常高級的藝術，它能讓音樂呼吸，並讓前面的樂句有時間被聽眾吸收。",
+      "example": "Leave space.",
+      "level": "easy"
     }
 ];
 
@@ -1001,16 +2353,25 @@ const state = {
     collection: JSON.parse(localStorage.getItem('my_words') || '[]'),
     progress: JSON.parse(localStorage.getItem('word_progress') || '{}'),
     daily: JSON.parse(localStorage.getItem('daily_set') || 'null'),
-    streak: parseInt(localStorage.getItem('listening_streak') || '0'),
+    shadowingLoop: parseInt(localStorage.getItem('shadowing_loop') || '3'),
+    adaptiveScore: parseInt(localStorage.getItem('adaptive_score') || '0'),
+    firstLoginDate: localStorage.getItem('first_login_date') || new Date().toISOString(),
     reviewQueue: [],
     currentReviewIndex: 0
 };
+
+// Ensure first login is saved
+if (!localStorage.getItem('first_login_date')) {
+    localStorage.setItem('first_login_date', state.firstLoginDate);
+}
 
 const saveToStorage = () => {
     localStorage.setItem('my_words', JSON.stringify(state.collection));
     localStorage.setItem('word_progress', JSON.stringify(state.progress));
     localStorage.setItem('daily_set', JSON.stringify(state.daily));
     localStorage.setItem('listening_streak', state.streak.toString());
+    localStorage.setItem('shadowing_loop', state.shadowingLoop.toString());
+    localStorage.setItem('adaptive_score', state.adaptiveScore.toString());
 };
 
 // --- DOM References ---
@@ -1031,6 +2392,170 @@ const speak = (text) => {
     window.speechSynthesis.speak(utterance);
 };
 
+// --- Adaptive Learning Utils ---
+const getAdaptiveTier = () => {
+    if (state.adaptiveScore < 50) return 0; // Early
+    if (state.adaptiveScore < 150) return 1; // Mid
+    return 2; // Late
+};
+
+const adjustAdaptiveScore = (delta) => {
+    state.adaptiveScore += delta;
+    if (state.adaptiveScore < 0) state.adaptiveScore = 0;
+    saveToStorage();
+};
+
+// --- Statistics & Progress Logic ---
+const calculateWeaknessScore = (word) => {
+    const prog = state.progress[word] || { familiarity: 0 };
+    let score = 0;
+    
+    // +3 for SRS errors
+    score += (prog.wrongCount || 0) * 3;
+    
+    // +2 for unfamiliar
+    if (!state.progress[word] || prog.familiarity === 0) score += 2;
+    
+    // +2 for memory (久未複習 > 7 days)
+    if (prog.lastReviewDate) {
+        const last = new Date(prog.lastReviewDate);
+        const days = (new Date() - last) / (1000 * 60 * 60 * 24);
+        if (days > 7) score += 2;
+    }
+    
+    // +1 for listening errors
+    score += (prog.listenWrongCount || 0) * 1;
+    
+    return score;
+};
+
+const getLearningStats = () => {
+    const now = new Date();
+    const start = new Date(state.firstLoginDate);
+    const diffTime = Math.abs(now - start);
+    const totalDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
+
+    const allProgress = Object.values(state.progress);
+    const masteredCount = allProgress.filter(p => p.familiarity === 2).length;
+
+    const getProgressForType = (type) => {
+        const typePool = INITIAL_DATA.filter(w => w.type === type);
+        if (typePool.length === 0) return 0;
+        const masteredInPool = typePool.filter(w => state.progress[w.word]?.familiarity === 2).length;
+        return Math.round((masteredInPool / typePool.length) * 100);
+    };
+
+    return {
+        todayDone: state.daily?.items.filter(i => i.status === 'done').length || 0,
+        todayTotal: state.daily?.items.length || 0,
+        totalDays,
+        masteredCount,
+        wordProgress: getProgressForType('word'),
+        dailyProgress: getProgressForType('daily'),
+        musicProgress: getProgressForType('music')
+    };
+};
+
+const renderProgressDashboard = () => {
+    const dashboard = document.getElementById('daily-stats-dashboard');
+    if (!dashboard) return;
+
+    const stats = getLearningStats();
+
+    dashboard.innerHTML = `
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value">${stats.todayDone}/${stats.todayTotal}</span>
+                <span class="stat-label">今日完成</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.totalDays}</span>
+                <span class="stat-label">學習天數</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.masteredCount}</span>
+                <span class="stat-label">已掌握單字</span>
+            </div>
+        </div>
+        <div class="sectional-progress">
+            <div class="progress-row">
+                <div class="progress-info">
+                    <span>Core Words</span>
+                    <span>${stats.wordProgress}%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill word" style="width: ${stats.wordProgress}%"></div>
+                </div>
+            </div>
+            <div class="progress-row">
+                <div class="progress-info">
+                    <span>Daily English</span>
+                    <span>${stats.dailyProgress}%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill daily" style="width: ${stats.dailyProgress}%"></div>
+                </div>
+            </div>
+            <div class="progress-row">
+                <div class="progress-info">
+                    <span>Music Terms</span>
+                    <span>${stats.musicProgress}%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill music" style="width: ${stats.musicProgress}%"></div>
+                </div>
+            </div>
+        </div>
+    `;
+};
+
+const getAdaptivePool = (count, typeFilter = null) => {
+    const tier = getAdaptiveTier();
+    
+    const distributions = [
+        [0.8, 0.2, 0.0], // Tier 0
+        [0.5, 0.4, 0.1], // Tier 1
+        [0.1, 0.45, 0.45] // Tier 2
+    ][tier];
+
+    const now = new Date();
+    const words = INITIAL_DATA.filter(w => !typeFilter || w.type === typeFilter);
+    const getLevelPool = (level) => words.filter(w => (w.level || 'easy') === level);
+
+    const easyPool = getLevelPool('easy');
+    const mediumPool = getLevelPool('medium');
+    const hardPool = getLevelPool('hard');
+
+    const counts = distributions.map(ratio => Math.ceil(count * ratio));
+    
+    const selectFromSubPool = (subPool, targetCount) => {
+        return subPool
+            .map(w => {
+                const prog = state.progress[w.word] || { familiarity: 0, nextReviewDate: 0 };
+                const weaknessScore = calculateWeaknessScore(w.word);
+                
+                let priority = 0;
+                if (prog.familiarity === 0) priority += 100; // New
+                if (prog.nextReviewDate && new Date(prog.nextReviewDate) <= now) priority += 50; // Due
+                
+                // Add Weakness Boost
+                priority += weaknessScore * 5;
+                
+                return { ...w, priority: priority + Math.random() * 10 };
+            })
+            .sort((a, b) => b.priority - a.priority)
+            .slice(0, targetCount);
+    };
+
+    const selected = [
+        ...selectFromSubPool(easyPool, counts[0]),
+        ...selectFromSubPool(mediumPool, counts[1]),
+        ...selectFromSubPool(hardPool, counts[2])
+    ];
+
+    return selected.sort(() => Math.random() - 0.5).slice(0, count);
+};
+
 // --- 📅 Daily View Logic ---
 const initDailyView = () => {
     const container = document.getElementById('daily-card-container');
@@ -1041,6 +2566,8 @@ const initDailyView = () => {
     // 1. Set Date
     const today = new Date().toISOString().split('T')[0];
     dateDisplay.textContent = new Date().toLocaleDateString('zh-TW', { month: 'long', day: 'numeric', weekday: 'long' });
+
+    renderProgressDashboard();
 
     // 2. Daily Set Generation
     if (!state.daily || state.daily.date !== today) {
@@ -1137,37 +2664,16 @@ const initDailyView = () => {
 };
 
 const generateDailySet = (dateStr) => {
-    // Priority: nextReviewDate <= today OR not in progress
-    const now = new Date();
-    
-    const getPool = (type) => {
-        return INITIAL_DATA
-            .filter(w => w.type === type)
-            .map(w => {
-                const prog = state.progress[w.word] || { nextReviewDate: null, familiarity: 0 };
-                return { ...w, ...prog };
-            });
-    };
-
-    const selectFromPool = (pool, count) => {
-        // Sort: Due first, then new, then random
-        const sorted = pool.sort((a, b) => {
-            const dateA = a.nextReviewDate ? new Date(a.nextReviewDate) : new Date(0);
-            const dateB = b.nextReviewDate ? new Date(b.nextReviewDate) : new Date(0);
-            if (dateA <= now && dateB > now) return -1;
-            if (dateB <= now && dateA > now) return 1;
-            return Math.random() - 0.5;
-        });
-        return sorted.slice(0, count).map(w => ({ word: w.word, status: 'pending' }));
-    };
-
-    const words = selectFromPool(getPool('word'), 4);
-    const music = selectFromPool(getPool('music'), 2);
-    const daily = selectFromPool(getPool('daily'), 2);
+    // Priority: use the adaptive pool to select 8 items
+    const selected = [
+        ...getAdaptivePool(4, 'word'),
+        ...getAdaptivePool(2, 'music'),
+        ...getAdaptivePool(2, 'daily')
+    ];
 
     state.daily = {
         date: dateStr,
-        items: [...words, ...music, ...daily]
+        items: selected.map(w => ({ word: w.word, status: 'pending' }))
     };
     saveToStorage();
 };
@@ -1183,7 +2689,16 @@ const updateSRSGlobal = (word, rank) => {
         familiarity: rank,
         nextReviewDate: nextReview.toISOString()
     };
+
+    // Adaptive Feedback
+    if (rank === 2) adjustAdaptiveScore(2); // Easy success
+    else if (rank === 1) adjustAdaptiveScore(1); // Normal success
+    else adjustAdaptiveScore(-5); // Fail
+
     saveToStorage();
+
+    // Auto-update dashboard if on daily view
+    if (state.currentView === 'daily') renderProgressDashboard();
 };
 
 // --- 🎧 Listening Mode Logic ---
@@ -1205,14 +2720,8 @@ const initListeningView = () => {
         statusText.textContent = 'What word did you hear?';
         playBtn.classList.remove('playing');
 
-        // Select word: priority non-familiar or due
-        const now = new Date();
-        const pool = INITIAL_DATA.sort(() => Math.random() - 0.5);
-        currentTarget = pool.find(w => {
-            const prog = state.progress[w.word];
-            if (!prog) return true;
-            return new Date(prog.nextReviewDate) <= now;
-        }) || pool[0];
+        // Adaptive Selection
+        currentTarget = getAdaptivePool(1)[0];
 
         // Generate distractors
         const distractors = generateDistractors(currentTarget);
@@ -1246,12 +2755,21 @@ const initListeningView = () => {
             btn.classList.add('correct');
             state.streak++;
             updateSRSGlobal(currentTarget.word, 2); // Rank 2 = Easy
+            adjustAdaptiveScore(1); // Small boost
             showFeedback(true);
             setTimeout(startNewQuestion, 2000);
         } else {
             btn.classList.add('wrong');
             state.streak = 0;
             updateSRSGlobal(currentTarget.word, 0); // Rank 0 = Hard
+            
+            // Track Listening Error specifically
+            if (!state.progress[currentTarget.word]) {
+                state.progress[currentTarget.word] = { familiarity: 0, nextReviewDate: new Date().toISOString() };
+            }
+            state.progress[currentTarget.word].listenWrongCount = (state.progress[currentTarget.word].listenWrongCount || 0) + 1;
+            
+            adjustAdaptiveScore(-2); // Penalty
             // Show correct one
             Array.from(optionsGrid.children).forEach(b => {
                 if (b.textContent === currentTarget.word) b.classList.add('correct');
@@ -1333,6 +2851,8 @@ const switchView = (viewName) => {
     if (viewName === 'music') initMusicView();
     if (viewName === 'daily-english') initDailyEnglishView();
     if (viewName === 'listening') initListeningView();
+    if (viewName === 'shadowing') initShadowingView();
+    if (viewName === 'weakness') initWeaknessView();
 };
 
 // --- 🔍 Search View Logic ---
@@ -1761,6 +3281,156 @@ const initDailyEnglishView = () => {
     });
 
     renderDailyList('all');
+};
+
+// --- 👥 Shadowing Mode Logic ---
+const initShadowingView = () => {
+    const status = document.getElementById('shadowing-status');
+    const textContainer = document.getElementById('shadowing-text-container');
+    const textEl = document.getElementById('shadowing-text');
+    const meaningEl = document.getElementById('shadowing-meaning');
+    const infoEl = document.getElementById('shadowing-info');
+    const replayBtn = document.getElementById('shadowing-replay');
+    const nextBtn = document.getElementById('shadowing-next');
+    const loopBtns = document.querySelectorAll('.loop-btn');
+
+    let currentSentence = null;
+    let isPlaying = false;
+    let sentencePool = [];
+    let poolIndex = 0;
+
+    const getSentencePool = () => {
+        // Use getAdaptivePool but filter for items with sentences
+        // We'll select a larger batch (20) and filter/extract sentences
+        return getAdaptivePool(20)
+            .filter(w => w.example || w.music_context || w.context)
+            .map(w => {
+                const sentence = w.example || w.music_context || w.context;
+                return { ...w, sentence };
+            });
+    };
+
+    const playSequence = async () => {
+        if (!currentSentence || isPlaying) return;
+        isPlaying = true;
+
+        status.textContent = 'Listen carefully...';
+        status.classList.remove('hidden');
+        textContainer.classList.add('hidden');
+
+        const loop = state.shadowingLoop;
+        
+        for (let i = 0; i < loop; i++) {
+            speak(currentSentence.sentence);
+            // Wait for duration of speech approx 
+            await new Promise(r => setTimeout(r, 2500)); 
+            if (i < loop - 1) {
+                status.textContent = `Playing... (${i + 2}/${loop})`;
+                await new Promise(r => setTimeout(r, 1000)); // The 1s delay requested
+            }
+        }
+
+        isPlaying = false;
+        status.textContent = 'Now you try!';
+        textContainer.classList.remove('hidden');
+        
+        textEl.textContent = currentSentence.sentence;
+        meaningEl.textContent = currentSentence.definition_zh;
+        infoEl.textContent = `from: ${currentSentence.word} (${currentSentence.category || currentSentence.type})`;
+    };
+
+    const loadNext = () => {
+        if (sentencePool.length === 0) sentencePool = getSentencePool();
+        currentSentence = sentencePool[poolIndex % sentencePool.length];
+        poolIndex++;
+        playSequence();
+    };
+
+    // UI Listeners
+    loopBtns.forEach(btn => {
+        btn.classList.toggle('active', parseInt(btn.dataset.count) === state.shadowingLoop);
+        btn.onclick = () => {
+            state.shadowingLoop = parseInt(btn.dataset.count);
+            saveToStorage();
+            loopBtns.forEach(b => b.classList.toggle('active', b === btn));
+        };
+    });
+
+    replayBtn.onclick = () => playSequence();
+    nextBtn.onclick = () => loadNext();
+
+    // Initial Load
+    loadNext();
+};
+
+// --- 📉 Weakness Page Logic ---
+const initWeaknessView = () => {
+    const counts = { gap: 0, error: 0, memory: 0, listen: 0 };
+    const now = new Date();
+
+    // 1. Calculate Summary Counts
+    INITIAL_DATA.forEach(w => {
+        const prog = state.progress[w.word];
+        const score = calculateWeaknessScore(w.word);
+        
+        if (!prog || prog.familiarity === 0) counts.gap++;
+        if (prog && prog.wrongCount > 0) counts.error++;
+        if (prog && prog.lastReviewDate) {
+            const days = (now - new Date(prog.lastReviewDate)) / (1000 * 60 * 60 * 24);
+            if (days > 7) counts.memory++;
+        }
+        if (prog && prog.listenWrongCount > 0) counts.listen++;
+    });
+
+    // Update Dashboard UI
+    document.getElementById('count-gap').textContent = counts.gap;
+    document.getElementById('count-error').textContent = counts.error;
+    document.getElementById('count-memory').textContent = counts.memory;
+    document.getElementById('count-listen').textContent = counts.listen;
+
+    // 2. Generate Top 10 List
+    const topWords = INITIAL_DATA
+        .map(w => ({ ...w, weaknessScore: calculateWeaknessScore(w.word) }))
+        .sort((a, b) => b.weaknessScore - a.weaknessScore)
+        .slice(0, 10)
+        .filter(w => w.weaknessScore > 0);
+
+    const listContainer = document.getElementById('weakness-top-list');
+    listContainer.innerHTML = '';
+
+    topWords.forEach(w => {
+        const el = document.createElement('div');
+        el.className = 'weakness-item';
+        el.innerHTML = `
+            <div class="weakness-word-info">
+                <span class="weakness-word-text">${w.word}</span>
+                <span class="weakness-type-tag">${w.category || w.type}</span>
+            </div>
+            <div class="weakness-score-pill">${w.weaknessScore} pts</div>
+        `;
+        listContainer.appendChild(el);
+    });
+
+    // 3. CTA Handlers (Focus Mode)
+    document.getElementById('weakness-focus-flash').onclick = () => {
+        // Start Flashcards with top weak words
+        const weakList = topWords.map(w => w.word);
+        if (weakList.length === 0) return showNotification('目前沒有明顯弱點單字！');
+        
+        state.reviewQueue = topWords;
+        state.currentReviewIndex = 0;
+        switchView('flashcards');
+    };
+
+    document.getElementById('weakness-focus-listen').onclick = () => {
+        if (topWords.length === 0) return showNotification('目前沒有明顯弱點單字！');
+        switchView('listening');
+    };
+
+    document.getElementById('weakness-focus-shadow').onclick = () => {
+        if (topWords.length === 0) return showNotification('目前沒有明顯弱點單字！');
+        switchView('shadowing');
+    };
 };
 
 // --- Global Actions ---

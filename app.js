@@ -3900,5 +3900,10 @@ navItems.forEach(item => {
     item.addEventListener('click', () => switchView(item.dataset.view));
 });
 
+const globalMeBtn = document.getElementById('global-me-btn');
+if (globalMeBtn) {
+    globalMeBtn.addEventListener('click', () => switchView('me'));
+}
+
 // Start with Home View
 switchView('home');

@@ -2356,8 +2356,15 @@ const state = {
     shadowingLoop: parseInt(localStorage.getItem('shadowing_loop') || '3'),
     adaptiveScore: parseInt(localStorage.getItem('adaptive_score') || '0'),
     firstLoginDate: localStorage.getItem('first_login_date') || new Date().toISOString(),
+    streak: parseInt(localStorage.getItem('listening_streak') || '0'),
     reviewQueue: [],
-    currentReviewIndex: 0
+    currentReviewIndex: 0,
+    // Listening Phases
+    activeListeningMode: 'daily',
+    listeningSessionCount: 0,
+    // Shadowing Settings
+    shadowingLoop: parseInt(localStorage.getItem('shadowing_loop') || '3'),
+    shadowingSpeed: parseFloat(localStorage.getItem('shadowing_speed') || '0.75')
 };
 
 // Ensure first login is saved
@@ -2371,6 +2378,7 @@ const saveToStorage = () => {
     localStorage.setItem('daily_set', JSON.stringify(state.daily));
     localStorage.setItem('listening_streak', state.streak.toString());
     localStorage.setItem('shadowing_loop', state.shadowingLoop.toString());
+    localStorage.setItem('shadowing_speed', state.shadowingSpeed.toString());
     localStorage.setItem('adaptive_score', state.adaptiveScore.toString());
 };
 
@@ -2386,9 +2394,51 @@ const showNotification = (msg) => {
     setTimeout(() => notification.classList.add('hidden'), 2000);
 };
 
-const speak = (text) => {
+// --- NLP Helpers for Shadowing ---
+const getSemanticChunks = (text) => {
+    const words = text.split(' ');
+    if (words.length < 5) return [text];
+    
+    const mid = Math.floor(words.length / 2);
+    const splitters = [',', ';', ':', 'that', 'because', 'which', 'and', 'but', 'when', 'if', 'with'];
+    
+    let bestSplit = mid;
+    let minDistance = 100;
+    
+    words.forEach((w, i) => {
+        const lowerW = w.toLowerCase().replace(/[^\w]/g, '');
+        const hasPunct = /[^\w]/.test(w);
+        if (splitters.includes(lowerW) || hasPunct) {
+            const dist = Math.abs(i - mid);
+            if (dist < minDistance) {
+                minDistance = dist;
+                bestSplit = i + 1;
+            }
+        }
+    });
+    
+    return [
+        words.slice(0, bestSplit).join(' '),
+        words.slice(bestSplit).join(' ')
+    ];
+};
+
+const applyStress = (text) => {
+    const stopWords = ['the', 'is', 'a', 'an', 'and', 'or', 'but', 'if', 'in', 'on', 'at', 'to', 'for', 'of', 'with'];
+    return text.split(' ').map(word => {
+        const clean = word.toLowerCase().replace(/[^\w]/g, '');
+        // Stress words longer than 4 chars and not stop words
+        if (clean.length > 4 && !stopWords.includes(clean)) {
+            return `<span class="stress-word">${word}</span>`;
+        }
+        return word;
+    }).join(' ');
+};
+
+const speak = (text, rate = 1.0) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
+    utterance.rate = rate;
     window.speechSynthesis.speak(utterance);
 };
 
@@ -2708,13 +2758,27 @@ const initListeningView = () => {
     const optionsGrid = document.getElementById('listening-options');
     const feedbackPanel = document.getElementById('listening-feedback');
     const statusText = document.getElementById('listening-status');
+    const modeTabs = document.querySelectorAll('#listening-mode-switcher .tab-btn');
+    const completionScreen = document.getElementById('listening-completion');
+    const continueBtn = document.getElementById('listening-continue-btn');
+    const endBtn = document.getElementById('listening-end-btn');
 
     let currentTarget = null;
     let isAnswering = false;
 
+    // Initialize session state
+    state.listeningSessionCount = 0;
+
     const startNewQuestion = () => {
+        // Check for Daily Goal completion
+        if (state.activeListeningMode === 'daily' && state.listeningSessionCount >= 10) {
+            showCompletionUI();
+            return;
+        }
+
         isAnswering = false;
         feedbackPanel.classList.add('hidden');
+        completionScreen.classList.add('hidden');
         optionsGrid.innerHTML = '';
         streakDisplay.textContent = state.streak;
         statusText.textContent = 'What word did you hear?';
@@ -2754,6 +2818,8 @@ const initListeningView = () => {
         if (isCorrect) {
             btn.classList.add('correct');
             state.streak++;
+            state.listeningSessionCount++;
+            
             updateSRSGlobal(currentTarget.word, 2); // Rank 2 = Easy
             adjustAdaptiveScore(1); // Small boost
             showFeedback(true);
@@ -2783,9 +2849,12 @@ const initListeningView = () => {
     const showFeedback = (isCorrect) => {
         feedbackPanel.classList.remove('hidden');
         feedbackPanel.innerHTML = `
-            <h2 style="color: ${isCorrect ? 'var(--success)' : 'var(--error)'}">
-                ${isCorrect ? 'Correct! ✅' : 'Wrong ❌'}
-            </h2>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <h2 style="color: ${isCorrect ? 'var(--success)' : 'var(--error)'}">
+                    ${isCorrect ? 'Correct! ✅' : 'Wrong ❌'}
+                </h2>
+                ${state.activeListeningMode === 'daily' ? `<span style="font-size:0.8rem; color:var(--muted)">Progress: ${state.listeningSessionCount}/10</span>` : ''}
+            </div>
             <div style="margin-top:15px; text-align:left;">
                 <h3 style="font-size:1.5rem;">${currentTarget.word}</h3>
                 <p style="font-weight:600;">${currentTarget.definition_zh}</p>
@@ -2799,6 +2868,32 @@ const initListeningView = () => {
 
         const nextBtn = document.getElementById('listening-next-btn');
         if (nextBtn) nextBtn.onclick = startNewQuestion;
+    };
+
+    const showCompletionUI = () => {
+        completionScreen.classList.remove('hidden');
+        feedbackPanel.classList.add('hidden');
+    };
+
+    // Mode Switcher Logic
+    modeTabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.mode === state.activeListeningMode);
+        tab.onclick = () => {
+            state.activeListeningMode = tab.dataset.mode;
+            modeTabs.forEach(t => t.classList.toggle('active', t === tab));
+            startNewQuestion();
+        };
+    });
+
+    // Completion Handlers
+    continueBtn.onclick = () => {
+        state.activeListeningMode = 'practice';
+        modeTabs.forEach(t => t.classList.toggle('active', t.dataset.mode === 'practice'));
+        startNewQuestion();
+    };
+
+    endBtn.onclick = () => {
+        switchView('home');
     };
 
     playBtn.onclick = () => playSound(currentTarget.word);
@@ -2845,14 +2940,18 @@ const switchView = (viewName) => {
 
     // Initialize View Logic
     if (viewName === 'home') initHomeView();
+    if (viewName === 'learn') initLearnView();
+    if (viewName === 'words') initWordsView();
     if (viewName === 'daily') initDailyView();
-    if (viewName === 'search') initSearchView();
-    if (viewName === 'collection') initCollectionView();
-    if (viewName === 'flashcards') initFlashcardsView();
-    if (viewName === 'music') initMusicView();
-    if (viewName === 'daily-english') initDailyEnglishView();
+    if (viewName === 'me') initMeView();
+    
+    // Legacy support for sub-views launched from Learn/Words
     if (viewName === 'listening') initListeningView();
     if (viewName === 'shadowing') initShadowingView();
+    if (viewName === 'daily-english') initDailyEnglishView();
+    if (viewName === 'music') initMusicView();
+    if (viewName === 'search') initSearchView();
+    if (viewName === 'collection') initCollectionView();
     if (viewName === 'weakness') initWeaknessView();
 };
 
@@ -2902,13 +3001,170 @@ const initHomeView = () => {
     });
 };
 
-// --- 🔍 Search View Logic ---
-const initSearchView = () => {
-    const input = document.getElementById('search-input');
-    const results = document.getElementById('search-results');
-    const clearBtn = document.getElementById('clear-search');
+// --- 📖 Learn View Logic ---
+const initLearnView = () => {
+    const cards = document.querySelectorAll('.learn-card');
+    cards.forEach(card => {
+        card.onclick = () => switchView(card.dataset.subview);
+    });
+};
 
-    input.focus();
+// --- 📚 Words View Logic (Combined Tool) ---
+const initWordsView = () => {
+    const searchInput = document.getElementById('words-search-input');
+    const tabBtns = document.querySelectorAll('#words-tab-control .tab-btn');
+    const content = document.getElementById('words-section-content');
+
+    const renderSection = (sec) => {
+        tabBtns.forEach(b => b.classList.toggle('active', b.dataset.sec === sec));
+        content.innerHTML = '';
+        
+        if (sec === 'collection') {
+            const listEl = document.createElement('div');
+            listEl.id = 'words-collection-list';
+            content.appendChild(listEl);
+            initCollectionView('words-collection-list');
+        } else if (sec === 'weakness') {
+            const listEl = document.createElement('div');
+            listEl.id = 'words-weakness-list';
+            content.appendChild(listEl);
+            initWeaknessView('words-weakness-list');
+        } else if (sec === 'search-results') {
+            const listEl = document.createElement('div');
+            listEl.id = 'words-search-results';
+            content.appendChild(listEl);
+            // Search result is handled by the search logic
+        }
+    };
+
+    // Default to collection
+    renderSection('collection');
+
+    tabBtns.forEach(btn => {
+        btn.onclick = () => renderSection(btn.dataset.sec);
+    });
+
+    searchInput.onkeypress = (e) => {
+        if (e.key === 'Enter' && searchInput.value.trim()) {
+            const query = searchInput.value.trim();
+            renderSection('search-results');
+            document.getElementById('words-api-tab').classList.add('active');
+            
+            // Re-trigger global initSearchView logic but pointed to our results div
+            initSearchView('words-search-results', query);
+        }
+    };
+};
+
+// --- 👤 Me View Logic ---
+const initMeView = () => {
+    const totalWordsEl = document.getElementById('me-total-words');
+    const streakRecordEl = document.getElementById('me-streak-record');
+    const masteryScoreEl = document.getElementById('me-mastery-score');
+    const joinDateEl = document.getElementById('me-join-date');
+    const loopBtns = document.querySelectorAll('#me-loop-setting button');
+    const clearDataBtn = document.getElementById('me-clear-data');
+
+    // 1. Stats
+    const stats = getLearningStats();
+    totalWordsEl.textContent = stats.masteredCount;
+    streakRecordEl.textContent = stats.totalDays;
+    masteryScoreEl.textContent = state.adaptiveScore;
+    
+    const joinDate = new Date(state.firstLoginDate);
+    joinDateEl.textContent = `加入日期: ${joinDate.toLocaleDateString()}`;
+
+    // 2. Loop Setting
+    loopBtns.forEach(btn => {
+        btn.classList.toggle('active', parseInt(btn.dataset.val) === state.shadowingLoop);
+        btn.onclick = () => {
+            state.shadowingLoop = parseInt(btn.dataset.val);
+            localStorage.setItem('shadowing_loop', state.shadowingLoop);
+            initMeView();
+            showNotification(`已更新跟讀循環為 ${state.shadowingLoop} 次`);
+        };
+    });
+
+    // 3. Clear Data
+    clearDataBtn.onclick = () => {
+        if (confirm('警告：這將清除所有學習進度和收藏，確定嗎？')) {
+            localStorage.clear();
+            location.reload();
+        }
+    };
+};
+
+// --- 🔍 Search View Logic ---
+const initSearchView = (containerId = 'search-results', initialQuery = null) => {
+    const input = document.getElementById(containerId === 'search-results' ? 'search-input' : 'words-search-input');
+    const results = document.getElementById(containerId);
+    const clearBtn = containerId === 'search-results' ? document.getElementById('clear-search') : null;
+
+    if (input) input.focus();
+
+    if (initialQuery && input) {
+        input.value = initialQuery;
+        // Trigger the search logic immediately
+        setTimeout(() => {
+            const event = new KeyboardEvent('keypress', { key: 'Enter' });
+            input.dispatchEvent(event);
+            // Also call the internal search handler if necessary
+            performSearch(initialQuery);
+        }, 10);
+    }
+
+    const performSearch = async (query) => {
+        if (!query) return;
+        results.innerHTML = '<div class="empty-state"><p>搜尋中...</p></div>';
+
+        // 1. Check Local INITIAL_DATA
+        const localWord = INITIAL_DATA.find(w => w.word.toLowerCase() === query);
+        if (localWord) {
+            renderResult(localWord);
+            return;
+        }
+
+        // 2. Fetch from API
+        try {
+            const dictResponse = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${query}`);
+            if (!dictResponse.ok) throw new Error('Not found');
+            const dictData = await dictResponse.json();
+            
+            let translatedZh = '查無中文翻譯';
+            try {
+                const transResponse = await fetch(`https://api.mymemory.translated.net/get?q=${query}&langpair=en|zh-TW`);
+                if (transResponse.ok) {
+                    const transData = await transResponse.json();
+                    translatedZh = transData.responseData.translatedText;
+                }
+            } catch (e) {
+                console.warn('Translation failed', e);
+            }
+
+            const entry = dictData[0];
+            const meaning = entry.meanings[0];
+            const examples = [];
+            entry.meanings.forEach(m => {
+                m.definitions.forEach(d => {
+                    if (d.example && examples.length < 3) examples.push(d.example);
+                });
+            });
+
+            const apiWord = {
+                word: entry.word,
+                phonetic: entry.phonetic || (entry.phonetics[0] ? entry.phonetics[0].text : ''),
+                pos: meaning.partOfSpeech || '',
+                definition_en: meaning.definitions[0].definition,
+                definition_zh: translatedZh,
+                examples: examples,
+                type: 'api'
+            };
+
+            renderResult(apiWord, true);
+        } catch (err) {
+            results.innerHTML = '<div class="empty-state"><p>找不到這個單字，換一個試試？</p></div>';
+        }
+    };
 
     const renderResult = (wordData, isFromApi = false) => {
         const isCollected = state.collection.some(w => w.word.toLowerCase() === wordData.word.toLowerCase());
@@ -2962,83 +3218,29 @@ const initSearchView = () => {
         });
     };
 
-    input.addEventListener('keypress', async (e) => {
-        if (e.key === 'Enter') {
-            const query = input.value.trim().toLowerCase();
-            if (!query) return;
-
-            results.innerHTML = '<div class="empty-state"><p>搜尋中...</p></div>';
-
-            // 1. Check Local INITIAL_DATA
-            const localWord = INITIAL_DATA.find(w => w.word.toLowerCase() === query);
-            if (localWord) {
-                renderResult(localWord);
-                return;
+    if (input) {
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch(input.value.trim().toLowerCase());
             }
+        });
+    }
 
-            // 2. Fetch from API
-            try {
-                // Fetch English definition
-                const dictResponse = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${query}`);
-                if (!dictResponse.ok) throw new Error('Not found');
-                const dictData = await dictResponse.json();
-                
-                // Fetch Chinese translation (MyMemory API)
-                let translatedZh = '查無中文翻譯';
-                try {
-                    const transResponse = await fetch(`https://api.mymemory.translated.net/get?q=${query}&langpair=en|zh-TW`);
-                    if (transResponse.ok) {
-                        const transData = await transResponse.json();
-                        translatedZh = transData.responseData.translatedText;
-                    }
-                } catch (e) {
-                    console.warn('Translation failed', e);
-                }
-
-                // Map data
-                const entry = dictData[0];
-                const meaning = entry.meanings[0];
-                
-                // Collect up to 3 examples
-                const examples = [];
-                entry.meanings.forEach(m => {
-                    m.definitions.forEach(d => {
-                        if (d.example && examples.length < 3) {
-                            examples.push(d.example);
-                        }
-                    });
-                });
-
-                const apiWord = {
-                    word: entry.word,
-                    phonetic: entry.phonetic || (entry.phonetics[0] ? entry.phonetics[0].text : ''),
-                    pos: meaning.partOfSpeech || '',
-                    definition_en: meaning.definitions[0].definition,
-                    definition_zh: translatedZh,
-                    examples: examples,
-                    type: 'api'
-                };
-
-                renderResult(apiWord, true);
-            } catch (err) {
-                results.innerHTML = '<div class="empty-state"><p>找不到這個單字，換一個試試？</p></div>';
-            }
-        }
-    });
-
-    clearBtn.addEventListener('click', () => {
-        input.value = '';
-        results.innerHTML = '<div class="empty-state"><p>開始查詢單字吧！</p></div>';
-        input.focus();
-    });
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            input.value = '';
+            results.innerHTML = '<div class="empty-state"><p>開始查詢單字吧！</p></div>';
+            input.focus();
+        });
+    }
 };
 
 // --- 📚 Collection Logic ---
-const initCollectionView = () => {
-    const list = document.getElementById('collection-list');
+const initCollectionView = (containerId = 'collection-list') => {
+    const list = document.getElementById(containerId);
     const count = document.getElementById('collection-count');
     
-    count.textContent = state.collection.length;
+    if (count) count.textContent = state.collection.length;
 
     if (state.collection.length === 0) {
         list.innerHTML = '<div class="empty-state"><p>還沒有收藏任何單字喔</p></div>';
@@ -3332,58 +3534,71 @@ const initDailyEnglishView = () => {
 
 // --- 👥 Shadowing Mode Logic ---
 const initShadowingView = () => {
+    const stepIndicator = document.getElementById('shadowing-step-indicator');
+    const activeChunkEl = document.getElementById('shadowing-active-chunk');
+    const ghostSentenceEl = document.getElementById('shadowing-ghost-sentence');
     const status = document.getElementById('shadowing-status');
     const textContainer = document.getElementById('shadowing-text-container');
-    const textEl = document.getElementById('shadowing-text');
     const meaningEl = document.getElementById('shadowing-meaning');
     const infoEl = document.getElementById('shadowing-info');
     const replayBtn = document.getElementById('shadowing-replay');
     const nextBtn = document.getElementById('shadowing-next');
     const loopBtns = document.querySelectorAll('.loop-btn');
+    const speedTabs = document.querySelectorAll('#shadowing-speed-switcher .tab-btn');
 
     let currentSentence = null;
     let isPlaying = false;
     let sentencePool = [];
     let poolIndex = 0;
 
+    const playSequence = async () => {
+        if (!currentSentence || isPlaying) return;
+        isPlaying = true;
+
+        const chunks = getSemanticChunks(currentSentence.sentence);
+        const speed = state.shadowingSpeed;
+
+        status.textContent = 'Listen carefully...';
+        textContainer.classList.add('hidden');
+        stepIndicator.classList.remove('hidden');
+        ghostSentenceEl.classList.add('hidden');
+        ghostSentenceEl.innerHTML = applyStress(currentSentence.sentence);
+
+        // Step 1 & 2: Chunk Playback
+        for (let i = 0; i < chunks.length; i++) {
+            const chunk = chunks[i];
+            stepIndicator.textContent = `Step ${i + 1}: Focus Chunk`;
+            activeChunkEl.innerHTML = applyStress(chunk);
+            
+            for (let j = 0; j < 2; j++) {
+                speak(chunk, speed);
+                await new Promise(r => setTimeout(r, (chunk.split(' ').length * 400 + 400) / speed));
+                if (j === 0) await new Promise(r => setTimeout(r, 800)); // 0.8s internal delay
+            }
+        }
+
+        // Step 3: Full Sentence
+        stepIndicator.textContent = `Step 3: Full Sentence`;
+        activeChunkEl.innerHTML = applyStress(currentSentence.sentence);
+        speak(currentSentence.sentence, speed);
+        await new Promise(r => setTimeout(r, (currentSentence.sentence.split(' ').length * 400 + 500) / speed));
+
+        isPlaying = false;
+        status.textContent = 'Now you try!';
+        textContainer.classList.remove('hidden');
+        ghostSentenceEl.classList.remove('hidden');
+        
+        meaningEl.textContent = currentSentence.definition_zh;
+        infoEl.textContent = `from: ${currentSentence.word}`;
+    };
+
     const getSentencePool = () => {
-        // Use getAdaptivePool but filter for items with sentences
-        // We'll select a larger batch (20) and filter/extract sentences
         return getAdaptivePool(20)
             .filter(w => w.example || w.music_context || w.context)
             .map(w => {
                 const sentence = w.example || w.music_context || w.context;
                 return { ...w, sentence };
             });
-    };
-
-    const playSequence = async () => {
-        if (!currentSentence || isPlaying) return;
-        isPlaying = true;
-
-        status.textContent = 'Listen carefully...';
-        status.classList.remove('hidden');
-        textContainer.classList.add('hidden');
-
-        const loop = state.shadowingLoop;
-        
-        for (let i = 0; i < loop; i++) {
-            speak(currentSentence.sentence);
-            // Wait for duration of speech approx 
-            await new Promise(r => setTimeout(r, 2500)); 
-            if (i < loop - 1) {
-                status.textContent = `Playing... (${i + 2}/${loop})`;
-                await new Promise(r => setTimeout(r, 1000)); // The 1s delay requested
-            }
-        }
-
-        isPlaying = false;
-        status.textContent = 'Now you try!';
-        textContainer.classList.remove('hidden');
-        
-        textEl.textContent = currentSentence.sentence;
-        meaningEl.textContent = currentSentence.definition_zh;
-        infoEl.textContent = `from: ${currentSentence.word} (${currentSentence.category || currentSentence.type})`;
     };
 
     const loadNext = () => {
@@ -3403,6 +3618,16 @@ const initShadowingView = () => {
         };
     });
 
+    // Speed Switcher
+    speedTabs.forEach(tab => {
+        tab.classList.toggle('active', parseFloat(tab.dataset.speed) === state.shadowingSpeed);
+        tab.onclick = () => {
+            state.shadowingSpeed = parseFloat(tab.dataset.speed);
+            saveToStorage();
+            speedTabs.forEach(t => t.classList.toggle('active', t === tab));
+        };
+    });
+
     replayBtn.onclick = () => playSequence();
     nextBtn.onclick = () => loadNext();
 
@@ -3411,7 +3636,7 @@ const initShadowingView = () => {
 };
 
 // --- 📉 Weakness Page Logic ---
-const initWeaknessView = () => {
+const initWeaknessView = (containerId = 'weakness-top-list') => {
     const counts = { gap: 0, error: 0, memory: 0, listen: 0 };
     const now = new Date();
 
@@ -3429,11 +3654,14 @@ const initWeaknessView = () => {
         if (prog && prog.listenWrongCount > 0) counts.listen++;
     });
 
-    // Update Dashboard UI
-    document.getElementById('count-gap').textContent = counts.gap;
-    document.getElementById('count-error').textContent = counts.error;
-    document.getElementById('count-memory').textContent = counts.memory;
-    document.getElementById('count-listen').textContent = counts.listen;
+    // Update Dashboard UI (if present)
+    const gapEl = document.getElementById('count-gap');
+    if (gapEl) {
+        gapEl.textContent = counts.gap;
+        document.getElementById('count-error').textContent = counts.error;
+        document.getElementById('count-memory').textContent = counts.memory;
+        document.getElementById('count-listen').textContent = counts.listen;
+    }
 
     // 2. Generate Top 10 List
     const topWords = INITIAL_DATA
@@ -3442,7 +3670,8 @@ const initWeaknessView = () => {
         .slice(0, 10)
         .filter(w => w.weaknessScore > 0);
 
-    const listContainer = document.getElementById('weakness-top-list');
+    const listContainer = document.getElementById(containerId);
+    if (!listContainer) return;
     listContainer.innerHTML = '';
 
     topWords.forEach(w => {

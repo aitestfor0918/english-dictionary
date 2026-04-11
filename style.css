@@ -1143,3 +1143,330 @@ h1 {
     color: var(--muted);
     font-style: italic;
 }
+
+/* Listening Mode Styles */
+.completion-screen {
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    z-index: 100;
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.completion-screen .check-mark {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.completion-screen h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.completion-screen p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    max-width: 250px;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Helper to handle hidden state with flex */
+.completion-screen.hidden {
+    display: none;
+}
+
+/* Shadowing Chunk & Stress Styles */
+.shadowing-active-chunk {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent);
+    text-align: center;
+    margin: 20px 0;
+    min-height: 3.5rem;
+    line-height: 1.3;
+    animation: fadeIn 0.3s ease;
+}
+
+.shadowing-ghost-sentence {
+    font-size: 1rem;
+    color: var(--muted);
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.stress-word {
+    color: var(--text);
+    text-decoration: underline var(--accent) 3px;
+    text-underline-offset: 4px;
+    font-weight: 900;
+}
+
+.step-indicator {
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: var(--accent);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Professional 5-Tab UX Overhaul */
+.learn-grid-full {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.learn-card {
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--border);
+}
+
+.learn-card:active {
+    transform: scale(0.97);
+}
+
+.card-icon {
+    font-size: 2rem;
+    width: 65px;
+    height: 65px;
+    background: var(--bg);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-body h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.card-status {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    background: rgba(0, 122, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+/* Words View Tabs */
+.search-tab-bar {
+    margin-top: 15px;
+}
+
+.search-box-global {
+    background: var(--secondary);
+    border-radius: 12px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+}
+
+.search-box-global input {
+    background: none;
+    border: none;
+    color: var(--text);
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.words-sections {
+    margin-top: 25px;
+}
+
+.section-tabs {
+    display: flex;
+    background: var(--secondary);
+    border-radius: 12px;
+    padding: 4px;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    background: var(--bg);
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Me (Profile) View */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--accent) 0%, #00d2ff 100%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 122, 255, 0.2);
+}
+
+.user-info h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.user-info p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.stats-card-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.me-stat-card {
+    background: var(--secondary);
+    padding: 15px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.stat-num {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.stat-unit {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.setting-item {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-item.danger {
+    color: #e74c3c;
+}
+
+.setting-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.setting-controls button {
+    width: 35px;
+    height: 30px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.setting-controls button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+@media (max-width: 480px) {
+    .stats-card-group {
+        gap: 8px;
+    }
+    .stat-num {
+        font-size: 1.2rem;
+    }
+}

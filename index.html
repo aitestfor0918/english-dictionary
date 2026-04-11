@@ -22,37 +22,21 @@
                 <span class="icon">🏠</span>
                 <span class="label">首頁</span>
             </button>
-            <button class="nav-item" data-view="search">
-                <span class="icon">🔍</span>
-                <span class="label">查詢</span>
+            <button class="nav-item" data-view="learn">
+                <span class="icon">📖</span>
+                <span class="label">學習</span>
             </button>
-            <button class="nav-item" data-view="collection">
+            <button class="nav-item" data-view="words">
                 <span class="icon">📚</span>
-                <span class="label">我的單字</span>
+                <span class="label">單字</span>
             </button>
-            <button class="nav-item" data-view="flashcards">
+            <button class="nav-item" data-view="daily">
                 <span class="icon">🎴</span>
                 <span class="label">複習</span>
             </button>
-            <button class="nav-item" data-view="music">
-                <span class="icon">🎵</span>
-                <span class="label">音樂術語</span>
-            </button>
-            <button class="nav-item" data-view="daily-english">
-                <span class="icon">💡</span>
-                <span class="label">日常英文</span>
-            </button>
-            <button class="nav-item" data-view="listening">
-                <span class="icon">🎧</span>
-                <span class="label">Listening</span>
-            </button>
-            <button class="nav-item" data-view="shadowing">
-                <span class="icon">👥</span>
-                <span class="label">Shadowing</span>
-            </button>
-            <button class="nav-item" data-view="weakness">
-                <span class="icon">📉</span>
-                <span class="label">Weakness</span>
+            <button class="nav-item" data-view="me">
+                <span class="icon">👤</span>
+                <span class="label">我的</span>
             </button>
         </nav>
     </div>
@@ -118,6 +102,117 @@
             </div>
         </div>
     </template>
+    <template id="view-learn">
+        <div class="view learn-view">
+            <div class="view-header">
+                <h1>學習中心</h1>
+                <p class="subtitle">提升音樂英文實力的必經之路</p>
+            </div>
+
+            <div class="learn-grid-full">
+                <div class="learn-card" data-subview="listening">
+                    <div class="card-icon">🎧</div>
+                    <div class="card-body">
+                        <h3>聽力測驗</h3>
+                        <p>透過音樂情境例句訓練聽力敏銳度</p>
+                        <span class="card-status">挑戰中 · streak ${state.streak || 0}</span>
+                    </div>
+                </div>
+                <div class="learn-card" data-subview="shadowing">
+                    <div class="card-icon">🗣</div>
+                    <div class="card-body">
+                        <h3>影子跟讀</h3>
+                        <p>模仿樂手口吻，練就道地演奏口語</p>
+                        <span class="card-status">Loop: ${state.shadowingLoop}x</span>
+                    </div>
+                </div>
+                <div class="learn-card" data-subview="daily-english">
+                    <div class="card-icon">💡</div>
+                    <div class="card-body">
+                        <h3>日常大師</h3>
+                        <p>排練、錄音室必備的短語與句型</p>
+                        <span class="card-status">80+ 表達</span>
+                    </div>
+                </div>
+                <div class="learn-card" data-subview="music">
+                    <div class="card-icon">🎵</div>
+                    <div class="card-body">
+                        <h3>術語研究</h3>
+                        <p>從理論到製作的專業術語彙整</p>
+                        <span class="card-status">基礎與進階編排</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="view-words">
+        <div class="view words-view">
+            <div class="view-header">
+                <h1>單字工具</h1>
+                <div class="search-tab-bar">
+                    <div class="search-box-global">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="words-search-input" placeholder="查詢單字..." autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="words-sections">
+                <div class="section-tabs" id="words-tab-control">
+                    <button class="tab-btn active" data-sec="collection">我的收藏</button>
+                    <button class="tab-btn" data-sec="weakness">弱點分析</button>
+                    <button class="tab-btn" data-sec="search-results" id="words-api-tab">搜尋結果</button>
+                </div>
+
+                <div id="words-section-content" class="section-content">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="view-me">
+        <div class="view me-view">
+            <div class="profile-header">
+                <div class="user-avatar">🎵</div>
+                <div class="user-info">
+                    <h2>Musician Student</h2>
+                    <p id="me-join-date">加入日期: -</p>
+                </div>
+            </div>
+
+            <div class="stats-card-group">
+                <div class="me-stat-card">
+                    <span class="stat-num" id="me-total-words">0</span>
+                    <span class="stat-unit">已掌握</span>
+                </div>
+                <div class="me-stat-card">
+                    <span class="stat-num" id="me-streak-record">0</span>
+                    <span class="stat-unit">最高連勝</span>
+                </div>
+                <div class="me-stat-card">
+                    <span class="stat-num" id="me-mastery-score">0</span>
+                    <span class="stat-unit">專注點數</span>
+                </div>
+            </div>
+
+            <div class="settings-list">
+                <div class="setting-item">
+                    <span>跟讀循環次數</span>
+                    <div class="setting-controls" id="me-loop-setting">
+                        <button data-val="1">1</button>
+                        <button data-val="3">3</button>
+                        <button data-val="5">5</button>
+                    </div>
+                </div>
+                <div class="setting-item danger" id="me-clear-data">
+                    <span>清除學習統計 (警告)</span>
+                </div>
+            </div>
+        </div>
+    </template>
+
     <template id="view-daily">
         <div class="view daily-view">
             <div class="view-header">
@@ -211,9 +306,16 @@
 
     <template id="view-listening">
         <div class="view listening-view">
-            <div class="view-header" style="justify-content: space-between; display: flex; align-items: center;">
-                <h1>Listening</h1>
-                <div class="streak-badge">Streak: <span id="listening-streak">0</span></div>
+            <div class="view-header" style="flex-direction: column; align-items: stretch; gap: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h1>Listening</h1>
+                    <div class="streak-badge">Streak: <span id="listening-streak">0</span></div>
+                </div>
+                
+                <div class="section-tabs" id="listening-mode-switcher">
+                    <button class="tab-btn active" data-mode="daily">Daily Target</button>
+                    <button class="tab-btn" data-mode="practice">Unlimited Practice</button>
+                </div>
             </div>
 
             <div class="listening-box">
@@ -228,6 +330,17 @@
 
                 <div id="listening-feedback" class="feedback-panel hidden">
                     <!-- Result shown here -->
+                </div>
+            </div>
+
+            <!-- Goal Completion UI -->
+            <div id="listening-completion" class="completion-screen hidden">
+                <div class="check-mark">🎉</div>
+                <h2>今日聽力完成！</h2>
+                <p>你已完成建議練習量，是否繼續？</p>
+                <div class="flashcard-actions" style="margin-top: 30px;">
+                    <button class="btn btn-easy" id="listening-continue-btn">繼續練習</button>
+                    <button class="btn btn-normal" id="listening-end-btn" style="background: var(--secondary); color: var(--text);">今日結束</button>
                 </div>
             </div>
         </div>
@@ -256,19 +369,35 @@
         <div class="view shadowing-view">
             <div class="view-header" style="justify-content: space-between; display: flex; align-items: center;">
                 <h1>Shadowing</h1>
-                <div class="loop-selector">
-                    <button class="loop-btn active" data-count="1">1x</button>
-                    <button class="loop-btn" data-count="3">3x</button>
-                    <button class="loop-btn" data-count="5">5x</button>
+                <div class="header-settings" style="display: flex; gap: 10px; align-items: center;">
+                    <div class="loop-selector">
+                        <span style="font-size: 0.7rem; color: var(--muted); margin-right: 5px;">Loop:</span>
+                        <button class="loop-btn active" data-count="1">1x</button>
+                        <button class="loop-btn" data-count="3">3x</button>
+                        <button class="loop-btn" data-count="5">5x</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="shadowing-main">
-                <div id="shadowing-status" class="listening-status">Listen carefully...</div>
-                <div id="shadowing-text-container" class="shadowing-text-container hidden">
-                    <div id="shadowing-text" class="shadowing-text"></div>
-                    <div id="shadowing-meaning" class="shadowing-meaning"></div>
-                    <div id="shadowing-info" class="shadowing-info"></div>
+            <div class="speed-control-container" style="padding: 10px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 0.9rem; font-weight: 600;">Speed:</span>
+                <div class="section-tabs" id="shadowing-speed-switcher" style="padding: 0; background: none; box-shadow: none;">
+                    <button class="tab-btn small" data-speed="0.75">0.75x</button>
+                    <button class="tab-btn small" data-speed="1.0">1.0x</button>
+                    <button class="tab-btn small" data-speed="1.25">1.25x</button>
+                </div>
+            </div>
+
+            <div class="shadowing-main" style="min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div id="shadowing-step-indicator" class="step-indicator hidden">Step 1</div>
+                <div id="shadowing-active-chunk" class="shadowing-active-chunk">Ready?</div>
+                <div id="shadowing-ghost-sentence" class="shadowing-ghost-sentence hidden">...</div>
+                
+                <div id="shadowing-status" class="listening-status" style="margin-top: 20px;"></div>
+                
+                <div id="shadowing-text-container" class="hidden">
+                    <p id="shadowing-meaning" style="margin-top: 20px; font-weight: 600;"></p>
+                    <p id="shadowing-info" class="music-context" style="font-size: 0.8rem;"></p>
                 </div>
             </div>
 

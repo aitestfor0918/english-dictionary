@@ -4194,8 +4194,9 @@ const initProReviewView = () => {
         stageContainer.innerHTML = `
             <div style="display:flex; justify-content:center; align-items:center; height:100%; flex-direction:column;">
                 <h3 style="color:var(--muted); margin-bottom:10px;">階段一：字卡辨識</h3>
-                <div class="flashcard" id="pr-flash" style="width:100%;">
-                    <div class="card-face front">
+                <div class="flashcard-container" style="width:100%; height:300px; margin: 10px 0; perspective: 1000px;">
+                    <div class="flashcard" id="pr-flash" style="width:100%; height:100%;">
+                        <div class="card-face front">
                     <button class="pronounce-btn" id="pr-flash-pron-front" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
                         <h2>${wordData.word}</h2>
                         <p style="margin-top:20px; color:var(--muted)">點擊翻面</p>
@@ -4205,6 +4206,7 @@ const initProReviewView = () => {
                         <h3>${wordData.definition_zh}</h3>
                         <p>${wordData.definition_en}</p>
                     </div>
+                </div>
                 </div>
                 <div id="pr-flash-actions" class="flashcard-actions hidden" style="width:100%;">
                     <button class="btn btn-hard" id="pr-flash-fail">忘記 / 錯誤</button>
@@ -4239,7 +4241,7 @@ const initProReviewView = () => {
                 <h3 style="color:var(--muted); margin-bottom:10px;">階段二：聽力測驗</h3>
                 <button id="pr-listen-play" class="play-main-btn" style="width:100px; height:100px; font-size:3rem; margin-bottom:20px;">▶</button>
                 <div class="options-grid" id="pr-listen-opts" style="width:100%; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                    ${options.map((o, idx) => `<button class="option-btn" data-val="${o.word}" style="width:100%; height:auto; padding:15px; font-size:0.95rem; border:1px solid var(--border); border-radius:12px; background:var(--surface);">${o.definition_zh}</button>`).join('')}
+                    ${options.map((o, idx) => `<button class="option-btn" data-val="${o.word}" style="width:100%; height:auto; padding:15px; font-size:0.95rem; border:1px solid var(--border); border-radius:12px; background:var(--secondary);">${o.definition_zh}</button>`).join('')}
                 </div>
             </div>
         `;

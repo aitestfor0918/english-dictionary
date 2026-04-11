@@ -38,6 +38,10 @@
                 <span class="icon">🎵</span>
                 <span class="label">音樂術語</span>
             </button>
+            <button class="nav-item" data-view="daily-english">
+                <span class="icon">💡</span>
+                <span class="label">日常英文</span>
+            </button>
             <button class="nav-item" data-view="listening">
                 <span class="icon">🎧</span>
                 <span class="label">Listening</span>
@@ -120,6 +124,15 @@
             <div class="view-header">
                 <h1>音樂專業術語</h1>
             </div>
+            <div class="category-tabs" id="music-tabs">
+                <div class="tabs-scroll">
+                    <button class="tab-item active" data-category="all">全部</button>
+                    <button class="tab-item" data-category="Performance">Performance</button>
+                    <button class="tab-item" data-category="Jazz">Jazz</button>
+                    <button class="tab-item" data-category="Recording">Recording</button>
+                    <button class="tab-item" data-category="Live">Live</button>
+                </div>
+            </div>
             <div id="music-terminology-list" class="item-list"></div>
         </div>
     </template>
@@ -145,6 +158,25 @@
                     <!-- Result shown here -->
                 </div>
             </div>
+        </div>
+    </template>
+
+    <template id="view-daily-english">
+        <div class="view daily-english-view">
+            <div class="view-header">
+                <h1>Daily English</h1>
+            </div>
+            <div class="category-tabs" id="daily-english-tabs">
+                <div class="tabs-scroll">
+                    <button class="tab-item active" data-category="all">全部</button>
+                    <button class="tab-item" data-category="Daily Life">日常生活</button>
+                    <button class="tab-item" data-category="Conversation">社交對話</button>
+                    <button class="tab-item" data-category="Emotion">情緒表達</button>
+                    <button class="tab-item" data-category="Work">工作</button>
+                    <button class="tab-item" data-category="Communication">電話/訊息</button>
+                </div>
+            </div>
+            <div id="daily-english-list" class="item-list"></div>
         </div>
     </template>
 

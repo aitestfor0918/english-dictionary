@@ -352,7 +352,7 @@ const renderProgressDashboard = () => {
             </div>
         </div>
         <div class="sectional-progress" style="gap: 8px; display: flex; flex-direction: column;">
-            <div class="progress-row" style="gap: 4px; display: flex; flex-direction: column;">
+            <div class="progress-row" style="gap: 4px; display: flex; flex-direction: column; cursor: pointer;" onclick="switchView('core')">
                 <div class="progress-info" style="font-size: 0.7rem;">
                     <span>Core Words</span>
                     <span>${stats.wordProgress}%</span>
@@ -361,7 +361,7 @@ const renderProgressDashboard = () => {
                     <div class="progress-fill word" style="width: ${stats.wordProgress}%; height:100%; border-radius: 2px;"></div>
                 </div>
             </div>
-            <div class="progress-row" style="gap: 4px; display: flex; flex-direction: column;">
+            <div class="progress-row" style="gap: 4px; display: flex; flex-direction: column; cursor: pointer;" onclick="switchView('music')">
                 <div class="progress-info" style="font-size: 0.7rem;">
                     <span>Music Terms</span>
                     <span>${stats.musicProgress}%</span>

@@ -16,28 +16,25 @@
             <!-- Views will be injected here -->
         </main>
 
-        <!-- Global 'My' Button -->
-        <button id="global-me-btn" class="global-me-btn" data-view="me">
-            👤
-        </button>
+
 
         <!-- Bottom Navigation -->
         <nav class="bottom-nav">
-            <button class="nav-item active" data-view="home">
+            <button class="nav-item active" data-view="learn">
                 <span class="icon">🏠</span>
-                <span class="label">首頁</span>
-            </button>
-            <button class="nav-item" data-view="learn">
-                <span class="icon">📖</span>
-                <span class="label">學習</span>
+                <span class="label">學習與單字查詢</span>
             </button>
             <button class="nav-item" data-view="words">
                 <span class="icon">📚</span>
-                <span class="label">單字庫</span>
+                <span class="label">單字卡</span>
+            </button>
+            <button class="nav-item" data-view="home">
+                <span class="icon">📖</span>
+                <span class="label">複習</span>
             </button>
             <button class="nav-item" data-view="daily">
                 <span class="icon">🎴</span>
-                <span class="label">複習與進度</span>
+                <span class="label">學習進度與設定</span>
             </button>
         </nav>
     </div>
@@ -45,17 +42,9 @@
     <!-- Templates -->
     <template id="view-home">
         <div class="view home-view">
-            <!-- Top Search Bar -->
-            <div class="home-search-container">
-                <div class="home-search-box">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="home-search-input" placeholder="查詢單字或表達..." autocomplete="off">
-                </div>
-            </div>
-
             <!-- Header Section -->
             <div class="home-header">
-                <h1>Pro Review Mode</h1>
+                <h1>複習</h1>
                 <div class="home-stats">
                     <div class="stat-pill">今日完成：<span id="home-today-count">0</span></div>
                     <div class="stat-pill">剩餘弱點：<span id="home-weakness-count">0</span></div>
@@ -63,25 +52,25 @@
             </div>
 
             <!-- Pro Review Setup Panel -->
-            <div class="pro-setup-panel" style="background:var(--secondary); border-radius:16px; padding:20px; margin:20px 0; border:1px solid var(--border);">
-                <div class="setup-row" style="margin-bottom:15px;">
-                    <h4 style="margin-bottom:10px;font-size:0.9rem;color:var(--muted);">練習模式</h4>
+            <div class="pro-setup-panel" style="background:var(--secondary); border-radius:16px; padding:16px; margin:10px 0; border:1px solid var(--border);">
+                <div class="setup-row" style="margin-bottom:10px;">
+                    <h4 style="margin-bottom:6px;font-size:0.85rem;color:var(--muted);">練習模式</h4>
                     <div class="section-tabs" id="pro-setup-mode" style="background:var(--bg); border:1px solid var(--border);">
                         <button class="tab-btn active" data-val="smart">智慧</button>
                         <button class="tab-btn" data-val="weak">弱點</button>
                         <button class="tab-btn" data-val="free">自由</button>
                     </div>
                 </div>
-                <div class="setup-row" style="margin-bottom:15px;">
-                    <h4 style="margin-bottom:10px;font-size:0.9rem;color:var(--muted);">長度</h4>
+                <div class="setup-row" style="margin-bottom:10px;">
+                    <h4 style="margin-bottom:6px;font-size:0.85rem;color:var(--muted);">長度</h4>
                     <div class="section-tabs" id="pro-setup-length" style="background:var(--bg); border:1px solid var(--border);">
                         <button class="tab-btn active" data-val="5">快 (1m)</button>
                         <button class="tab-btn" data-val="10">中 (5m)</button>
                         <button class="tab-btn" data-val="20">深 (10m)</button>
                     </div>
                 </div>
-                <div class="setup-row" style="margin-bottom:20px;">
-                    <h4 style="margin-bottom:10px;font-size:0.9rem;color:var(--muted);">發聲情境</h4>
+                <div class="setup-row" style="margin-bottom:15px;">
+                    <h4 style="margin-bottom:6px;font-size:0.85rem;color:var(--muted);">發聲情境</h4>
                     <div class="section-tabs" id="pro-setup-context" style="background:var(--bg); border:1px solid var(--border);">
                         <button class="tab-btn active" data-val="full">🔊 完整 (發聲)</button>
                         <button class="tab-btn" data-val="silent">🔇 靜音 (心中默讀)</button>
@@ -105,43 +94,47 @@
     <template id="view-learn">
         <div class="view learn-view">
             <div class="view-header">
-                <h1>學習中心</h1>
-                <p class="subtitle">提升音樂英文實力的必經之路</p>
+                <h1>學習與單字查詢</h1>
             </div>
 
-            <div class="learn-grid-full">
-                <div class="learn-card" data-subview="listening">
-                    <div class="card-icon">🎧</div>
-                    <div class="card-body">
-                        <h3>聽力測驗</h3>
-                        <p>透過音樂情境例句訓練聽力敏銳度</p>
-                        <span class="card-status">挑戰中 · streak ${state.streak || 0}</span>
-                    </div>
+            <!-- Top Search Bar -->
+            <div class="home-search-container" style="margin-bottom: 8px;">
+                <div class="home-search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="learn-search-input" placeholder="查詢單字或表達..." autocomplete="off">
                 </div>
-                <div class="learn-card" data-subview="shadowing">
-                    <div class="card-icon">🗣</div>
-                    <div class="card-body">
-                        <h3>影子跟讀</h3>
-                        <p>模仿樂手口吻，練就道地演奏口語</p>
-                        <span class="card-status">Loop: ${state.shadowingLoop}x</span>
-                    </div>
+            </div>
+
+            <!-- 4 功能方塊 -->
+            <div class="learn-mini-grid">
+                <div class="learn-mini-card" data-subview="core">
+                    <div class="mini-card-icon">💎</div>
+                    <span class="mini-card-label">核心單字</span>
                 </div>
-                <div class="learn-card" data-subview="daily-english">
-                    <div class="card-icon">💡</div>
-                    <div class="card-body">
-                        <h3>日常大師</h3>
-                        <p>排練、錄音室必備的短語與句型</p>
-                        <span class="card-status">80+ 表達</span>
-                    </div>
+                <div class="learn-mini-card" data-subview="music">
+                    <div class="mini-card-icon">🎵</div>
+                    <span class="mini-card-label">音樂術語</span>
                 </div>
-                <div class="learn-card" data-subview="music">
-                    <div class="card-icon">🎵</div>
-                    <div class="card-body">
-                        <h3>術語研究</h3>
-                        <p>從理論到製作的專業術語彙整</p>
-                        <span class="card-status">基礎與進階編排</span>
-                    </div>
+                <div class="learn-mini-card" data-subview="listening">
+                    <div class="mini-card-icon">🎧</div>
+                    <span class="mini-card-label">聽力測驗</span>
                 </div>
+                <div class="learn-mini-card" data-subview="shadowing">
+                    <div class="mini-card-icon">🗣</div>
+                    <span class="mini-card-label">影子跟讀</span>
+                </div>
+            </div>
+
+            <!-- 翻卡學習 Section -->
+            <div class="learn-section-title" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <span>🎴 翻卡學習</span>
+                <span class="progress-text" style="font-size: 0.8rem; font-weight: normal; color: var(--muted); text-transform: none; letter-spacing: normal;">已完成 <span id="learn-daily-count">0/8</span></span>
+            </div>
+            <div id="learn-daily-card-container" class="flashcard-container" style="height: 220px; margin-bottom: 0; margin-top: 6px;"></div>
+            <div id="learn-daily-actions" class="flashcard-actions hidden" style="margin-bottom: 6px;">
+                <button class="btn btn-hard" data-rank="0">不會</button>
+                <button class="btn btn-normal" data-rank="1">普通</button>
+                <button class="btn btn-easy" data-rank="2">會</button>
             </div>
         </div>
     </template>
@@ -149,51 +142,36 @@
     <template id="view-words">
         <div class="view words-view">
             <div class="view-header">
-                <h1>單字工具</h1>
-                <div class="free-practice-ctas" style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 10px;">
-                    <button class="btn btn-primary shadow-btn" id="start-free-practice-btn" style="flex: 1; padding: 10px; font-size: 0.95rem;">開始複習</button>
-                    <button class="btn btn-secondary shadow-btn" id="start-free-weakness-btn" style="flex: 1; padding: 10px; font-size: 0.95rem;">弱點單字練習</button>
-                </div>
-                <div class="search-tab-bar">
-                    <div class="search-box-global">
-                        <span class="search-icon">🔍</span>
-                        <input type="text" id="words-search-input" placeholder="查詢單字..." autocomplete="off">
-                    </div>
-                </div>
+                <h1>單字卡</h1>
+                <p class="subtitle">我的收藏 <span id="collection-badge" class="badge">0</span></p>
             </div>
 
-            <div class="words-sections">
-                <div class="section-tabs" id="words-tab-control">
-                    <button class="tab-btn active" data-sec="collection">我的收藏</button>
-                    <button class="tab-btn" data-sec="weakness">弱點分析</button>
-                    <button class="tab-btn" data-sec="search-results" id="words-api-tab">搜尋結果</button>
-                </div>
-
-                <div id="words-section-content" class="section-content">
-                    <!-- Dynamic content -->
-                </div>
+            <div id="words-collection-list" class="item-list">
+                <!-- Collection rendered directly here -->
             </div>
         </div>
     </template>
 
-    <template id="view-me">
-        <div class="view me-view">
-            <div class="profile-header">
-                <div class="user-avatar">🎵</div>
-                <div class="user-info">
-                    <h2>Musician Student</h2>
-                    <p id="me-join-date">加入日期: -</p>
+
+
+    <template id="view-daily">
+        <div class="view daily-view">
+            <div class="view-header" style="flex-direction: column; align-items: stretch; margin-bottom: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <h1 style="margin-bottom: 0;">學習進度與設定</h1>
+                    <div id="daily-date" class="date-display" style="font-size: 0.9rem; color: var(--muted);"></div>
                 </div>
+                <p id="me-join-date" style="font-size: 0.85rem; color: var(--muted); margin-top: 6px;">加入日期: -</p>
             </div>
 
-            <div class="stats-card-group">
+            <div class="stats-card-group" style="margin-bottom: 20px;">
                 <div class="me-stat-card">
                     <span class="stat-num" id="me-total-words">0</span>
                     <span class="stat-unit">已掌握</span>
                 </div>
                 <div class="me-stat-card">
                     <span class="stat-num" id="me-streak-record">0</span>
-                    <span class="stat-unit">最高連勝</span>
+                    <span class="stat-unit">總學習天數</span>
                 </div>
                 <div class="me-stat-card">
                     <span class="stat-num" id="me-mastery-score">0</span>
@@ -201,45 +179,24 @@
                 </div>
             </div>
 
-            <div class="settings-list">
-                <div class="setting-item">
-                    <span>跟讀循環次數</span>
-                    <div class="setting-controls" id="me-loop-setting">
-                        <button data-val="1">1</button>
-                        <button data-val="3">3</button>
-                        <button data-val="5">5</button>
-                    </div>
-                </div>
-                <div class="setting-item danger" id="me-clear-data">
-                    <span>清除學習統計 (警告)</span>
-                </div>
-            </div>
-        </div>
-    </template>
-
-    <template id="view-daily">
-        <div class="view daily-view">
-            <div class="view-header">
-                <h1>Today's Learning</h1>
-                <div id="daily-date" class="date-display"></div>
-            </div>
-
             <div id="daily-stats-dashboard" class="stats-dashboard">
                 <!-- Data injected via JS -->
             </div>
-            
-            <div id="daily-card-container" class="flashcard-container">
-                <!-- Word card will be injected here -->
+
+            <div class="settings-list" style="margin-top: 20px;">
+                <div class="setting-item">
+                    <span>🌙 深色模式</span>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </div>
 
-            <div id="daily-actions" class="flashcard-actions hidden">
-                <button class="btn btn-hard" data-rank="0">不會</button>
-                <button class="btn btn-normal" data-rank="1">普通</button>
-                <button class="btn btn-easy" data-rank="2">會</button>
-            </div>
-
-            <div id="daily-progress-footer" class="progress-footer">
-                <div class="progress-text">已完成 <span id="daily-count">0/8</span></div>
+            <div class="settings-list" style="margin-top: 10px;">
+                <div class="setting-item danger" id="me-clear-data" style="cursor: pointer;">
+                    <span>清除學習統計 (這會清空所有的進度紀錄)</span>
+                </div>
             </div>
         </div>
     </template>
@@ -264,7 +221,7 @@
     <template id="view-collection">
         <div class="view collection-view">
             <div class="view-header">
-                <h1>我的單字庫</h1>
+                <h1>我的單字卡</h1>
                 <span id="collection-count" class="badge">0</span>
             </div>
             <div id="collection-list" class="item-list"></div>
@@ -298,15 +255,16 @@
     <template id="view-music">
         <div class="view music-view">
             <div class="view-header">
-                <h1>音樂專業術語</h1>
+                <h1>音樂術語</h1>
             </div>
             <div class="category-tabs" id="music-tabs">
                 <div class="tabs-scroll">
                     <button class="tab-item active" data-category="all">全部</button>
-                    <button class="tab-item" data-category="Performance">Performance</button>
-                    <button class="tab-item" data-category="Jazz">Jazz</button>
-                    <button class="tab-item" data-category="Recording">Recording</button>
-                    <button class="tab-item" data-category="Live">Live</button>
+                    <button class="tab-item" data-category="理論調式">理論調式</button>
+                    <button class="tab-item" data-category="爵士語言">爵士語言</button>
+                    <button class="tab-item" data-category="錄音製作">錄音製作</button>
+                    <button class="tab-item" data-category="演奏技巧">演奏技巧</button>
+                    <button class="tab-item" data-category="音樂風格">音樂風格</button>
                 </div>
             </div>
             <div id="music-terminology-list" class="item-list"></div>
@@ -317,7 +275,7 @@
         <div class="view listening-view">
             <div class="view-header" style="flex-direction: column; align-items: stretch; gap: 15px;">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h1>Listening</h1>
+                    <h1>聽力測驗</h1>
                     <div class="streak-badge">Streak: <span id="listening-streak">0</span></div>
                 </div>
                 
@@ -328,9 +286,11 @@
             </div>
 
             <div class="listening-box">
-                <div class="play-container">
-                    <button id="listening-play-btn" class="play-main-btn">▶</button>
-                    <p id="listening-status">What word did you hear?</p>
+                <div class="play-container-wrapper">
+                    <div class="mini-player-bar">
+                        <button id="listening-play-btn" class="mini-play-btn">▶</button>
+                        <p id="listening-status">What word did you hear?</p>
+                    </div>
                 </div>
 
                 <div id="listening-options" class="options-grid">
@@ -339,6 +299,15 @@
 
                 <div id="listening-feedback" class="feedback-panel hidden">
                     <!-- Result shown here -->
+                    <div id="listening-result-content"></div>
+                    <div id="listening-feedback-actions" style="display: flex; gap: 10px; margin-top: 15px; display: none;">
+                        <button id="listening-add-btn" class="mini-btn" style="flex: 1; padding: 12px; background: rgba(16,185,129,0.1); color: var(--success); border-color: var(--success);">
+                            ➕ 加入單字卡
+                        </button>
+                        <button id="listening-next-btn" class="mini-btn primary" style="flex: 1.5; padding: 12px; font-weight: bold;">
+                            下一題 Next ➔
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -355,31 +324,42 @@
         </div>
     </template>
 
-    <template id="view-daily-english">
-        <div class="view daily-english-view">
+    <template id="view-core">
+        <div class="view core-view">
             <div class="view-header">
-                <h1>Daily English</h1>
+                <h1>核心單字庫</h1>
             </div>
-            <div class="category-tabs" id="daily-english-tabs">
+            <div class="category-tabs" id="core-words-tabs">
                 <div class="tabs-scroll">
                     <button class="tab-item active" data-category="all">全部</button>
-                    <button class="tab-item" data-category="Daily Life">日常生活</button>
-                    <button class="tab-item" data-category="Conversation">社交對話</button>
-                    <button class="tab-item" data-category="Emotion">情緒表達</button>
-                    <button class="tab-item" data-category="Work">工作</button>
-                    <button class="tab-item" data-category="Communication">電話/訊息</button>
+                    <button class="tab-item" data-category="日常用語">日常用語</button>
+                    <button class="tab-item" data-category="基礎核心">基礎核心</button>
+                    <button class="tab-item" data-category="行動描述">行動描述</button>
+                    <button class="tab-item" data-category="邏輯特徵">邏輯特徵</button>
+                    <button class="tab-item" data-category="職場社交">職場社交</button>
                 </div>
             </div>
-            <div id="daily-english-list" class="item-list"></div>
+            <div id="core-words-list" class="item-list"></div>
         </div>
     </template>
     
     <template id="view-shadowing">
         <div class="view shadowing-view">
-            <div class="view-header" style="flex-direction: column; align-items: stretch; gap: 15px;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h1>Shadowing</h1>
-                    <div class="header-settings" style="display: flex; gap: 10px; align-items: center;">
+            <div class="view-header" style="flex-direction: column; align-items: stretch; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h1 style="margin-bottom: 0;">影子跟讀</h1>
+                    <div class="header-settings" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end;">
+                        <!-- Speed Control -->
+                        <div class="speed-selector" style="display: flex; align-items: center; background: var(--secondary); padding: 2px; border-radius: 10px; border: 1px solid var(--border);">
+                            <span style="font-size: 0.7rem; color: var(--muted); margin: 0 5px;">Speed:</span>
+                            <div class="section-tabs" id="shadowing-speed-switcher" style="padding: 0; background: none; box-shadow: none; display: flex; gap: 2px; margin-bottom: 0;">
+                                <button class="loop-btn" data-speed="0.65">0.65x</button>
+                                <button class="loop-btn" data-speed="0.75">0.75x</button>
+                                <button class="loop-btn active" data-speed="1.0">1.0x</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Loop Control -->
                         <div class="loop-selector">
                             <span style="font-size: 0.7rem; color: var(--muted); margin-right: 5px;">Loop:</span>
                             <button class="loop-btn active" data-count="1">1x</button>
@@ -389,32 +369,19 @@
                     </div>
                 </div>
 
-                <div class="section-tabs" id="shadowing-mode-switcher">
+                <div class="section-tabs" id="shadowing-mode-switcher" style="margin-bottom: 0;">
                     <button class="tab-btn active" data-mode="daily">Daily Target (5)</button>
                     <button class="tab-btn" data-mode="practice">Unlimited Practice</button>
                 </div>
-                
-                <p style="font-size: 0.8rem; color: var(--muted); text-align: center; font-style: italic; margin-top: -5px;">
-                    💡 跟讀品質比數量更重要
-                </p>
             </div>
 
-            <div class="shadowing-stats-mini" id="shadowing-stats-mini">
-                <div class="stat-mini-item">Done: <span id="shadow-stat-done">0</span></div>
-                <div class="stat-mini-item">Good: 🌱 <span id="shadow-stat-good">0</span></div>
-                <div class="stat-mini-item">Try: ⚠️ <span id="shadow-stat-try">0</span></div>
+            <div class="shadowing-stats-mini" id="shadowing-stats-mini" style="display: flex; justify-content: center; gap: 20px; font-size: 0.9rem; font-weight: 600; padding: 10px 0;">
+                <div class="stat-mini-item" style="color: var(--muted);">Done: <span id="shadow-stat-done" style="color: var(--text);">0</span></div>
+                <div class="stat-mini-item" style="color: var(--success);">Good: 🌱 <span id="shadow-stat-good">0</span></div>
+                <div class="stat-mini-item" style="color: var(--error);">Try: ⚠️ <span id="shadow-stat-try">0</span></div>
             </div>
 
-            <div class="speed-control-container" style="padding: 10px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 15px;">
-                <span style="font-size: 0.9rem; font-weight: 600;">Speed:</span>
-                <div class="section-tabs" id="shadowing-speed-switcher" style="padding: 0; background: none; box-shadow: none;">
-                    <button class="tab-btn small" data-speed="0.65">0.65x</button>
-                    <button class="tab-btn small" data-speed="0.75">0.75x</button>
-                    <button class="tab-btn small" data-speed="1.0">1.0x</button>
-                </div>
-            </div>
-
-            <div class="shadowing-main" style="min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+            <div class="shadowing-main" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; margin: 10px 0;">
                 <div id="shadowing-quality-badge" class="quality-badge hidden"></div>
                 <div id="shadowing-step-indicator" class="step-indicator hidden">Step 1</div>
                 <div id="shadowing-active-chunk" class="shadowing-active-chunk">Ready?</div>
@@ -453,6 +420,7 @@
     <!-- Global Components -->
     <div id="notification" class="notification hidden"></div>
 
+    <script src="data.js"></script>
     <script src="app.js"></script>
     <template id="view-weakness">
         <div class="view weakness-view">
@@ -503,7 +471,7 @@
         <div class="view pro-review-view">
             <div class="view-header" style="flex-direction:row;justify-content:space-between;align-items:center;">
                 <div style="flex:1;">
-                    <h1 id="pro-review-title" style="font-size:1.5rem; margin-bottom:0;">Pro Review</h1>
+                    <h1 id="pro-review-title" style="font-size:1.5rem; margin-bottom:0;">複習</h1>
                     <p class="subtitle" id="pro-review-subtitle" style="margin-top:2px;">Word 1 / 10</p>
                 </div>
                 <button class="btn btn-secondary shadow-btn" id="pro-review-quit-btn" style="padding:5px 12px; font-size:0.85rem;">Quit</button>

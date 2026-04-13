@@ -254,8 +254,9 @@
 
     <template id="view-music">
         <div class="view music-view">
-            <div class="view-header">
-                <h1>音樂術語</h1>
+            <div class="view-header" style="display:flex; flex-direction:row; justify-content:flex-start; align-items:baseline; gap:12px;">
+                <h1 style="margin-bottom:0;">音樂術語</h1>
+                <button id="music-words-refresh" style="background:none; border:none; color:var(--text); opacity:0.7; font-size:1rem; font-weight:600; cursor:pointer; padding:0;">🔄 刷新單字</button>
             </div>
             <div class="category-tabs" id="music-tabs">
                 <div class="tabs-scroll">
@@ -276,12 +277,7 @@
             <div class="view-header" style="flex-direction: column; align-items: stretch; gap: 15px;">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <h1>聽力測驗</h1>
-                    <div class="streak-badge">Streak: <span id="listening-streak">0</span></div>
-                </div>
-                
-                <div class="section-tabs" id="listening-mode-switcher">
-                    <button class="tab-btn active" data-mode="daily">Daily Target</button>
-                    <button class="tab-btn" data-mode="practice">Unlimited Practice</button>
+                    <div class="streak-badge">Progress: <span id="listening-streak">0/10</span></div>
                 </div>
             </div>
 
@@ -326,8 +322,9 @@
 
     <template id="view-core">
         <div class="view core-view">
-            <div class="view-header">
-                <h1>核心單字庫</h1>
+            <div class="view-header" style="display:flex; flex-direction:row; justify-content:flex-start; align-items:baseline; gap:12px;">
+                <h1 style="margin-bottom:0;">核心單字庫</h1>
+                <button id="core-words-refresh" style="background:none; border:none; color:var(--text); opacity:0.7; font-size:1rem; font-weight:600; cursor:pointer; padding:0;">🔄 刷新單字</button>
             </div>
             <div class="category-tabs" id="core-words-tabs">
                 <div class="tabs-scroll">

@@ -469,7 +469,7 @@ const MUSIC_WORDS = [
     {
         "word": "Dorian",
         "type": "music",
-        "category": "理論調式",
+        "category": "爵士語言",
         "phonetic": "/dorian/",
         "definition_zh": "多利安",
         "definition_en": "Fundamental music theory",
@@ -502,7 +502,7 @@ const MUSIC_WORDS = [
     {
         "word": "Mixolydian",
         "type": "music",
-        "category": "理論調式",
+        "category": "爵士語言",
         "phonetic": "/mixolydian/",
         "definition_zh": "混合利底亞",
         "definition_en": "Fundamental music theory",
@@ -711,7 +711,7 @@ const MUSIC_WORDS = [
     {
         "word": "Syncopation",
         "type": "music",
-        "category": "理論調式",
+        "category": "爵士語言",
         "phonetic": "/syncopation/",
         "definition_zh": "切分音",
         "definition_en": "Fundamental music theory",
@@ -1492,7 +1492,7 @@ const MUSIC_WORDS = [
     {
         "word": "Comping",
         "type": "music",
-        "category": "演奏技巧",
+        "category": "爵士語言",
         "phonetic": "/comping/",
         "definition_zh": "切分伴奏",
         "definition_en": "Advanced playing technique",
@@ -1503,7 +1503,7 @@ const MUSIC_WORDS = [
     {
         "word": "Walking Bass",
         "type": "music",
-        "category": "演奏技巧",
+        "category": "爵士語言",
         "phonetic": "/walking bass/",
         "definition_zh": "步行低音",
         "definition_en": "Advanced playing technique",

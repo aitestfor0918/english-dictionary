@@ -524,7 +524,10 @@ const initLearnDailyCards = () => {
                 // Gather all words already seen this session
                 const seenWords = new Set(state.daily.items.map(i => i.word));
                 // Pull a new batch from the adaptive pool, excluding seen words
-                const moreBatch = getAdaptivePool(8).filter(w => !seenWords.has(w.word)).slice(0, 8);
+                const moreBatch = [
+                    ...getAdaptivePool(20, 'word').filter(w => !seenWords.has(w.word)).slice(0, 7),
+                    ...getAdaptivePool(20, 'music').filter(w => !seenWords.has(w.word)).slice(0, 3)
+                ].sort(() => Math.random() - 0.5);
                 if (moreBatch.length === 0) {
                     container.innerHTML = `
                         <div class="completion-screen" style="min-height:180px;">
@@ -623,11 +626,11 @@ const initLearnDailyCards = () => {
 
 
 const generateDailySet = (dateStr) => {
-    // 每次翻卡學習固定 8 張：6 核心單字 + 2 音樂術語
+    // 每次翻卡學習固定 10 張：7 核心單字 + 3 音樂術語
     const selected = [
-        ...getAdaptivePool(6, 'word'),
-        ...getAdaptivePool(2, 'music')
-    ];
+        ...getAdaptivePool(7, 'word'),
+        ...getAdaptivePool(3, 'music')
+    ].sort(() => Math.random() - 0.5);
 
     state.daily = {
         date: dateStr,
@@ -689,7 +692,6 @@ const initListeningView = () => {
     const optionsGrid = document.getElementById('listening-options');
     const feedbackPanel = document.getElementById('listening-feedback');
     const statusText = document.getElementById('listening-status');
-    const modeTabs = document.querySelectorAll('#listening-mode-switcher .tab-btn');
     const completionScreen = document.getElementById('listening-completion');
     const continueBtn = document.getElementById('listening-continue-btn');
     const endBtn = document.getElementById('listening-end-btn');
@@ -711,7 +713,7 @@ const initListeningView = () => {
         actionsContainer.style.display = 'none';
         mainView.classList.remove('feedback-mode');
         optionsGrid.classList.remove('hidden'); 
-        startNewQuestion();
+        startNewQuestion(true);
     };
 
     addBtn.onclick = () => {
@@ -723,7 +725,7 @@ const initListeningView = () => {
         }
     };
 
-    const startNewQuestion = () => {
+    const startNewQuestion = (autoPlay = false) => {
         mainView.classList.remove('feedback-mode');
         // Check for Daily Goal completion
         if (state.activeListeningMode === 'daily' && state.listeningSessionCount >= 10) {
@@ -735,12 +737,17 @@ const initListeningView = () => {
         feedbackPanel.classList.add('hidden');
         completionScreen.classList.add('hidden');
         optionsGrid.innerHTML = '';
-        streakDisplay.textContent = state.streak;
+        streakDisplay.textContent = state.activeListeningMode === 'daily' ? `${state.listeningSessionCount}/10` : state.listeningSessionCount;
         statusText.textContent = 'What word did you hear?';
         playBtn.classList.remove('playing');
 
-        // Adaptive Selection
-        currentTarget = getAdaptivePool(1)[0];
+        // Adaptive Selection (70% core words, 30% music terms randomly shuffled per 10 questions)
+        const qIndex = state.listeningSessionCount % 10;
+        if (qIndex === 0 || !window.currentBatchOrder) {
+            window.currentBatchOrder = ['word', 'word', 'word', 'word', 'word', 'word', 'word', 'music', 'music', 'music'].sort(() => Math.random() - 0.5);
+        }
+        const targetType = window.currentBatchOrder[qIndex];
+        currentTarget = getAdaptivePool(1, targetType)[0];
 
         // Generate distractors
         const distractors = generateDistractors(currentTarget);
@@ -754,8 +761,9 @@ const initListeningView = () => {
             optionsGrid.appendChild(btn);
         });
 
-        // Auto play first time
-        setTimeout(() => playSound(currentTarget.word), 300);
+        if (autoPlay) {
+            setTimeout(() => playSound(currentTarget.word), 300);
+        }
     };
 
     const playSound = (text) => {
@@ -796,7 +804,7 @@ const initListeningView = () => {
             showFeedback(false);
         }
         saveToStorage();
-        streakDisplay.textContent = state.streak;
+        streakDisplay.textContent = state.activeListeningMode === 'daily' ? `${state.listeningSessionCount}/10` : state.listeningSessionCount;
     };
 
     const showFeedback = (isCorrect) => {
@@ -832,21 +840,10 @@ const initListeningView = () => {
         feedbackPanel.classList.add('hidden');
     };
 
-    // Mode Switcher Logic
-    modeTabs.forEach(tab => {
-        tab.classList.toggle('active', tab.dataset.mode === state.activeListeningMode);
-        tab.onclick = () => {
-            state.activeListeningMode = tab.dataset.mode;
-            modeTabs.forEach(t => t.classList.toggle('active', t === tab));
-            startNewQuestion();
-        };
-    });
-
     // Completion Handlers
     continueBtn.onclick = () => {
         state.activeListeningMode = 'practice';
-        modeTabs.forEach(t => t.classList.toggle('active', t.dataset.mode === 'practice'));
-        startNewQuestion();
+        startNewQuestion(true);
     };
 
     endBtn.onclick = () => {
@@ -1222,12 +1219,12 @@ const initFlashcardsView = () => {
     const actions = document.getElementById('flashcard-actions');
     const progress = document.getElementById('review-progress');
 
-    // Filter words due for review
-    const now = new Date();
-    state.reviewQueue = state.collection.filter(w => {
-        if (!w.next_review) return true;
-        return new Date(w.next_review) <= now;
-    });
+    // 針對性複習或卡片複習沒有特定上限，先拉出一定數量
+    state.reviewQueue = [
+        ...getAdaptivePool(50, 'word'),
+        ...getAdaptivePool(20, 'music')
+    ].sort(() => Math.random() - 0.5);
+
 
     state.currentReviewIndex = 0;
 
@@ -1300,19 +1297,27 @@ const updateSRS = (word, rank) => {
     nextReview.setDate(nextReview.getDate() + daysToAdd);
     nextReview.setHours(0, 0, 0, 0);
 
+    if (!state.progress[word.word]) {
+        state.progress[word.word] = { familiarity: 0 };
+    }
+    state.progress[word.word].nextReviewDate = nextReview.toISOString();
+    state.progress[word.word].familiarity = Math.min(100, state.progress[word.word].familiarity + (rank * 10)); // Rank 0=0, 1=10, 2=20
+    
+    // Also update collection if it happens to be there
     const index = state.collection.findIndex(w => w.word === word.word);
     if (index !== -1) {
         state.collection[index].next_review = nextReview.toISOString();
         if (rank === 2) state.collection[index].familiar = true;
-        saveToStorage();
     }
+    
+    saveToStorage();
 };
 
 // --- 🎵 Music View Logic ---
 const initMusicView = () => {
     const list = document.getElementById('music-terminology-list');
     const tabs = document.querySelectorAll('#music-tabs .tab-item');
-    const PAGE_SIZE = 20;
+    const PAGE_SIZE = 10;
 
     const renderMusicList = (category) => {
         list.innerHTML = '';
@@ -1352,9 +1357,6 @@ const initMusicView = () => {
                     </div>
                 </div>
                 <div class="item-detail hidden">
-                    <div class="explanation">
-                        <strong>💡 教學解析：</strong><br>${item.explanation || item.music_context}
-                    </div>
                     <div class="context">
                         <strong>📍 樂手情境：</strong><br>${item.example ? `"${item.example}"` : '尚無情境例句'}
                     </div>
@@ -1447,6 +1449,16 @@ const initMusicView = () => {
         };
     });
 
+    const refreshBtn = document.getElementById('music-words-refresh');
+    if (refreshBtn) {
+        refreshBtn.onclick = () => {
+            MUSIC_WORDS.sort(() => Math.random() - 0.5);
+            const activeCategory = document.querySelector('#music-tabs .tab-item.active').dataset.category || 'all';
+            renderMusicList(activeCategory);
+            showNotification('已刷新音樂術語 ✨');
+        };
+    }
+
     renderMusicList('all');
 };
 
@@ -1456,7 +1468,7 @@ const initMusicView = () => {
 const initCoreWordsView = () => {
     const list = document.getElementById('core-words-list');
     const tabs = document.querySelectorAll('#core-words-tabs .tab-item');
-    const PAGE_SIZE = 20;
+    const PAGE_SIZE = 10;
 
     const renderCoreList = (category = 'all') => {
         list.innerHTML = '';
@@ -1494,9 +1506,6 @@ const initCoreWordsView = () => {
                     </div>
                 </div>
                 <div class="item-detail hidden">
-                    <div class="explanation">
-                        <strong>💡 教學解析：</strong><br>${item.definition_zh} - ${item.definition_en}
-                    </div>
                     <div class="context">
                         <strong>📍 例句：</strong><br>${item.example ? `"${item.example}"` : '尚無例句'}
                     </div>
@@ -1572,6 +1581,16 @@ const initCoreWordsView = () => {
             renderCoreList(tab.dataset.category);
         };
     });
+
+    const coreRefreshBtn = document.getElementById('core-words-refresh');
+    if (coreRefreshBtn) {
+        coreRefreshBtn.onclick = () => {
+            CORE_WORDS.sort(() => Math.random() - 0.5);
+            const activeCategory = document.querySelector('#core-words-tabs .tab-item.active').dataset.category || 'all';
+            renderCoreList(activeCategory);
+            showNotification('已刷新核心單字 ✨');
+        };
+    }
 
     renderCoreList('all');
 };
@@ -1925,50 +1944,13 @@ const generateProReviewPool = () => {
     const config = state.proReviewConfig || { mode: 'smart', length: 5, context: 'full' };
     const maxCount = parseInt(config.length) || 5;
 
-    // 從使用者的單字卡（收藏）取得複習區源
-    const sourceWords = state.collection;
+    const wordCount = Math.round(maxCount * 0.7);
+    const musicCount = maxCount - wordCount;
 
-    if (sourceWords.length === 0) {
-        showNotification('請先到「單字卡」收藏单字，才能開始複習！');
-        return false; // Signal that pool gen failed
-    }
-
-    let pool = [];
-    const now = new Date();
-
-    // Assign Priority Score
-    const scoredWords = sourceWords.map(w => {
-        let score = 0;
-        const prog = state.progress[w.word];
-
-        if (config.mode === 'free') {
-            score = Math.random() * 10;
-        } else if (!prog || prog.status === 'new') {
-            score = 1;
-        } else {
-            if (prog.status === 'weak') score += 5;
-            if (new Date(prog.nextReviewDate) <= now) score += 4;
-            if (prog.lastErrorDate && (now - new Date(prog.lastErrorDate)) < 24*60*60*1000) score += 3;
-            if (prog.lastReviewDate && (now - new Date(prog.lastReviewDate)) > 7*24*60*60*1000) score += 2;
-        }
-
-        return { wordData: w, score, prog };
-    });
-
-    if (config.mode === 'weak') {
-        const weakPool = scoredWords.filter(item => item.prog && (item.prog.status === 'weak' || calculateWeaknessScore(item.wordData.word) >= 5));
-        pool = weakPool.sort((a, b) => b.score - a.score).slice(0, maxCount).map(i => i.wordData);
-        // Fallback: if no weak words, use all collection words
-        if (pool.length === 0) pool = sourceWords.slice(0, maxCount);
-    } else if (config.mode === 'free') {
-        pool = scoredWords.sort((a, b) => b.score - a.score).slice(0, maxCount).map(i => i.wordData);
-    } else {
-        // Smart mode
-        pool = scoredWords.sort((a, b) => b.score - a.score).slice(0, maxCount).map(i => i.wordData);
-    }
-
-    // Final fallback
-    if (pool.length === 0) pool = sourceWords.slice(0, maxCount);
+    let pool = [
+        ...getAdaptivePool(wordCount, 'word'),
+        ...getAdaptivePool(musicCount, 'music')
+    ].sort(() => Math.random() - 0.5);
 
     let initialWeakCount = 0;
     pool.forEach(w => {

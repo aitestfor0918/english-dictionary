@@ -561,11 +561,21 @@ const initLearnDailyCards = () => {
                 <div class="card-face back">
                     <button class="pronounce-btn" id="ld-pronounce-back" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
                     <h3 style="font-size:1.3rem;">${word.definition_zh}</h3>
-                    <p style="font-size:0.9rem;">${word.definition_en}</p>
-                    <div class="music-context" style="margin-top:14px; border-left:3px solid var(--accent); padding-left:12px; text-align:left; font-size:0.85rem;">
-                        <strong>${word.type === 'music' ? '白話解析' : (word.type === 'daily' ? '情境解析' : '例句')}:</strong>
-                        ${word.explanation || word.music_context || word.example || ''}
+                    ${word.example ? `
+                    <div class="word-example" style="margin-top:15px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <strong style="color:var(--muted); font-size:0.85rem;">例句:</strong>
+                            <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                        </div>
+                        <div style="margin-top:6px; line-height: 1.4; color: var(--text); font-size:0.95rem;">"${word.example}"</div>
+                        ${word.example_zh ? `<div style="margin-top:6px; line-height: 1.4; color: var(--muted); font-size:0.85rem;">${word.example_zh}</div>` : ''}
                     </div>
+                    ` : ''}
+                    ${word.type === 'music' && (word.explanation || word.music_context) ? `
+                    <div style="margin-top:12px; font-size:0.85rem; color: var(--muted); text-align:left; padding: 0 5px;">
+                        <strong>專業解析:</strong> ${word.explanation || word.music_context}
+                    </div>
+                    ` : ''}
                 </div>
             </div>
         `;
@@ -727,17 +737,19 @@ const initListeningView = () => {
 
     const startNewQuestion = (autoPlay = false) => {
         mainView.classList.remove('feedback-mode');
-        // Check for Daily Goal completion
-        if (state.activeListeningMode === 'daily' && state.listeningSessionCount >= 10) {
+        // Check for Goal completion recursively every 10 questions
+        if (state.listeningSessionCount > 0 && state.listeningSessionCount % 10 === 0 && !state.hasListeningContinued) {
             showCompletionUI();
             return;
         }
+        state.hasListeningContinued = false;
 
         isAnswering = false;
         feedbackPanel.classList.add('hidden');
         completionScreen.classList.add('hidden');
         optionsGrid.innerHTML = '';
-        streakDisplay.textContent = state.activeListeningMode === 'daily' ? `${state.listeningSessionCount}/10` : state.listeningSessionCount;
+        const targetStreak = Math.floor(state.listeningSessionCount / 10) * 10 + (state.listeningSessionCount > 0 && state.listeningSessionCount % 10 === 0 && !state.hasListeningContinued ? 0 : 10);
+        streakDisplay.textContent = `${state.listeningSessionCount}/${targetStreak}`;
         statusText.textContent = 'What word did you hear?';
         playBtn.classList.remove('playing');
 
@@ -804,7 +816,8 @@ const initListeningView = () => {
             showFeedback(false);
         }
         saveToStorage();
-        streakDisplay.textContent = state.activeListeningMode === 'daily' ? `${state.listeningSessionCount}/10` : state.listeningSessionCount;
+        const targetStreak = Math.floor(state.listeningSessionCount / 10) * 10 + (state.listeningSessionCount > 0 && state.listeningSessionCount % 10 === 0 && !state.hasListeningContinued ? 0 : 10);
+        streakDisplay.textContent = `${state.listeningSessionCount}/${targetStreak}`;
     };
 
     const showFeedback = (isCorrect) => {
@@ -822,15 +835,28 @@ const initListeningView = () => {
                 <h2 style="color: ${isCorrect ? 'var(--success)' : 'var(--error)'}; margin:0; font-size:1.2rem;">
                     ${isCorrect ? 'Correct! ✅' : 'Wrong ❌'}
                 </h2>
-                ${state.activeListeningMode === 'daily' ? `<span style="font-size:0.8rem; color:var(--muted)">Progress: ${state.listeningSessionCount}/10</span>` : ''}
+                <span style="font-size:0.8rem; color:var(--muted)">Progress: ${state.listeningSessionCount}/${Math.floor(state.listeningSessionCount / 10) * 10 + (state.listeningSessionCount > 0 && state.listeningSessionCount % 10 === 0 && !state.hasListeningContinued ? 0 : 10)}</span>
             </div>
             <div style="margin-top:10px; text-align:left;">
                 <h3 style="font-size:1.4rem; margin-bottom:2px;">${currentTarget.word}</h3>
-                <p style="font-weight:600; color: var(--accent); margin-bottom:5px; font-size:1.1rem;">${currentTarget.definition_zh}</p>
-                <div class="music-context" style="font-size: 0.85rem; line-height:1.4;">
-                    <strong style="color: var(--muted);">${currentTarget.type === 'music' ? '專業解析' : '例句'}:</strong><br>
-                    <div style="margin-top: 2px;">${currentTarget.music_context || currentTarget.explanation || currentTarget.example}</div>
+                <div style="margin-bottom:5px; line-height: 1.3;">
+                    <span style="font-weight:600; color: var(--accent); font-size:1.1rem;">${currentTarget.definition_zh}</span>
+                    ${currentTarget.type === 'music' && (currentTarget.explanation || currentTarget.music_context) ? `
+                    <span style="font-size:0.85rem; color: var(--muted); margin-left:8px;">
+                        ${currentTarget.explanation || currentTarget.music_context}
+                    </span>
+                    ` : ''}
                 </div>
+                ${currentTarget.example ? `
+                <div class="word-example" style="margin-top:8px; background: rgba(255,255,255,0.05); padding: 8px 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <strong style="color:var(--muted); font-size:0.85rem;">例句:</strong>
+                        <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${currentTarget.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                    </div>
+                    <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${currentTarget.example}"</div>
+                    ${currentTarget.example_zh ? `<div style="margin-top:4px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${currentTarget.example_zh}</div>` : ''}
+                </div>
+                ` : ''}
             </div>
         `;
     };
@@ -842,7 +868,7 @@ const initListeningView = () => {
 
     // Completion Handlers
     continueBtn.onclick = () => {
-        state.activeListeningMode = 'practice';
+        state.hasListeningContinued = true;
         startNewQuestion(true);
     };
 
@@ -1253,8 +1279,21 @@ const initFlashcardsView = () => {
                 <div class="card-face back">
                     <button class="pronounce-btn" id="flash-pronounce-back" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
                     <h3>${word.definition_zh}</h3>
-                    <p>${word.definition_en}</p>
-                    ${word.example ? `<div class="word-example" style="margin-top:20px">"${word.example}"</div>` : ''}
+                    ${word.example ? `
+                    <div class="word-example" style="margin-top:15px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <strong style="color:var(--muted); font-size:0.85rem;">例句:</strong>
+                            <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                        </div>
+                        <div style="margin-top:6px; line-height: 1.4; color: var(--text); font-size:0.95rem;">"${word.example}"</div>
+                        ${word.example_zh ? `<div style="margin-top:6px; line-height: 1.4; color: var(--muted); font-size:0.85rem;">${word.example_zh}</div>` : ''}
+                    </div>
+                    ` : ''}
+                    ${word.type === 'music' && (word.explanation || word.music_context) ? `
+                    <div style="margin-top:12px; font-size:0.85rem; color: var(--muted); text-align:left; padding: 0 5px;">
+                        <strong>專業解析:</strong> ${word.explanation || word.music_context}
+                    </div>
+                    ` : ''}
                 </div>
             </div>
         `;
@@ -1358,7 +1397,11 @@ const initMusicView = () => {
                 </div>
                 <div class="item-detail hidden">
                     <div class="context">
-                        <strong>📍 樂手情境：</strong><br>${item.example ? `"${item.example}"` : '尚無情境例句'}
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <strong>📍 樂手情境：</strong>
+                            ${item.example ? `<button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>` : ''}
+                        </div>
+                        <div style="margin-top:4px;">${item.example ? `"${item.example}"` : '尚無情境例句'}</div>
                     </div>
                     <div class="detail-actions">
                         <button class="mini-btn" id="pronounce-music-${item.word.replace(/[^a-zA-Z]/g, '-')}" style="flex:0.5;">🔊 發音</button>
@@ -1507,7 +1550,11 @@ const initCoreWordsView = () => {
                 </div>
                 <div class="item-detail hidden">
                     <div class="context">
-                        <strong>📍 例句：</strong><br>${item.example ? `"${item.example}"` : '尚無例句'}
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <strong>📍 例句：</strong>
+                            ${item.example ? `<button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>` : ''}
+                        </div>
+                        <div style="margin-top:4px;">${item.example ? `"${item.example}"` : '尚無例句'}</div>
                     </div>
                     <div class="detail-actions">
                         <button class="mini-btn" id="pronounce-core-${item.word.replace(/[^a-zA-Z]/g, '-')}" style="flex:0.5;">🔊 發音</button>

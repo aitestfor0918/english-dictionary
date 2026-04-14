@@ -754,6 +754,7 @@ h1 {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
+    color: var(--text);
 }
 
 .option-btn:active {
@@ -1057,7 +1058,7 @@ h1 {
 
 .shadow-btn.primary {
     background: var(--text);
-    color: #fff;
+    color: var(--bg);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 

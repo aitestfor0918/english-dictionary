@@ -1,0 +1,1602 @@
+[
+  {
+    "word": "Blues",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Jazz",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Funk",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Soul",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Gospel",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Fusion",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Bebop",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Hard Bop",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Bossa Nova",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Reggae",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Motown",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "R&B",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Rock",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Metal",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Punk",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Country",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Folk",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Classical",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Baroque",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Romantic",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Ambient",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Lo-fi",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Synthwave",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Shoegaze",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Avant-garde",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Salsa",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Tango",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Flamenco",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Ska",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Grunge",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Dubstep",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Techno",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "House",
+    "word_type": "music",
+    "category": "音樂風格"
+  },
+  {
+    "word": "Pitch",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Interval",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Chord",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Scale",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Rhythm",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Tempo",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Arpeggio",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Cadence",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Harmony",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Dorian",
+    "word_type": "music",
+    "category": "爵士語言"
+  },
+  {
+    "word": "Phrygian",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Lydian",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Mixolydian",
+    "word_type": "music",
+    "category": "爵士語言"
+  },
+  {
+    "word": "Aeolian",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Locrian",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Chromatic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Dynamics",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Crescendo",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Decrescendo",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Staccato",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Legato",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Accent",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Bar",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Clef",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Sharp",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Flat",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Natural",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Octave",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Polyphony",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Modulation",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Metronome",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Syncopation",
+    "word_type": "music",
+    "category": "爵士語言"
+  },
+  {
+    "word": "Tritone",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Counterpoint",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Overtone",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Polyrhythm",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Tonic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Dominant",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Subdominant",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Relative Minor",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Circle of Fifths",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Time Signature",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Subdivision",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "BPM",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Reverb",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Delay",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Compressor",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Equalizer",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Limiter",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Panning",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Gain",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Sidechain",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Bus",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Monitor",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Latency",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Plugin",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Mastering",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Mixing",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Tracking",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Overdub",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Normalize",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Bit Depth",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Sample Rate",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "DAW",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "MIDI",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Envelope",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Attack",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Release",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Filter",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Threshold",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Ratio",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Knee",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Makeup Gain",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Low Pass",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "High Pass",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Saturation",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Phase",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Clipping",
+    "word_type": "music",
+    "category": "錄音製作"
+  },
+  {
+    "word": "Vibrato",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Glissando",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Portamento",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Tremolo",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Slap",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Pop",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Ghost Note",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Hammer-on",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Pull-off",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Bending",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Mute",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Palm Mute",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Harmonics",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Double Stop",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Sweep Picking",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Alternate Picking",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Tapping",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Fingerstyle",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Strumming",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Pizzicato",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Tremolo picking",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Hybrid Picking",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Legato playing",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Vamping",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Comping",
+    "word_type": "music",
+    "category": "爵士語言"
+  },
+  {
+    "word": "Walking Bass",
+    "word_type": "music",
+    "category": "爵士語言"
+  },
+  {
+    "word": "Shuffle",
+    "word_type": "music",
+    "category": "演奏技巧"
+  },
+  {
+    "word": "Arpeggiator",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Sustain Pedal",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Whammy bar",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Fret",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Bridge",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Pickup",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Pickup Selector",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Single Coil",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Humbucker",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Amps",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Cabinet",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Valve",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Solid State",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Overdrive",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Distortion",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Fuzz",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Wah-wah",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Chorus effect",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Phaser",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Flanger",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Tremolo pedal",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Octaver",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Pitch Shifter",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Tuner",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Patch cable",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "DI Box",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Condenser mic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Dynamic mic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Ribbon mic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "XLR",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Jack",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Monitors",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Preamp",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Power amp",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Mixer",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Fader",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Knob",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Automation",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Quantize",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Grid",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Tempo Map",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Metronome mark",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Bar line",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Double bar",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Repeat sign",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Da Capo",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Dal Segno",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Coda",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Fine",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Simile",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Solo",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Duo",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Trio",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Quartet",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Quintet",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Big Band",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Brass",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Strings",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Woodwinds",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Percussion",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Harmony vocals",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Lead vocals",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Backing track",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Stem",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "WAV",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "MP3",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "FLAC",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Track",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Region",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Loop",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Sample",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Acoustic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Electric",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Semi-acoustic",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Fretless",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Action",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Neck",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Body",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Scale length",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Tuning",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Drop D",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Open Tuning",
+    "word_type": "music",
+    "category": "理論調式"
+  },
+  {
+    "word": "Analyze",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Approach",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Assess",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Assume",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Authority",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Available",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Benefit",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Concept",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Consistent",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Context",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Create",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Data",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Definition",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Derived",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Distribution",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Economic",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Environment",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Evidence",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Establish",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Estimate",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Factor",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Financial",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Formula",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Function",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Identify",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Income",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Indicate",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Individual",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Interpret",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Involved",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Issue",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Labour",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Legal",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Legislation",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Major",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Method",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Occur",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Percent",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Period",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Policy",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Principle",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Procedure",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Process",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Required",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Research",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Response",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Role",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Section",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Sector",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Significant",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Similar",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Source",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Specific",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Structure",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Theory",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Variable",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Achieve",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Acquisition",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Administration",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Affect",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Appropriate",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Aspect",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Assistance",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Category",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Chapter",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Commission",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Community",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Complex",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Compute",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Conclusion",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Conduct",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Consequence",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Construction",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Consumer",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Credit",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Cultural",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Design",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Distinct",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Element",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Equation",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Evaluate",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Feature",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Final",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Focus",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Impact",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Invest",
+    "word_type": "word",
+    "category": "職場社交"
+  },
+  {
+    "word": "Item",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Journal",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Maintain",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Normal",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Obtain",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Participate",
+    "word_type": "word",
+    "category": "行動描述"
+  },
+  {
+    "word": "Perceive",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Positive",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Potential",
+    "word_type": "word",
+    "category": "邏輯特徵"
+  },
+  {
+    "word": "Previous",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Primary",
+    "word_type": "word",
+    "category": "基礎核心"
+  },
+  {
+    "word": "Purchase",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Range",
+    "word_type": "word",
+    "category": "日常用語"
+  },
+  {
+    "word": "Region",
+    "word_type": "word",
+    "category": "基礎核心"
+  }
+]

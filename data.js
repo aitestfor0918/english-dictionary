@@ -12,8 +12,9 @@ const MUSIC_WORDS = [
         "definition_zh": "藍調",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：藍調。",
-        "example": "Observe the Blues elements.",
-        "level": "medium"
+        "example": "I've been heavily influenced by early blues records.",
+        "level": "medium",
+        "example_zh": "我深受早期藍調唱片的影響。"
     },
     {
         "word": "Jazz",
@@ -23,8 +24,9 @@ const MUSIC_WORDS = [
         "definition_zh": "爵士樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：爵士樂。",
-        "example": "Observe the Jazz elements.",
-        "level": "medium"
+        "example": "Miles Davis is a legendary figure in jazz.",
+        "level": "medium",
+        "example_zh": "Miles Davis 是爵士樂領域的傳奇人物。"
     },
     {
         "word": "Funk",
@@ -34,8 +36,9 @@ const MUSIC_WORDS = [
         "definition_zh": "放克",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：放克。",
-        "example": "Observe the Funk elements.",
-        "level": "medium"
+        "example": "Funk music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "放克音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Soul",
@@ -45,8 +48,9 @@ const MUSIC_WORDS = [
         "definition_zh": "靈魂樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：靈魂樂。",
-        "example": "Observe the Soul elements.",
-        "level": "medium"
+        "example": "The band seamlessly blends elements of soul into their tracks.",
+        "level": "medium",
+        "example_zh": "這個樂團將靈魂樂的元素完美融合進了他們的曲目中。"
     },
     {
         "word": "Gospel",
@@ -56,8 +60,9 @@ const MUSIC_WORDS = [
         "definition_zh": "福音音樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：福音音樂。",
-        "example": "Observe the Gospel elements.",
-        "level": "medium"
+        "example": "I've been heavily influenced by early gospel records.",
+        "level": "medium",
+        "example_zh": "我深受早期福音音樂唱片的影響。"
     },
     {
         "word": "Fusion",
@@ -67,8 +72,9 @@ const MUSIC_WORDS = [
         "definition_zh": "融合爵士",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：融合爵士。",
-        "example": "Observe the Fusion elements.",
-        "level": "medium"
+        "example": "The distinct rhythm is a hallmark of fusion.",
+        "level": "medium",
+        "example_zh": "獨特的節奏是融合爵士的標誌。"
     },
     {
         "word": "Bebop",
@@ -78,8 +84,9 @@ const MUSIC_WORDS = [
         "definition_zh": "咆哮樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：咆哮樂。",
-        "example": "Observe the Bebop elements.",
-        "level": "medium"
+        "example": "Bebop music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "咆哮樂音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Hard Bop",
@@ -89,8 +96,9 @@ const MUSIC_WORDS = [
         "definition_zh": "硬派咆哮",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：硬派咆哮。",
-        "example": "Observe the Hard Bop elements.",
-        "level": "medium"
+        "example": "We decided to play a Hard Bop piece for the finale.",
+        "level": "medium",
+        "example_zh": "我們決定在壓軸表演中演奏一首硬派咆哮曲目。"
     },
     {
         "word": "Bossa Nova",
@@ -100,8 +108,9 @@ const MUSIC_WORDS = [
         "definition_zh": "波薩諾瓦",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：波薩諾瓦。",
-        "example": "Observe the Bossa Nova elements.",
-        "level": "medium"
+        "example": "Bossa Nova music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "波薩諾瓦音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Reggae",
@@ -111,8 +120,9 @@ const MUSIC_WORDS = [
         "definition_zh": "雷鬼",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：雷鬼。",
-        "example": "Observe the Reggae elements.",
-        "level": "medium"
+        "example": "We decided to play a reggae piece for the finale.",
+        "level": "medium",
+        "example_zh": "我們決定在壓軸表演中演奏一首雷鬼曲目。"
     },
     {
         "word": "Motown",
@@ -122,8 +132,9 @@ const MUSIC_WORDS = [
         "definition_zh": "摩城",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：摩城。",
-        "example": "Observe the Motown elements.",
-        "level": "medium"
+        "example": "The distinct rhythm is a hallmark of motown.",
+        "level": "medium",
+        "example_zh": "獨特的節奏是摩城的標誌。"
     },
     {
         "word": "R&B",
@@ -133,8 +144,9 @@ const MUSIC_WORDS = [
         "definition_zh": "節奏藍調",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：節奏藍調。",
-        "example": "Observe the R&B elements.",
-        "level": "medium"
+        "example": "The band seamlessly blends elements of R&B into their tracks.",
+        "level": "medium",
+        "example_zh": "這個樂團將節奏藍調的元素完美融合進了他們的曲目中。"
     },
     {
         "word": "Rock",
@@ -144,8 +156,9 @@ const MUSIC_WORDS = [
         "definition_zh": "搖滾",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：搖滾。",
-        "example": "Observe the Rock elements.",
-        "level": "medium"
+        "example": "I've been heavily influenced by early rock records.",
+        "level": "medium",
+        "example_zh": "我深受早期搖滾唱片的影響。"
     },
     {
         "word": "Metal",
@@ -155,8 +168,9 @@ const MUSIC_WORDS = [
         "definition_zh": "重金屬",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：重金屬。",
-        "example": "Observe the Metal elements.",
-        "level": "medium"
+        "example": "Metal music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "重金屬音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Punk",
@@ -166,8 +180,9 @@ const MUSIC_WORDS = [
         "definition_zh": "龐克",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：龐克。",
-        "example": "Observe the Punk elements.",
-        "level": "medium"
+        "example": "The band seamlessly blends elements of punk into their tracks.",
+        "level": "medium",
+        "example_zh": "這個樂團將龐克的元素完美融合進了他們的曲目中。"
     },
     {
         "word": "Country",
@@ -177,8 +192,9 @@ const MUSIC_WORDS = [
         "definition_zh": "鄉村",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：鄉村。",
-        "example": "Observe the Country elements.",
-        "level": "medium"
+        "example": "That album really captures the essence of country.",
+        "level": "medium",
+        "example_zh": "那張專輯真正捕捉到了鄉村的精髓。"
     },
     {
         "word": "Folk",
@@ -188,8 +204,9 @@ const MUSIC_WORDS = [
         "definition_zh": "民謠",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：民謠。",
-        "example": "Observe the Folk elements.",
-        "level": "medium"
+        "example": "We decided to play a folk piece for the finale.",
+        "level": "medium",
+        "example_zh": "我們決定在壓軸表演中演奏一首民謠曲目。"
     },
     {
         "word": "Classical",
@@ -199,8 +216,9 @@ const MUSIC_WORDS = [
         "definition_zh": "古典音樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：古典音樂。",
-        "example": "Observe the Classical elements.",
-        "level": "medium"
+        "example": "We decided to play a classical piece for the finale.",
+        "level": "medium",
+        "example_zh": "我們決定在壓軸表演中演奏一首古典音樂曲目。"
     },
     {
         "word": "Baroque",
@@ -210,8 +228,9 @@ const MUSIC_WORDS = [
         "definition_zh": "巴洛克",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：巴洛克。",
-        "example": "Observe the Baroque elements.",
-        "level": "medium"
+        "example": "I've been heavily influenced by early baroque records.",
+        "level": "medium",
+        "example_zh": "我深受早期巴洛克唱片的影響。"
     },
     {
         "word": "Romantic",
@@ -221,8 +240,9 @@ const MUSIC_WORDS = [
         "definition_zh": "浪漫派",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：浪漫派。",
-        "example": "Observe the Romantic elements.",
-        "level": "medium"
+        "example": "Miles Davis is a legendary figure in romantic.",
+        "level": "medium",
+        "example_zh": "Miles Davis 是浪漫派領域的傳奇人物。"
     },
     {
         "word": "Ambient",
@@ -232,8 +252,9 @@ const MUSIC_WORDS = [
         "definition_zh": "氛圍音樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：氛圍音樂。",
-        "example": "Observe the Ambient elements.",
-        "level": "medium"
+        "example": "We decided to play a ambient piece for the finale.",
+        "level": "medium",
+        "example_zh": "我們決定在壓軸表演中演奏一首氛圍音樂曲目。"
     },
     {
         "word": "Lo-fi",
@@ -243,8 +264,9 @@ const MUSIC_WORDS = [
         "definition_zh": "低傳真",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：低傳真。",
-        "example": "Observe the Lo-fi elements.",
-        "level": "medium"
+        "example": "That album really captures the essence of lo-fi.",
+        "level": "medium",
+        "example_zh": "那張專輯真正捕捉到了低傳真的精髓。"
     },
     {
         "word": "Synthwave",
@@ -254,8 +276,9 @@ const MUSIC_WORDS = [
         "definition_zh": "合成器波",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：合成器波。",
-        "example": "Observe the Synthwave elements.",
-        "level": "medium"
+        "example": "We decided to play a synthwave piece for the finale.",
+        "level": "medium",
+        "example_zh": "我們決定在壓軸表演中演奏一首合成器波曲目。"
     },
     {
         "word": "Shoegaze",
@@ -265,8 +288,9 @@ const MUSIC_WORDS = [
         "definition_zh": "瞪鞋搖滾",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：瞪鞋搖滾。",
-        "example": "Observe the Shoegaze elements.",
-        "level": "medium"
+        "example": "Miles Davis is a legendary figure in shoegaze.",
+        "level": "medium",
+        "example_zh": "Miles Davis 是瞪鞋搖滾領域的傳奇人物。"
     },
     {
         "word": "Avant-garde",
@@ -276,8 +300,9 @@ const MUSIC_WORDS = [
         "definition_zh": "前衛派",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：前衛派。",
-        "example": "Observe the Avant-garde elements.",
-        "level": "medium"
+        "example": "I've been heavily influenced by early avant-garde records.",
+        "level": "medium",
+        "example_zh": "我深受早期前衛派唱片的影響。"
     },
     {
         "word": "Salsa",
@@ -287,8 +312,9 @@ const MUSIC_WORDS = [
         "definition_zh": "騷莎",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：騷莎。",
-        "example": "Observe the Salsa elements.",
-        "level": "medium"
+        "example": "Salsa music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "騷莎音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Tango",
@@ -298,8 +324,9 @@ const MUSIC_WORDS = [
         "definition_zh": "探戈",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：探戈。",
-        "example": "Observe the Tango elements.",
-        "level": "medium"
+        "example": "The band seamlessly blends elements of tango into their tracks.",
+        "level": "medium",
+        "example_zh": "這個樂團將探戈的元素完美融合進了他們的曲目中。"
     },
     {
         "word": "Flamenco",
@@ -309,8 +336,9 @@ const MUSIC_WORDS = [
         "definition_zh": "佛朗明哥",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：佛朗明哥。",
-        "example": "Observe the Flamenco elements.",
-        "level": "medium"
+        "example": "Flamenco music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "佛朗明哥音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Ska",
@@ -320,8 +348,9 @@ const MUSIC_WORDS = [
         "definition_zh": "斯卡",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：斯卡。",
-        "example": "Observe the Ska elements.",
-        "level": "medium"
+        "example": "Ska music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "斯卡音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "Grunge",
@@ -331,8 +360,9 @@ const MUSIC_WORDS = [
         "definition_zh": "油漬搖滾",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：油漬搖滾。",
-        "example": "Observe the Grunge elements.",
-        "level": "medium"
+        "example": "The distinct rhythm is a hallmark of grunge.",
+        "level": "medium",
+        "example_zh": "獨特的節奏是油漬搖滾的標誌。"
     },
     {
         "word": "Dubstep",
@@ -342,8 +372,9 @@ const MUSIC_WORDS = [
         "definition_zh": "迴響貝斯",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：迴響貝斯。",
-        "example": "Observe the Dubstep elements.",
-        "level": "medium"
+        "example": "The band seamlessly blends elements of dubstep into their tracks.",
+        "level": "medium",
+        "example_zh": "這個樂團將迴響貝斯的元素完美融合進了他們的曲目中。"
     },
     {
         "word": "Techno",
@@ -353,8 +384,9 @@ const MUSIC_WORDS = [
         "definition_zh": "科技舞曲",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：科技舞曲。",
-        "example": "Observe the Techno elements.",
-        "level": "medium"
+        "example": "Techno music emerged and popularized quickly in that era.",
+        "level": "medium",
+        "example_zh": "科技舞曲音樂在那個時代迅速出現並普及。"
     },
     {
         "word": "House",
@@ -364,8 +396,9 @@ const MUSIC_WORDS = [
         "definition_zh": "浩室",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：浩室。",
-        "example": "Observe the House elements.",
-        "level": "medium"
+        "example": "Miles Davis is a legendary figure in house.",
+        "level": "medium",
+        "example_zh": "Miles Davis 是浩室領域的傳奇人物。"
     },
     {
         "word": "Pitch",
@@ -375,8 +408,9 @@ const MUSIC_WORDS = [
         "definition_zh": "音高",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：音高。",
-        "example": "Pay attention to the Pitch.",
-        "level": "medium"
+        "example": "Practicing pitch will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習音高絕對能提升你的音感。"
     },
     {
         "word": "Interval",
@@ -386,8 +420,9 @@ const MUSIC_WORDS = [
         "definition_zh": "音程",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：音程。",
-        "example": "Pay attention to the Interval.",
-        "level": "medium"
+        "example": "Pay close attention to the interval when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意音程。"
     },
     {
         "word": "Chord",
@@ -397,8 +432,9 @@ const MUSIC_WORDS = [
         "definition_zh": "和弦",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：和弦。",
-        "example": "Pay attention to the Chord.",
-        "level": "medium"
+        "example": "The progressive shift built on chord gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在和弦上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Scale",
@@ -408,8 +444,9 @@ const MUSIC_WORDS = [
         "definition_zh": "音階",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：音階。",
-        "example": "Pay attention to the Scale.",
-        "level": "medium"
+        "example": "Pay close attention to the scale when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意音階。"
     },
     {
         "word": "Rhythm",
@@ -419,8 +456,9 @@ const MUSIC_WORDS = [
         "definition_zh": "節奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：節奏。",
-        "example": "Pay attention to the Rhythm.",
-        "level": "medium"
+        "example": "She spent hours analyzing the rhythm of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的節奏。"
     },
     {
         "word": "Tempo",
@@ -430,8 +468,9 @@ const MUSIC_WORDS = [
         "definition_zh": "節拍速度",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：節拍速度。",
-        "example": "Pay attention to the Tempo.",
-        "level": "medium"
+        "example": "She spent hours analyzing the tempo of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的節拍速度。"
     },
     {
         "word": "Arpeggio",
@@ -441,8 +480,9 @@ const MUSIC_WORDS = [
         "definition_zh": "琶音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：琶音。",
-        "example": "Pay attention to the Arpeggio.",
-        "level": "medium"
+        "example": "The composer's use of arpeggio here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對琶音的運用相當非傳統。"
     },
     {
         "word": "Cadence",
@@ -452,8 +492,9 @@ const MUSIC_WORDS = [
         "definition_zh": "終止式",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：終止式。",
-        "example": "Pay attention to the Cadence.",
-        "level": "medium"
+        "example": "She spent hours analyzing the cadence of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的終止式。"
     },
     {
         "word": "Harmony",
@@ -463,8 +504,9 @@ const MUSIC_WORDS = [
         "definition_zh": "和聲",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：和聲。",
-        "example": "Pay attention to the Harmony.",
-        "level": "medium"
+        "example": "The composer's use of harmony here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對和聲的運用相當非傳統。"
     },
     {
         "word": "Dorian",
@@ -474,8 +516,9 @@ const MUSIC_WORDS = [
         "definition_zh": "多利安",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：多利安。",
-        "example": "Pay attention to the Dorian.",
-        "level": "medium"
+        "example": "The bassist laid down a solid dorian groove.",
+        "level": "medium",
+        "example_zh": "貝斯手鋪墊了一個扎實的多利安律動。"
     },
     {
         "word": "Phrygian",
@@ -485,8 +528,9 @@ const MUSIC_WORDS = [
         "definition_zh": "弗里吉亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：弗里吉亞。",
-        "example": "Pay attention to the Phrygian.",
-        "level": "medium"
+        "example": "Pay close attention to the phrygian when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意弗里吉亞。"
     },
     {
         "word": "Lydian",
@@ -496,8 +540,9 @@ const MUSIC_WORDS = [
         "definition_zh": "利底亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：利底亞。",
-        "example": "Pay attention to the Lydian.",
-        "level": "medium"
+        "example": "She spent hours analyzing the lydian of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的利底亞。"
     },
     {
         "word": "Mixolydian",
@@ -507,8 +552,9 @@ const MUSIC_WORDS = [
         "definition_zh": "混合利底亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：混合利底亞。",
-        "example": "Pay attention to the Mixolydian.",
-        "level": "medium"
+        "example": "Let's try applying some mixolydian to this standard.",
+        "level": "medium",
+        "example_zh": "我們試著在這首標準曲中應用一些混合利底亞吧。"
     },
     {
         "word": "Aeolian",
@@ -518,8 +564,9 @@ const MUSIC_WORDS = [
         "definition_zh": "愛奧尼亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：愛奧尼亞。",
-        "example": "Pay attention to the Aeolian.",
-        "level": "medium"
+        "example": "The composer's use of aeolian here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對愛奧尼亞的運用相當非傳統。"
     },
     {
         "word": "Locrian",
@@ -529,8 +576,9 @@ const MUSIC_WORDS = [
         "definition_zh": "洛克里亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：洛克里亞。",
-        "example": "Pay attention to the Locrian.",
-        "level": "medium"
+        "example": "The progressive shift built on locrian gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在洛克里亞上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Chromatic",
@@ -540,8 +588,9 @@ const MUSIC_WORDS = [
         "definition_zh": "半音階",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：半音階。",
-        "example": "Pay attention to the Chromatic.",
-        "level": "medium"
+        "example": "Can you identify the chromatic in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的半音階嗎？"
     },
     {
         "word": "Dynamics",
@@ -551,8 +600,9 @@ const MUSIC_WORDS = [
         "definition_zh": "動態強度",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：動態強度。",
-        "example": "Pay attention to the Dynamics.",
-        "level": "medium"
+        "example": "Understanding dynamics is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解動態強度對於進階作曲至關重要。"
     },
     {
         "word": "Crescendo",
@@ -562,8 +612,9 @@ const MUSIC_WORDS = [
         "definition_zh": "漸強",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：漸強。",
-        "example": "Pay attention to the Crescendo.",
-        "level": "medium"
+        "example": "The composer's use of crescendo here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對漸強的運用相當非傳統。"
     },
     {
         "word": "Decrescendo",
@@ -573,8 +624,9 @@ const MUSIC_WORDS = [
         "definition_zh": "漸弱",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：漸弱。",
-        "example": "Pay attention to the Decrescendo.",
-        "level": "medium"
+        "example": "Practicing decrescendo will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習漸弱絕對能提升你的音感。"
     },
     {
         "word": "Staccato",
@@ -584,8 +636,9 @@ const MUSIC_WORDS = [
         "definition_zh": "斷奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：斷奏。",
-        "example": "Pay attention to the Staccato.",
-        "level": "medium"
+        "example": "She spent hours analyzing the staccato of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的斷奏。"
     },
     {
         "word": "Legato",
@@ -595,8 +648,9 @@ const MUSIC_WORDS = [
         "definition_zh": "連奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：連奏。",
-        "example": "Pay attention to the Legato.",
-        "level": "medium"
+        "example": "Pay close attention to the legato when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意連奏。"
     },
     {
         "word": "Accent",
@@ -606,8 +660,9 @@ const MUSIC_WORDS = [
         "definition_zh": "重音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：重音。",
-        "example": "Pay attention to the Accent.",
-        "level": "medium"
+        "example": "Understanding accent is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解重音對於進階作曲至關重要。"
     },
     {
         "word": "Bar",
@@ -617,8 +672,9 @@ const MUSIC_WORDS = [
         "definition_zh": "小節線",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：小節線。",
-        "example": "Pay attention to the Bar.",
-        "level": "medium"
+        "example": "Understanding bar is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解小節線對於進階作曲至關重要。"
     },
     {
         "word": "Clef",
@@ -628,8 +684,9 @@ const MUSIC_WORDS = [
         "definition_zh": "譜號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：譜號。",
-        "example": "Pay attention to the Clef.",
-        "level": "medium"
+        "example": "The composer's use of clef here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對譜號的運用相當非傳統。"
     },
     {
         "word": "Sharp",
@@ -639,8 +696,9 @@ const MUSIC_WORDS = [
         "definition_zh": "升號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：升號。",
-        "example": "Pay attention to the Sharp.",
-        "level": "medium"
+        "example": "She spent hours analyzing the sharp of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的升號。"
     },
     {
         "word": "Flat",
@@ -650,8 +708,9 @@ const MUSIC_WORDS = [
         "definition_zh": "降號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：降號。",
-        "example": "Pay attention to the Flat.",
-        "level": "medium"
+        "example": "Can you identify the flat in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的降號嗎？"
     },
     {
         "word": "Natural",
@@ -661,8 +720,9 @@ const MUSIC_WORDS = [
         "definition_zh": "還原號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：還原號。",
-        "example": "Pay attention to the Natural.",
-        "level": "medium"
+        "example": "Can you identify the natural in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的還原號嗎？"
     },
     {
         "word": "Octave",
@@ -672,8 +732,9 @@ const MUSIC_WORDS = [
         "definition_zh": "八度",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：八度。",
-        "example": "Pay attention to the Octave.",
-        "level": "medium"
+        "example": "The progressive shift built on octave gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在八度上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Polyphony",
@@ -683,8 +744,9 @@ const MUSIC_WORDS = [
         "definition_zh": "複音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：複音。",
-        "example": "Pay attention to the Polyphony.",
-        "level": "medium"
+        "example": "Practicing polyphony will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習複音絕對能提升你的音感。"
     },
     {
         "word": "Modulation",
@@ -694,8 +756,9 @@ const MUSIC_WORDS = [
         "definition_zh": "轉調",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：轉調。",
-        "example": "Pay attention to the Modulation.",
-        "level": "medium"
+        "example": "The progressive shift built on modulation gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在轉調上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Metronome",
@@ -705,8 +768,9 @@ const MUSIC_WORDS = [
         "definition_zh": "節拍器",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：節拍器。",
-        "example": "Pay attention to the Metronome.",
-        "level": "medium"
+        "example": "She spent hours analyzing the metronome of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的節拍器。"
     },
     {
         "word": "Syncopation",
@@ -716,8 +780,9 @@ const MUSIC_WORDS = [
         "definition_zh": "切分音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：切分音。",
-        "example": "Pay attention to the Syncopation.",
-        "level": "medium"
+        "example": "The bassist laid down a solid syncopation groove.",
+        "level": "medium",
+        "example_zh": "貝斯手鋪墊了一個扎實的切分音律動。"
     },
     {
         "word": "Tritone",
@@ -727,8 +792,9 @@ const MUSIC_WORDS = [
         "definition_zh": "三全音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：三全音。",
-        "example": "Pay attention to the Tritone.",
-        "level": "medium"
+        "example": "Understanding tritone is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解三全音對於進階作曲至關重要。"
     },
     {
         "word": "Counterpoint",
@@ -738,8 +804,9 @@ const MUSIC_WORDS = [
         "definition_zh": "對位法",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：對位法。",
-        "example": "Pay attention to the Counterpoint.",
-        "level": "medium"
+        "example": "The progressive shift built on counterpoint gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在對位法上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Overtone",
@@ -749,8 +816,9 @@ const MUSIC_WORDS = [
         "definition_zh": "泛音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：泛音。",
-        "example": "Pay attention to the Overtone.",
-        "level": "medium"
+        "example": "Pay close attention to the overtone when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意泛音。"
     },
     {
         "word": "Polyrhythm",
@@ -760,8 +828,9 @@ const MUSIC_WORDS = [
         "definition_zh": "複合節奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：複合節奏。",
-        "example": "Pay attention to the Polyrhythm.",
-        "level": "medium"
+        "example": "Understanding polyrhythm is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解複合節奏對於進階作曲至關重要。"
     },
     {
         "word": "Tonic",
@@ -771,8 +840,9 @@ const MUSIC_WORDS = [
         "definition_zh": "主音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：主音。",
-        "example": "Pay attention to the Tonic.",
-        "level": "medium"
+        "example": "Understanding tonic is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解主音對於進階作曲至關重要。"
     },
     {
         "word": "Dominant",
@@ -782,8 +852,9 @@ const MUSIC_WORDS = [
         "definition_zh": "屬音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：屬音。",
-        "example": "Pay attention to the Dominant.",
-        "level": "medium"
+        "example": "Pay close attention to the dominant when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意屬音。"
     },
     {
         "word": "Subdominant",
@@ -793,8 +864,9 @@ const MUSIC_WORDS = [
         "definition_zh": "下屬音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：下屬音。",
-        "example": "Pay attention to the Subdominant.",
-        "level": "medium"
+        "example": "Practicing subdominant will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習下屬音絕對能提升你的音感。"
     },
     {
         "word": "Relative Minor",
@@ -804,8 +876,9 @@ const MUSIC_WORDS = [
         "definition_zh": "關係小調",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：關係小調。",
-        "example": "Pay attention to the Relative Minor.",
-        "level": "medium"
+        "example": "The composer's use of Relative Minor here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對關係小調的運用相當非傳統。"
     },
     {
         "word": "Circle of Fifths",
@@ -815,8 +888,9 @@ const MUSIC_WORDS = [
         "definition_zh": "五度圈",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：五度圈。",
-        "example": "Pay attention to the Circle of Fifths.",
-        "level": "medium"
+        "example": "The composer's use of Circle of Fifths here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對五度圈的運用相當非傳統。"
     },
     {
         "word": "Time Signature",
@@ -826,8 +900,9 @@ const MUSIC_WORDS = [
         "definition_zh": "拍號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：拍號。",
-        "example": "Pay attention to the Time Signature.",
-        "level": "medium"
+        "example": "Understanding Time Signature is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解拍號對於進階作曲至關重要。"
     },
     {
         "word": "Subdivision",
@@ -837,8 +912,9 @@ const MUSIC_WORDS = [
         "definition_zh": "拍子細分",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：拍子細分。",
-        "example": "Pay attention to the Subdivision.",
-        "level": "medium"
+        "example": "The composer's use of subdivision here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對拍子細分的運用相當非傳統。"
     },
     {
         "word": "BPM",
@@ -848,8 +924,9 @@ const MUSIC_WORDS = [
         "definition_zh": "每分拍數",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：每分拍數。",
-        "example": "Pay attention to the BPM.",
-        "level": "medium"
+        "example": "Can you identify the BPM in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的每分拍數嗎？"
     },
     {
         "word": "Reverb",
@@ -859,8 +936,9 @@ const MUSIC_WORDS = [
         "definition_zh": "混響",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：混響。",
-        "example": "Adjust the Reverb level.",
-        "level": "medium"
+        "example": "I love the vintage sound of analog reverb.",
+        "level": "medium",
+        "example_zh": "我很喜歡類比混響的復古聲音。"
     },
     {
         "word": "Delay",
@@ -870,8 +948,9 @@ const MUSIC_WORDS = [
         "definition_zh": "延遲",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：延遲。",
-        "example": "Adjust the Delay level.",
-        "level": "medium"
+        "example": "Make sure the delay is properly configured before recording.",
+        "level": "medium",
+        "example_zh": "在錄音前，請確保延遲已正確配置。"
     },
     {
         "word": "Compressor",
@@ -881,8 +960,9 @@ const MUSIC_WORDS = [
         "definition_zh": "壓縮器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：壓縮器。",
-        "example": "Adjust the Compressor level.",
-        "level": "medium"
+        "example": "I love the vintage sound of analog compressor.",
+        "level": "medium",
+        "example_zh": "我很喜歡類比壓縮器的復古聲音。"
     },
     {
         "word": "Equalizer",
@@ -892,8 +972,9 @@ const MUSIC_WORDS = [
         "definition_zh": "等化器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：等化器。",
-        "example": "Adjust the Equalizer level.",
-        "level": "medium"
+        "example": "Let's add a bit more equalizer to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點等化器。"
     },
     {
         "word": "Limiter",
@@ -903,8 +984,9 @@ const MUSIC_WORDS = [
         "definition_zh": "限制器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：限制器。",
-        "example": "Adjust the Limiter level.",
-        "level": "medium"
+        "example": "Let's add a bit more limiter to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點限制器。"
     },
     {
         "word": "Panning",
@@ -914,8 +996,9 @@ const MUSIC_WORDS = [
         "definition_zh": "聲像相位",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：聲像相位。",
-        "example": "Adjust the Panning level.",
-        "level": "medium"
+        "example": "The engineer adjusted the panning during the mixing phase.",
+        "level": "medium",
+        "example_zh": "工程師在混音階段調整了聲像相位。"
     },
     {
         "word": "Gain",
@@ -925,8 +1008,9 @@ const MUSIC_WORDS = [
         "definition_zh": "增益",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：增益。",
-        "example": "Adjust the Gain level.",
-        "level": "medium"
+        "example": "Let's add a bit more gain to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點增益。"
     },
     {
         "word": "Sidechain",
@@ -936,8 +1020,9 @@ const MUSIC_WORDS = [
         "definition_zh": "側鏈",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：側鏈。",
-        "example": "Adjust the Sidechain level.",
-        "level": "medium"
+        "example": "I love the vintage sound of analog sidechain.",
+        "level": "medium",
+        "example_zh": "我很喜歡類比側鏈的復古聲音。"
     },
     {
         "word": "Bus",
@@ -947,8 +1032,9 @@ const MUSIC_WORDS = [
         "definition_zh": "匯流排",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：匯流排。",
-        "example": "Adjust the Bus level.",
-        "level": "medium"
+        "example": "Too much bus can muddy up the entire mix.",
+        "level": "medium",
+        "example_zh": "過多的匯流排會讓整首混音變得混濁。"
     },
     {
         "word": "Monitor",
@@ -958,8 +1044,9 @@ const MUSIC_WORDS = [
         "definition_zh": "監聽",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：監聽。",
-        "example": "Adjust the Monitor level.",
-        "level": "medium"
+        "example": "Make sure the monitor is properly configured before recording.",
+        "level": "medium",
+        "example_zh": "在錄音前，請確保監聽已正確配置。"
     },
     {
         "word": "Latency",
@@ -969,8 +1056,9 @@ const MUSIC_WORDS = [
         "definition_zh": "延遲延時",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：延遲延時。",
-        "example": "Adjust the Latency level.",
-        "level": "medium"
+        "example": "Let's add a bit more latency to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點延遲延時。"
     },
     {
         "word": "Plugin",
@@ -980,8 +1068,9 @@ const MUSIC_WORDS = [
         "definition_zh": "插件",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：插件。",
-        "example": "Adjust the Plugin level.",
-        "level": "medium"
+        "example": "The engineer adjusted the plugin during the mixing phase.",
+        "level": "medium",
+        "example_zh": "工程師在混音階段調整了插件。"
     },
     {
         "word": "Mastering",
@@ -991,8 +1080,9 @@ const MUSIC_WORDS = [
         "definition_zh": "母帶",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：母帶。",
-        "example": "Adjust the Mastering level.",
-        "level": "medium"
+        "example": "Let's add a bit more mastering to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點母帶。"
     },
     {
         "word": "Mixing",
@@ -1002,8 +1092,9 @@ const MUSIC_WORDS = [
         "definition_zh": "混音",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：混音。",
-        "example": "Adjust the Mixing level.",
-        "level": "medium"
+        "example": "The engineer adjusted the mixing during the mixing phase.",
+        "level": "medium",
+        "example_zh": "工程師在混音階段調整了混音。"
     },
     {
         "word": "Tracking",
@@ -1013,8 +1104,9 @@ const MUSIC_WORDS = [
         "definition_zh": "錄音錄軌",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：錄音錄軌。",
-        "example": "Adjust the Tracking level.",
-        "level": "medium"
+        "example": "I love the vintage sound of analog tracking.",
+        "level": "medium",
+        "example_zh": "我很喜歡類比錄音錄軌的復古聲音。"
     },
     {
         "word": "Overdub",
@@ -1024,8 +1116,9 @@ const MUSIC_WORDS = [
         "definition_zh": "疊錄",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：疊錄。",
-        "example": "Adjust the Overdub level.",
-        "level": "medium"
+        "example": "Let's add a bit more overdub to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點疊錄。"
     },
     {
         "word": "Normalize",
@@ -1035,8 +1128,9 @@ const MUSIC_WORDS = [
         "definition_zh": "標準化",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：標準化。",
-        "example": "Adjust the Normalize level.",
-        "level": "medium"
+        "example": "Too much normalize can muddy up the entire mix.",
+        "level": "medium",
+        "example_zh": "過多的標準化會讓整首混音變得混濁。"
     },
     {
         "word": "Bit Depth",
@@ -1046,8 +1140,9 @@ const MUSIC_WORDS = [
         "definition_zh": "位元深度",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：位元深度。",
-        "example": "Adjust the Bit Depth level.",
-        "level": "medium"
+        "example": "Make sure the Bit Depth is properly configured before recording.",
+        "level": "medium",
+        "example_zh": "在錄音前，請確保位元深度已正確配置。"
     },
     {
         "word": "Sample Rate",
@@ -1057,8 +1152,9 @@ const MUSIC_WORDS = [
         "definition_zh": "採樣率",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：採樣率。",
-        "example": "Adjust the Sample Rate level.",
-        "level": "medium"
+        "example": "Make sure the Sample Rate is properly configured before recording.",
+        "level": "medium",
+        "example_zh": "在錄音前，請確保採樣率已正確配置。"
     },
     {
         "word": "DAW",
@@ -1068,8 +1164,9 @@ const MUSIC_WORDS = [
         "definition_zh": "數位工作站",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：數位工作站。",
-        "example": "Adjust the DAW level.",
-        "level": "medium"
+        "example": "Let's add a bit more DAW to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點數位工作站。"
     },
     {
         "word": "MIDI",
@@ -1079,8 +1176,9 @@ const MUSIC_WORDS = [
         "definition_zh": "數位介面",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：數位介面。",
-        "example": "Adjust the MIDI level.",
-        "level": "medium"
+        "example": "I love the vintage sound of analog MIDI.",
+        "level": "medium",
+        "example_zh": "我很喜歡類比數位介面的復古聲音。"
     },
     {
         "word": "Envelope",
@@ -1090,8 +1188,9 @@ const MUSIC_WORDS = [
         "definition_zh": "包絡",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：包絡。",
-        "example": "Adjust the Envelope level.",
-        "level": "medium"
+        "example": "We need to tweak the envelope settings on the master bus.",
+        "level": "medium",
+        "example_zh": "我們需要微調總線上的包絡設定。"
     },
     {
         "word": "Attack",
@@ -1101,8 +1200,9 @@ const MUSIC_WORDS = [
         "definition_zh": "起音時間",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：起音時間。",
-        "example": "Adjust the Attack level.",
-        "level": "medium"
+        "example": "Let's add a bit more attack to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點起音時間。"
     },
     {
         "word": "Release",
@@ -1112,8 +1212,9 @@ const MUSIC_WORDS = [
         "definition_zh": "釋放時間",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：釋放時間。",
-        "example": "Adjust the Release level.",
-        "level": "medium"
+        "example": "We need to tweak the release settings on the master bus.",
+        "level": "medium",
+        "example_zh": "我們需要微調總線上的釋放時間設定。"
     },
     {
         "word": "Filter",
@@ -1123,8 +1224,9 @@ const MUSIC_WORDS = [
         "definition_zh": "濾波器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：濾波器。",
-        "example": "Adjust the Filter level.",
-        "level": "medium"
+        "example": "Too much filter can muddy up the entire mix.",
+        "level": "medium",
+        "example_zh": "過多的濾波器會讓整首混音變得混濁。"
     },
     {
         "word": "Threshold",
@@ -1134,8 +1236,9 @@ const MUSIC_WORDS = [
         "definition_zh": "閾值門檻",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：閾值門檻。",
-        "example": "Adjust the Threshold level.",
-        "level": "medium"
+        "example": "I love the vintage sound of analog threshold.",
+        "level": "medium",
+        "example_zh": "我很喜歡類比閾值門檻的復古聲音。"
     },
     {
         "word": "Ratio",
@@ -1145,8 +1248,9 @@ const MUSIC_WORDS = [
         "definition_zh": "壓縮比",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：壓縮比。",
-        "example": "Adjust the Ratio level.",
-        "level": "medium"
+        "example": "Too much ratio can muddy up the entire mix.",
+        "level": "medium",
+        "example_zh": "過多的壓縮比會讓整首混音變得混濁。"
     },
     {
         "word": "Knee",
@@ -1156,8 +1260,9 @@ const MUSIC_WORDS = [
         "definition_zh": "拐點",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：拐點。",
-        "example": "Adjust the Knee level.",
-        "level": "medium"
+        "example": "Too much knee can muddy up the entire mix.",
+        "level": "medium",
+        "example_zh": "過多的拐點會讓整首混音變得混濁。"
     },
     {
         "word": "Makeup Gain",
@@ -1167,8 +1272,9 @@ const MUSIC_WORDS = [
         "definition_zh": "補償增益",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：補償增益。",
-        "example": "Adjust the Makeup Gain level.",
-        "level": "medium"
+        "example": "We need to tweak the Makeup Gain settings on the master bus.",
+        "level": "medium",
+        "example_zh": "我們需要微調總線上的補償增益設定。"
     },
     {
         "word": "Low Pass",
@@ -1178,8 +1284,9 @@ const MUSIC_WORDS = [
         "definition_zh": "低通濾波",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：低通濾波。",
-        "example": "Adjust the Low Pass level.",
-        "level": "medium"
+        "example": "We need to tweak the Low Pass settings on the master bus.",
+        "level": "medium",
+        "example_zh": "我們需要微調總線上的低通濾波設定。"
     },
     {
         "word": "High Pass",
@@ -1189,8 +1296,9 @@ const MUSIC_WORDS = [
         "definition_zh": "高通濾波",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：高通濾波。",
-        "example": "Adjust the High Pass level.",
-        "level": "medium"
+        "example": "Let's add a bit more High Pass to the vocal track.",
+        "level": "medium",
+        "example_zh": "讓我們在人聲軌道上多加一點高通濾波。"
     },
     {
         "word": "Saturation",
@@ -1200,8 +1308,9 @@ const MUSIC_WORDS = [
         "definition_zh": "飽和",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：飽和。",
-        "example": "Adjust the Saturation level.",
-        "level": "medium"
+        "example": "Make sure the saturation is properly configured before recording.",
+        "level": "medium",
+        "example_zh": "在錄音前，請確保飽和已正確配置。"
     },
     {
         "word": "Phase",
@@ -1211,8 +1320,9 @@ const MUSIC_WORDS = [
         "definition_zh": "相位",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：相位。",
-        "example": "Adjust the Phase level.",
-        "level": "medium"
+        "example": "The engineer adjusted the phase during the mixing phase.",
+        "level": "medium",
+        "example_zh": "工程師在混音階段調整了相位。"
     },
     {
         "word": "Clipping",
@@ -1222,8 +1332,9 @@ const MUSIC_WORDS = [
         "definition_zh": "削波破音",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：削波破音。",
-        "example": "Adjust the Clipping level.",
-        "level": "medium"
+        "example": "The engineer adjusted the clipping during the mixing phase.",
+        "level": "medium",
+        "example_zh": "工程師在混音階段調整了削波破音。"
     },
     {
         "word": "Vibrato",
@@ -1233,8 +1344,9 @@ const MUSIC_WORDS = [
         "definition_zh": "揉音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：揉音。",
-        "example": "Apply some Vibrato here.",
-        "level": "medium"
+        "example": "Try to use vibrato to make the phrase expressively.",
+        "level": "medium",
+        "example_zh": "試著運用揉音讓這個樂句更加充滿情感。"
     },
     {
         "word": "Glissando",
@@ -1244,8 +1356,9 @@ const MUSIC_WORDS = [
         "definition_zh": "滑音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：滑音。",
-        "example": "Apply some Glissando here.",
-        "level": "medium"
+        "example": "Her glissando is so flawless it sounds almost electronic.",
+        "level": "medium",
+        "example_zh": "她的滑音完美無瑕，聽起來幾乎像是電子合成的。"
     },
     {
         "word": "Portamento",
@@ -1255,8 +1368,9 @@ const MUSIC_WORDS = [
         "definition_zh": "滑奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：滑奏。",
-        "example": "Apply some Portamento here.",
-        "level": "medium"
+        "example": "He has perfected his portamento over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的滑奏磨練到了極致。"
     },
     {
         "word": "Tremolo",
@@ -1266,8 +1380,9 @@ const MUSIC_WORDS = [
         "definition_zh": "顫音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：顫音。",
-        "example": "Apply some Tremolo here.",
-        "level": "medium"
+        "example": "He has perfected his tremolo over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的顫音磨練到了極致。"
     },
     {
         "word": "Slap",
@@ -1277,8 +1392,9 @@ const MUSIC_WORDS = [
         "definition_zh": "擊弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：擊弦。",
-        "example": "Apply some Slap here.",
-        "level": "medium"
+        "example": "This piece requires advanced slap to be played correctly.",
+        "level": "medium",
+        "example_zh": "這首曲子需要高階的擊弦才能正確演奏。"
     },
     {
         "word": "Pop",
@@ -1288,8 +1404,9 @@ const MUSIC_WORDS = [
         "definition_zh": "勾弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：勾弦。",
-        "example": "Apply some Pop here.",
-        "level": "medium"
+        "example": "He has perfected his pop over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的勾弦磨練到了極致。"
     },
     {
         "word": "Ghost Note",
@@ -1299,8 +1416,9 @@ const MUSIC_WORDS = [
         "definition_zh": "虛音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：虛音。",
-        "example": "Apply some Ghost Note here.",
-        "level": "medium"
+        "example": "The guitarist showcased incredible Ghost Note during the break.",
+        "level": "medium",
+        "example_zh": "吉他手在間奏中展現了令人難以置信的虛音。"
     },
     {
         "word": "Hammer-on",
@@ -1310,8 +1428,9 @@ const MUSIC_WORDS = [
         "definition_zh": "槌音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：槌音。",
-        "example": "Apply some Hammer-on here.",
-        "level": "medium"
+        "example": "He has perfected his hammer-on over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的槌音磨練到了極致。"
     },
     {
         "word": "Pull-off",
@@ -1321,8 +1440,9 @@ const MUSIC_WORDS = [
         "definition_zh": "勾音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：勾音。",
-        "example": "Apply some Pull-off here.",
-        "level": "medium"
+        "example": "Try to use pull-off to make the phrase expressively.",
+        "level": "medium",
+        "example_zh": "試著運用勾音讓這個樂句更加充滿情感。"
     },
     {
         "word": "Bending",
@@ -1332,8 +1452,9 @@ const MUSIC_WORDS = [
         "definition_zh": "推弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：推弦。",
-        "example": "Apply some Bending here.",
-        "level": "medium"
+        "example": "The guitarist showcased incredible bending during the break.",
+        "level": "medium",
+        "example_zh": "吉他手在間奏中展現了令人難以置信的推弦。"
     },
     {
         "word": "Mute",
@@ -1343,8 +1464,9 @@ const MUSIC_WORDS = [
         "definition_zh": "弱音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：弱音。",
-        "example": "Apply some Mute here.",
-        "level": "medium"
+        "example": "Her mute is so flawless it sounds almost electronic.",
+        "level": "medium",
+        "example_zh": "她的弱音完美無瑕，聽起來幾乎像是電子合成的。"
     },
     {
         "word": "Palm Mute",
@@ -1354,8 +1476,9 @@ const MUSIC_WORDS = [
         "definition_zh": "悶音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：悶音。",
-        "example": "Apply some Palm Mute here.",
-        "level": "medium"
+        "example": "Her Palm Mute is so flawless it sounds almost electronic.",
+        "level": "medium",
+        "example_zh": "她的悶音完美無瑕，聽起來幾乎像是電子合成的。"
     },
     {
         "word": "Harmonics",
@@ -1365,8 +1488,9 @@ const MUSIC_WORDS = [
         "definition_zh": "泛音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：泛音。",
-        "example": "Apply some Harmonics here.",
-        "level": "medium"
+        "example": "This piece requires advanced harmonics to be played correctly.",
+        "level": "medium",
+        "example_zh": "這首曲子需要高階的泛音才能正確演奏。"
     },
     {
         "word": "Double Stop",
@@ -1376,8 +1500,9 @@ const MUSIC_WORDS = [
         "definition_zh": "雙音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：雙音。",
-        "example": "Apply some Double Stop here.",
-        "level": "medium"
+        "example": "He has perfected his Double Stop over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的雙音磨練到了極致。"
     },
     {
         "word": "Sweep Picking",
@@ -1387,8 +1512,9 @@ const MUSIC_WORDS = [
         "definition_zh": "掃撥",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：掃撥。",
-        "example": "Apply some Sweep Picking here.",
-        "level": "medium"
+        "example": "He has perfected his Sweep Picking over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的掃撥磨練到了極致。"
     },
     {
         "word": "Alternate Picking",
@@ -1398,8 +1524,9 @@ const MUSIC_WORDS = [
         "definition_zh": "交替撥弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：交替撥弦。",
-        "example": "Apply some Alternate Picking here.",
-        "level": "medium"
+        "example": "This piece requires advanced Alternate Picking to be played correctly.",
+        "level": "medium",
+        "example_zh": "這首曲子需要高階的交替撥弦才能正確演奏。"
     },
     {
         "word": "Tapping",
@@ -1409,8 +1536,9 @@ const MUSIC_WORDS = [
         "definition_zh": "點弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：點弦。",
-        "example": "Apply some Tapping here.",
-        "level": "medium"
+        "example": "Her tapping is so flawless it sounds almost electronic.",
+        "level": "medium",
+        "example_zh": "她的點弦完美無瑕，聽起來幾乎像是電子合成的。"
     },
     {
         "word": "Fingerstyle",
@@ -1420,8 +1548,9 @@ const MUSIC_WORDS = [
         "definition_zh": "指彈",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：指彈。",
-        "example": "Apply some Fingerstyle here.",
-        "level": "medium"
+        "example": "This piece requires advanced fingerstyle to be played correctly.",
+        "level": "medium",
+        "example_zh": "這首曲子需要高階的指彈才能正確演奏。"
     },
     {
         "word": "Strumming",
@@ -1431,8 +1560,9 @@ const MUSIC_WORDS = [
         "definition_zh": "刷奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：刷奏。",
-        "example": "Apply some Strumming here.",
-        "level": "medium"
+        "example": "The guitarist showcased incredible strumming during the break.",
+        "level": "medium",
+        "example_zh": "吉他手在間奏中展現了令人難以置信的刷奏。"
     },
     {
         "word": "Pizzicato",
@@ -1442,8 +1572,9 @@ const MUSIC_WORDS = [
         "definition_zh": "撥奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：撥奏。",
-        "example": "Apply some Pizzicato here.",
-        "level": "medium"
+        "example": "He has perfected his pizzicato over many years of touring.",
+        "level": "medium",
+        "example_zh": "他透過多年的巡迴演出，將他的撥奏磨練到了極致。"
     },
     {
         "word": "Tremolo picking",
@@ -1453,8 +1584,9 @@ const MUSIC_WORDS = [
         "definition_zh": "顫指撥弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：顫指撥弦。",
-        "example": "Apply some Tremolo picking here.",
-        "level": "medium"
+        "example": "Try to use Tremolo picking to make the phrase expressively.",
+        "level": "medium",
+        "example_zh": "試著運用顫指撥弦讓這個樂句更加充滿情感。"
     },
     {
         "word": "Hybrid Picking",
@@ -1464,8 +1596,9 @@ const MUSIC_WORDS = [
         "definition_zh": "混合撥弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：混合撥弦。",
-        "example": "Apply some Hybrid Picking here.",
-        "level": "medium"
+        "example": "This piece requires advanced Hybrid Picking to be played correctly.",
+        "level": "medium",
+        "example_zh": "這首曲子需要高階的混合撥弦才能正確演奏。"
     },
     {
         "word": "Legato playing",
@@ -1475,8 +1608,9 @@ const MUSIC_WORDS = [
         "definition_zh": "連奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：連奏。",
-        "example": "Apply some Legato playing here.",
-        "level": "medium"
+        "example": "Try to use Legato playing to make the phrase expressively.",
+        "level": "medium",
+        "example_zh": "試著運用連奏讓這個樂句更加充滿情感。"
     },
     {
         "word": "Vamping",
@@ -1486,8 +1620,9 @@ const MUSIC_WORDS = [
         "definition_zh": "即興伴奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：即興伴奏。",
-        "example": "Apply some Vamping here.",
-        "level": "medium"
+        "example": "The guitarist showcased incredible vamping during the break.",
+        "level": "medium",
+        "example_zh": "吉他手在間奏中展現了令人難以置信的即興伴奏。"
     },
     {
         "word": "Comping",
@@ -1497,8 +1632,9 @@ const MUSIC_WORDS = [
         "definition_zh": "切分伴奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：切分伴奏。",
-        "example": "Apply some Comping here.",
-        "level": "medium"
+        "example": "The bassist laid down a solid comping groove.",
+        "level": "medium",
+        "example_zh": "貝斯手鋪墊了一個扎實的切分伴奏律動。"
     },
     {
         "word": "Walking Bass",
@@ -1508,8 +1644,9 @@ const MUSIC_WORDS = [
         "definition_zh": "步行低音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：步行低音。",
-        "example": "Apply some Walking Bass here.",
-        "level": "medium"
+        "example": "His improvisational solo heavily relied on Walking Bass.",
+        "level": "medium",
+        "example_zh": "他的即興獨奏非常依賴步行低音。"
     },
     {
         "word": "Shuffle",
@@ -1519,8 +1656,9 @@ const MUSIC_WORDS = [
         "definition_zh": "洗牌節奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：洗牌節奏。",
-        "example": "Apply some Shuffle here.",
-        "level": "medium"
+        "example": "Try to use shuffle to make the phrase expressively.",
+        "level": "medium",
+        "example_zh": "試著運用洗牌節奏讓這個樂句更加充滿情感。"
     },
     {
         "word": "Arpeggiator",
@@ -1530,8 +1668,9 @@ const MUSIC_WORDS = [
         "definition_zh": "琶音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琶音器。",
-        "example": "Check the Arpeggiator condition.",
-        "level": "medium"
+        "example": "Understanding arpeggiator is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解琶音器對於進階作曲至關重要。"
     },
     {
         "word": "Sustain Pedal",
@@ -1541,8 +1680,9 @@ const MUSIC_WORDS = [
         "definition_zh": "延音踏板",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：延音踏板。",
-        "example": "Check the Sustain Pedal condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the Sustain Pedal of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的延音踏板。"
     },
     {
         "word": "Whammy bar",
@@ -1552,8 +1692,9 @@ const MUSIC_WORDS = [
         "definition_zh": "顫音桿",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：顫音桿。",
-        "example": "Check the Whammy bar condition.",
-        "level": "medium"
+        "example": "Can you identify the Whammy bar in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的顫音桿嗎？"
     },
     {
         "word": "Fret",
@@ -1563,8 +1704,9 @@ const MUSIC_WORDS = [
         "definition_zh": "琴格",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴格。",
-        "example": "Check the Fret condition.",
-        "level": "medium"
+        "example": "Understanding fret is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解琴格對於進階作曲至關重要。"
     },
     {
         "word": "Bridge",
@@ -1574,8 +1716,9 @@ const MUSIC_WORDS = [
         "definition_zh": "琴橋",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴橋。",
-        "example": "Check the Bridge condition.",
-        "level": "medium"
+        "example": "Can you identify the bridge in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的琴橋嗎？"
     },
     {
         "word": "Pickup",
@@ -1585,8 +1728,9 @@ const MUSIC_WORDS = [
         "definition_zh": "拾音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：拾音器。",
-        "example": "Check the Pickup condition.",
-        "level": "medium"
+        "example": "Pay close attention to the pickup when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意拾音器。"
     },
     {
         "word": "Pickup Selector",
@@ -1596,8 +1740,9 @@ const MUSIC_WORDS = [
         "definition_zh": "拾音器切換",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：拾音器切換。",
-        "example": "Check the Pickup Selector condition.",
-        "level": "medium"
+        "example": "Practicing Pickup Selector will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習拾音器切換絕對能提升你的音感。"
     },
     {
         "word": "Single Coil",
@@ -1607,8 +1752,9 @@ const MUSIC_WORDS = [
         "definition_zh": "單線圈",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：單線圈。",
-        "example": "Check the Single Coil condition.",
-        "level": "medium"
+        "example": "Pay close attention to the Single Coil when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意單線圈。"
     },
     {
         "word": "Humbucker",
@@ -1618,8 +1764,9 @@ const MUSIC_WORDS = [
         "definition_zh": "雙線圈",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：雙線圈。",
-        "example": "Check the Humbucker condition.",
-        "level": "medium"
+        "example": "Understanding humbucker is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解雙線圈對於進階作曲至關重要。"
     },
     {
         "word": "Amps",
@@ -1629,8 +1776,9 @@ const MUSIC_WORDS = [
         "definition_zh": "音箱",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：音箱。",
-        "example": "Check the Amps condition.",
-        "level": "medium"
+        "example": "Can you identify the amps in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的音箱嗎？"
     },
     {
         "word": "Cabinet",
@@ -1640,8 +1788,9 @@ const MUSIC_WORDS = [
         "definition_zh": "箱體",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：箱體。",
-        "example": "Check the Cabinet condition.",
-        "level": "medium"
+        "example": "Pay close attention to the cabinet when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意箱體。"
     },
     {
         "word": "Valve",
@@ -1651,8 +1800,9 @@ const MUSIC_WORDS = [
         "definition_zh": "真空管",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：真空管。",
-        "example": "Check the Valve condition.",
-        "level": "medium"
+        "example": "The composer's use of valve here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對真空管的運用相當非傳統。"
     },
     {
         "word": "Solid State",
@@ -1662,8 +1812,9 @@ const MUSIC_WORDS = [
         "definition_zh": "電晶體",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：電晶體。",
-        "example": "Check the Solid State condition.",
-        "level": "medium"
+        "example": "The progressive shift built on Solid State gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在電晶體上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Overdrive",
@@ -1673,8 +1824,9 @@ const MUSIC_WORDS = [
         "definition_zh": "超載",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：超載。",
-        "example": "Check the Overdrive condition.",
-        "level": "medium"
+        "example": "The progressive shift built on overdrive gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在超載上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Distortion",
@@ -1684,8 +1836,9 @@ const MUSIC_WORDS = [
         "definition_zh": "失真",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：失真。",
-        "example": "Check the Distortion condition.",
-        "level": "medium"
+        "example": "Understanding distortion is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解失真對於進階作曲至關重要。"
     },
     {
         "word": "Fuzz",
@@ -1695,8 +1848,9 @@ const MUSIC_WORDS = [
         "definition_zh": "破音",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：破音。",
-        "example": "Check the Fuzz condition.",
-        "level": "medium"
+        "example": "The composer's use of fuzz here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對破音的運用相當非傳統。"
     },
     {
         "word": "Wah-wah",
@@ -1706,8 +1860,9 @@ const MUSIC_WORDS = [
         "definition_zh": "哇音",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：哇音。",
-        "example": "Check the Wah-wah condition.",
-        "level": "medium"
+        "example": "Pay close attention to the wah-wah when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意哇音。"
     },
     {
         "word": "Chorus effect",
@@ -1717,8 +1872,9 @@ const MUSIC_WORDS = [
         "definition_zh": "合唱效果",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：合唱效果。",
-        "example": "Check the Chorus effect condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the Chorus effect of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的合唱效果。"
     },
     {
         "word": "Phaser",
@@ -1728,8 +1884,9 @@ const MUSIC_WORDS = [
         "definition_zh": "移相器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：移相器。",
-        "example": "Check the Phaser condition.",
-        "level": "medium"
+        "example": "Practicing phaser will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習移相器絕對能提升你的音感。"
     },
     {
         "word": "Flanger",
@@ -1739,8 +1896,9 @@ const MUSIC_WORDS = [
         "definition_zh": "飛梭效果",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：飛梭效果。",
-        "example": "Check the Flanger condition.",
-        "level": "medium"
+        "example": "The progressive shift built on flanger gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在飛梭效果上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Tremolo pedal",
@@ -1750,8 +1908,9 @@ const MUSIC_WORDS = [
         "definition_zh": "顫音踏板",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：顫音踏板。",
-        "example": "Check the Tremolo pedal condition.",
-        "level": "medium"
+        "example": "The progressive shift built on Tremolo pedal gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在顫音踏板上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Octaver",
@@ -1761,8 +1920,9 @@ const MUSIC_WORDS = [
         "definition_zh": "八度音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：八度音器。",
-        "example": "Check the Octaver condition.",
-        "level": "medium"
+        "example": "Can you identify the octaver in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的八度音器嗎？"
     },
     {
         "word": "Pitch Shifter",
@@ -1772,8 +1932,9 @@ const MUSIC_WORDS = [
         "definition_zh": "移調器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：移調器。",
-        "example": "Check the Pitch Shifter condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the Pitch Shifter of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的移調器。"
     },
     {
         "word": "Tuner",
@@ -1783,8 +1944,9 @@ const MUSIC_WORDS = [
         "definition_zh": "調音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：調音器。",
-        "example": "Check the Tuner condition.",
-        "level": "medium"
+        "example": "The progressive shift built on tuner gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在調音器上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Patch cable",
@@ -1794,8 +1956,9 @@ const MUSIC_WORDS = [
         "definition_zh": "跳線",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：跳線。",
-        "example": "Check the Patch cable condition.",
-        "level": "medium"
+        "example": "Practicing Patch cable will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習跳線絕對能提升你的音感。"
     },
     {
         "word": "DI Box",
@@ -1805,8 +1968,9 @@ const MUSIC_WORDS = [
         "definition_zh": "直接輸入盒",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：直接輸入盒。",
-        "example": "Check the DI Box condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the DI Box of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的直接輸入盒。"
     },
     {
         "word": "Condenser mic",
@@ -1816,8 +1980,9 @@ const MUSIC_WORDS = [
         "definition_zh": "電容麥克風",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：電容麥克風。",
-        "example": "Check the Condenser mic condition.",
-        "level": "medium"
+        "example": "Can you identify the Condenser mic in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的電容麥克風嗎？"
     },
     {
         "word": "Dynamic mic",
@@ -1827,8 +1992,9 @@ const MUSIC_WORDS = [
         "definition_zh": "動圈麥克風",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：動圈麥克風。",
-        "example": "Check the Dynamic mic condition.",
-        "level": "medium"
+        "example": "Practicing Dynamic mic will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習動圈麥克風絕對能提升你的音感。"
     },
     {
         "word": "Ribbon mic",
@@ -1838,8 +2004,9 @@ const MUSIC_WORDS = [
         "definition_zh": "鋁帶麥克風",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：鋁帶麥克風。",
-        "example": "Check the Ribbon mic condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the Ribbon mic of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的鋁帶麥克風。"
     },
     {
         "word": "XLR",
@@ -1849,8 +2016,9 @@ const MUSIC_WORDS = [
         "definition_zh": "平衡接口",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：平衡接口。",
-        "example": "Check the XLR condition.",
-        "level": "medium"
+        "example": "Understanding XLR is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解平衡接口對於進階作曲至關重要。"
     },
     {
         "word": "Jack",
@@ -1860,8 +2028,9 @@ const MUSIC_WORDS = [
         "definition_zh": "導線頭",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：導線頭。",
-        "example": "Check the Jack condition.",
-        "level": "medium"
+        "example": "Can you identify the jack in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的導線頭嗎？"
     },
     {
         "word": "Monitors",
@@ -1871,8 +2040,9 @@ const MUSIC_WORDS = [
         "definition_zh": "監聽語",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：監聽語。",
-        "example": "Check the Monitors condition.",
-        "level": "medium"
+        "example": "The progressive shift built on monitors gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在監聽語上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Preamp",
@@ -1882,8 +2052,9 @@ const MUSIC_WORDS = [
         "definition_zh": "前級",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：前級。",
-        "example": "Check the Preamp condition.",
-        "level": "medium"
+        "example": "Understanding preamp is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解前級對於進階作曲至關重要。"
     },
     {
         "word": "Power amp",
@@ -1893,8 +2064,9 @@ const MUSIC_WORDS = [
         "definition_zh": "後級",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：後級。",
-        "example": "Check the Power amp condition.",
-        "level": "medium"
+        "example": "Pay close attention to the Power amp when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意後級。"
     },
     {
         "word": "Mixer",
@@ -1904,8 +2076,9 @@ const MUSIC_WORDS = [
         "definition_zh": "混音台",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：混音台。",
-        "example": "Check the Mixer condition.",
-        "level": "medium"
+        "example": "The progressive shift built on mixer gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在混音台上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Fader",
@@ -1915,8 +2088,9 @@ const MUSIC_WORDS = [
         "definition_zh": "推桿",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：推桿。",
-        "example": "Check the Fader condition.",
-        "level": "medium"
+        "example": "The composer's use of fader here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對推桿的運用相當非傳統。"
     },
     {
         "word": "Knob",
@@ -1926,8 +2100,9 @@ const MUSIC_WORDS = [
         "definition_zh": "旋鈕",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：旋鈕。",
-        "example": "Check the Knob condition.",
-        "level": "medium"
+        "example": "The progressive shift built on knob gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在旋鈕上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Automation",
@@ -1937,8 +2112,9 @@ const MUSIC_WORDS = [
         "definition_zh": "自動化",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：自動化。",
-        "example": "Check the Automation condition.",
-        "level": "medium"
+        "example": "Pay close attention to the automation when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意自動化。"
     },
     {
         "word": "Quantize",
@@ -1948,8 +2124,9 @@ const MUSIC_WORDS = [
         "definition_zh": "量化",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：量化。",
-        "example": "Check the Quantize condition.",
-        "level": "medium"
+        "example": "Practicing quantize will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習量化絕對能提升你的音感。"
     },
     {
         "word": "Grid",
@@ -1959,8 +2136,9 @@ const MUSIC_WORDS = [
         "definition_zh": "網格",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：網格。",
-        "example": "Check the Grid condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the grid of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的網格。"
     },
     {
         "word": "Tempo Map",
@@ -1970,8 +2148,9 @@ const MUSIC_WORDS = [
         "definition_zh": "速度軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：速度軌。",
-        "example": "Check the Tempo Map condition.",
-        "level": "medium"
+        "example": "Pay close attention to the Tempo Map when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意速度軌。"
     },
     {
         "word": "Metronome mark",
@@ -1981,8 +2160,9 @@ const MUSIC_WORDS = [
         "definition_zh": "速度標記",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：速度標記。",
-        "example": "Check the Metronome mark condition.",
-        "level": "medium"
+        "example": "Can you identify the Metronome mark in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的速度標記嗎？"
     },
     {
         "word": "Bar line",
@@ -1992,8 +2172,9 @@ const MUSIC_WORDS = [
         "definition_zh": "小節線",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：小節線。",
-        "example": "Check the Bar line condition.",
-        "level": "medium"
+        "example": "The composer's use of Bar line here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對小節線的運用相當非傳統。"
     },
     {
         "word": "Double bar",
@@ -2003,8 +2184,9 @@ const MUSIC_WORDS = [
         "definition_zh": "雙小節線",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：雙小節線。",
-        "example": "Check the Double bar condition.",
-        "level": "medium"
+        "example": "Understanding Double bar is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解雙小節線對於進階作曲至關重要。"
     },
     {
         "word": "Repeat sign",
@@ -2014,8 +2196,9 @@ const MUSIC_WORDS = [
         "definition_zh": "反復記號",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：反復記號。",
-        "example": "Check the Repeat sign condition.",
-        "level": "medium"
+        "example": "The composer's use of Repeat sign here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對反復記號的運用相當非傳統。"
     },
     {
         "word": "Da Capo",
@@ -2025,8 +2208,9 @@ const MUSIC_WORDS = [
         "definition_zh": "從頭反復",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：從頭反復。",
-        "example": "Check the Da Capo condition.",
-        "level": "medium"
+        "example": "The composer's use of Da Capo here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對從頭反復的運用相當非傳統。"
     },
     {
         "word": "Dal Segno",
@@ -2036,8 +2220,9 @@ const MUSIC_WORDS = [
         "definition_zh": "從記號處反復",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：從記號處反復。",
-        "example": "Check the Dal Segno condition.",
-        "level": "medium"
+        "example": "Pay close attention to the Dal Segno when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意從記號處反復。"
     },
     {
         "word": "Coda",
@@ -2047,8 +2232,9 @@ const MUSIC_WORDS = [
         "definition_zh": "結束段",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：結束段。",
-        "example": "Check the Coda condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the coda of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的結束段。"
     },
     {
         "word": "Fine",
@@ -2058,8 +2244,9 @@ const MUSIC_WORDS = [
         "definition_zh": "結束",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：結束。",
-        "example": "Check the Fine condition.",
-        "level": "medium"
+        "example": "The progressive shift built on fine gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在結束上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Simile",
@@ -2069,8 +2256,9 @@ const MUSIC_WORDS = [
         "definition_zh": "同樣地",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：同樣地。",
-        "example": "Check the Simile condition.",
-        "level": "medium"
+        "example": "Understanding simile is essential for advanced composition.",
+        "level": "medium",
+        "example_zh": "理解同樣地對於進階作曲至關重要。"
     },
     {
         "word": "Solo",
@@ -2080,8 +2268,9 @@ const MUSIC_WORDS = [
         "definition_zh": "獨奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：獨奏。",
-        "example": "Check the Solo condition.",
-        "level": "medium"
+        "example": "Can you identify the solo in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的獨奏嗎？"
     },
     {
         "word": "Duo",
@@ -2091,8 +2280,9 @@ const MUSIC_WORDS = [
         "definition_zh": "二重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：二重奏。",
-        "example": "Check the Duo condition.",
-        "level": "medium"
+        "example": "The composer's use of duo here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對二重奏的運用相當非傳統。"
     },
     {
         "word": "Trio",
@@ -2102,8 +2292,9 @@ const MUSIC_WORDS = [
         "definition_zh": "三重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：三重奏。",
-        "example": "Check the Trio condition.",
-        "level": "medium"
+        "example": "Pay close attention to the trio when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意三重奏。"
     },
     {
         "word": "Quartet",
@@ -2113,8 +2304,9 @@ const MUSIC_WORDS = [
         "definition_zh": "四重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：四重奏。",
-        "example": "Check the Quartet condition.",
-        "level": "medium"
+        "example": "The composer's use of quartet here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對四重奏的運用相當非傳統。"
     },
     {
         "word": "Quintet",
@@ -2124,8 +2316,9 @@ const MUSIC_WORDS = [
         "definition_zh": "五重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：五重奏。",
-        "example": "Check the Quintet condition.",
-        "level": "medium"
+        "example": "Pay close attention to the quintet when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意五重奏。"
     },
     {
         "word": "Big Band",
@@ -2135,8 +2328,9 @@ const MUSIC_WORDS = [
         "definition_zh": "大樂團",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：大樂團。",
-        "example": "Check the Big Band condition.",
-        "level": "medium"
+        "example": "The composer's use of Big Band here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對大樂團的運用相當非傳統。"
     },
     {
         "word": "Brass",
@@ -2146,8 +2340,9 @@ const MUSIC_WORDS = [
         "definition_zh": "銅管",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：銅管。",
-        "example": "Check the Brass condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the brass of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的銅管。"
     },
     {
         "word": "Strings",
@@ -2157,8 +2352,9 @@ const MUSIC_WORDS = [
         "definition_zh": "弦樂",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：弦樂。",
-        "example": "Check the Strings condition.",
-        "level": "medium"
+        "example": "The composer's use of strings here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對弦樂的運用相當非傳統。"
     },
     {
         "word": "Woodwinds",
@@ -2168,8 +2364,9 @@ const MUSIC_WORDS = [
         "definition_zh": "木管",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：木管。",
-        "example": "Check the Woodwinds condition.",
-        "level": "medium"
+        "example": "Pay close attention to the woodwinds when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意木管。"
     },
     {
         "word": "Percussion",
@@ -2179,8 +2376,9 @@ const MUSIC_WORDS = [
         "definition_zh": "敲擊",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：敲擊。",
-        "example": "Check the Percussion condition.",
-        "level": "medium"
+        "example": "Pay close attention to the percussion when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意敲擊。"
     },
     {
         "word": "Harmony vocals",
@@ -2190,8 +2388,9 @@ const MUSIC_WORDS = [
         "definition_zh": "和聲",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：和聲。",
-        "example": "Check the Harmony vocals condition.",
-        "level": "medium"
+        "example": "Practicing Harmony vocals will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習和聲絕對能提升你的音感。"
     },
     {
         "word": "Lead vocals",
@@ -2201,8 +2400,9 @@ const MUSIC_WORDS = [
         "definition_zh": "主唱",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：主唱。",
-        "example": "Check the Lead vocals condition.",
-        "level": "medium"
+        "example": "Pay close attention to the Lead vocals when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意主唱。"
     },
     {
         "word": "Backing track",
@@ -2212,8 +2412,9 @@ const MUSIC_WORDS = [
         "definition_zh": "伴奏軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：伴奏軌。",
-        "example": "Check the Backing track condition.",
-        "level": "medium"
+        "example": "Can you identify the Backing track in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的伴奏軌嗎？"
     },
     {
         "word": "Stem",
@@ -2223,8 +2424,9 @@ const MUSIC_WORDS = [
         "definition_zh": "分軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：分軌。",
-        "example": "Check the Stem condition.",
-        "level": "medium"
+        "example": "Pay close attention to the stem when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意分軌。"
     },
     {
         "word": "WAV",
@@ -2234,8 +2436,9 @@ const MUSIC_WORDS = [
         "definition_zh": "無損格式",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：無損格式。",
-        "example": "Check the WAV condition.",
-        "level": "medium"
+        "example": "Pay close attention to the WAV when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意無損格式。"
     },
     {
         "word": "MP3",
@@ -2245,8 +2448,9 @@ const MUSIC_WORDS = [
         "definition_zh": "壓縮格式",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：壓縮格式。",
-        "example": "Check the MP3 condition.",
-        "level": "medium"
+        "example": "The composer's use of MP3 here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對壓縮格式的運用相當非傳統。"
     },
     {
         "word": "FLAC",
@@ -2256,8 +2460,9 @@ const MUSIC_WORDS = [
         "definition_zh": "無損壓縮",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：無損壓縮。",
-        "example": "Check the FLAC condition.",
-        "level": "medium"
+        "example": "Pay close attention to the FLAC when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意無損壓縮。"
     },
     {
         "word": "Track",
@@ -2267,8 +2472,9 @@ const MUSIC_WORDS = [
         "definition_zh": "音軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：音軌。",
-        "example": "Check the Track condition.",
-        "level": "medium"
+        "example": "The progressive shift built on track gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在音軌上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Region",
@@ -2278,8 +2484,9 @@ const MUSIC_WORDS = [
         "definition_zh": "區域段落",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：區域段落。",
-        "example": "Check the Region condition.",
-        "level": "medium"
+        "example": "Can you identify the region in the second measure?",
+        "level": "medium",
+        "example_zh": "你能聽出第二小節裡的區域段落嗎？"
     },
     {
         "word": "Loop",
@@ -2289,8 +2496,9 @@ const MUSIC_WORDS = [
         "definition_zh": "循環",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：循環。",
-        "example": "Check the Loop condition.",
-        "level": "medium"
+        "example": "Practicing loop will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習循環絕對能提升你的音感。"
     },
     {
         "word": "Sample",
@@ -2300,8 +2508,9 @@ const MUSIC_WORDS = [
         "definition_zh": "採樣",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：採樣。",
-        "example": "Check the Sample condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the sample of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的採樣。"
     },
     {
         "word": "Acoustic",
@@ -2311,8 +2520,9 @@ const MUSIC_WORDS = [
         "definition_zh": "不插電",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：不插電。",
-        "example": "Check the Acoustic condition.",
-        "level": "medium"
+        "example": "Practicing acoustic will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習不插電絕對能提升你的音感。"
     },
     {
         "word": "Electric",
@@ -2322,8 +2532,9 @@ const MUSIC_WORDS = [
         "definition_zh": "插電",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：插電。",
-        "example": "Check the Electric condition.",
-        "level": "medium"
+        "example": "The progressive shift built on electric gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在插電上的漸進變化賦予了這首歌張力。"
     },
     {
         "word": "Semi-acoustic",
@@ -2333,8 +2544,9 @@ const MUSIC_WORDS = [
         "definition_zh": "半空心",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：半空心。",
-        "example": "Check the Semi-acoustic condition.",
-        "level": "medium"
+        "example": "Pay close attention to the semi-acoustic when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意半空心。"
     },
     {
         "word": "Fretless",
@@ -2344,8 +2556,9 @@ const MUSIC_WORDS = [
         "definition_zh": "無格",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：無格。",
-        "example": "Check the Fretless condition.",
-        "level": "medium"
+        "example": "Practicing fretless will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習無格絕對能提升你的音感。"
     },
     {
         "word": "Action",
@@ -2355,8 +2568,9 @@ const MUSIC_WORDS = [
         "definition_zh": "弦高",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：弦高。",
-        "example": "Check the Action condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the action of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的弦高。"
     },
     {
         "word": "Neck",
@@ -2366,8 +2580,9 @@ const MUSIC_WORDS = [
         "definition_zh": "琴頸",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴頸。",
-        "example": "Check the Neck condition.",
-        "level": "medium"
+        "example": "The composer's use of neck here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對琴頸的運用相當非傳統。"
     },
     {
         "word": "Body",
@@ -2377,8 +2592,9 @@ const MUSIC_WORDS = [
         "definition_zh": "琴身",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴身。",
-        "example": "Check the Body condition.",
-        "level": "medium"
+        "example": "The composer's use of body here is quite unorthodox.",
+        "level": "medium",
+        "example_zh": "作曲家在這裡對琴身的運用相當非傳統。"
     },
     {
         "word": "Scale length",
@@ -2388,8 +2604,9 @@ const MUSIC_WORDS = [
         "definition_zh": "弦長度",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：弦長度。",
-        "example": "Check the Scale length condition.",
-        "level": "medium"
+        "example": "Pay close attention to the Scale length when playing this section.",
+        "level": "medium",
+        "example_zh": "在演奏這個段落時，請密切注意弦長度。"
     },
     {
         "word": "Tuning",
@@ -2399,8 +2616,9 @@ const MUSIC_WORDS = [
         "definition_zh": "調音",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：調音。",
-        "example": "Check the Tuning condition.",
-        "level": "medium"
+        "example": "Practicing tuning will strictly improve your musical ear.",
+        "level": "medium",
+        "example_zh": "練習調音絕對能提升你的音感。"
     },
     {
         "word": "Drop D",
@@ -2410,8 +2628,9 @@ const MUSIC_WORDS = [
         "definition_zh": "降低D調",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：降低D調。",
-        "example": "Check the Drop D condition.",
-        "level": "medium"
+        "example": "She spent hours analyzing the Drop D of the classical piece.",
+        "level": "medium",
+        "example_zh": "她花了好幾個小時分析這首古典樂曲的降低D調。"
     },
     {
         "word": "Open Tuning",
@@ -2421,8 +2640,9 @@ const MUSIC_WORDS = [
         "definition_zh": "開放定弦",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：開放定弦。",
-        "example": "Check the Open Tuning condition.",
-        "level": "medium"
+        "example": "The progressive shift built on Open Tuning gives the song its tension.",
+        "level": "medium",
+        "example_zh": "建立在開放定弦上的漸進變化賦予了這首歌張力。"
     }
 ];
 const CORE_WORDS = [
@@ -2434,8 +2654,9 @@ const CORE_WORDS = [
         "definition_zh": "分析",
         "definition_en": "Core academic vocab",
         "explanation": "研究事物的組成與脈絡。",
-        "example": "Use Analyze in your study.",
-        "level": "medium"
+        "example": "Management will analyze the new strategy next week.",
+        "level": "medium",
+        "example_zh": "管理層下週將分析這項新策略。"
     },
     {
         "word": "Approach",
@@ -2445,8 +2666,9 @@ const CORE_WORDS = [
         "definition_zh": "方法",
         "definition_en": "Core academic vocab",
         "explanation": "處理問題的特定方式。",
-        "example": "Use Approach in your study.",
-        "level": "medium"
+        "example": "Please approach the documents before the meeting starts.",
+        "level": "medium",
+        "example_zh": "請在會議開始前方法這些文件。"
     },
     {
         "word": "Assess",
@@ -2456,8 +2678,9 @@ const CORE_WORDS = [
         "definition_zh": "評估",
         "definition_en": "Core academic vocab",
         "explanation": "判定事物的價值或水準。",
-        "example": "Use Assess in your study.",
-        "level": "medium"
+        "example": "Please assess the documents before the meeting starts.",
+        "level": "medium",
+        "example_zh": "請在會議開始前評估這些文件。"
     },
     {
         "word": "Assume",
@@ -2467,8 +2690,9 @@ const CORE_WORDS = [
         "definition_zh": "假設",
         "definition_en": "Core academic vocab",
         "explanation": "在未經證實前認為某事是事實。",
-        "example": "Use Assume in your study.",
-        "level": "medium"
+        "example": "It is a mistake to assume that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去假設一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Authority",
@@ -2478,8 +2702,9 @@ const CORE_WORDS = [
         "definition_zh": "權威",
         "definition_en": "Core academic vocab",
         "explanation": "具備法律或專業決策權。",
-        "example": "Use Authority in your study.",
-        "level": "medium"
+        "example": "She showed great authority during the negotiations.",
+        "level": "medium",
+        "example_zh": "她在談判中展現了極大的權威。"
     },
     {
         "word": "Available",
@@ -2489,8 +2714,9 @@ const CORE_WORDS = [
         "definition_zh": "可用的",
         "definition_en": "Core academic vocab",
         "explanation": "現成且可以立即投入使用。",
-        "example": "Use Available in your study.",
-        "level": "medium"
+        "example": "Is the new software available for download yet?",
+        "level": "medium",
+        "example_zh": "這款新軟體已經開放提供可用的了嗎？"
     },
     {
         "word": "Benefit",
@@ -2500,8 +2726,9 @@ const CORE_WORDS = [
         "definition_zh": "利益",
         "definition_en": "Core academic vocab",
         "explanation": "能帶來正面影響的因素。",
-        "example": "Use Benefit in your study.",
-        "level": "medium"
+        "example": "Is the new software benefit for download yet?",
+        "level": "medium",
+        "example_zh": "這款新軟體已經開放提供利益了嗎？"
     },
     {
         "word": "Concept",
@@ -2511,8 +2738,9 @@ const CORE_WORDS = [
         "definition_zh": "觀念",
         "definition_en": "Core academic vocab",
         "explanation": "抽象的想法或普遍原則。",
-        "example": "Use Concept in your study.",
-        "level": "medium"
+        "example": "You need to grasp the concept vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與觀念相關的詞彙。"
     },
     {
         "word": "Consistent",
@@ -2522,8 +2750,9 @@ const CORE_WORDS = [
         "definition_zh": "一致的",
         "definition_en": "Core academic vocab",
         "explanation": "前後標準始終如一。",
-        "example": "Use Consistent in your study.",
-        "level": "medium"
+        "example": "The core consistent behind this theory is quite complex.",
+        "level": "medium",
+        "example_zh": "這個理論背後的核心一致的相當複雜。"
     },
     {
         "word": "Context",
@@ -2533,8 +2762,9 @@ const CORE_WORDS = [
         "definition_zh": "脈絡",
         "definition_en": "Core academic vocab",
         "explanation": "影響事物意義的背景。",
-        "example": "Use Context in your study.",
-        "level": "medium"
+        "example": "The context remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個脈絡法則仍然保持著完美的不變性。"
     },
     {
         "word": "Create",
@@ -2544,8 +2774,9 @@ const CORE_WORDS = [
         "definition_zh": "創造",
         "definition_en": "Core academic vocab",
         "explanation": "使原本不存在的事物誕生。",
-        "example": "Use Create in your study.",
-        "level": "medium"
+        "example": "It is difficult to create the exact impact of the policy.",
+        "level": "medium",
+        "example_zh": "很難精確地測量該政策帶來什麼樣的創造。"
     },
     {
         "word": "Data",
@@ -2555,8 +2786,9 @@ const CORE_WORDS = [
         "definition_zh": "數據",
         "definition_en": "Core academic vocab",
         "explanation": "用於分析的Facts與數字。",
-        "example": "Use Data in your study.",
-        "level": "medium"
+        "example": "The data remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個數據法則仍然保持著完美的不變性。"
     },
     {
         "word": "Definition",
@@ -2566,8 +2798,9 @@ const CORE_WORDS = [
         "definition_zh": "定義",
         "definition_en": "Core academic vocab",
         "explanation": "對事物範疇的精確說明。",
-        "example": "Use Definition in your study.",
-        "level": "medium"
+        "example": "The definition remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個定義法則仍然保持著完美的不變性。"
     },
     {
         "word": "Derived",
@@ -2577,8 +2810,9 @@ const CORE_WORDS = [
         "definition_zh": "衍生的",
         "definition_en": "Core academic vocab",
         "explanation": "從特定來源發展而成。",
-        "example": "Use Derived in your study.",
-        "level": "medium"
+        "example": "It is a mistake to derived that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去衍生的一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Distribution",
@@ -2588,8 +2822,9 @@ const CORE_WORDS = [
         "definition_zh": "分配",
         "definition_en": "Core academic vocab",
         "explanation": "散播或分發的行為。",
-        "example": "Use Distribution in your study.",
-        "level": "medium"
+        "example": "It's important to maintain professional distribution at work.",
+        "level": "medium",
+        "example_zh": "在工作上保持專業的分配是很重要的。"
     },
     {
         "word": "Economic",
@@ -2599,8 +2834,9 @@ const CORE_WORDS = [
         "definition_zh": "經濟的",
         "definition_en": "Core academic vocab",
         "explanation": "與生產、分配和消費相關。",
-        "example": "Use Economic in your study.",
-        "level": "medium"
+        "example": "He possesses the necessary economic to lead the project.",
+        "level": "medium",
+        "example_zh": "他具備領導這個專案所需的經濟的。"
     },
     {
         "word": "Environment",
@@ -2610,8 +2846,9 @@ const CORE_WORDS = [
         "definition_zh": "環境",
         "definition_en": "Core academic vocab",
         "explanation": "自然與文化條件的總和。",
-        "example": "Use Environment in your study.",
-        "level": "medium"
+        "example": "This concept represents the environment of the subject.",
+        "level": "medium",
+        "example_zh": "這個概念代表了這門學科的環境。"
     },
     {
         "word": "Evidence",
@@ -2621,8 +2858,9 @@ const CORE_WORDS = [
         "definition_zh": "證據",
         "definition_en": "Core academic vocab",
         "explanation": "證明事實的相關資訊。",
-        "example": "Use Evidence in your study.",
-        "level": "medium"
+        "example": "We must examine the evidence before drawing conclusions.",
+        "level": "medium",
+        "example_zh": "在得出結論之前，我們必須檢驗這個證據。"
     },
     {
         "word": "Establish",
@@ -2632,8 +2870,9 @@ const CORE_WORDS = [
         "definition_zh": "建立",
         "definition_en": "Core academic vocab",
         "explanation": "使之被廣泛接受。",
-        "example": "Use Establish in your study.",
-        "level": "medium"
+        "example": "We need to thoroughly establish the current situation.",
+        "level": "medium",
+        "example_zh": "我們需要徹底建立目前的狀況。"
     },
     {
         "word": "Estimate",
@@ -2643,8 +2882,9 @@ const CORE_WORDS = [
         "definition_zh": "估計",
         "definition_en": "Core academic vocab",
         "explanation": "對數值的粗略計算。",
-        "example": "Use Estimate in your study.",
-        "level": "medium"
+        "example": "Statistical estimate plays a key role in the research.",
+        "level": "medium",
+        "example_zh": "統計分析在這項研究中扮演了包含估計的關鍵角色。"
     },
     {
         "word": "Factor",
@@ -2654,8 +2894,9 @@ const CORE_WORDS = [
         "definition_zh": "因素",
         "definition_en": "Core academic vocab",
         "explanation": "構成結果的其中一個條件。",
-        "example": "Use Factor in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable factor.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的因素上。"
     },
     {
         "word": "Financial",
@@ -2665,8 +2906,9 @@ const CORE_WORDS = [
         "definition_zh": "財務的",
         "definition_en": "Core academic vocab",
         "explanation": "與資金資源管理相關。",
-        "example": "Use Financial in your study.",
-        "level": "medium"
+        "example": "Building financial with your team is crucial for success.",
+        "level": "medium",
+        "example_zh": "與你的團隊建立良好的財務的對於成功至關重要。"
     },
     {
         "word": "Formula",
@@ -2676,8 +2918,9 @@ const CORE_WORDS = [
         "definition_zh": "公式",
         "definition_en": "Core academic vocab",
         "explanation": "達成特定結果的固定路徑。",
-        "example": "Use Formula in your study.",
-        "level": "medium"
+        "example": "That specific formula makes the framework unique.",
+        "level": "medium",
+        "example_zh": "那個特定的公式讓這個框架與眾不同。"
     },
     {
         "word": "Function",
@@ -2687,8 +2930,9 @@ const CORE_WORDS = [
         "definition_zh": "功能",
         "definition_en": "Core academic vocab",
         "explanation": "設計用來達成的用途。",
-        "example": "Use Function in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable function.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的功能上。"
     },
     {
         "word": "Identify",
@@ -2698,8 +2942,9 @@ const CORE_WORDS = [
         "definition_zh": "識別",
         "definition_en": "Core academic vocab",
         "explanation": "確認身份或特質。",
-        "example": "Use Identify in your study.",
-        "level": "medium"
+        "example": "Please identify the documents before the meeting starts.",
+        "level": "medium",
+        "example_zh": "請在會議開始前識別這些文件。"
     },
     {
         "word": "Income",
@@ -2709,8 +2954,9 @@ const CORE_WORDS = [
         "definition_zh": "收入",
         "definition_en": "Core academic vocab",
         "explanation": "所獲得的報酬。",
-        "example": "Use Income in your study.",
-        "level": "medium"
+        "example": "She showed great income during the negotiations.",
+        "level": "medium",
+        "example_zh": "她在談判中展現了極大的收入。"
     },
     {
         "word": "Indicate",
@@ -2720,8 +2966,9 @@ const CORE_WORDS = [
         "definition_zh": "指出",
         "definition_en": "Core academic vocab",
         "explanation": "顯現跡象或導引注意力。",
-        "example": "Use Indicate in your study.",
-        "level": "medium"
+        "example": "You need to grasp the indicate vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與指出相關的詞彙。"
     },
     {
         "word": "Individual",
@@ -2731,8 +2978,9 @@ const CORE_WORDS = [
         "definition_zh": "個人",
         "definition_en": "Core academic vocab",
         "explanation": "單一且獨立的對象。",
-        "example": "Use Individual in your study.",
-        "level": "medium"
+        "example": "You need to grasp the individual vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與個人相關的詞彙。"
     },
     {
         "word": "Interpret",
@@ -2742,8 +2990,9 @@ const CORE_WORDS = [
         "definition_zh": "詮釋",
         "definition_en": "Core academic vocab",
         "explanation": "對事物含義的理解與說明。",
-        "example": "Use Interpret in your study.",
-        "level": "medium"
+        "example": "You need to grasp the interpret vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與詮釋相關的詞彙。"
     },
     {
         "word": "Involved",
@@ -2753,8 +3002,9 @@ const CORE_WORDS = [
         "definition_zh": "涉及的",
         "definition_en": "Core academic vocab",
         "explanation": "參與到某項活動。",
-        "example": "Use Involved in your study.",
-        "level": "medium"
+        "example": "Having a good involved makes all the difference.",
+        "level": "medium",
+        "example_zh": "擁有良好的涉及的能帶來巨大的改變。"
     },
     {
         "word": "Issue",
@@ -2764,8 +3014,9 @@ const CORE_WORDS = [
         "definition_zh": "議題",
         "definition_en": "Core academic vocab",
         "explanation": "重要的討論話題或問題。",
-        "example": "Use Issue in your study.",
-        "level": "medium"
+        "example": "This approach has a significant issue for everyone.",
+        "level": "medium",
+        "example_zh": "這種方法對每個人都有顯著的議題。"
     },
     {
         "word": "Labour",
@@ -2775,8 +3026,9 @@ const CORE_WORDS = [
         "definition_zh": "勞務",
         "definition_en": "Core academic vocab",
         "explanation": "一定的體力或腦力工作。",
-        "example": "Use Labour in your study.",
-        "level": "medium"
+        "example": "Building labour with your team is crucial for success.",
+        "level": "medium",
+        "example_zh": "與你的團隊建立良好的勞務對於成功至關重要。"
     },
     {
         "word": "Legal",
@@ -2786,8 +3038,9 @@ const CORE_WORDS = [
         "definition_zh": "法律的",
         "definition_en": "Core academic vocab",
         "explanation": "與法規體系相關。",
-        "example": "Use Legal in your study.",
-        "level": "medium"
+        "example": "The manager will legal the responsibilities evenly.",
+        "level": "medium",
+        "example_zh": "經理將會平均地分配與法律的這些責任。"
     },
     {
         "word": "Legislation",
@@ -2797,8 +3050,9 @@ const CORE_WORDS = [
         "definition_zh": "立法",
         "definition_en": "Core academic vocab",
         "explanation": "制定與通過法律的過程。",
-        "example": "Use Legislation in your study.",
-        "level": "medium"
+        "example": "It's important to maintain professional legislation at work.",
+        "level": "medium",
+        "example_zh": "在工作上保持專業的立法是很重要的。"
     },
     {
         "word": "Major",
@@ -2808,8 +3062,9 @@ const CORE_WORDS = [
         "definition_zh": "主要的",
         "definition_en": "Core academic vocab",
         "explanation": "範圍廣或較重要的部分。",
-        "example": "Use Major in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable major.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的主要的上。"
     },
     {
         "word": "Method",
@@ -2819,8 +3074,9 @@ const CORE_WORDS = [
         "definition_zh": "方法",
         "definition_en": "Core academic vocab",
         "explanation": "做某事的既定路徑。",
-        "example": "Use Method in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable method.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的方法上。"
     },
     {
         "word": "Occur",
@@ -2830,8 +3086,9 @@ const CORE_WORDS = [
         "definition_zh": "發生",
         "definition_en": "Core academic vocab",
         "explanation": "在特定時間地點出現。",
-        "example": "Use Occur in your study.",
-        "level": "medium"
+        "example": "Can you clarify the occur for me once more?",
+        "level": "medium",
+        "example_zh": "你能再為我釐清一次這個發生嗎？"
     },
     {
         "word": "Percent",
@@ -2841,8 +3098,9 @@ const CORE_WORDS = [
         "definition_zh": "百分比",
         "definition_en": "Core academic vocab",
         "explanation": "每一百份中的佔比。",
-        "example": "Use Percent in your study.",
-        "level": "medium"
+        "example": "You need to grasp the percent vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與百分比相關的詞彙。"
     },
     {
         "word": "Period",
@@ -2852,8 +3110,9 @@ const CORE_WORDS = [
         "definition_zh": "時期",
         "definition_en": "Core academic vocab",
         "explanation": "特定的時間長段或階段。",
-        "example": "Use Period in your study.",
-        "level": "medium"
+        "example": "This concept represents the period of the subject.",
+        "level": "medium",
+        "example_zh": "這個概念代表了這門學科的時期。"
     },
     {
         "word": "Policy",
@@ -2863,8 +3122,9 @@ const CORE_WORDS = [
         "definition_zh": "政策",
         "definition_en": "Core academic vocab",
         "explanation": "組織採取的方針準則。",
-        "example": "Use Policy in your study.",
-        "level": "medium"
+        "example": "He possesses the necessary policy to lead the project.",
+        "level": "medium",
+        "example_zh": "他具備領導這個專案所需的政策。"
     },
     {
         "word": "Principle",
@@ -2874,8 +3134,9 @@ const CORE_WORDS = [
         "definition_zh": "原則",
         "definition_en": "Core academic vocab",
         "explanation": "基本的法律、真理或準則。",
-        "example": "Use Principle in your study.",
-        "level": "medium"
+        "example": "Statistical principle plays a key role in the research.",
+        "level": "medium",
+        "example_zh": "統計分析在這項研究中扮演了包含原則的關鍵角色。"
     },
     {
         "word": "Procedure",
@@ -2885,8 +3146,9 @@ const CORE_WORDS = [
         "definition_zh": "程序",
         "definition_en": "Core academic vocab",
         "explanation": "執行任務的正確順序。",
-        "example": "Use Procedure in your study.",
-        "level": "medium"
+        "example": "It is difficult to procedure the exact impact of the policy.",
+        "level": "medium",
+        "example_zh": "很難精確地測量該政策帶來什麼樣的程序。"
     },
     {
         "word": "Process",
@@ -2896,8 +3158,9 @@ const CORE_WORDS = [
         "definition_zh": "過程",
         "definition_en": "Core academic vocab",
         "explanation": "達成結果的一系列變化。",
-        "example": "Use Process in your study.",
-        "level": "medium"
+        "example": "It is difficult to process the exact impact of the policy.",
+        "level": "medium",
+        "example_zh": "很難精確地測量該政策帶來什麼樣的過程。"
     },
     {
         "word": "Required",
@@ -2907,8 +3170,9 @@ const CORE_WORDS = [
         "definition_zh": "必須的",
         "definition_en": "Core academic vocab",
         "explanation": "不可或缺的條件。",
-        "example": "Use Required in your study.",
-        "level": "medium"
+        "example": "Can you clarify the required for me once more?",
+        "level": "medium",
+        "example_zh": "你能再為我釐清一次這個必須的嗎？"
     },
     {
         "word": "Research",
@@ -2918,8 +3182,9 @@ const CORE_WORDS = [
         "definition_zh": "研究",
         "definition_en": "Core academic vocab",
         "explanation": "深入調查與事實發現。",
-        "example": "Use Research in your study.",
-        "level": "medium"
+        "example": "We need to thoroughly research the current situation.",
+        "level": "medium",
+        "example_zh": "我們需要徹底研究目前的狀況。"
     },
     {
         "word": "Response",
@@ -2929,8 +3194,9 @@ const CORE_WORDS = [
         "definition_zh": "反映",
         "definition_en": "Core academic vocab",
         "explanation": "對刺激或行為的答覆。",
-        "example": "Use Response in your study.",
-        "level": "medium"
+        "example": "It is difficult to response the exact impact of the policy.",
+        "level": "medium",
+        "example_zh": "很難精確地測量該政策帶來什麼樣的反映。"
     },
     {
         "word": "Role",
@@ -2940,8 +3206,9 @@ const CORE_WORDS = [
         "definition_zh": "角色",
         "definition_en": "Core academic vocab",
         "explanation": "在特定情況下扮演的功能。",
-        "example": "Use Role in your study.",
-        "level": "medium"
+        "example": "It is relatively easy to role this device.",
+        "level": "medium",
+        "example_zh": "要角色這個設備相對容易。"
     },
     {
         "word": "Section",
@@ -2951,8 +3218,9 @@ const CORE_WORDS = [
         "definition_zh": "部分",
         "definition_en": "Core academic vocab",
         "explanation": "整體中一個獨立區塊。",
-        "example": "Use Section in your study.",
-        "level": "medium"
+        "example": "Is the new software section for download yet?",
+        "level": "medium",
+        "example_zh": "這款新軟體已經開放提供部分了嗎？"
     },
     {
         "word": "Sector",
@@ -2962,8 +3230,9 @@ const CORE_WORDS = [
         "definition_zh": "部門",
         "definition_en": "Core academic vocab",
         "explanation": "社會活動的一個特定分區。",
-        "example": "Use Sector in your study.",
-        "level": "medium"
+        "example": "Building sector with your team is crucial for success.",
+        "level": "medium",
+        "example_zh": "與你的團隊建立良好的部門對於成功至關重要。"
     },
     {
         "word": "Significant",
@@ -2973,8 +3242,9 @@ const CORE_WORDS = [
         "definition_zh": "顯著的",
         "definition_en": "Core academic vocab",
         "explanation": "具重大影響力。",
-        "example": "Use Significant in your study.",
-        "level": "medium"
+        "example": "It is a mistake to significant that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去顯著的一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Similar",
@@ -2984,8 +3254,9 @@ const CORE_WORDS = [
         "definition_zh": "相似的",
         "definition_en": "Core academic vocab",
         "explanation": "在某些特點上很接近的。",
-        "example": "Use Similar in your study.",
-        "level": "medium"
+        "example": "It is relatively easy to similar this device.",
+        "level": "medium",
+        "example_zh": "要相似的這個設備相對容易。"
     },
     {
         "word": "Source",
@@ -2995,8 +3266,9 @@ const CORE_WORDS = [
         "definition_zh": "來源",
         "definition_en": "Core academic vocab",
         "explanation": "事物的起始點處。",
-        "example": "Use Source in your study.",
-        "level": "medium"
+        "example": "A solid source is essential for future learning.",
+        "level": "medium",
+        "example_zh": "一個穩固的來源對於未來的學習不可或缺。"
     },
     {
         "word": "Specific",
@@ -3006,8 +3278,9 @@ const CORE_WORDS = [
         "definition_zh": "具體的",
         "definition_en": "Core academic vocab",
         "explanation": "精確、明確且方針性的。",
-        "example": "Use Specific in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable specific.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的具體的上。"
     },
     {
         "word": "Structure",
@@ -3017,8 +3290,9 @@ const CORE_WORDS = [
         "definition_zh": "結構",
         "definition_en": "Core academic vocab",
         "explanation": "零件組合成整體的方式。",
-        "example": "Use Structure in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable structure.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的結構上。"
     },
     {
         "word": "Theory",
@@ -3028,8 +3302,9 @@ const CORE_WORDS = [
         "definition_zh": "理論",
         "definition_en": "Core academic vocab",
         "explanation": "解釋事實的一套原則。",
-        "example": "Use Theory in your study.",
-        "level": "medium"
+        "example": "That specific theory makes the framework unique.",
+        "level": "medium",
+        "example_zh": "那個特定的理論讓這個框架與眾不同。"
     },
     {
         "word": "Variable",
@@ -3039,8 +3314,9 @@ const CORE_WORDS = [
         "definition_zh": "變數",
         "definition_en": "Core academic vocab",
         "explanation": "會隨情況改變的元素。",
-        "example": "Use Variable in your study.",
-        "level": "medium"
+        "example": "It is a mistake to variable that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去變數一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Achieve",
@@ -3050,8 +3326,9 @@ const CORE_WORDS = [
         "definition_zh": "達成",
         "definition_en": "Core academic vocab",
         "explanation": "透過努力獲得成功結果。",
-        "example": "Use Achieve in your study.",
-        "level": "medium"
+        "example": "They managed to achieve the problem efficiently.",
+        "level": "medium",
+        "example_zh": "他們有效地成功達成了這個問題。"
     },
     {
         "word": "Acquisition",
@@ -3061,8 +3338,9 @@ const CORE_WORDS = [
         "definition_zh": "獲取",
         "definition_en": "Core academic vocab",
         "explanation": "獲得某物或公司的行為。",
-        "example": "Use Acquisition in your study.",
-        "level": "medium"
+        "example": "Building acquisition with your team is crucial for success.",
+        "level": "medium",
+        "example_zh": "與你的團隊建立良好的獲取對於成功至關重要。"
     },
     {
         "word": "Administration",
@@ -3072,8 +3350,9 @@ const CORE_WORDS = [
         "definition_zh": "行政",
         "definition_en": "Core academic vocab",
         "explanation": "組織的正式運行與管理。",
-        "example": "Use Administration in your study.",
-        "level": "medium"
+        "example": "She showed great administration during the negotiations.",
+        "level": "medium",
+        "example_zh": "她在談判中展現了極大的行政。"
     },
     {
         "word": "Affect",
@@ -3083,8 +3362,9 @@ const CORE_WORDS = [
         "definition_zh": "影響",
         "definition_en": "Core academic vocab",
         "explanation": "對某事產生變化。",
-        "example": "Use Affect in your study.",
-        "level": "medium"
+        "example": "Having a good affect makes all the difference.",
+        "level": "medium",
+        "example_zh": "擁有良好的影響能帶來巨大的改變。"
     },
     {
         "word": "Appropriate",
@@ -3094,8 +3374,9 @@ const CORE_WORDS = [
         "definition_zh": "適當的",
         "definition_en": "Core academic vocab",
         "explanation": "適合特定情況或用途。",
-        "example": "Use Appropriate in your study.",
-        "level": "medium"
+        "example": "Is the new software appropriate for download yet?",
+        "level": "medium",
+        "example_zh": "這款新軟體已經開放提供適當的了嗎？"
     },
     {
         "word": "Aspect",
@@ -3105,8 +3386,9 @@ const CORE_WORDS = [
         "definition_zh": "面向",
         "definition_en": "Core academic vocab",
         "explanation": "事物的一個特定特點。",
-        "example": "Use Aspect in your study.",
-        "level": "medium"
+        "example": "You need to grasp the aspect vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與面向相關的詞彙。"
     },
     {
         "word": "Assistance",
@@ -3116,8 +3398,9 @@ const CORE_WORDS = [
         "definition_zh": "協助",
         "definition_en": "Core academic vocab",
         "explanation": "提供幫忙或支持的行為。",
-        "example": "Use Assistance in your study.",
-        "level": "medium"
+        "example": "Can you clarify the assistance for me once more?",
+        "level": "medium",
+        "example_zh": "你能再為我釐清一次這個協助嗎？"
     },
     {
         "word": "Category",
@@ -3127,8 +3410,9 @@ const CORE_WORDS = [
         "definition_zh": "類別",
         "definition_en": "Core academic vocab",
         "explanation": "根據共同特性劃分的手法。",
-        "example": "Use Category in your study.",
-        "level": "medium"
+        "example": "You need to grasp the category vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與類別相關的詞彙。"
     },
     {
         "word": "Chapter",
@@ -3138,8 +3422,9 @@ const CORE_WORDS = [
         "definition_zh": "章節",
         "definition_en": "Core academic vocab",
         "explanation": "書籍、時期的一個部分。",
-        "example": "Use Chapter in your study.",
-        "level": "medium"
+        "example": "This concept represents the chapter of the subject.",
+        "level": "medium",
+        "example_zh": "這個概念代表了這門學科的章節。"
     },
     {
         "word": "Commission",
@@ -3149,8 +3434,9 @@ const CORE_WORDS = [
         "definition_zh": "佣金",
         "definition_en": "Core academic vocab",
         "explanation": "委派的任務或酬金。",
-        "example": "Use Commission in your study.",
-        "level": "medium"
+        "example": "Building commission with your team is crucial for success.",
+        "level": "medium",
+        "example_zh": "與你的團隊建立良好的佣金對於成功至關重要。"
     },
     {
         "word": "Community",
@@ -3160,8 +3446,9 @@ const CORE_WORDS = [
         "definition_zh": "社區",
         "definition_en": "Core academic vocab",
         "explanation": "居住、利益共同體。",
-        "example": "Use Community in your study.",
-        "level": "medium"
+        "example": "Can you clarify the community for me once more?",
+        "level": "medium",
+        "example_zh": "你能再為我釐清一次這個社區嗎？"
     },
     {
         "word": "Complex",
@@ -3171,8 +3458,9 @@ const CORE_WORDS = [
         "definition_zh": "複雜的",
         "definition_en": "Core academic vocab",
         "explanation": "包含多個關聯部分。",
-        "example": "Use Complex in your study.",
-        "level": "medium"
+        "example": "That specific complex makes the framework unique.",
+        "level": "medium",
+        "example_zh": "那個特定的複雜的讓這個框架與眾不同。"
     },
     {
         "word": "Compute",
@@ -3182,8 +3470,9 @@ const CORE_WORDS = [
         "definition_zh": "計算",
         "definition_en": "Core academic vocab",
         "explanation": "使用數學算出數值。",
-        "example": "Use Compute in your study.",
-        "level": "medium"
+        "example": "They managed to compute the problem efficiently.",
+        "level": "medium",
+        "example_zh": "他們有效地成功計算了這個問題。"
     },
     {
         "word": "Conclusion",
@@ -3193,8 +3482,9 @@ const CORE_WORDS = [
         "definition_zh": "結論",
         "definition_en": "Core academic vocab",
         "explanation": "考慮事實後的決定。",
-        "example": "Use Conclusion in your study.",
-        "level": "medium"
+        "example": "Statistical conclusion plays a key role in the research.",
+        "level": "medium",
+        "example_zh": "統計分析在這項研究中扮演了包含結論的關鍵角色。"
     },
     {
         "word": "Conduct",
@@ -3204,8 +3494,9 @@ const CORE_WORDS = [
         "definition_zh": "實施",
         "definition_en": "Core academic vocab",
         "explanation": "組織執行一項活動研究。",
-        "example": "Use Conduct in your study.",
-        "level": "medium"
+        "example": "It is difficult to conduct the exact impact of the policy.",
+        "level": "medium",
+        "example_zh": "很難精確地測量該政策帶來什麼樣的實施。"
     },
     {
         "word": "Consequence",
@@ -3215,8 +3506,9 @@ const CORE_WORDS = [
         "definition_zh": "後果",
         "definition_en": "Core academic vocab",
         "explanation": "行動導致的最終影響。",
-        "example": "Use Consequence in your study.",
-        "level": "medium"
+        "example": "It is a mistake to consequence that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去後果一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Construction",
@@ -3226,8 +3518,9 @@ const CORE_WORDS = [
         "definition_zh": "建築",
         "definition_en": "Core academic vocab",
         "explanation": "搭建大型結構物的行為。",
-        "example": "Use Construction in your study.",
-        "level": "medium"
+        "example": "Building construction with your team is crucial for success.",
+        "level": "medium",
+        "example_zh": "與你的團隊建立良好的建築對於成功至關重要。"
     },
     {
         "word": "Consumer",
@@ -3237,8 +3530,9 @@ const CORE_WORDS = [
         "definition_zh": "消費者",
         "definition_en": "Core academic vocab",
         "explanation": "購買、使用商品服務者。",
-        "example": "Use Consumer in your study.",
-        "level": "medium"
+        "example": "The manager will consumer the responsibilities evenly.",
+        "level": "medium",
+        "example_zh": "經理將會平均地分配與消費者這些責任。"
     },
     {
         "word": "Credit",
@@ -3248,8 +3542,9 @@ const CORE_WORDS = [
         "definition_zh": "信用",
         "definition_en": "Core academic vocab",
         "explanation": "相信某項能力的保證。",
-        "example": "Use Credit in your study.",
-        "level": "medium"
+        "example": "He possesses the necessary credit to lead the project.",
+        "level": "medium",
+        "example_zh": "他具備領導這個專案所需的信用。"
     },
     {
         "word": "Cultural",
@@ -3259,8 +3554,9 @@ const CORE_WORDS = [
         "definition_zh": "文化的",
         "definition_en": "Core academic vocab",
         "explanation": "與藝術、傳統精神相關。",
-        "example": "Use Cultural in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable cultural.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的文化的上。"
     },
     {
         "word": "Design",
@@ -3270,8 +3566,9 @@ const CORE_WORDS = [
         "definition_zh": "設計",
         "definition_en": "Core academic vocab",
         "explanation": "事前規劃或製作草稿。",
-        "example": "Use Design in your study.",
-        "level": "medium"
+        "example": "The design remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個設計法則仍然保持著完美的不變性。"
     },
     {
         "word": "Distinct",
@@ -3281,8 +3578,9 @@ const CORE_WORDS = [
         "definition_zh": "明顯不同的",
         "definition_en": "Core academic vocab",
         "explanation": "易於區分的特點鮮明者。",
-        "example": "Use Distinct in your study.",
-        "level": "medium"
+        "example": "It is a mistake to distinct that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去明顯不同的一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Element",
@@ -3292,8 +3590,9 @@ const CORE_WORDS = [
         "definition_zh": "元素",
         "definition_en": "Core academic vocab",
         "explanation": "組成的最基本單位。",
-        "example": "Use Element in your study.",
-        "level": "medium"
+        "example": "Statistical element plays a key role in the research.",
+        "level": "medium",
+        "example_zh": "統計分析在這項研究中扮演了包含元素的關鍵角色。"
     },
     {
         "word": "Equation",
@@ -3303,8 +3602,9 @@ const CORE_WORDS = [
         "definition_zh": "方程式",
         "definition_en": "Core academic vocab",
         "explanation": "表示兩量相等的描述。",
-        "example": "Use Equation in your study.",
-        "level": "medium"
+        "example": "It is a mistake to equation that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去方程式一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Evaluate",
@@ -3314,8 +3614,9 @@ const CORE_WORDS = [
         "definition_zh": "評價",
         "definition_en": "Core academic vocab",
         "explanation": "評量某事的優劣與價值。",
-        "example": "Use Evaluate in your study.",
-        "level": "medium"
+        "example": "It is a mistake to evaluate that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去評價一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Feature",
@@ -3325,8 +3626,9 @@ const CORE_WORDS = [
         "definition_zh": "特徵",
         "definition_en": "Core academic vocab",
         "explanation": "典型且顯著的功能特點。",
-        "example": "Use Feature in your study.",
-        "level": "medium"
+        "example": "You need to grasp the feature vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與特徵相關的詞彙。"
     },
     {
         "word": "Final",
@@ -3336,8 +3638,9 @@ const CORE_WORDS = [
         "definition_zh": "最終的",
         "definition_en": "Core academic vocab",
         "explanation": "最後的決定或結果。",
-        "example": "Use Final in your study.",
-        "level": "medium"
+        "example": "Is the new software final for download yet?",
+        "level": "medium",
+        "example_zh": "這款新軟體已經開放提供最終的了嗎？"
     },
     {
         "word": "Focus",
@@ -3347,8 +3650,9 @@ const CORE_WORDS = [
         "definition_zh": "重點",
         "definition_en": "Core academic vocab",
         "explanation": "注意力的集中核心。",
-        "example": "Use Focus in your study.",
-        "level": "medium"
+        "example": "It is relatively easy to focus this device.",
+        "level": "medium",
+        "example_zh": "要重點這個設備相對容易。"
     },
     {
         "word": "Impact",
@@ -3358,8 +3662,9 @@ const CORE_WORDS = [
         "definition_zh": "衝擊",
         "definition_en": "Core academic vocab",
         "explanation": "強大的效果與震懾力。",
-        "example": "Use Impact in your study.",
-        "level": "medium"
+        "example": "Having a good impact makes all the difference.",
+        "level": "medium",
+        "example_zh": "擁有良好的衝擊能帶來巨大的改變。"
     },
     {
         "word": "Invest",
@@ -3369,8 +3674,9 @@ const CORE_WORDS = [
         "definition_zh": "投資",
         "definition_en": "Core academic vocab",
         "explanation": "投入資金心力求回報。",
-        "example": "Use Invest in your study.",
-        "level": "medium"
+        "example": "She showed great invest during the negotiations.",
+        "level": "medium",
+        "example_zh": "她在談判中展現了極大的投資。"
     },
     {
         "word": "Item",
@@ -3380,8 +3686,9 @@ const CORE_WORDS = [
         "definition_zh": "項目",
         "definition_en": "Core academic vocab",
         "explanation": "清單中的單一物件內容。",
-        "example": "Use Item in your study.",
-        "level": "medium"
+        "example": "Is the new software item for download yet?",
+        "level": "medium",
+        "example_zh": "這款新軟體已經開放提供項目了嗎？"
     },
     {
         "word": "Journal",
@@ -3391,8 +3698,9 @@ const CORE_WORDS = [
         "definition_zh": "期刊",
         "definition_en": "Core academic vocab",
         "explanation": "專業學術定期刊物。",
-        "example": "Use Journal in your study.",
-        "level": "medium"
+        "example": "You need to grasp the journal vocabulary first.",
+        "level": "medium",
+        "example_zh": "你必須先掌握與期刊相關的詞彙。"
     },
     {
         "word": "Maintain",
@@ -3402,8 +3710,9 @@ const CORE_WORDS = [
         "definition_zh": "維持",
         "definition_en": "Core academic vocab",
         "explanation": "讓事物保持在原先狀態。",
-        "example": "Use Maintain in your study.",
-        "level": "medium"
+        "example": "The maintain remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個維持法則仍然保持著完美的不變性。"
     },
     {
         "word": "Normal",
@@ -3413,8 +3722,9 @@ const CORE_WORDS = [
         "definition_zh": "正常的",
         "definition_en": "Core academic vocab",
         "explanation": "符合標準或預期常規。",
-        "example": "Use Normal in your study.",
-        "level": "medium"
+        "example": "The normal remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個正常的法則仍然保持著完美的不變性。"
     },
     {
         "word": "Obtain",
@@ -3424,8 +3734,9 @@ const CORE_WORDS = [
         "definition_zh": "獲得",
         "definition_en": "Core academic vocab",
         "explanation": "透過程序或努力得到。",
-        "example": "Use Obtain in your study.",
-        "level": "medium"
+        "example": "Management will obtain the new strategy next week.",
+        "level": "medium",
+        "example_zh": "管理層下週將獲得這項新策略。"
     },
     {
         "word": "Participate",
@@ -3435,8 +3746,9 @@ const CORE_WORDS = [
         "definition_zh": "參加",
         "definition_en": "Core academic vocab",
         "explanation": "加入某項活動之中。",
-        "example": "Use Participate in your study.",
-        "level": "medium"
+        "example": "We need to thoroughly participate the current situation.",
+        "level": "medium",
+        "example_zh": "我們需要徹底參加目前的狀況。"
     },
     {
         "word": "Perceive",
@@ -3446,8 +3758,9 @@ const CORE_WORDS = [
         "definition_zh": "察覺",
         "definition_en": "Core academic vocab",
         "explanation": "感知到某事的存在。",
-        "example": "Use Perceive in your study.",
-        "level": "medium"
+        "example": "It is a mistake to perceive that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去察覺一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Positive",
@@ -3457,8 +3770,9 @@ const CORE_WORDS = [
         "definition_zh": "正面的",
         "definition_en": "Core academic vocab",
         "explanation": "充滿希望與支持者。",
-        "example": "Use Positive in your study.",
-        "level": "medium"
+        "example": "This approach has a significant positive for everyone.",
+        "level": "medium",
+        "example_zh": "這種方法對每個人都有顯著的正面的。"
     },
     {
         "word": "Potential",
@@ -3468,8 +3782,9 @@ const CORE_WORDS = [
         "definition_zh": "潛力",
         "definition_en": "Core academic vocab",
         "explanation": "未來發展的能力可能。",
-        "example": "Use Potential in your study.",
-        "level": "medium"
+        "example": "It is a mistake to potential that everything will go as planned.",
+        "level": "medium",
+        "example_zh": "去潛力一切都會按計畫進行，是個錯誤。"
     },
     {
         "word": "Previous",
@@ -3479,8 +3794,9 @@ const CORE_WORDS = [
         "definition_zh": "先前的",
         "definition_en": "Core academic vocab",
         "explanation": "在此之前發生的。",
-        "example": "Use Previous in your study.",
-        "level": "medium"
+        "example": "They built the app on a very stable previous.",
+        "level": "medium",
+        "example_zh": "他們將這個應用程式建立在一個非常穩定的先前的上。"
     },
     {
         "word": "Primary",
@@ -3490,8 +3806,9 @@ const CORE_WORDS = [
         "definition_zh": "首要的",
         "definition_en": "Core academic vocab",
         "explanation": "最重要的第一位。",
-        "example": "Use Primary in your study.",
-        "level": "medium"
+        "example": "A solid primary is essential for future learning.",
+        "level": "medium",
+        "example_zh": "一個穩固的首要的對於未來的學習不可或缺。"
     },
     {
         "word": "Purchase",
@@ -3501,8 +3818,9 @@ const CORE_WORDS = [
         "definition_zh": "購買",
         "definition_en": "Core academic vocab",
         "explanation": "買下某物的交易行為。",
-        "example": "Use Purchase in your study.",
-        "level": "medium"
+        "example": "This approach has a significant purchase for everyone.",
+        "level": "medium",
+        "example_zh": "這種方法對每個人都有顯著的購買。"
     },
     {
         "word": "Range",
@@ -3512,8 +3830,9 @@ const CORE_WORDS = [
         "definition_zh": "範圍",
         "definition_en": "Core academic vocab",
         "explanation": "變化的界線範圍。",
-        "example": "Use Range in your study.",
-        "level": "medium"
+        "example": "Having a good range makes all the difference.",
+        "level": "medium",
+        "example_zh": "擁有良好的範圍能帶來巨大的改變。"
     },
     {
         "word": "Region",
@@ -3523,8 +3842,9 @@ const CORE_WORDS = [
         "definition_zh": "地區",
         "definition_en": "Core academic vocab",
         "explanation": "地理上、特定的區塊。",
-        "example": "Use Region in your study.",
-        "level": "medium"
+        "example": "The region remains perfectly unchanged.",
+        "level": "medium",
+        "example_zh": "這個地區法則仍然保持著完美的不變性。"
     }
 ];
 const INITIAL_DATA = [...MUSIC_WORDS, ...CORE_WORDS];

@@ -1830,12 +1830,25 @@ const initShadowingView = () => {
     };
 
     const getSentencePool = () => {
-        return getAdaptivePool(20)
-            .filter(w => w.example || w.music_context || w.context)
+        const now = new Date();
+        // Use CORE_WORDS only, prioritise words due for review or weak
+        return CORE_WORDS
+            .filter(w => w.context_sentence || w.learn_sentence)
             .map(w => {
-                const sentence = w.example || w.music_context || w.context;
-                return { ...w, sentence };
-            });
+                const prog = state.progress[w.word];
+                let priority = Math.random() * 10; // base shuffle
+                if (!prog) priority += 80; // brand new, high priority
+                else {
+                    if (prog.status === 'weak') priority += 60;
+                    else if (prog.status === 'learning') priority += 30;
+                    if (prog.nextReviewDate && new Date(prog.nextReviewDate) <= now) priority += 40;
+                }
+                // Prefer context_sentence (longer, more natural) over learn_sentence
+                const sentence = w.context_sentence || w.learn_sentence;
+                return { ...w, sentence, priority };
+            })
+            .sort((a, b) => b.priority - a.priority)
+            .slice(0, 20);
     };
 
     const loadNext = () => {

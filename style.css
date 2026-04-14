@@ -545,6 +545,10 @@ h1 {
 
 .card-face.back {
     transform: rotateY(180deg);
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .card-face.front h2 {
@@ -785,6 +789,9 @@ h1 {
 
 #listening-result-content {
     line-height: 1.6;
+    max-height: 32vh;
+    overflow-y: auto;
+    padding-right: 5px;
 }
 
 @keyframes slideUp {

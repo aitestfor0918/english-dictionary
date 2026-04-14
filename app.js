@@ -384,7 +384,7 @@ const getAdaptivePool = (count, typeFilter = null) => {
     ][tier];
 
     const now = new Date();
-    const words = INITIAL_DATA.filter(w => !typeFilter || w.type === typeFilter);
+    const words = INITIAL_DATA.filter(w => !typeFilter || w.type === typeFilter || (typeFilter === 'word' && w.type === 'daily'));
     const getLevelPool = (level) => words.filter(w => (w.level || 'easy') === level);
 
     const easyPool = getLevelPool('easy');
@@ -515,7 +515,7 @@ const initLearnDailyCards = () => {
                     <div class="check-mark" style="font-size:2rem; margin-bottom:4px;">✔</div>
                     <h2 style="margin:4px 0; font-size:1.2rem;">今日目標達成！</h2>
                     <p style="color:var(--muted); margin:4px 0; font-size:0.85rem;">已完成 ${totalDone} 張翻卡學習</p>
-                    <button id="learn-continue-btn" style="margin-top:12px; padding:8px 24px; border-radius:10px; border:1.5px solid var(--accent); background:var(--bg); font-size:0.9rem; font-weight:700; cursor:pointer;">繼續翻卡 →</button>
+                    <button id="learn-continue-btn" style="margin-top:12px; padding:8px 24px; border-radius:10px; border:1.5px solid var(--accent); background:var(--bg); color:var(--text); font-size:0.9rem; font-weight:700; cursor:pointer;">繼續翻卡 →</button>
                 </div>
             `;
             actions.classList.add('hidden');
@@ -561,14 +561,28 @@ const initLearnDailyCards = () => {
                 <div class="card-face back">
                     <button class="pronounce-btn" id="ld-pronounce-back" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
                     <h3 style="font-size:1.3rem;">${word.definition_zh}</h3>
-                    ${word.example ? `
-                    <div class="word-example" style="margin-top:15px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left;">
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <strong style="color:var(--muted); font-size:0.85rem;">例句:</strong>
-                            <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                    ${word.learn_sentence || word.context_sentence ? `
+                    <div class="word-example" style="margin-top:15px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left; display:flex; flex-direction:column; gap:10px;">
+                        ${word.learn_sentence ? `
+                        <div>
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <strong style="color:var(--muted); font-size:0.85rem;">🌱 基礎搭配 (Learn)</strong>
+                                <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.learn_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                            </div>
+                            <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${word.learn_sentence}"</div>
+                            ${word.learn_sentence_zh ? `<div style="margin-top:2px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${word.learn_sentence_zh}</div>` : ''}
                         </div>
-                        <div style="margin-top:6px; line-height: 1.4; color: var(--text); font-size:0.95rem;">"${word.example}"</div>
-                        ${word.example_zh ? `<div style="margin-top:6px; line-height: 1.4; color: var(--muted); font-size:0.85rem;">${word.example_zh}</div>` : ''}
+                        ` : ''}
+                        ${word.context_sentence ? `
+                        <div>
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <strong style="color:var(--muted); font-size:0.85rem;">💬 日常情境 (Context)</strong>
+                                <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.context_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                            </div>
+                            <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${word.context_sentence}"</div>
+                            ${word.context_sentence_zh ? `<div style="margin-top:2px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${word.context_sentence_zh}</div>` : ''}
+                        </div>
+                        ` : ''}
                     </div>
                     ` : ''}
                     ${word.type === 'music' && (word.explanation || word.music_context) ? `
@@ -847,14 +861,28 @@ const initListeningView = () => {
                     </span>
                     ` : ''}
                 </div>
-                ${currentTarget.example ? `
-                <div class="word-example" style="margin-top:8px; background: rgba(255,255,255,0.05); padding: 8px 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left;">
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <strong style="color:var(--muted); font-size:0.85rem;">例句:</strong>
-                        <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${currentTarget.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                ${currentTarget.learn_sentence || currentTarget.context_sentence ? `
+                <div class="word-example" style="margin-top:8px; background: rgba(255,255,255,0.05); padding: 8px 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left; display:flex; flex-direction:column; gap:8px;">
+                    ${currentTarget.learn_sentence ? `
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <strong style="color:var(--muted); font-size:0.85rem;">🌱 基礎搭配 (Learn)</strong>
+                            <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${currentTarget.learn_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                        </div>
+                        <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${currentTarget.learn_sentence}"</div>
+                        ${currentTarget.learn_sentence_zh ? `<div style="margin-top:2px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${currentTarget.learn_sentence_zh}</div>` : ''}
                     </div>
-                    <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${currentTarget.example}"</div>
-                    ${currentTarget.example_zh ? `<div style="margin-top:4px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${currentTarget.example_zh}</div>` : ''}
+                    ` : ''}
+                    ${currentTarget.context_sentence ? `
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <strong style="color:var(--muted); font-size:0.85rem;">💬 日常情境 (Context)</strong>
+                            <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${currentTarget.context_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                        </div>
+                        <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${currentTarget.context_sentence}"</div>
+                        ${currentTarget.context_sentence_zh ? `<div style="margin-top:2px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${currentTarget.context_sentence_zh}</div>` : ''}
+                    </div>
+                    ` : ''}
                 </div>
                 ` : ''}
             </div>
@@ -1279,14 +1307,28 @@ const initFlashcardsView = () => {
                 <div class="card-face back">
                     <button class="pronounce-btn" id="flash-pronounce-back" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer;">🔊</button>
                     <h3>${word.definition_zh}</h3>
-                    ${word.example ? `
-                    <div class="word-example" style="margin-top:15px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left;">
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <strong style="color:var(--muted); font-size:0.85rem;">例句:</strong>
-                            <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                    ${word.learn_sentence || word.context_sentence ? `
+                    <div class="word-example" style="margin-top:15px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border-left: 3px solid var(--accent); text-align: left; display:flex; flex-direction:column; gap:10px;">
+                        ${word.learn_sentence ? `
+                        <div>
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <strong style="color:var(--muted); font-size:0.85rem;">🌱 基礎搭配 (Learn)</strong>
+                                <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.learn_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                            </div>
+                            <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${word.learn_sentence}"</div>
+                            ${word.learn_sentence_zh ? `<div style="margin-top:2px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${word.learn_sentence_zh}</div>` : ''}
                         </div>
-                        <div style="margin-top:6px; line-height: 1.4; color: var(--text); font-size:0.95rem;">"${word.example}"</div>
-                        ${word.example_zh ? `<div style="margin-top:6px; line-height: 1.4; color: var(--muted); font-size:0.85rem;">${word.example_zh}</div>` : ''}
+                        ` : ''}
+                        ${word.context_sentence ? `
+                        <div>
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <strong style="color:var(--muted); font-size:0.85rem;">💬 日常情境 (Context)</strong>
+                                <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${word.context_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                            </div>
+                            <div style="margin-top:4px; line-height: 1.3; color: var(--text); font-size:0.95rem;">"${word.context_sentence}"</div>
+                            ${word.context_sentence_zh ? `<div style="margin-top:2px; line-height: 1.3; color: var(--muted); font-size:0.85rem;">${word.context_sentence_zh}</div>` : ''}
+                        </div>
+                        ` : ''}
                     </div>
                     ` : ''}
                     ${word.type === 'music' && (word.explanation || word.music_context) ? `
@@ -1397,11 +1439,29 @@ const initMusicView = () => {
                 </div>
                 <div class="item-detail hidden">
                     <div class="context">
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <strong>📍 樂手情境：</strong>
-                            ${item.example ? `<button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>` : ''}
+                        <div style="margin-bottom:10px;"><strong>📍 樂手情境：</strong> ${item.explanation || item.music_context || '常用術語'}</div>
+                        ${item.learn_sentence || item.context_sentence ? `
+                        <div style="display:flex; flex-direction:column; gap:8px;">
+                            ${item.learn_sentence ? `
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <strong style="color:var(--muted); font-size:0.85rem;">🌱 Learn:</strong>
+                                    <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.learn_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                                </div>
+                                <div style="line-height:1.3;">"${item.learn_sentence}"</div>
+                            </div>
+                            ` : ''}
+                            ${item.context_sentence ? `
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <strong style="color:var(--muted); font-size:0.85rem;">💬 Context:</strong>
+                                    <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.context_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                                </div>
+                                <div style="line-height:1.3;">"${item.context_sentence}"</div>
+                            </div>
+                            ` : ''}
                         </div>
-                        <div style="margin-top:4px;">${item.example ? `"${item.example}"` : '尚無情境例句'}</div>
+                        ` : ''}
                     </div>
                     <div class="detail-actions">
                         <button class="mini-btn" id="pronounce-music-${item.word.replace(/[^a-zA-Z]/g, '-')}" style="flex:0.5;">🔊 發音</button>
@@ -1550,11 +1610,30 @@ const initCoreWordsView = () => {
                 </div>
                 <div class="item-detail hidden">
                     <div class="context">
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <strong>📍 例句：</strong>
-                            ${item.example ? `<button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.example.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>` : ''}
+                        ${item.learn_sentence || item.context_sentence ? `
+                        <div style="display:flex; flex-direction:column; gap:8px;">
+                            ${item.learn_sentence ? `
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <strong style="color:var(--muted); font-size:0.85rem;">🌱 Learn:</strong>
+                                    <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.learn_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                                </div>
+                                <div style="line-height:1.3;">"${item.learn_sentence}"</div>
+                                ${item.learn_sentence_zh ? `<div style="color:var(--muted); font-size:0.85rem; margin-top:2px;">${item.learn_sentence_zh}</div>` : ''}
+                            </div>
+                            ` : ''}
+                            ${item.context_sentence ? `
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:center;">
+                                    <strong style="color:var(--muted); font-size:0.85rem;">💬 Context:</strong>
+                                    <button class="icon-action-btn" onclick="event.stopPropagation(); speak('${item.context_sentence.replace(/'/g, "\\'")}')" style="padding:4px; font-size:1.1rem; background:none; border:none; cursor:pointer;">🔊</button>
+                                </div>
+                                <div style="line-height:1.3;">"${item.context_sentence}"</div>
+                                ${item.context_sentence_zh ? `<div style="color:var(--muted); font-size:0.85rem; margin-top:2px;">${item.context_sentence_zh}</div>` : ''}
+                            </div>
+                            ` : ''}
                         </div>
-                        <div style="margin-top:4px;">${item.example ? `"${item.example}"` : '尚無例句'}</div>
+                        ` : '<div style="color:var(--muted);">尚無例句</div>'}
                     </div>
                     <div class="detail-actions">
                         <button class="mini-btn" id="pronounce-core-${item.word.replace(/[^a-zA-Z]/g, '-')}" style="flex:0.5;">🔊 發音</button>

@@ -12,9 +12,11 @@ const MUSIC_WORDS = [
         "definition_zh": "藍調",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：藍調。",
-        "example": "I've been heavily influenced by early blues records.",
         "level": "medium",
-        "example_zh": "我深受早期藍調唱片的影響。"
+        "learn_sentence": "Put on some Blues.",
+        "learn_sentence_zh": "播點藍調吧。",
+        "context_sentence": "They totally nailed that Blues feel.",
+        "context_sentence_zh": "他們完美抓住了那個藍調特有的感覺。"
     },
     {
         "word": "Jazz",
@@ -24,9 +26,11 @@ const MUSIC_WORDS = [
         "definition_zh": "爵士樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：爵士樂。",
-        "example": "Miles Davis is a legendary figure in jazz.",
         "level": "medium",
-        "example_zh": "Miles Davis 是爵士樂領域的傳奇人物。"
+        "learn_sentence": "He's super into Jazz.",
+        "learn_sentence_zh": "他超迷爵士樂的。",
+        "context_sentence": "That track has a heavy Jazz vibe.",
+        "context_sentence_zh": "那首歌有很重的爵士樂氛圍。"
     },
     {
         "word": "Funk",
@@ -36,9 +40,11 @@ const MUSIC_WORDS = [
         "definition_zh": "放克",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：放克。",
-        "example": "Funk music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "放克音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "He's super into Funk.",
+        "learn_sentence_zh": "他超迷放克的。",
+        "context_sentence": "That track has a heavy Funk vibe.",
+        "context_sentence_zh": "那首歌有很重的放克氛圍。"
     },
     {
         "word": "Soul",
@@ -48,9 +54,11 @@ const MUSIC_WORDS = [
         "definition_zh": "靈魂樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：靈魂樂。",
-        "example": "The band seamlessly blends elements of soul into their tracks.",
         "level": "medium",
-        "example_zh": "這個樂團將靈魂樂的元素完美融合進了他們的曲目中。"
+        "learn_sentence": "I play a bit of Soul.",
+        "learn_sentence_zh": "我會彈一點靈魂樂。",
+        "context_sentence": "We need a better Soul groove here.",
+        "context_sentence_zh": "我們這裡需要更好的靈魂樂律動。"
     },
     {
         "word": "Gospel",
@@ -60,9 +68,11 @@ const MUSIC_WORDS = [
         "definition_zh": "福音音樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：福音音樂。",
-        "example": "I've been heavily influenced by early gospel records.",
         "level": "medium",
-        "example_zh": "我深受早期福音音樂唱片的影響。"
+        "learn_sentence": "That's pure Gospel.",
+        "learn_sentence_zh": "那根本是純正的福音音樂。",
+        "context_sentence": "I grew up listening to a lot of Gospel.",
+        "context_sentence_zh": "我從小聽很多福音音樂長大。"
     },
     {
         "word": "Fusion",
@@ -72,9 +82,11 @@ const MUSIC_WORDS = [
         "definition_zh": "融合爵士",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：融合爵士。",
-        "example": "The distinct rhythm is a hallmark of fusion.",
         "level": "medium",
-        "example_zh": "獨特的節奏是融合爵士的標誌。"
+        "learn_sentence": "I play a bit of Fusion.",
+        "learn_sentence_zh": "我會彈一點融合爵士。",
+        "context_sentence": "We need a better Fusion groove here.",
+        "context_sentence_zh": "我們這裡需要更好的融合爵士律動。"
     },
     {
         "word": "Bebop",
@@ -84,9 +96,11 @@ const MUSIC_WORDS = [
         "definition_zh": "咆哮樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：咆哮樂。",
-        "example": "Bebop music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "咆哮樂音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "Put on some Bebop.",
+        "learn_sentence_zh": "播點咆哮樂吧。",
+        "context_sentence": "They totally nailed that Bebop feel.",
+        "context_sentence_zh": "他們完美抓住了那個咆哮樂特有的感覺。"
     },
     {
         "word": "Hard Bop",
@@ -96,9 +110,11 @@ const MUSIC_WORDS = [
         "definition_zh": "硬派咆哮",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：硬派咆哮。",
-        "example": "We decided to play a Hard Bop piece for the finale.",
         "level": "medium",
-        "example_zh": "我們決定在壓軸表演中演奏一首硬派咆哮曲目。"
+        "learn_sentence": "He's super into Hard bop.",
+        "learn_sentence_zh": "他超迷硬派咆哮的。",
+        "context_sentence": "That track has a heavy Hard bop vibe.",
+        "context_sentence_zh": "那首歌有很重的硬派咆哮氛圍。"
     },
     {
         "word": "Bossa Nova",
@@ -108,9 +124,11 @@ const MUSIC_WORDS = [
         "definition_zh": "波薩諾瓦",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：波薩諾瓦。",
-        "example": "Bossa Nova music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "波薩諾瓦音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "He's super into Bossa nova.",
+        "learn_sentence_zh": "他超迷波薩諾瓦的。",
+        "context_sentence": "That track has a heavy Bossa nova vibe.",
+        "context_sentence_zh": "那首歌有很重的波薩諾瓦氛圍。"
     },
     {
         "word": "Reggae",
@@ -120,9 +138,11 @@ const MUSIC_WORDS = [
         "definition_zh": "雷鬼",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：雷鬼。",
-        "example": "We decided to play a reggae piece for the finale.",
         "level": "medium",
-        "example_zh": "我們決定在壓軸表演中演奏一首雷鬼曲目。"
+        "learn_sentence": "He's super into Reggae.",
+        "learn_sentence_zh": "他超迷雷鬼的。",
+        "context_sentence": "That track has a heavy Reggae vibe.",
+        "context_sentence_zh": "那首歌有很重的雷鬼氛圍。"
     },
     {
         "word": "Motown",
@@ -132,9 +152,11 @@ const MUSIC_WORDS = [
         "definition_zh": "摩城",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：摩城。",
-        "example": "The distinct rhythm is a hallmark of motown.",
         "level": "medium",
-        "example_zh": "獨特的節奏是摩城的標誌。"
+        "learn_sentence": "That's pure Motown.",
+        "learn_sentence_zh": "那根本是純正的摩城。",
+        "context_sentence": "I grew up listening to a lot of Motown.",
+        "context_sentence_zh": "我從小聽很多摩城長大。"
     },
     {
         "word": "R&B",
@@ -144,9 +166,11 @@ const MUSIC_WORDS = [
         "definition_zh": "節奏藍調",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：節奏藍調。",
-        "example": "The band seamlessly blends elements of R&B into their tracks.",
         "level": "medium",
-        "example_zh": "這個樂團將節奏藍調的元素完美融合進了他們的曲目中。"
+        "learn_sentence": "I play a bit of R&b.",
+        "learn_sentence_zh": "我會彈一點節奏藍調。",
+        "context_sentence": "We need a better R&b groove here.",
+        "context_sentence_zh": "我們這裡需要更好的節奏藍調律動。"
     },
     {
         "word": "Rock",
@@ -156,9 +180,11 @@ const MUSIC_WORDS = [
         "definition_zh": "搖滾",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：搖滾。",
-        "example": "I've been heavily influenced by early rock records.",
         "level": "medium",
-        "example_zh": "我深受早期搖滾唱片的影響。"
+        "learn_sentence": "He's super into Rock.",
+        "learn_sentence_zh": "他超迷搖滾的。",
+        "context_sentence": "That track has a heavy Rock vibe.",
+        "context_sentence_zh": "那首歌有很重的搖滾氛圍。"
     },
     {
         "word": "Metal",
@@ -168,9 +194,11 @@ const MUSIC_WORDS = [
         "definition_zh": "重金屬",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：重金屬。",
-        "example": "Metal music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "重金屬音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "He's super into Metal.",
+        "learn_sentence_zh": "他超迷重金屬的。",
+        "context_sentence": "That track has a heavy Metal vibe.",
+        "context_sentence_zh": "那首歌有很重的重金屬氛圍。"
     },
     {
         "word": "Punk",
@@ -180,9 +208,11 @@ const MUSIC_WORDS = [
         "definition_zh": "龐克",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：龐克。",
-        "example": "The band seamlessly blends elements of punk into their tracks.",
         "level": "medium",
-        "example_zh": "這個樂團將龐克的元素完美融合進了他們的曲目中。"
+        "learn_sentence": "He's super into Punk.",
+        "learn_sentence_zh": "他超迷龐克的。",
+        "context_sentence": "That track has a heavy Punk vibe.",
+        "context_sentence_zh": "那首歌有很重的龐克氛圍。"
     },
     {
         "word": "Country",
@@ -192,9 +222,11 @@ const MUSIC_WORDS = [
         "definition_zh": "鄉村",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：鄉村。",
-        "example": "That album really captures the essence of country.",
         "level": "medium",
-        "example_zh": "那張專輯真正捕捉到了鄉村的精髓。"
+        "learn_sentence": "Put on some Country.",
+        "learn_sentence_zh": "播點鄉村吧。",
+        "context_sentence": "They totally nailed that Country feel.",
+        "context_sentence_zh": "他們完美抓住了那個鄉村特有的感覺。"
     },
     {
         "word": "Folk",
@@ -204,9 +236,11 @@ const MUSIC_WORDS = [
         "definition_zh": "民謠",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：民謠。",
-        "example": "We decided to play a folk piece for the finale.",
         "level": "medium",
-        "example_zh": "我們決定在壓軸表演中演奏一首民謠曲目。"
+        "learn_sentence": "He's super into Folk.",
+        "learn_sentence_zh": "他超迷民謠的。",
+        "context_sentence": "That track has a heavy Folk vibe.",
+        "context_sentence_zh": "那首歌有很重的民謠氛圍。"
     },
     {
         "word": "Classical",
@@ -216,9 +250,11 @@ const MUSIC_WORDS = [
         "definition_zh": "古典音樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：古典音樂。",
-        "example": "We decided to play a classical piece for the finale.",
         "level": "medium",
-        "example_zh": "我們決定在壓軸表演中演奏一首古典音樂曲目。"
+        "learn_sentence": "I really dig Classical.",
+        "learn_sentence_zh": "我滿喜歡古典音樂的。",
+        "context_sentence": "We jammed some Classical last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些古典音樂。"
     },
     {
         "word": "Baroque",
@@ -228,9 +264,11 @@ const MUSIC_WORDS = [
         "definition_zh": "巴洛克",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：巴洛克。",
-        "example": "I've been heavily influenced by early baroque records.",
         "level": "medium",
-        "example_zh": "我深受早期巴洛克唱片的影響。"
+        "learn_sentence": "I really dig Baroque.",
+        "learn_sentence_zh": "我滿喜歡巴洛克的。",
+        "context_sentence": "We jammed some Baroque last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些巴洛克。"
     },
     {
         "word": "Romantic",
@@ -240,9 +278,11 @@ const MUSIC_WORDS = [
         "definition_zh": "浪漫派",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：浪漫派。",
-        "example": "Miles Davis is a legendary figure in romantic.",
         "level": "medium",
-        "example_zh": "Miles Davis 是浪漫派領域的傳奇人物。"
+        "learn_sentence": "He's super into Romantic.",
+        "learn_sentence_zh": "他超迷浪漫派的。",
+        "context_sentence": "That track has a heavy Romantic vibe.",
+        "context_sentence_zh": "那首歌有很重的浪漫派氛圍。"
     },
     {
         "word": "Ambient",
@@ -252,9 +292,11 @@ const MUSIC_WORDS = [
         "definition_zh": "氛圍音樂",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：氛圍音樂。",
-        "example": "We decided to play a ambient piece for the finale.",
         "level": "medium",
-        "example_zh": "我們決定在壓軸表演中演奏一首氛圍音樂曲目。"
+        "learn_sentence": "I play a bit of Ambient.",
+        "learn_sentence_zh": "我會彈一點氛圍音樂。",
+        "context_sentence": "We need a better Ambient groove here.",
+        "context_sentence_zh": "我們這裡需要更好的氛圍音樂律動。"
     },
     {
         "word": "Lo-fi",
@@ -264,9 +306,11 @@ const MUSIC_WORDS = [
         "definition_zh": "低傳真",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：低傳真。",
-        "example": "That album really captures the essence of lo-fi.",
         "level": "medium",
-        "example_zh": "那張專輯真正捕捉到了低傳真的精髓。"
+        "learn_sentence": "That's pure Lo-fi.",
+        "learn_sentence_zh": "那根本是純正的低傳真。",
+        "context_sentence": "I grew up listening to a lot of Lo-fi.",
+        "context_sentence_zh": "我從小聽很多低傳真長大。"
     },
     {
         "word": "Synthwave",
@@ -276,9 +320,11 @@ const MUSIC_WORDS = [
         "definition_zh": "合成器波",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：合成器波。",
-        "example": "We decided to play a synthwave piece for the finale.",
         "level": "medium",
-        "example_zh": "我們決定在壓軸表演中演奏一首合成器波曲目。"
+        "learn_sentence": "I play a bit of Synthwave.",
+        "learn_sentence_zh": "我會彈一點合成器波。",
+        "context_sentence": "We need a better Synthwave groove here.",
+        "context_sentence_zh": "我們這裡需要更好的合成器波律動。"
     },
     {
         "word": "Shoegaze",
@@ -288,9 +334,11 @@ const MUSIC_WORDS = [
         "definition_zh": "瞪鞋搖滾",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：瞪鞋搖滾。",
-        "example": "Miles Davis is a legendary figure in shoegaze.",
         "level": "medium",
-        "example_zh": "Miles Davis 是瞪鞋搖滾領域的傳奇人物。"
+        "learn_sentence": "I play a bit of Shoegaze.",
+        "learn_sentence_zh": "我會彈一點瞪鞋搖滾。",
+        "context_sentence": "We need a better Shoegaze groove here.",
+        "context_sentence_zh": "我們這裡需要更好的瞪鞋搖滾律動。"
     },
     {
         "word": "Avant-garde",
@@ -300,9 +348,11 @@ const MUSIC_WORDS = [
         "definition_zh": "前衛派",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：前衛派。",
-        "example": "I've been heavily influenced by early avant-garde records.",
         "level": "medium",
-        "example_zh": "我深受早期前衛派唱片的影響。"
+        "learn_sentence": "That's pure Avant-garde.",
+        "learn_sentence_zh": "那根本是純正的前衛派。",
+        "context_sentence": "I grew up listening to a lot of Avant-garde.",
+        "context_sentence_zh": "我從小聽很多前衛派長大。"
     },
     {
         "word": "Salsa",
@@ -312,9 +362,11 @@ const MUSIC_WORDS = [
         "definition_zh": "騷莎",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：騷莎。",
-        "example": "Salsa music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "騷莎音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "That's pure Salsa.",
+        "learn_sentence_zh": "那根本是純正的騷莎。",
+        "context_sentence": "I grew up listening to a lot of Salsa.",
+        "context_sentence_zh": "我從小聽很多騷莎長大。"
     },
     {
         "word": "Tango",
@@ -324,9 +376,11 @@ const MUSIC_WORDS = [
         "definition_zh": "探戈",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：探戈。",
-        "example": "The band seamlessly blends elements of tango into their tracks.",
         "level": "medium",
-        "example_zh": "這個樂團將探戈的元素完美融合進了他們的曲目中。"
+        "learn_sentence": "I really dig Tango.",
+        "learn_sentence_zh": "我滿喜歡探戈的。",
+        "context_sentence": "We jammed some Tango last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些探戈。"
     },
     {
         "word": "Flamenco",
@@ -336,9 +390,11 @@ const MUSIC_WORDS = [
         "definition_zh": "佛朗明哥",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：佛朗明哥。",
-        "example": "Flamenco music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "佛朗明哥音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "I really dig Flamenco.",
+        "learn_sentence_zh": "我滿喜歡佛朗明哥的。",
+        "context_sentence": "We jammed some Flamenco last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些佛朗明哥。"
     },
     {
         "word": "Ska",
@@ -348,9 +404,11 @@ const MUSIC_WORDS = [
         "definition_zh": "斯卡",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：斯卡。",
-        "example": "Ska music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "斯卡音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "I really dig Ska.",
+        "learn_sentence_zh": "我滿喜歡斯卡的。",
+        "context_sentence": "We jammed some Ska last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些斯卡。"
     },
     {
         "word": "Grunge",
@@ -360,9 +418,11 @@ const MUSIC_WORDS = [
         "definition_zh": "油漬搖滾",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：油漬搖滾。",
-        "example": "The distinct rhythm is a hallmark of grunge.",
         "level": "medium",
-        "example_zh": "獨特的節奏是油漬搖滾的標誌。"
+        "learn_sentence": "He's super into Grunge.",
+        "learn_sentence_zh": "他超迷油漬搖滾的。",
+        "context_sentence": "That track has a heavy Grunge vibe.",
+        "context_sentence_zh": "那首歌有很重的油漬搖滾氛圍。"
     },
     {
         "word": "Dubstep",
@@ -372,9 +432,11 @@ const MUSIC_WORDS = [
         "definition_zh": "迴響貝斯",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：迴響貝斯。",
-        "example": "The band seamlessly blends elements of dubstep into their tracks.",
         "level": "medium",
-        "example_zh": "這個樂團將迴響貝斯的元素完美融合進了他們的曲目中。"
+        "learn_sentence": "I really dig Dubstep.",
+        "learn_sentence_zh": "我滿喜歡迴響貝斯的。",
+        "context_sentence": "We jammed some Dubstep last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些迴響貝斯。"
     },
     {
         "word": "Techno",
@@ -384,9 +446,11 @@ const MUSIC_WORDS = [
         "definition_zh": "科技舞曲",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：科技舞曲。",
-        "example": "Techno music emerged and popularized quickly in that era.",
         "level": "medium",
-        "example_zh": "科技舞曲音樂在那個時代迅速出現並普及。"
+        "learn_sentence": "I really dig Techno.",
+        "learn_sentence_zh": "我滿喜歡科技舞曲的。",
+        "context_sentence": "We jammed some Techno last night.",
+        "context_sentence_zh": "我們昨晚即興玩了一些科技舞曲。"
     },
     {
         "word": "House",
@@ -396,9 +460,11 @@ const MUSIC_WORDS = [
         "definition_zh": "浩室",
         "definition_en": "Traditional music style",
         "explanation": "這是音樂界非常經典的『音樂風格』：浩室。",
-        "example": "Miles Davis is a legendary figure in house.",
         "level": "medium",
-        "example_zh": "Miles Davis 是浩室領域的傳奇人物。"
+        "learn_sentence": "Put on some House.",
+        "learn_sentence_zh": "播點浩室吧。",
+        "context_sentence": "They totally nailed that House feel.",
+        "context_sentence_zh": "他們完美抓住了那個浩室特有的感覺。"
     },
     {
         "word": "Pitch",
@@ -408,9 +474,11 @@ const MUSIC_WORDS = [
         "definition_zh": "音高",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：音高。",
-        "example": "Practicing pitch will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習音高絕對能提升你的音感。"
+        "learn_sentence": "I struggle with pitch.",
+        "learn_sentence_zh": "我對音高超不拿手。",
+        "context_sentence": "That pitch completely changed the mood.",
+        "context_sentence_zh": "那個音高徹底改變了整體的氛圍。"
     },
     {
         "word": "Interval",
@@ -420,9 +488,11 @@ const MUSIC_WORDS = [
         "definition_zh": "音程",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：音程。",
-        "example": "Pay close attention to the interval when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意音程。"
+        "learn_sentence": "Watch out for the interval.",
+        "learn_sentence_zh": "注意那邊的音程。",
+        "context_sentence": "His solo was packed with cool interval.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的音程。"
     },
     {
         "word": "Chord",
@@ -432,9 +502,11 @@ const MUSIC_WORDS = [
         "definition_zh": "和弦",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：和弦。",
-        "example": "The progressive shift built on chord gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在和弦上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "That's a tricky chord.",
+        "learn_sentence_zh": "那個和弦有點難搞。",
+        "context_sentence": "I'm still practicing my chord.",
+        "context_sentence_zh": "我還在練我的和弦。"
     },
     {
         "word": "Scale",
@@ -444,9 +516,11 @@ const MUSIC_WORDS = [
         "definition_zh": "音階",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：音階。",
-        "example": "Pay close attention to the scale when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意音階。"
+        "learn_sentence": "Let's break down this scale.",
+        "learn_sentence_zh": "我們來拆解這個音階。",
+        "context_sentence": "Can you hear the scale in there?",
+        "context_sentence_zh": "你有聽出裡面的音階嗎？"
     },
     {
         "word": "Rhythm",
@@ -456,9 +530,11 @@ const MUSIC_WORDS = [
         "definition_zh": "節奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：節奏。",
-        "example": "She spent hours analyzing the rhythm of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的節奏。"
+        "learn_sentence": "I struggle with rhythm.",
+        "learn_sentence_zh": "我對節奏超不拿手。",
+        "context_sentence": "That rhythm completely changed the mood.",
+        "context_sentence_zh": "那個節奏徹底改變了整體的氛圍。"
     },
     {
         "word": "Tempo",
@@ -468,9 +544,11 @@ const MUSIC_WORDS = [
         "definition_zh": "節拍速度",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：節拍速度。",
-        "example": "She spent hours analyzing the tempo of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的節拍速度。"
+        "learn_sentence": "It's all about the tempo.",
+        "learn_sentence_zh": "重點全在這個節拍速度。",
+        "context_sentence": "Try adding some tempo to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點節拍速度。"
     },
     {
         "word": "Arpeggio",
@@ -480,9 +558,11 @@ const MUSIC_WORDS = [
         "definition_zh": "琶音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：琶音。",
-        "example": "The composer's use of arpeggio here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對琶音的運用相當非傳統。"
+        "learn_sentence": "That's a tricky arpeggio.",
+        "learn_sentence_zh": "那個琶音有點難搞。",
+        "context_sentence": "I'm still practicing my arpeggio.",
+        "context_sentence_zh": "我還在練我的琶音。"
     },
     {
         "word": "Cadence",
@@ -492,9 +572,11 @@ const MUSIC_WORDS = [
         "definition_zh": "終止式",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：終止式。",
-        "example": "She spent hours analyzing the cadence of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的終止式。"
+        "learn_sentence": "It's all about the cadence.",
+        "learn_sentence_zh": "重點全在這個終止式。",
+        "context_sentence": "Try adding some cadence to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點終止式。"
     },
     {
         "word": "Harmony",
@@ -504,9 +586,11 @@ const MUSIC_WORDS = [
         "definition_zh": "和聲",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：和聲。",
-        "example": "The composer's use of harmony here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對和聲的運用相當非傳統。"
+        "learn_sentence": "I struggle with harmony.",
+        "learn_sentence_zh": "我對和聲超不拿手。",
+        "context_sentence": "That harmony completely changed the mood.",
+        "context_sentence_zh": "那個和聲徹底改變了整體的氛圍。"
     },
     {
         "word": "Dorian",
@@ -516,9 +600,11 @@ const MUSIC_WORDS = [
         "definition_zh": "多利安",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：多利安。",
-        "example": "The bassist laid down a solid dorian groove.",
         "level": "medium",
-        "example_zh": "貝斯手鋪墊了一個扎實的多利安律動。"
+        "learn_sentence": "Nice dorian man.",
+        "learn_sentence_zh": "老兄，那個多利安很讚。",
+        "context_sentence": "We're gonna work on your dorian today.",
+        "context_sentence_zh": "我們今天要來練練你的多利安。"
     },
     {
         "word": "Phrygian",
@@ -528,9 +614,11 @@ const MUSIC_WORDS = [
         "definition_zh": "弗里吉亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：弗里吉亞。",
-        "example": "Pay close attention to the phrygian when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意弗里吉亞。"
+        "learn_sentence": "That's a tricky phrygian.",
+        "learn_sentence_zh": "那個弗里吉亞有點難搞。",
+        "context_sentence": "I'm still practicing my phrygian.",
+        "context_sentence_zh": "我還在練我的弗里吉亞。"
     },
     {
         "word": "Lydian",
@@ -540,9 +628,11 @@ const MUSIC_WORDS = [
         "definition_zh": "利底亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：利底亞。",
-        "example": "She spent hours analyzing the lydian of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的利底亞。"
+        "learn_sentence": "I struggle with lydian.",
+        "learn_sentence_zh": "我對利底亞超不拿手。",
+        "context_sentence": "That lydian completely changed the mood.",
+        "context_sentence_zh": "那個利底亞徹底改變了整體的氛圍。"
     },
     {
         "word": "Mixolydian",
@@ -552,9 +642,11 @@ const MUSIC_WORDS = [
         "definition_zh": "混合利底亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：混合利底亞。",
-        "example": "Let's try applying some mixolydian to this standard.",
         "level": "medium",
-        "example_zh": "我們試著在這首標準曲中應用一些混合利底亞吧。"
+        "learn_sentence": "That was a sick mixolydian.",
+        "learn_sentence_zh": "剛剛那個混合利底亞太神了。",
+        "context_sentence": "Just focus on the mixolydian for now.",
+        "context_sentence_zh": "你先專注在那個混合利底亞就好。"
     },
     {
         "word": "Aeolian",
@@ -564,9 +656,11 @@ const MUSIC_WORDS = [
         "definition_zh": "愛奧尼亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：愛奧尼亞。",
-        "example": "The composer's use of aeolian here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對愛奧尼亞的運用相當非傳統。"
+        "learn_sentence": "Let's break down this aeolian.",
+        "learn_sentence_zh": "我們來拆解這個愛奧尼亞。",
+        "context_sentence": "Can you hear the aeolian in there?",
+        "context_sentence_zh": "你有聽出裡面的愛奧尼亞嗎？"
     },
     {
         "word": "Locrian",
@@ -576,9 +670,11 @@ const MUSIC_WORDS = [
         "definition_zh": "洛克里亞",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：洛克里亞。",
-        "example": "The progressive shift built on locrian gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在洛克里亞上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "I struggle with locrian.",
+        "learn_sentence_zh": "我對洛克里亞超不拿手。",
+        "context_sentence": "That locrian completely changed the mood.",
+        "context_sentence_zh": "那個洛克里亞徹底改變了整體的氛圍。"
     },
     {
         "word": "Chromatic",
@@ -588,9 +684,11 @@ const MUSIC_WORDS = [
         "definition_zh": "半音階",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：半音階。",
-        "example": "Can you identify the chromatic in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的半音階嗎？"
+        "learn_sentence": "Watch out for the chromatic.",
+        "learn_sentence_zh": "注意那邊的半音階。",
+        "context_sentence": "His solo was packed with cool chromatic.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的半音階。"
     },
     {
         "word": "Dynamics",
@@ -600,9 +698,11 @@ const MUSIC_WORDS = [
         "definition_zh": "動態強度",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：動態強度。",
-        "example": "Understanding dynamics is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解動態強度對於進階作曲至關重要。"
+        "learn_sentence": "It's all about the dynamics.",
+        "learn_sentence_zh": "重點全在這個動態強度。",
+        "context_sentence": "Try adding some dynamics to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點動態強度。"
     },
     {
         "word": "Crescendo",
@@ -612,9 +712,11 @@ const MUSIC_WORDS = [
         "definition_zh": "漸強",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：漸強。",
-        "example": "The composer's use of crescendo here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對漸強的運用相當非傳統。"
+        "learn_sentence": "Watch out for the crescendo.",
+        "learn_sentence_zh": "注意那邊的漸強。",
+        "context_sentence": "His solo was packed with cool crescendo.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的漸強。"
     },
     {
         "word": "Decrescendo",
@@ -624,9 +726,11 @@ const MUSIC_WORDS = [
         "definition_zh": "漸弱",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：漸弱。",
-        "example": "Practicing decrescendo will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習漸弱絕對能提升你的音感。"
+        "learn_sentence": "Watch out for the decrescendo.",
+        "learn_sentence_zh": "注意那邊的漸弱。",
+        "context_sentence": "His solo was packed with cool decrescendo.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的漸弱。"
     },
     {
         "word": "Staccato",
@@ -636,9 +740,11 @@ const MUSIC_WORDS = [
         "definition_zh": "斷奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：斷奏。",
-        "example": "She spent hours analyzing the staccato of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的斷奏。"
+        "learn_sentence": "I struggle with staccato.",
+        "learn_sentence_zh": "我對斷奏超不拿手。",
+        "context_sentence": "That staccato completely changed the mood.",
+        "context_sentence_zh": "那個斷奏徹底改變了整體的氛圍。"
     },
     {
         "word": "Legato",
@@ -648,9 +754,11 @@ const MUSIC_WORDS = [
         "definition_zh": "連奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：連奏。",
-        "example": "Pay close attention to the legato when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意連奏。"
+        "learn_sentence": "That's a tricky legato.",
+        "learn_sentence_zh": "那個連奏有點難搞。",
+        "context_sentence": "I'm still practicing my legato.",
+        "context_sentence_zh": "我還在練我的連奏。"
     },
     {
         "word": "Accent",
@@ -660,9 +768,11 @@ const MUSIC_WORDS = [
         "definition_zh": "重音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：重音。",
-        "example": "Understanding accent is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解重音對於進階作曲至關重要。"
+        "learn_sentence": "Watch out for the accent.",
+        "learn_sentence_zh": "注意那邊的重音。",
+        "context_sentence": "His solo was packed with cool accent.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的重音。"
     },
     {
         "word": "Bar",
@@ -672,9 +782,11 @@ const MUSIC_WORDS = [
         "definition_zh": "小節線",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：小節線。",
-        "example": "Understanding bar is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解小節線對於進階作曲至關重要。"
+        "learn_sentence": "I struggle with bar.",
+        "learn_sentence_zh": "我對小節線超不拿手。",
+        "context_sentence": "That bar completely changed the mood.",
+        "context_sentence_zh": "那個小節線徹底改變了整體的氛圍。"
     },
     {
         "word": "Clef",
@@ -684,9 +796,11 @@ const MUSIC_WORDS = [
         "definition_zh": "譜號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：譜號。",
-        "example": "The composer's use of clef here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對譜號的運用相當非傳統。"
+        "learn_sentence": "I struggle with clef.",
+        "learn_sentence_zh": "我對譜號超不拿手。",
+        "context_sentence": "That clef completely changed the mood.",
+        "context_sentence_zh": "那個譜號徹底改變了整體的氛圍。"
     },
     {
         "word": "Sharp",
@@ -696,9 +810,11 @@ const MUSIC_WORDS = [
         "definition_zh": "升號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：升號。",
-        "example": "She spent hours analyzing the sharp of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的升號。"
+        "learn_sentence": "Let's break down this sharp.",
+        "learn_sentence_zh": "我們來拆解這個升號。",
+        "context_sentence": "Can you hear the sharp in there?",
+        "context_sentence_zh": "你有聽出裡面的升號嗎？"
     },
     {
         "word": "Flat",
@@ -708,9 +824,11 @@ const MUSIC_WORDS = [
         "definition_zh": "降號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：降號。",
-        "example": "Can you identify the flat in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的降號嗎？"
+        "learn_sentence": "That's a tricky flat.",
+        "learn_sentence_zh": "那個降號有點難搞。",
+        "context_sentence": "I'm still practicing my flat.",
+        "context_sentence_zh": "我還在練我的降號。"
     },
     {
         "word": "Natural",
@@ -720,9 +838,11 @@ const MUSIC_WORDS = [
         "definition_zh": "還原號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：還原號。",
-        "example": "Can you identify the natural in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的還原號嗎？"
+        "learn_sentence": "It's all about the natural.",
+        "learn_sentence_zh": "重點全在這個還原號。",
+        "context_sentence": "Try adding some natural to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點還原號。"
     },
     {
         "word": "Octave",
@@ -732,9 +852,11 @@ const MUSIC_WORDS = [
         "definition_zh": "八度",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：八度。",
-        "example": "The progressive shift built on octave gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在八度上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "I struggle with octave.",
+        "learn_sentence_zh": "我對八度超不拿手。",
+        "context_sentence": "That octave completely changed the mood.",
+        "context_sentence_zh": "那個八度徹底改變了整體的氛圍。"
     },
     {
         "word": "Polyphony",
@@ -744,9 +866,11 @@ const MUSIC_WORDS = [
         "definition_zh": "複音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：複音。",
-        "example": "Practicing polyphony will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習複音絕對能提升你的音感。"
+        "learn_sentence": "Watch out for the polyphony.",
+        "learn_sentence_zh": "注意那邊的複音。",
+        "context_sentence": "His solo was packed with cool polyphony.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的複音。"
     },
     {
         "word": "Modulation",
@@ -756,9 +880,11 @@ const MUSIC_WORDS = [
         "definition_zh": "轉調",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：轉調。",
-        "example": "The progressive shift built on modulation gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在轉調上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "Let's break down this modulation.",
+        "learn_sentence_zh": "我們來拆解這個轉調。",
+        "context_sentence": "Can you hear the modulation in there?",
+        "context_sentence_zh": "你有聽出裡面的轉調嗎？"
     },
     {
         "word": "Metronome",
@@ -768,9 +894,11 @@ const MUSIC_WORDS = [
         "definition_zh": "節拍器",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：節拍器。",
-        "example": "She spent hours analyzing the metronome of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的節拍器。"
+        "learn_sentence": "It's all about the metronome.",
+        "learn_sentence_zh": "重點全在這個節拍器。",
+        "context_sentence": "Try adding some metronome to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點節拍器。"
     },
     {
         "word": "Syncopation",
@@ -780,9 +908,11 @@ const MUSIC_WORDS = [
         "definition_zh": "切分音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：切分音。",
-        "example": "The bassist laid down a solid syncopation groove.",
         "level": "medium",
-        "example_zh": "貝斯手鋪墊了一個扎實的切分音律動。"
+        "learn_sentence": "I missed the syncopation.",
+        "learn_sentence_zh": "我漏掉了那個切分音。",
+        "context_sentence": "He always uses the same syncopation.",
+        "context_sentence_zh": "他老是用一樣的切分音。"
     },
     {
         "word": "Tritone",
@@ -792,9 +922,11 @@ const MUSIC_WORDS = [
         "definition_zh": "三全音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：三全音。",
-        "example": "Understanding tritone is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解三全音對於進階作曲至關重要。"
+        "learn_sentence": "I struggle with tritone.",
+        "learn_sentence_zh": "我對三全音超不拿手。",
+        "context_sentence": "That tritone completely changed the mood.",
+        "context_sentence_zh": "那個三全音徹底改變了整體的氛圍。"
     },
     {
         "word": "Counterpoint",
@@ -804,9 +936,11 @@ const MUSIC_WORDS = [
         "definition_zh": "對位法",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：對位法。",
-        "example": "The progressive shift built on counterpoint gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在對位法上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "That's a tricky counterpoint.",
+        "learn_sentence_zh": "那個對位法有點難搞。",
+        "context_sentence": "I'm still practicing my counterpoint.",
+        "context_sentence_zh": "我還在練我的對位法。"
     },
     {
         "word": "Overtone",
@@ -816,9 +950,11 @@ const MUSIC_WORDS = [
         "definition_zh": "泛音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：泛音。",
-        "example": "Pay close attention to the overtone when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意泛音。"
+        "learn_sentence": "Watch out for the overtone.",
+        "learn_sentence_zh": "注意那邊的泛音。",
+        "context_sentence": "His solo was packed with cool overtone.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的泛音。"
     },
     {
         "word": "Polyrhythm",
@@ -828,9 +964,11 @@ const MUSIC_WORDS = [
         "definition_zh": "複合節奏",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：複合節奏。",
-        "example": "Understanding polyrhythm is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解複合節奏對於進階作曲至關重要。"
+        "learn_sentence": "It's all about the polyrhythm.",
+        "learn_sentence_zh": "重點全在這個複合節奏。",
+        "context_sentence": "Try adding some polyrhythm to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點複合節奏。"
     },
     {
         "word": "Tonic",
@@ -840,9 +978,11 @@ const MUSIC_WORDS = [
         "definition_zh": "主音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：主音。",
-        "example": "Understanding tonic is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解主音對於進階作曲至關重要。"
+        "learn_sentence": "I struggle with tonic.",
+        "learn_sentence_zh": "我對主音超不拿手。",
+        "context_sentence": "That tonic completely changed the mood.",
+        "context_sentence_zh": "那個主音徹底改變了整體的氛圍。"
     },
     {
         "word": "Dominant",
@@ -852,9 +992,11 @@ const MUSIC_WORDS = [
         "definition_zh": "屬音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：屬音。",
-        "example": "Pay close attention to the dominant when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意屬音。"
+        "learn_sentence": "That's a tricky dominant.",
+        "learn_sentence_zh": "那個屬音有點難搞。",
+        "context_sentence": "I'm still practicing my dominant.",
+        "context_sentence_zh": "我還在練我的屬音。"
     },
     {
         "word": "Subdominant",
@@ -864,9 +1006,11 @@ const MUSIC_WORDS = [
         "definition_zh": "下屬音",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：下屬音。",
-        "example": "Practicing subdominant will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習下屬音絕對能提升你的音感。"
+        "learn_sentence": "Watch out for the subdominant.",
+        "learn_sentence_zh": "注意那邊的下屬音。",
+        "context_sentence": "His solo was packed with cool subdominant.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的下屬音。"
     },
     {
         "word": "Relative Minor",
@@ -876,9 +1020,11 @@ const MUSIC_WORDS = [
         "definition_zh": "關係小調",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：關係小調。",
-        "example": "The composer's use of Relative Minor here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對關係小調的運用相當非傳統。"
+        "learn_sentence": "Watch out for the relative minor.",
+        "learn_sentence_zh": "注意那邊的關係小調。",
+        "context_sentence": "His solo was packed with cool relative minor.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的關係小調。"
     },
     {
         "word": "Circle of Fifths",
@@ -888,9 +1034,11 @@ const MUSIC_WORDS = [
         "definition_zh": "五度圈",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：五度圈。",
-        "example": "The composer's use of Circle of Fifths here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對五度圈的運用相當非傳統。"
+        "learn_sentence": "I struggle with circle of fifths.",
+        "learn_sentence_zh": "我對五度圈超不拿手。",
+        "context_sentence": "That circle of fifths completely changed the mood.",
+        "context_sentence_zh": "那個五度圈徹底改變了整體的氛圍。"
     },
     {
         "word": "Time Signature",
@@ -900,9 +1048,11 @@ const MUSIC_WORDS = [
         "definition_zh": "拍號",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：拍號。",
-        "example": "Understanding Time Signature is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解拍號對於進階作曲至關重要。"
+        "learn_sentence": "That's a tricky time signature.",
+        "learn_sentence_zh": "那個拍號有點難搞。",
+        "context_sentence": "I'm still practicing my time signature.",
+        "context_sentence_zh": "我還在練我的拍號。"
     },
     {
         "word": "Subdivision",
@@ -912,9 +1062,11 @@ const MUSIC_WORDS = [
         "definition_zh": "拍子細分",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：拍子細分。",
-        "example": "The composer's use of subdivision here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對拍子細分的運用相當非傳統。"
+        "learn_sentence": "Watch out for the subdivision.",
+        "learn_sentence_zh": "注意那邊的拍子細分。",
+        "context_sentence": "His solo was packed with cool subdivision.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的拍子細分。"
     },
     {
         "word": "BPM",
@@ -924,9 +1076,11 @@ const MUSIC_WORDS = [
         "definition_zh": "每分拍數",
         "definition_en": "Fundamental music theory",
         "explanation": "這是學習音樂必備的『理論調式的』：每分拍數。",
-        "example": "Can you identify the BPM in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的每分拍數嗎？"
+        "learn_sentence": "Let's break down this bpm.",
+        "learn_sentence_zh": "我們來拆解這個每分拍數。",
+        "context_sentence": "Can you hear the bpm in there?",
+        "context_sentence_zh": "你有聽出裡面的每分拍數嗎？"
     },
     {
         "word": "Reverb",
@@ -936,9 +1090,11 @@ const MUSIC_WORDS = [
         "definition_zh": "混響",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：混響。",
-        "example": "I love the vintage sound of analog reverb.",
         "level": "medium",
-        "example_zh": "我很喜歡類比混響的復古聲音。"
+        "learn_sentence": "Needs more reverb.",
+        "learn_sentence_zh": "需要多加一點混響。",
+        "context_sentence": "The mix lacks a bit of reverb.",
+        "context_sentence_zh": "這次混音少了一點混響的味道。"
     },
     {
         "word": "Delay",
@@ -948,9 +1104,11 @@ const MUSIC_WORDS = [
         "definition_zh": "延遲",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：延遲。",
-        "example": "Make sure the delay is properly configured before recording.",
         "level": "medium",
-        "example_zh": "在錄音前，請確保延遲已正確配置。"
+        "learn_sentence": "Tweak the delay a bit.",
+        "learn_sentence_zh": "稍微調一下那個延遲。",
+        "context_sentence": "I love the analog delay on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的延遲。"
     },
     {
         "word": "Compressor",
@@ -960,9 +1118,11 @@ const MUSIC_WORDS = [
         "definition_zh": "壓縮器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：壓縮器。",
-        "example": "I love the vintage sound of analog compressor.",
         "level": "medium",
-        "example_zh": "我很喜歡類比壓縮器的復古聲音。"
+        "learn_sentence": "Watch the compressor levels.",
+        "learn_sentence_zh": "盯緊壓縮器的音量。",
+        "context_sentence": "Can we bypass the compressor for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個壓縮器聽聽看嗎？"
     },
     {
         "word": "Equalizer",
@@ -972,9 +1132,11 @@ const MUSIC_WORDS = [
         "definition_zh": "等化器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：等化器。",
-        "example": "Let's add a bit more equalizer to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點等化器。"
+        "learn_sentence": "Watch the equalizer levels.",
+        "learn_sentence_zh": "盯緊等化器的音量。",
+        "context_sentence": "Can we bypass the equalizer for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個等化器聽聽看嗎？"
     },
     {
         "word": "Limiter",
@@ -984,9 +1146,11 @@ const MUSIC_WORDS = [
         "definition_zh": "限制器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：限制器。",
-        "example": "Let's add a bit more limiter to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點限制器。"
+        "learn_sentence": "Needs more limiter.",
+        "learn_sentence_zh": "需要多加一點限制器。",
+        "context_sentence": "The mix lacks a bit of limiter.",
+        "context_sentence_zh": "這次混音少了一點限制器的味道。"
     },
     {
         "word": "Panning",
@@ -996,9 +1160,11 @@ const MUSIC_WORDS = [
         "definition_zh": "聲像相位",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：聲像相位。",
-        "example": "The engineer adjusted the panning during the mixing phase.",
         "level": "medium",
-        "example_zh": "工程師在混音階段調整了聲像相位。"
+        "learn_sentence": "Tweak the panning a bit.",
+        "learn_sentence_zh": "稍微調一下那個聲像相位。",
+        "context_sentence": "I love the analog panning on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的聲像相位。"
     },
     {
         "word": "Gain",
@@ -1008,9 +1174,11 @@ const MUSIC_WORDS = [
         "definition_zh": "增益",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：增益。",
-        "example": "Let's add a bit more gain to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點增益。"
+        "learn_sentence": "Needs more gain.",
+        "learn_sentence_zh": "需要多加一點增益。",
+        "context_sentence": "The mix lacks a bit of gain.",
+        "context_sentence_zh": "這次混音少了一點增益的味道。"
     },
     {
         "word": "Sidechain",
@@ -1020,9 +1188,11 @@ const MUSIC_WORDS = [
         "definition_zh": "側鏈",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：側鏈。",
-        "example": "I love the vintage sound of analog sidechain.",
         "level": "medium",
-        "example_zh": "我很喜歡類比側鏈的復古聲音。"
+        "learn_sentence": "Needs more sidechain.",
+        "learn_sentence_zh": "需要多加一點側鏈。",
+        "context_sentence": "The mix lacks a bit of sidechain.",
+        "context_sentence_zh": "這次混音少了一點側鏈的味道。"
     },
     {
         "word": "Bus",
@@ -1032,9 +1202,11 @@ const MUSIC_WORDS = [
         "definition_zh": "匯流排",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：匯流排。",
-        "example": "Too much bus can muddy up the entire mix.",
         "level": "medium",
-        "example_zh": "過多的匯流排會讓整首混音變得混濁。"
+        "learn_sentence": "Needs more bus.",
+        "learn_sentence_zh": "需要多加一點匯流排。",
+        "context_sentence": "The mix lacks a bit of bus.",
+        "context_sentence_zh": "這次混音少了一點匯流排的味道。"
     },
     {
         "word": "Monitor",
@@ -1044,9 +1216,11 @@ const MUSIC_WORDS = [
         "definition_zh": "監聽",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：監聽。",
-        "example": "Make sure the monitor is properly configured before recording.",
         "level": "medium",
-        "example_zh": "在錄音前，請確保監聽已正確配置。"
+        "learn_sentence": "Boost the monitor right there.",
+        "learn_sentence_zh": "在那邊把監聽推大聲一點。",
+        "context_sentence": "That plugin ruined the entire monitor.",
+        "context_sentence_zh": "那個外掛徹底毀了整個監聽。"
     },
     {
         "word": "Latency",
@@ -1056,9 +1230,11 @@ const MUSIC_WORDS = [
         "definition_zh": "延遲延時",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：延遲延時。",
-        "example": "Let's add a bit more latency to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點延遲延時。"
+        "learn_sentence": "Needs more latency.",
+        "learn_sentence_zh": "需要多加一點延遲延時。",
+        "context_sentence": "The mix lacks a bit of latency.",
+        "context_sentence_zh": "這次混音少了一點延遲延時的味道。"
     },
     {
         "word": "Plugin",
@@ -1068,9 +1244,11 @@ const MUSIC_WORDS = [
         "definition_zh": "插件",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：插件。",
-        "example": "The engineer adjusted the plugin during the mixing phase.",
         "level": "medium",
-        "example_zh": "工程師在混音階段調整了插件。"
+        "learn_sentence": "Tweak the plugin a bit.",
+        "learn_sentence_zh": "稍微調一下那個插件。",
+        "context_sentence": "I love the analog plugin on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的插件。"
     },
     {
         "word": "Mastering",
@@ -1080,9 +1258,11 @@ const MUSIC_WORDS = [
         "definition_zh": "母帶",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：母帶。",
-        "example": "Let's add a bit more mastering to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點母帶。"
+        "learn_sentence": "Watch the mastering levels.",
+        "learn_sentence_zh": "盯緊母帶的音量。",
+        "context_sentence": "Can we bypass the mastering for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個母帶聽聽看嗎？"
     },
     {
         "word": "Mixing",
@@ -1092,9 +1272,11 @@ const MUSIC_WORDS = [
         "definition_zh": "混音",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：混音。",
-        "example": "The engineer adjusted the mixing during the mixing phase.",
         "level": "medium",
-        "example_zh": "工程師在混音階段調整了混音。"
+        "learn_sentence": "Tweak the mixing a bit.",
+        "learn_sentence_zh": "稍微調一下那個混音。",
+        "context_sentence": "I love the analog mixing on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的混音。"
     },
     {
         "word": "Tracking",
@@ -1104,9 +1286,11 @@ const MUSIC_WORDS = [
         "definition_zh": "錄音錄軌",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：錄音錄軌。",
-        "example": "I love the vintage sound of analog tracking.",
         "level": "medium",
-        "example_zh": "我很喜歡類比錄音錄軌的復古聲音。"
+        "learn_sentence": "Watch the tracking levels.",
+        "learn_sentence_zh": "盯緊錄音錄軌的音量。",
+        "context_sentence": "Can we bypass the tracking for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個錄音錄軌聽聽看嗎？"
     },
     {
         "word": "Overdub",
@@ -1116,9 +1300,11 @@ const MUSIC_WORDS = [
         "definition_zh": "疊錄",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：疊錄。",
-        "example": "Let's add a bit more overdub to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點疊錄。"
+        "learn_sentence": "Watch the overdub levels.",
+        "learn_sentence_zh": "盯緊疊錄的音量。",
+        "context_sentence": "Can we bypass the overdub for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個疊錄聽聽看嗎？"
     },
     {
         "word": "Normalize",
@@ -1128,9 +1314,11 @@ const MUSIC_WORDS = [
         "definition_zh": "標準化",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：標準化。",
-        "example": "Too much normalize can muddy up the entire mix.",
         "level": "medium",
-        "example_zh": "過多的標準化會讓整首混音變得混濁。"
+        "learn_sentence": "Needs more normalize.",
+        "learn_sentence_zh": "需要多加一點標準化。",
+        "context_sentence": "The mix lacks a bit of normalize.",
+        "context_sentence_zh": "這次混音少了一點標準化的味道。"
     },
     {
         "word": "Bit Depth",
@@ -1140,9 +1328,11 @@ const MUSIC_WORDS = [
         "definition_zh": "位元深度",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：位元深度。",
-        "example": "Make sure the Bit Depth is properly configured before recording.",
         "level": "medium",
-        "example_zh": "在錄音前，請確保位元深度已正確配置。"
+        "learn_sentence": "Boost the bit depth right there.",
+        "learn_sentence_zh": "在那邊把位元深度推大聲一點。",
+        "context_sentence": "That plugin ruined the entire bit depth.",
+        "context_sentence_zh": "那個外掛徹底毀了整個位元深度。"
     },
     {
         "word": "Sample Rate",
@@ -1152,9 +1342,11 @@ const MUSIC_WORDS = [
         "definition_zh": "採樣率",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：採樣率。",
-        "example": "Make sure the Sample Rate is properly configured before recording.",
         "level": "medium",
-        "example_zh": "在錄音前，請確保採樣率已正確配置。"
+        "learn_sentence": "Boost the sample rate right there.",
+        "learn_sentence_zh": "在那邊把採樣率推大聲一點。",
+        "context_sentence": "That plugin ruined the entire sample rate.",
+        "context_sentence_zh": "那個外掛徹底毀了整個採樣率。"
     },
     {
         "word": "DAW",
@@ -1164,9 +1356,11 @@ const MUSIC_WORDS = [
         "definition_zh": "數位工作站",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：數位工作站。",
-        "example": "Let's add a bit more DAW to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點數位工作站。"
+        "learn_sentence": "Watch the daw levels.",
+        "learn_sentence_zh": "盯緊數位工作站的音量。",
+        "context_sentence": "Can we bypass the daw for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個數位工作站聽聽看嗎？"
     },
     {
         "word": "MIDI",
@@ -1176,9 +1370,11 @@ const MUSIC_WORDS = [
         "definition_zh": "數位介面",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：數位介面。",
-        "example": "I love the vintage sound of analog MIDI.",
         "level": "medium",
-        "example_zh": "我很喜歡類比數位介面的復古聲音。"
+        "learn_sentence": "Needs more midi.",
+        "learn_sentence_zh": "需要多加一點數位介面。",
+        "context_sentence": "The mix lacks a bit of midi.",
+        "context_sentence_zh": "這次混音少了一點數位介面的味道。"
     },
     {
         "word": "Envelope",
@@ -1188,9 +1384,11 @@ const MUSIC_WORDS = [
         "definition_zh": "包絡",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：包絡。",
-        "example": "We need to tweak the envelope settings on the master bus.",
         "level": "medium",
-        "example_zh": "我們需要微調總線上的包絡設定。"
+        "learn_sentence": "Tweak the envelope a bit.",
+        "learn_sentence_zh": "稍微調一下那個包絡。",
+        "context_sentence": "I love the analog envelope on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的包絡。"
     },
     {
         "word": "Attack",
@@ -1200,9 +1398,11 @@ const MUSIC_WORDS = [
         "definition_zh": "起音時間",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：起音時間。",
-        "example": "Let's add a bit more attack to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點起音時間。"
+        "learn_sentence": "Watch the attack levels.",
+        "learn_sentence_zh": "盯緊起音時間的音量。",
+        "context_sentence": "Can we bypass the attack for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個起音時間聽聽看嗎？"
     },
     {
         "word": "Release",
@@ -1212,9 +1412,11 @@ const MUSIC_WORDS = [
         "definition_zh": "釋放時間",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：釋放時間。",
-        "example": "We need to tweak the release settings on the master bus.",
         "level": "medium",
-        "example_zh": "我們需要微調總線上的釋放時間設定。"
+        "learn_sentence": "Boost the release right there.",
+        "learn_sentence_zh": "在那邊把釋放時間推大聲一點。",
+        "context_sentence": "That plugin ruined the entire release.",
+        "context_sentence_zh": "那個外掛徹底毀了整個釋放時間。"
     },
     {
         "word": "Filter",
@@ -1224,9 +1426,11 @@ const MUSIC_WORDS = [
         "definition_zh": "濾波器",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：濾波器。",
-        "example": "Too much filter can muddy up the entire mix.",
         "level": "medium",
-        "example_zh": "過多的濾波器會讓整首混音變得混濁。"
+        "learn_sentence": "Watch the filter levels.",
+        "learn_sentence_zh": "盯緊濾波器的音量。",
+        "context_sentence": "Can we bypass the filter for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個濾波器聽聽看嗎？"
     },
     {
         "word": "Threshold",
@@ -1236,9 +1440,11 @@ const MUSIC_WORDS = [
         "definition_zh": "閾值門檻",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：閾值門檻。",
-        "example": "I love the vintage sound of analog threshold.",
         "level": "medium",
-        "example_zh": "我很喜歡類比閾值門檻的復古聲音。"
+        "learn_sentence": "Needs more threshold.",
+        "learn_sentence_zh": "需要多加一點閾值門檻。",
+        "context_sentence": "The mix lacks a bit of threshold.",
+        "context_sentence_zh": "這次混音少了一點閾值門檻的味道。"
     },
     {
         "word": "Ratio",
@@ -1248,9 +1454,11 @@ const MUSIC_WORDS = [
         "definition_zh": "壓縮比",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：壓縮比。",
-        "example": "Too much ratio can muddy up the entire mix.",
         "level": "medium",
-        "example_zh": "過多的壓縮比會讓整首混音變得混濁。"
+        "learn_sentence": "Needs more ratio.",
+        "learn_sentence_zh": "需要多加一點壓縮比。",
+        "context_sentence": "The mix lacks a bit of ratio.",
+        "context_sentence_zh": "這次混音少了一點壓縮比的味道。"
     },
     {
         "word": "Knee",
@@ -1260,9 +1468,11 @@ const MUSIC_WORDS = [
         "definition_zh": "拐點",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：拐點。",
-        "example": "Too much knee can muddy up the entire mix.",
         "level": "medium",
-        "example_zh": "過多的拐點會讓整首混音變得混濁。"
+        "learn_sentence": "Watch the knee levels.",
+        "learn_sentence_zh": "盯緊拐點的音量。",
+        "context_sentence": "Can we bypass the knee for a sec?",
+        "context_sentence_zh": "我們可以先關掉那個拐點聽聽看嗎？"
     },
     {
         "word": "Makeup Gain",
@@ -1272,9 +1482,11 @@ const MUSIC_WORDS = [
         "definition_zh": "補償增益",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：補償增益。",
-        "example": "We need to tweak the Makeup Gain settings on the master bus.",
         "level": "medium",
-        "example_zh": "我們需要微調總線上的補償增益設定。"
+        "learn_sentence": "Boost the makeup gain right there.",
+        "learn_sentence_zh": "在那邊把補償增益推大聲一點。",
+        "context_sentence": "That plugin ruined the entire makeup gain.",
+        "context_sentence_zh": "那個外掛徹底毀了整個補償增益。"
     },
     {
         "word": "Low Pass",
@@ -1284,9 +1496,11 @@ const MUSIC_WORDS = [
         "definition_zh": "低通濾波",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：低通濾波。",
-        "example": "We need to tweak the Low Pass settings on the master bus.",
         "level": "medium",
-        "example_zh": "我們需要微調總線上的低通濾波設定。"
+        "learn_sentence": "Tweak the low pass a bit.",
+        "learn_sentence_zh": "稍微調一下那個低通濾波。",
+        "context_sentence": "I love the analog low pass on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的低通濾波。"
     },
     {
         "word": "High Pass",
@@ -1296,9 +1510,11 @@ const MUSIC_WORDS = [
         "definition_zh": "高通濾波",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：高通濾波。",
-        "example": "Let's add a bit more High Pass to the vocal track.",
         "level": "medium",
-        "example_zh": "讓我們在人聲軌道上多加一點高通濾波。"
+        "learn_sentence": "Needs more high pass.",
+        "learn_sentence_zh": "需要多加一點高通濾波。",
+        "context_sentence": "The mix lacks a bit of high pass.",
+        "context_sentence_zh": "這次混音少了一點高通濾波的味道。"
     },
     {
         "word": "Saturation",
@@ -1308,9 +1524,11 @@ const MUSIC_WORDS = [
         "definition_zh": "飽和",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：飽和。",
-        "example": "Make sure the saturation is properly configured before recording.",
         "level": "medium",
-        "example_zh": "在錄音前，請確保飽和已正確配置。"
+        "learn_sentence": "Tweak the saturation a bit.",
+        "learn_sentence_zh": "稍微調一下那個飽和。",
+        "context_sentence": "I love the analog saturation on this track.",
+        "context_sentence_zh": "我很愛這軌極具類比感的飽和。"
     },
     {
         "word": "Phase",
@@ -1320,9 +1538,11 @@ const MUSIC_WORDS = [
         "definition_zh": "相位",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：相位。",
-        "example": "The engineer adjusted the phase during the mixing phase.",
         "level": "medium",
-        "example_zh": "工程師在混音階段調整了相位。"
+        "learn_sentence": "Boost the phase right there.",
+        "learn_sentence_zh": "在那邊把相位推大聲一點。",
+        "context_sentence": "That plugin ruined the entire phase.",
+        "context_sentence_zh": "那個外掛徹底毀了整個相位。"
     },
     {
         "word": "Clipping",
@@ -1332,9 +1552,11 @@ const MUSIC_WORDS = [
         "definition_zh": "削波破音",
         "definition_en": "Professional recording term",
         "explanation": "錄音製作中非常關鍵的技術術語：削波破音。",
-        "example": "The engineer adjusted the clipping during the mixing phase.",
         "level": "medium",
-        "example_zh": "工程師在混音階段調整了削波破音。"
+        "learn_sentence": "Boost the clipping right there.",
+        "learn_sentence_zh": "在那邊把削波破音推大聲一點。",
+        "context_sentence": "That plugin ruined the entire clipping.",
+        "context_sentence_zh": "那個外掛徹底毀了整個削波破音。"
     },
     {
         "word": "Vibrato",
@@ -1344,9 +1566,11 @@ const MUSIC_WORDS = [
         "definition_zh": "揉音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：揉音。",
-        "example": "Try to use vibrato to make the phrase expressively.",
         "level": "medium",
-        "example_zh": "試著運用揉音讓這個樂句更加充滿情感。"
+        "learn_sentence": "That vibrato is killer.",
+        "learn_sentence_zh": "那個揉音太殺了。",
+        "context_sentence": "I totally messed up the vibrato part.",
+        "context_sentence_zh": "我把揉音那個段落全彈爛了。"
     },
     {
         "word": "Glissando",
@@ -1356,9 +1580,11 @@ const MUSIC_WORDS = [
         "definition_zh": "滑音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：滑音。",
-        "example": "Her glissando is so flawless it sounds almost electronic.",
         "level": "medium",
-        "example_zh": "她的滑音完美無瑕，聽起來幾乎像是電子合成的。"
+        "learn_sentence": "That glissando is killer.",
+        "learn_sentence_zh": "那個滑音太殺了。",
+        "context_sentence": "I totally messed up the glissando part.",
+        "context_sentence_zh": "我把滑音那個段落全彈爛了。"
     },
     {
         "word": "Portamento",
@@ -1368,9 +1594,11 @@ const MUSIC_WORDS = [
         "definition_zh": "滑奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：滑奏。",
-        "example": "He has perfected his portamento over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的滑奏磨練到了極致。"
+        "learn_sentence": "Show me that portamento again.",
+        "learn_sentence_zh": "再示範一次那個滑奏給我看。",
+        "context_sentence": "We need to tighten up the portamento.",
+        "context_sentence_zh": "我們得把那個滑奏彈得更精準一點。"
     },
     {
         "word": "Tremolo",
@@ -1380,9 +1608,11 @@ const MUSIC_WORDS = [
         "definition_zh": "顫音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：顫音。",
-        "example": "He has perfected his tremolo over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的顫音磨練到了極致。"
+        "learn_sentence": "Your tremolo is getting better.",
+        "learn_sentence_zh": "你的顫音有在進步喔。",
+        "context_sentence": "I can't seem to get this tremolo right.",
+        "context_sentence_zh": "我怎麼也搞不定這個顫音。"
     },
     {
         "word": "Slap",
@@ -1392,9 +1622,11 @@ const MUSIC_WORDS = [
         "definition_zh": "擊弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：擊弦。",
-        "example": "This piece requires advanced slap to be played correctly.",
         "level": "medium",
-        "example_zh": "這首曲子需要高階的擊弦才能正確演奏。"
+        "learn_sentence": "That slap is killer.",
+        "learn_sentence_zh": "那個擊弦太殺了。",
+        "context_sentence": "I totally messed up the slap part.",
+        "context_sentence_zh": "我把擊弦那個段落全彈爛了。"
     },
     {
         "word": "Pop",
@@ -1404,9 +1636,11 @@ const MUSIC_WORDS = [
         "definition_zh": "勾弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：勾弦。",
-        "example": "He has perfected his pop over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的勾弦磨練到了極致。"
+        "learn_sentence": "Your pop is getting better.",
+        "learn_sentence_zh": "你的勾弦有在進步喔。",
+        "context_sentence": "I can't seem to get this pop right.",
+        "context_sentence_zh": "我怎麼也搞不定這個勾弦。"
     },
     {
         "word": "Ghost Note",
@@ -1416,9 +1650,11 @@ const MUSIC_WORDS = [
         "definition_zh": "虛音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：虛音。",
-        "example": "The guitarist showcased incredible Ghost Note during the break.",
         "level": "medium",
-        "example_zh": "吉他手在間奏中展現了令人難以置信的虛音。"
+        "learn_sentence": "That ghost note is killer.",
+        "learn_sentence_zh": "那個虛音太殺了。",
+        "context_sentence": "I totally messed up the ghost note part.",
+        "context_sentence_zh": "我把虛音那個段落全彈爛了。"
     },
     {
         "word": "Hammer-on",
@@ -1428,9 +1664,11 @@ const MUSIC_WORDS = [
         "definition_zh": "槌音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：槌音。",
-        "example": "He has perfected his hammer-on over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的槌音磨練到了極致。"
+        "learn_sentence": "Show me that hammer-on again.",
+        "learn_sentence_zh": "再示範一次那個槌音給我看。",
+        "context_sentence": "We need to tighten up the hammer-on.",
+        "context_sentence_zh": "我們得把那個槌音彈得更精準一點。"
     },
     {
         "word": "Pull-off",
@@ -1440,9 +1678,11 @@ const MUSIC_WORDS = [
         "definition_zh": "勾音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：勾音。",
-        "example": "Try to use pull-off to make the phrase expressively.",
         "level": "medium",
-        "example_zh": "試著運用勾音讓這個樂句更加充滿情感。"
+        "learn_sentence": "Your pull-off is getting better.",
+        "learn_sentence_zh": "你的勾音有在進步喔。",
+        "context_sentence": "I can't seem to get this pull-off right.",
+        "context_sentence_zh": "我怎麼也搞不定這個勾音。"
     },
     {
         "word": "Bending",
@@ -1452,9 +1692,11 @@ const MUSIC_WORDS = [
         "definition_zh": "推弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：推弦。",
-        "example": "The guitarist showcased incredible bending during the break.",
         "level": "medium",
-        "example_zh": "吉他手在間奏中展現了令人難以置信的推弦。"
+        "learn_sentence": "That bending is killer.",
+        "learn_sentence_zh": "那個推弦太殺了。",
+        "context_sentence": "I totally messed up the bending part.",
+        "context_sentence_zh": "我把推弦那個段落全彈爛了。"
     },
     {
         "word": "Mute",
@@ -1464,9 +1706,11 @@ const MUSIC_WORDS = [
         "definition_zh": "弱音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：弱音。",
-        "example": "Her mute is so flawless it sounds almost electronic.",
         "level": "medium",
-        "example_zh": "她的弱音完美無瑕，聽起來幾乎像是電子合成的。"
+        "learn_sentence": "Your mute is getting better.",
+        "learn_sentence_zh": "你的弱音有在進步喔。",
+        "context_sentence": "I can't seem to get this mute right.",
+        "context_sentence_zh": "我怎麼也搞不定這個弱音。"
     },
     {
         "word": "Palm Mute",
@@ -1476,9 +1720,11 @@ const MUSIC_WORDS = [
         "definition_zh": "悶音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：悶音。",
-        "example": "Her Palm Mute is so flawless it sounds almost electronic.",
         "level": "medium",
-        "example_zh": "她的悶音完美無瑕，聽起來幾乎像是電子合成的。"
+        "learn_sentence": "Show me that palm mute again.",
+        "learn_sentence_zh": "再示範一次那個悶音給我看。",
+        "context_sentence": "We need to tighten up the palm mute.",
+        "context_sentence_zh": "我們得把那個悶音彈得更精準一點。"
     },
     {
         "word": "Harmonics",
@@ -1488,9 +1734,11 @@ const MUSIC_WORDS = [
         "definition_zh": "泛音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：泛音。",
-        "example": "This piece requires advanced harmonics to be played correctly.",
         "level": "medium",
-        "example_zh": "這首曲子需要高階的泛音才能正確演奏。"
+        "learn_sentence": "Show me that harmonics again.",
+        "learn_sentence_zh": "再示範一次那個泛音給我看。",
+        "context_sentence": "We need to tighten up the harmonics.",
+        "context_sentence_zh": "我們得把那個泛音彈得更精準一點。"
     },
     {
         "word": "Double Stop",
@@ -1500,9 +1748,11 @@ const MUSIC_WORDS = [
         "definition_zh": "雙音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：雙音。",
-        "example": "He has perfected his Double Stop over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的雙音磨練到了極致。"
+        "learn_sentence": "That double stop is killer.",
+        "learn_sentence_zh": "那個雙音太殺了。",
+        "context_sentence": "I totally messed up the double stop part.",
+        "context_sentence_zh": "我把雙音那個段落全彈爛了。"
     },
     {
         "word": "Sweep Picking",
@@ -1512,9 +1762,11 @@ const MUSIC_WORDS = [
         "definition_zh": "掃撥",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：掃撥。",
-        "example": "He has perfected his Sweep Picking over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的掃撥磨練到了極致。"
+        "learn_sentence": "Show me that sweep picking again.",
+        "learn_sentence_zh": "再示範一次那個掃撥給我看。",
+        "context_sentence": "We need to tighten up the sweep picking.",
+        "context_sentence_zh": "我們得把那個掃撥彈得更精準一點。"
     },
     {
         "word": "Alternate Picking",
@@ -1524,9 +1776,11 @@ const MUSIC_WORDS = [
         "definition_zh": "交替撥弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：交替撥弦。",
-        "example": "This piece requires advanced Alternate Picking to be played correctly.",
         "level": "medium",
-        "example_zh": "這首曲子需要高階的交替撥弦才能正確演奏。"
+        "learn_sentence": "Work on your alternate picking.",
+        "learn_sentence_zh": "多練練你的交替撥弦。",
+        "context_sentence": "Her alternate picking is absolutely crazy.",
+        "context_sentence_zh": "她的交替撥弦真的太瘋狂了。"
     },
     {
         "word": "Tapping",
@@ -1536,9 +1790,11 @@ const MUSIC_WORDS = [
         "definition_zh": "點弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：點弦。",
-        "example": "Her tapping is so flawless it sounds almost electronic.",
         "level": "medium",
-        "example_zh": "她的點弦完美無瑕，聽起來幾乎像是電子合成的。"
+        "learn_sentence": "Show me that tapping again.",
+        "learn_sentence_zh": "再示範一次那個點弦給我看。",
+        "context_sentence": "We need to tighten up the tapping.",
+        "context_sentence_zh": "我們得把那個點弦彈得更精準一點。"
     },
     {
         "word": "Fingerstyle",
@@ -1548,9 +1804,11 @@ const MUSIC_WORDS = [
         "definition_zh": "指彈",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：指彈。",
-        "example": "This piece requires advanced fingerstyle to be played correctly.",
         "level": "medium",
-        "example_zh": "這首曲子需要高階的指彈才能正確演奏。"
+        "learn_sentence": "Work on your fingerstyle.",
+        "learn_sentence_zh": "多練練你的指彈。",
+        "context_sentence": "Her fingerstyle is absolutely crazy.",
+        "context_sentence_zh": "她的指彈真的太瘋狂了。"
     },
     {
         "word": "Strumming",
@@ -1560,9 +1818,11 @@ const MUSIC_WORDS = [
         "definition_zh": "刷奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：刷奏。",
-        "example": "The guitarist showcased incredible strumming during the break.",
         "level": "medium",
-        "example_zh": "吉他手在間奏中展現了令人難以置信的刷奏。"
+        "learn_sentence": "Show me that strumming again.",
+        "learn_sentence_zh": "再示範一次那個刷奏給我看。",
+        "context_sentence": "We need to tighten up the strumming.",
+        "context_sentence_zh": "我們得把那個刷奏彈得更精準一點。"
     },
     {
         "word": "Pizzicato",
@@ -1572,9 +1832,11 @@ const MUSIC_WORDS = [
         "definition_zh": "撥奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：撥奏。",
-        "example": "He has perfected his pizzicato over many years of touring.",
         "level": "medium",
-        "example_zh": "他透過多年的巡迴演出，將他的撥奏磨練到了極致。"
+        "learn_sentence": "That pizzicato is killer.",
+        "learn_sentence_zh": "那個撥奏太殺了。",
+        "context_sentence": "I totally messed up the pizzicato part.",
+        "context_sentence_zh": "我把撥奏那個段落全彈爛了。"
     },
     {
         "word": "Tremolo picking",
@@ -1584,9 +1846,11 @@ const MUSIC_WORDS = [
         "definition_zh": "顫指撥弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：顫指撥弦。",
-        "example": "Try to use Tremolo picking to make the phrase expressively.",
         "level": "medium",
-        "example_zh": "試著運用顫指撥弦讓這個樂句更加充滿情感。"
+        "learn_sentence": "Work on your tremolo picking.",
+        "learn_sentence_zh": "多練練你的顫指撥弦。",
+        "context_sentence": "Her tremolo picking is absolutely crazy.",
+        "context_sentence_zh": "她的顫指撥弦真的太瘋狂了。"
     },
     {
         "word": "Hybrid Picking",
@@ -1596,9 +1860,11 @@ const MUSIC_WORDS = [
         "definition_zh": "混合撥弦",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：混合撥弦。",
-        "example": "This piece requires advanced Hybrid Picking to be played correctly.",
         "level": "medium",
-        "example_zh": "這首曲子需要高階的混合撥弦才能正確演奏。"
+        "learn_sentence": "That hybrid picking is killer.",
+        "learn_sentence_zh": "那個混合撥弦太殺了。",
+        "context_sentence": "I totally messed up the hybrid picking part.",
+        "context_sentence_zh": "我把混合撥弦那個段落全彈爛了。"
     },
     {
         "word": "Legato playing",
@@ -1608,9 +1874,11 @@ const MUSIC_WORDS = [
         "definition_zh": "連奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：連奏。",
-        "example": "Try to use Legato playing to make the phrase expressively.",
         "level": "medium",
-        "example_zh": "試著運用連奏讓這個樂句更加充滿情感。"
+        "learn_sentence": "That legato playing is killer.",
+        "learn_sentence_zh": "那個連奏太殺了。",
+        "context_sentence": "I totally messed up the legato playing part.",
+        "context_sentence_zh": "我把連奏那個段落全彈爛了。"
     },
     {
         "word": "Vamping",
@@ -1620,9 +1888,11 @@ const MUSIC_WORDS = [
         "definition_zh": "即興伴奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：即興伴奏。",
-        "example": "The guitarist showcased incredible vamping during the break.",
         "level": "medium",
-        "example_zh": "吉他手在間奏中展現了令人難以置信的即興伴奏。"
+        "learn_sentence": "That vamping is killer.",
+        "learn_sentence_zh": "那個即興伴奏太殺了。",
+        "context_sentence": "I totally messed up the vamping part.",
+        "context_sentence_zh": "我把即興伴奏那個段落全彈爛了。"
     },
     {
         "word": "Comping",
@@ -1632,9 +1902,11 @@ const MUSIC_WORDS = [
         "definition_zh": "切分伴奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：切分伴奏。",
-        "example": "The bassist laid down a solid comping groove.",
         "level": "medium",
-        "example_zh": "貝斯手鋪墊了一個扎實的切分伴奏律動。"
+        "learn_sentence": "Nice comping man.",
+        "learn_sentence_zh": "老兄，那個切分伴奏很讚。",
+        "context_sentence": "We're gonna work on your comping today.",
+        "context_sentence_zh": "我們今天要來練練你的切分伴奏。"
     },
     {
         "word": "Walking Bass",
@@ -1644,9 +1916,11 @@ const MUSIC_WORDS = [
         "definition_zh": "步行低音",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：步行低音。",
-        "example": "His improvisational solo heavily relied on Walking Bass.",
         "level": "medium",
-        "example_zh": "他的即興獨奏非常依賴步行低音。"
+        "learn_sentence": "Nice walking bass man.",
+        "learn_sentence_zh": "老兄，那個步行低音很讚。",
+        "context_sentence": "We're gonna work on your walking bass today.",
+        "context_sentence_zh": "我們今天要來練練你的步行低音。"
     },
     {
         "word": "Shuffle",
@@ -1656,9 +1930,11 @@ const MUSIC_WORDS = [
         "definition_zh": "洗牌節奏",
         "definition_en": "Advanced playing technique",
         "explanation": "大幅豐富演才表現力的『演奏技巧』：洗牌節奏。",
-        "example": "Try to use shuffle to make the phrase expressively.",
         "level": "medium",
-        "example_zh": "試著運用洗牌節奏讓這個樂句更加充滿情感。"
+        "learn_sentence": "That shuffle is killer.",
+        "learn_sentence_zh": "那個洗牌節奏太殺了。",
+        "context_sentence": "I totally messed up the shuffle part.",
+        "context_sentence_zh": "我把洗牌節奏那個段落全彈爛了。"
     },
     {
         "word": "Arpeggiator",
@@ -1668,9 +1944,11 @@ const MUSIC_WORDS = [
         "definition_zh": "琶音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琶音器。",
-        "example": "Understanding arpeggiator is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解琶音器對於進階作曲至關重要。"
+        "learn_sentence": "That's a tricky arpeggiator.",
+        "learn_sentence_zh": "那個琶音器有點難搞。",
+        "context_sentence": "I'm still practicing my arpeggiator.",
+        "context_sentence_zh": "我還在練我的琶音器。"
     },
     {
         "word": "Sustain Pedal",
@@ -1680,9 +1958,11 @@ const MUSIC_WORDS = [
         "definition_zh": "延音踏板",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：延音踏板。",
-        "example": "She spent hours analyzing the Sustain Pedal of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的延音踏板。"
+        "learn_sentence": "It's all about the sustain pedal.",
+        "learn_sentence_zh": "重點全在這個延音踏板。",
+        "context_sentence": "Try adding some sustain pedal to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點延音踏板。"
     },
     {
         "word": "Whammy bar",
@@ -1692,9 +1972,11 @@ const MUSIC_WORDS = [
         "definition_zh": "顫音桿",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：顫音桿。",
-        "example": "Can you identify the Whammy bar in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的顫音桿嗎？"
+        "learn_sentence": "I struggle with whammy bar.",
+        "learn_sentence_zh": "我對顫音桿超不拿手。",
+        "context_sentence": "That whammy bar completely changed the mood.",
+        "context_sentence_zh": "那個顫音桿徹底改變了整體的氛圍。"
     },
     {
         "word": "Fret",
@@ -1704,9 +1986,11 @@ const MUSIC_WORDS = [
         "definition_zh": "琴格",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴格。",
-        "example": "Understanding fret is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解琴格對於進階作曲至關重要。"
+        "learn_sentence": "Let's break down this fret.",
+        "learn_sentence_zh": "我們來拆解這個琴格。",
+        "context_sentence": "Can you hear the fret in there?",
+        "context_sentence_zh": "你有聽出裡面的琴格嗎？"
     },
     {
         "word": "Bridge",
@@ -1716,9 +2000,11 @@ const MUSIC_WORDS = [
         "definition_zh": "琴橋",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴橋。",
-        "example": "Can you identify the bridge in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的琴橋嗎？"
+        "learn_sentence": "I struggle with bridge.",
+        "learn_sentence_zh": "我對琴橋超不拿手。",
+        "context_sentence": "That bridge completely changed the mood.",
+        "context_sentence_zh": "那個琴橋徹底改變了整體的氛圍。"
     },
     {
         "word": "Pickup",
@@ -1728,9 +2014,11 @@ const MUSIC_WORDS = [
         "definition_zh": "拾音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：拾音器。",
-        "example": "Pay close attention to the pickup when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意拾音器。"
+        "learn_sentence": "I struggle with pickup.",
+        "learn_sentence_zh": "我對拾音器超不拿手。",
+        "context_sentence": "That pickup completely changed the mood.",
+        "context_sentence_zh": "那個拾音器徹底改變了整體的氛圍。"
     },
     {
         "word": "Pickup Selector",
@@ -1740,9 +2028,11 @@ const MUSIC_WORDS = [
         "definition_zh": "拾音器切換",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：拾音器切換。",
-        "example": "Practicing Pickup Selector will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習拾音器切換絕對能提升你的音感。"
+        "learn_sentence": "I struggle with pickup selector.",
+        "learn_sentence_zh": "我對拾音器切換超不拿手。",
+        "context_sentence": "That pickup selector completely changed the mood.",
+        "context_sentence_zh": "那個拾音器切換徹底改變了整體的氛圍。"
     },
     {
         "word": "Single Coil",
@@ -1752,9 +2042,11 @@ const MUSIC_WORDS = [
         "definition_zh": "單線圈",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：單線圈。",
-        "example": "Pay close attention to the Single Coil when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意單線圈。"
+        "learn_sentence": "I struggle with single coil.",
+        "learn_sentence_zh": "我對單線圈超不拿手。",
+        "context_sentence": "That single coil completely changed the mood.",
+        "context_sentence_zh": "那個單線圈徹底改變了整體的氛圍。"
     },
     {
         "word": "Humbucker",
@@ -1764,9 +2056,11 @@ const MUSIC_WORDS = [
         "definition_zh": "雙線圈",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：雙線圈。",
-        "example": "Understanding humbucker is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解雙線圈對於進階作曲至關重要。"
+        "learn_sentence": "It's all about the humbucker.",
+        "learn_sentence_zh": "重點全在這個雙線圈。",
+        "context_sentence": "Try adding some humbucker to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點雙線圈。"
     },
     {
         "word": "Amps",
@@ -1776,9 +2070,11 @@ const MUSIC_WORDS = [
         "definition_zh": "音箱",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：音箱。",
-        "example": "Can you identify the amps in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的音箱嗎？"
+        "learn_sentence": "I struggle with amps.",
+        "learn_sentence_zh": "我對音箱超不拿手。",
+        "context_sentence": "That amps completely changed the mood.",
+        "context_sentence_zh": "那個音箱徹底改變了整體的氛圍。"
     },
     {
         "word": "Cabinet",
@@ -1788,9 +2084,11 @@ const MUSIC_WORDS = [
         "definition_zh": "箱體",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：箱體。",
-        "example": "Pay close attention to the cabinet when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意箱體。"
+        "learn_sentence": "That's a tricky cabinet.",
+        "learn_sentence_zh": "那個箱體有點難搞。",
+        "context_sentence": "I'm still practicing my cabinet.",
+        "context_sentence_zh": "我還在練我的箱體。"
     },
     {
         "word": "Valve",
@@ -1800,9 +2098,11 @@ const MUSIC_WORDS = [
         "definition_zh": "真空管",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：真空管。",
-        "example": "The composer's use of valve here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對真空管的運用相當非傳統。"
+        "learn_sentence": "Watch out for the valve.",
+        "learn_sentence_zh": "注意那邊的真空管。",
+        "context_sentence": "His solo was packed with cool valve.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的真空管。"
     },
     {
         "word": "Solid State",
@@ -1812,9 +2112,11 @@ const MUSIC_WORDS = [
         "definition_zh": "電晶體",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：電晶體。",
-        "example": "The progressive shift built on Solid State gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在電晶體上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "I struggle with solid state.",
+        "learn_sentence_zh": "我對電晶體超不拿手。",
+        "context_sentence": "That solid state completely changed the mood.",
+        "context_sentence_zh": "那個電晶體徹底改變了整體的氛圍。"
     },
     {
         "word": "Overdrive",
@@ -1824,9 +2126,11 @@ const MUSIC_WORDS = [
         "definition_zh": "超載",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：超載。",
-        "example": "The progressive shift built on overdrive gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在超載上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "That's a tricky overdrive.",
+        "learn_sentence_zh": "那個超載有點難搞。",
+        "context_sentence": "I'm still practicing my overdrive.",
+        "context_sentence_zh": "我還在練我的超載。"
     },
     {
         "word": "Distortion",
@@ -1836,9 +2140,11 @@ const MUSIC_WORDS = [
         "definition_zh": "失真",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：失真。",
-        "example": "Understanding distortion is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解失真對於進階作曲至關重要。"
+        "learn_sentence": "Let's break down this distortion.",
+        "learn_sentence_zh": "我們來拆解這個失真。",
+        "context_sentence": "Can you hear the distortion in there?",
+        "context_sentence_zh": "你有聽出裡面的失真嗎？"
     },
     {
         "word": "Fuzz",
@@ -1848,9 +2154,11 @@ const MUSIC_WORDS = [
         "definition_zh": "破音",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：破音。",
-        "example": "The composer's use of fuzz here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對破音的運用相當非傳統。"
+        "learn_sentence": "That's a tricky fuzz.",
+        "learn_sentence_zh": "那個破音有點難搞。",
+        "context_sentence": "I'm still practicing my fuzz.",
+        "context_sentence_zh": "我還在練我的破音。"
     },
     {
         "word": "Wah-wah",
@@ -1860,9 +2168,11 @@ const MUSIC_WORDS = [
         "definition_zh": "哇音",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：哇音。",
-        "example": "Pay close attention to the wah-wah when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意哇音。"
+        "learn_sentence": "Watch out for the wah-wah.",
+        "learn_sentence_zh": "注意那邊的哇音。",
+        "context_sentence": "His solo was packed with cool wah-wah.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的哇音。"
     },
     {
         "word": "Chorus effect",
@@ -1872,9 +2182,11 @@ const MUSIC_WORDS = [
         "definition_zh": "合唱效果",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：合唱效果。",
-        "example": "She spent hours analyzing the Chorus effect of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的合唱效果。"
+        "learn_sentence": "Watch out for the chorus effect.",
+        "learn_sentence_zh": "注意那邊的合唱效果。",
+        "context_sentence": "His solo was packed with cool chorus effect.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的合唱效果。"
     },
     {
         "word": "Phaser",
@@ -1884,9 +2196,11 @@ const MUSIC_WORDS = [
         "definition_zh": "移相器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：移相器。",
-        "example": "Practicing phaser will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習移相器絕對能提升你的音感。"
+        "learn_sentence": "I struggle with phaser.",
+        "learn_sentence_zh": "我對移相器超不拿手。",
+        "context_sentence": "That phaser completely changed the mood.",
+        "context_sentence_zh": "那個移相器徹底改變了整體的氛圍。"
     },
     {
         "word": "Flanger",
@@ -1896,9 +2210,11 @@ const MUSIC_WORDS = [
         "definition_zh": "飛梭效果",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：飛梭效果。",
-        "example": "The progressive shift built on flanger gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在飛梭效果上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "Watch out for the flanger.",
+        "learn_sentence_zh": "注意那邊的飛梭效果。",
+        "context_sentence": "His solo was packed with cool flanger.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的飛梭效果。"
     },
     {
         "word": "Tremolo pedal",
@@ -1908,9 +2224,11 @@ const MUSIC_WORDS = [
         "definition_zh": "顫音踏板",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：顫音踏板。",
-        "example": "The progressive shift built on Tremolo pedal gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在顫音踏板上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "Let's break down this tremolo pedal.",
+        "learn_sentence_zh": "我們來拆解這個顫音踏板。",
+        "context_sentence": "Can you hear the tremolo pedal in there?",
+        "context_sentence_zh": "你有聽出裡面的顫音踏板嗎？"
     },
     {
         "word": "Octaver",
@@ -1920,9 +2238,11 @@ const MUSIC_WORDS = [
         "definition_zh": "八度音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：八度音器。",
-        "example": "Can you identify the octaver in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的八度音器嗎？"
+        "learn_sentence": "It's all about the octaver.",
+        "learn_sentence_zh": "重點全在這個八度音器。",
+        "context_sentence": "Try adding some octaver to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點八度音器。"
     },
     {
         "word": "Pitch Shifter",
@@ -1932,9 +2252,11 @@ const MUSIC_WORDS = [
         "definition_zh": "移調器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：移調器。",
-        "example": "She spent hours analyzing the Pitch Shifter of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的移調器。"
+        "learn_sentence": "That's a tricky pitch shifter.",
+        "learn_sentence_zh": "那個移調器有點難搞。",
+        "context_sentence": "I'm still practicing my pitch shifter.",
+        "context_sentence_zh": "我還在練我的移調器。"
     },
     {
         "word": "Tuner",
@@ -1944,9 +2266,11 @@ const MUSIC_WORDS = [
         "definition_zh": "調音器",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：調音器。",
-        "example": "The progressive shift built on tuner gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在調音器上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "It's all about the tuner.",
+        "learn_sentence_zh": "重點全在這個調音器。",
+        "context_sentence": "Try adding some tuner to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點調音器。"
     },
     {
         "word": "Patch cable",
@@ -1956,9 +2280,11 @@ const MUSIC_WORDS = [
         "definition_zh": "跳線",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：跳線。",
-        "example": "Practicing Patch cable will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習跳線絕對能提升你的音感。"
+        "learn_sentence": "Watch out for the patch cable.",
+        "learn_sentence_zh": "注意那邊的跳線。",
+        "context_sentence": "His solo was packed with cool patch cable.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的跳線。"
     },
     {
         "word": "DI Box",
@@ -1968,9 +2294,11 @@ const MUSIC_WORDS = [
         "definition_zh": "直接輸入盒",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：直接輸入盒。",
-        "example": "She spent hours analyzing the DI Box of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的直接輸入盒。"
+        "learn_sentence": "That's a tricky di box.",
+        "learn_sentence_zh": "那個直接輸入盒有點難搞。",
+        "context_sentence": "I'm still practicing my di box.",
+        "context_sentence_zh": "我還在練我的直接輸入盒。"
     },
     {
         "word": "Condenser mic",
@@ -1980,9 +2308,11 @@ const MUSIC_WORDS = [
         "definition_zh": "電容麥克風",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：電容麥克風。",
-        "example": "Can you identify the Condenser mic in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的電容麥克風嗎？"
+        "learn_sentence": "Watch out for the condenser mic.",
+        "learn_sentence_zh": "注意那邊的電容麥克風。",
+        "context_sentence": "His solo was packed with cool condenser mic.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的電容麥克風。"
     },
     {
         "word": "Dynamic mic",
@@ -1992,9 +2322,11 @@ const MUSIC_WORDS = [
         "definition_zh": "動圈麥克風",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：動圈麥克風。",
-        "example": "Practicing Dynamic mic will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習動圈麥克風絕對能提升你的音感。"
+        "learn_sentence": "I struggle with dynamic mic.",
+        "learn_sentence_zh": "我對動圈麥克風超不拿手。",
+        "context_sentence": "That dynamic mic completely changed the mood.",
+        "context_sentence_zh": "那個動圈麥克風徹底改變了整體的氛圍。"
     },
     {
         "word": "Ribbon mic",
@@ -2004,9 +2336,11 @@ const MUSIC_WORDS = [
         "definition_zh": "鋁帶麥克風",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：鋁帶麥克風。",
-        "example": "She spent hours analyzing the Ribbon mic of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的鋁帶麥克風。"
+        "learn_sentence": "Watch out for the ribbon mic.",
+        "learn_sentence_zh": "注意那邊的鋁帶麥克風。",
+        "context_sentence": "His solo was packed with cool ribbon mic.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的鋁帶麥克風。"
     },
     {
         "word": "XLR",
@@ -2016,9 +2350,11 @@ const MUSIC_WORDS = [
         "definition_zh": "平衡接口",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：平衡接口。",
-        "example": "Understanding XLR is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解平衡接口對於進階作曲至關重要。"
+        "learn_sentence": "Let's break down this xlr.",
+        "learn_sentence_zh": "我們來拆解這個平衡接口。",
+        "context_sentence": "Can you hear the xlr in there?",
+        "context_sentence_zh": "你有聽出裡面的平衡接口嗎？"
     },
     {
         "word": "Jack",
@@ -2028,9 +2364,11 @@ const MUSIC_WORDS = [
         "definition_zh": "導線頭",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：導線頭。",
-        "example": "Can you identify the jack in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的導線頭嗎？"
+        "learn_sentence": "It's all about the jack.",
+        "learn_sentence_zh": "重點全在這個導線頭。",
+        "context_sentence": "Try adding some jack to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點導線頭。"
     },
     {
         "word": "Monitors",
@@ -2040,9 +2378,11 @@ const MUSIC_WORDS = [
         "definition_zh": "監聽語",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：監聽語。",
-        "example": "The progressive shift built on monitors gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在監聽語上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "Let's break down this monitors.",
+        "learn_sentence_zh": "我們來拆解這個監聽語。",
+        "context_sentence": "Can you hear the monitors in there?",
+        "context_sentence_zh": "你有聽出裡面的監聽語嗎？"
     },
     {
         "word": "Preamp",
@@ -2052,9 +2392,11 @@ const MUSIC_WORDS = [
         "definition_zh": "前級",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：前級。",
-        "example": "Understanding preamp is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解前級對於進階作曲至關重要。"
+        "learn_sentence": "Let's break down this preamp.",
+        "learn_sentence_zh": "我們來拆解這個前級。",
+        "context_sentence": "Can you hear the preamp in there?",
+        "context_sentence_zh": "你有聽出裡面的前級嗎？"
     },
     {
         "word": "Power amp",
@@ -2064,9 +2406,11 @@ const MUSIC_WORDS = [
         "definition_zh": "後級",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：後級。",
-        "example": "Pay close attention to the Power amp when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意後級。"
+        "learn_sentence": "That's a tricky power amp.",
+        "learn_sentence_zh": "那個後級有點難搞。",
+        "context_sentence": "I'm still practicing my power amp.",
+        "context_sentence_zh": "我還在練我的後級。"
     },
     {
         "word": "Mixer",
@@ -2076,9 +2420,11 @@ const MUSIC_WORDS = [
         "definition_zh": "混音台",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：混音台。",
-        "example": "The progressive shift built on mixer gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在混音台上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "That's a tricky mixer.",
+        "learn_sentence_zh": "那個混音台有點難搞。",
+        "context_sentence": "I'm still practicing my mixer.",
+        "context_sentence_zh": "我還在練我的混音台。"
     },
     {
         "word": "Fader",
@@ -2088,9 +2434,11 @@ const MUSIC_WORDS = [
         "definition_zh": "推桿",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：推桿。",
-        "example": "The composer's use of fader here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對推桿的運用相當非傳統。"
+        "learn_sentence": "It's all about the fader.",
+        "learn_sentence_zh": "重點全在這個推桿。",
+        "context_sentence": "Try adding some fader to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點推桿。"
     },
     {
         "word": "Knob",
@@ -2100,9 +2448,11 @@ const MUSIC_WORDS = [
         "definition_zh": "旋鈕",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：旋鈕。",
-        "example": "The progressive shift built on knob gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在旋鈕上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "Let's break down this knob.",
+        "learn_sentence_zh": "我們來拆解這個旋鈕。",
+        "context_sentence": "Can you hear the knob in there?",
+        "context_sentence_zh": "你有聽出裡面的旋鈕嗎？"
     },
     {
         "word": "Automation",
@@ -2112,9 +2462,11 @@ const MUSIC_WORDS = [
         "definition_zh": "自動化",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：自動化。",
-        "example": "Pay close attention to the automation when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意自動化。"
+        "learn_sentence": "It's all about the automation.",
+        "learn_sentence_zh": "重點全在這個自動化。",
+        "context_sentence": "Try adding some automation to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點自動化。"
     },
     {
         "word": "Quantize",
@@ -2124,9 +2476,11 @@ const MUSIC_WORDS = [
         "definition_zh": "量化",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：量化。",
-        "example": "Practicing quantize will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習量化絕對能提升你的音感。"
+        "learn_sentence": "Let's break down this quantize.",
+        "learn_sentence_zh": "我們來拆解這個量化。",
+        "context_sentence": "Can you hear the quantize in there?",
+        "context_sentence_zh": "你有聽出裡面的量化嗎？"
     },
     {
         "word": "Grid",
@@ -2136,9 +2490,11 @@ const MUSIC_WORDS = [
         "definition_zh": "網格",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：網格。",
-        "example": "She spent hours analyzing the grid of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的網格。"
+        "learn_sentence": "That's a tricky grid.",
+        "learn_sentence_zh": "那個網格有點難搞。",
+        "context_sentence": "I'm still practicing my grid.",
+        "context_sentence_zh": "我還在練我的網格。"
     },
     {
         "word": "Tempo Map",
@@ -2148,9 +2504,11 @@ const MUSIC_WORDS = [
         "definition_zh": "速度軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：速度軌。",
-        "example": "Pay close attention to the Tempo Map when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意速度軌。"
+        "learn_sentence": "I struggle with tempo map.",
+        "learn_sentence_zh": "我對速度軌超不拿手。",
+        "context_sentence": "That tempo map completely changed the mood.",
+        "context_sentence_zh": "那個速度軌徹底改變了整體的氛圍。"
     },
     {
         "word": "Metronome mark",
@@ -2160,9 +2518,11 @@ const MUSIC_WORDS = [
         "definition_zh": "速度標記",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：速度標記。",
-        "example": "Can you identify the Metronome mark in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的速度標記嗎？"
+        "learn_sentence": "I struggle with metronome mark.",
+        "learn_sentence_zh": "我對速度標記超不拿手。",
+        "context_sentence": "That metronome mark completely changed the mood.",
+        "context_sentence_zh": "那個速度標記徹底改變了整體的氛圍。"
     },
     {
         "word": "Bar line",
@@ -2172,9 +2532,11 @@ const MUSIC_WORDS = [
         "definition_zh": "小節線",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：小節線。",
-        "example": "The composer's use of Bar line here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對小節線的運用相當非傳統。"
+        "learn_sentence": "I struggle with bar line.",
+        "learn_sentence_zh": "我對小節線超不拿手。",
+        "context_sentence": "That bar line completely changed the mood.",
+        "context_sentence_zh": "那個小節線徹底改變了整體的氛圍。"
     },
     {
         "word": "Double bar",
@@ -2184,9 +2546,11 @@ const MUSIC_WORDS = [
         "definition_zh": "雙小節線",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：雙小節線。",
-        "example": "Understanding Double bar is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解雙小節線對於進階作曲至關重要。"
+        "learn_sentence": "Let's break down this double bar.",
+        "learn_sentence_zh": "我們來拆解這個雙小節線。",
+        "context_sentence": "Can you hear the double bar in there?",
+        "context_sentence_zh": "你有聽出裡面的雙小節線嗎？"
     },
     {
         "word": "Repeat sign",
@@ -2196,9 +2560,11 @@ const MUSIC_WORDS = [
         "definition_zh": "反復記號",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：反復記號。",
-        "example": "The composer's use of Repeat sign here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對反復記號的運用相當非傳統。"
+        "learn_sentence": "Watch out for the repeat sign.",
+        "learn_sentence_zh": "注意那邊的反復記號。",
+        "context_sentence": "His solo was packed with cool repeat sign.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的反復記號。"
     },
     {
         "word": "Da Capo",
@@ -2208,9 +2574,11 @@ const MUSIC_WORDS = [
         "definition_zh": "從頭反復",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：從頭反復。",
-        "example": "The composer's use of Da Capo here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對從頭反復的運用相當非傳統。"
+        "learn_sentence": "It's all about the da capo.",
+        "learn_sentence_zh": "重點全在這個從頭反復。",
+        "context_sentence": "Try adding some da capo to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點從頭反復。"
     },
     {
         "word": "Dal Segno",
@@ -2220,9 +2588,11 @@ const MUSIC_WORDS = [
         "definition_zh": "從記號處反復",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：從記號處反復。",
-        "example": "Pay close attention to the Dal Segno when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意從記號處反復。"
+        "learn_sentence": "That's a tricky dal segno.",
+        "learn_sentence_zh": "那個從記號處反復有點難搞。",
+        "context_sentence": "I'm still practicing my dal segno.",
+        "context_sentence_zh": "我還在練我的從記號處反復。"
     },
     {
         "word": "Coda",
@@ -2232,9 +2602,11 @@ const MUSIC_WORDS = [
         "definition_zh": "結束段",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：結束段。",
-        "example": "She spent hours analyzing the coda of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的結束段。"
+        "learn_sentence": "I struggle with coda.",
+        "learn_sentence_zh": "我對結束段超不拿手。",
+        "context_sentence": "That coda completely changed the mood.",
+        "context_sentence_zh": "那個結束段徹底改變了整體的氛圍。"
     },
     {
         "word": "Fine",
@@ -2244,9 +2616,11 @@ const MUSIC_WORDS = [
         "definition_zh": "結束",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：結束。",
-        "example": "The progressive shift built on fine gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在結束上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "That's a tricky fine.",
+        "learn_sentence_zh": "那個結束有點難搞。",
+        "context_sentence": "I'm still practicing my fine.",
+        "context_sentence_zh": "我還在練我的結束。"
     },
     {
         "word": "Simile",
@@ -2256,9 +2630,11 @@ const MUSIC_WORDS = [
         "definition_zh": "同樣地",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：同樣地。",
-        "example": "Understanding simile is essential for advanced composition.",
         "level": "medium",
-        "example_zh": "理解同樣地對於進階作曲至關重要。"
+        "learn_sentence": "Let's break down this simile.",
+        "learn_sentence_zh": "我們來拆解這個同樣地。",
+        "context_sentence": "Can you hear the simile in there?",
+        "context_sentence_zh": "你有聽出裡面的同樣地嗎？"
     },
     {
         "word": "Solo",
@@ -2268,9 +2644,11 @@ const MUSIC_WORDS = [
         "definition_zh": "獨奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：獨奏。",
-        "example": "Can you identify the solo in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的獨奏嗎？"
+        "learn_sentence": "It's all about the solo.",
+        "learn_sentence_zh": "重點全在這個獨奏。",
+        "context_sentence": "Try adding some solo to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點獨奏。"
     },
     {
         "word": "Duo",
@@ -2280,9 +2658,11 @@ const MUSIC_WORDS = [
         "definition_zh": "二重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：二重奏。",
-        "example": "The composer's use of duo here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對二重奏的運用相當非傳統。"
+        "learn_sentence": "That's a tricky duo.",
+        "learn_sentence_zh": "那個二重奏有點難搞。",
+        "context_sentence": "I'm still practicing my duo.",
+        "context_sentence_zh": "我還在練我的二重奏。"
     },
     {
         "word": "Trio",
@@ -2292,9 +2672,11 @@ const MUSIC_WORDS = [
         "definition_zh": "三重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：三重奏。",
-        "example": "Pay close attention to the trio when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意三重奏。"
+        "learn_sentence": "That's a tricky trio.",
+        "learn_sentence_zh": "那個三重奏有點難搞。",
+        "context_sentence": "I'm still practicing my trio.",
+        "context_sentence_zh": "我還在練我的三重奏。"
     },
     {
         "word": "Quartet",
@@ -2304,9 +2686,11 @@ const MUSIC_WORDS = [
         "definition_zh": "四重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：四重奏。",
-        "example": "The composer's use of quartet here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對四重奏的運用相當非傳統。"
+        "learn_sentence": "Let's break down this quartet.",
+        "learn_sentence_zh": "我們來拆解這個四重奏。",
+        "context_sentence": "Can you hear the quartet in there?",
+        "context_sentence_zh": "你有聽出裡面的四重奏嗎？"
     },
     {
         "word": "Quintet",
@@ -2316,9 +2700,11 @@ const MUSIC_WORDS = [
         "definition_zh": "五重奏",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：五重奏。",
-        "example": "Pay close attention to the quintet when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意五重奏。"
+        "learn_sentence": "Watch out for the quintet.",
+        "learn_sentence_zh": "注意那邊的五重奏。",
+        "context_sentence": "His solo was packed with cool quintet.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的五重奏。"
     },
     {
         "word": "Big Band",
@@ -2328,9 +2714,11 @@ const MUSIC_WORDS = [
         "definition_zh": "大樂團",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：大樂團。",
-        "example": "The composer's use of Big Band here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對大樂團的運用相當非傳統。"
+        "learn_sentence": "Watch out for the big band.",
+        "learn_sentence_zh": "注意那邊的大樂團。",
+        "context_sentence": "His solo was packed with cool big band.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的大樂團。"
     },
     {
         "word": "Brass",
@@ -2340,9 +2728,11 @@ const MUSIC_WORDS = [
         "definition_zh": "銅管",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：銅管。",
-        "example": "She spent hours analyzing the brass of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的銅管。"
+        "learn_sentence": "It's all about the brass.",
+        "learn_sentence_zh": "重點全在這個銅管。",
+        "context_sentence": "Try adding some brass to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點銅管。"
     },
     {
         "word": "Strings",
@@ -2352,9 +2742,11 @@ const MUSIC_WORDS = [
         "definition_zh": "弦樂",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：弦樂。",
-        "example": "The composer's use of strings here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對弦樂的運用相當非傳統。"
+        "learn_sentence": "Watch out for the strings.",
+        "learn_sentence_zh": "注意那邊的弦樂。",
+        "context_sentence": "His solo was packed with cool strings.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的弦樂。"
     },
     {
         "word": "Woodwinds",
@@ -2364,9 +2756,11 @@ const MUSIC_WORDS = [
         "definition_zh": "木管",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：木管。",
-        "example": "Pay close attention to the woodwinds when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意木管。"
+        "learn_sentence": "That's a tricky woodwinds.",
+        "learn_sentence_zh": "那個木管有點難搞。",
+        "context_sentence": "I'm still practicing my woodwinds.",
+        "context_sentence_zh": "我還在練我的木管。"
     },
     {
         "word": "Percussion",
@@ -2376,9 +2770,11 @@ const MUSIC_WORDS = [
         "definition_zh": "敲擊",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：敲擊。",
-        "example": "Pay close attention to the percussion when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意敲擊。"
+        "learn_sentence": "Watch out for the percussion.",
+        "learn_sentence_zh": "注意那邊的敲擊。",
+        "context_sentence": "His solo was packed with cool percussion.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的敲擊。"
     },
     {
         "word": "Harmony vocals",
@@ -2388,9 +2784,11 @@ const MUSIC_WORDS = [
         "definition_zh": "和聲",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：和聲。",
-        "example": "Practicing Harmony vocals will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習和聲絕對能提升你的音感。"
+        "learn_sentence": "It's all about the harmony vocals.",
+        "learn_sentence_zh": "重點全在這個和聲。",
+        "context_sentence": "Try adding some harmony vocals to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點和聲。"
     },
     {
         "word": "Lead vocals",
@@ -2400,9 +2798,11 @@ const MUSIC_WORDS = [
         "definition_zh": "主唱",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：主唱。",
-        "example": "Pay close attention to the Lead vocals when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意主唱。"
+        "learn_sentence": "I struggle with lead vocals.",
+        "learn_sentence_zh": "我對主唱超不拿手。",
+        "context_sentence": "That lead vocals completely changed the mood.",
+        "context_sentence_zh": "那個主唱徹底改變了整體的氛圍。"
     },
     {
         "word": "Backing track",
@@ -2412,9 +2812,11 @@ const MUSIC_WORDS = [
         "definition_zh": "伴奏軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：伴奏軌。",
-        "example": "Can you identify the Backing track in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的伴奏軌嗎？"
+        "learn_sentence": "Let's break down this backing track.",
+        "learn_sentence_zh": "我們來拆解這個伴奏軌。",
+        "context_sentence": "Can you hear the backing track in there?",
+        "context_sentence_zh": "你有聽出裡面的伴奏軌嗎？"
     },
     {
         "word": "Stem",
@@ -2424,9 +2826,11 @@ const MUSIC_WORDS = [
         "definition_zh": "分軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：分軌。",
-        "example": "Pay close attention to the stem when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意分軌。"
+        "learn_sentence": "It's all about the stem.",
+        "learn_sentence_zh": "重點全在這個分軌。",
+        "context_sentence": "Try adding some stem to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點分軌。"
     },
     {
         "word": "WAV",
@@ -2436,9 +2840,11 @@ const MUSIC_WORDS = [
         "definition_zh": "無損格式",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：無損格式。",
-        "example": "Pay close attention to the WAV when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意無損格式。"
+        "learn_sentence": "It's all about the wav.",
+        "learn_sentence_zh": "重點全在這個無損格式。",
+        "context_sentence": "Try adding some wav to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點無損格式。"
     },
     {
         "word": "MP3",
@@ -2448,9 +2854,11 @@ const MUSIC_WORDS = [
         "definition_zh": "壓縮格式",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：壓縮格式。",
-        "example": "The composer's use of MP3 here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對壓縮格式的運用相當非傳統。"
+        "learn_sentence": "Let's break down this mp3.",
+        "learn_sentence_zh": "我們來拆解這個壓縮格式。",
+        "context_sentence": "Can you hear the mp3 in there?",
+        "context_sentence_zh": "你有聽出裡面的壓縮格式嗎？"
     },
     {
         "word": "FLAC",
@@ -2460,9 +2868,11 @@ const MUSIC_WORDS = [
         "definition_zh": "無損壓縮",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：無損壓縮。",
-        "example": "Pay close attention to the FLAC when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意無損壓縮。"
+        "learn_sentence": "I struggle with flac.",
+        "learn_sentence_zh": "我對無損壓縮超不拿手。",
+        "context_sentence": "That flac completely changed the mood.",
+        "context_sentence_zh": "那個無損壓縮徹底改變了整體的氛圍。"
     },
     {
         "word": "Track",
@@ -2472,9 +2882,11 @@ const MUSIC_WORDS = [
         "definition_zh": "音軌",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：音軌。",
-        "example": "The progressive shift built on track gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在音軌上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "Let's break down this track.",
+        "learn_sentence_zh": "我們來拆解這個音軌。",
+        "context_sentence": "Can you hear the track in there?",
+        "context_sentence_zh": "你有聽出裡面的音軌嗎？"
     },
     {
         "word": "Region",
@@ -2484,9 +2896,11 @@ const MUSIC_WORDS = [
         "definition_zh": "區域段落",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：區域段落。",
-        "example": "Can you identify the region in the second measure?",
         "level": "medium",
-        "example_zh": "你能聽出第二小節裡的區域段落嗎？"
+        "learn_sentence": "I struggle with region.",
+        "learn_sentence_zh": "我對區域段落超不拿手。",
+        "context_sentence": "That region completely changed the mood.",
+        "context_sentence_zh": "那個區域段落徹底改變了整體的氛圍。"
     },
     {
         "word": "Loop",
@@ -2496,9 +2910,11 @@ const MUSIC_WORDS = [
         "definition_zh": "循環",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：循環。",
-        "example": "Practicing loop will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習循環絕對能提升你的音感。"
+        "learn_sentence": "That's a tricky loop.",
+        "learn_sentence_zh": "那個循環有點難搞。",
+        "context_sentence": "I'm still practicing my loop.",
+        "context_sentence_zh": "我還在練我的循環。"
     },
     {
         "word": "Sample",
@@ -2508,9 +2924,11 @@ const MUSIC_WORDS = [
         "definition_zh": "採樣",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：採樣。",
-        "example": "She spent hours analyzing the sample of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的採樣。"
+        "learn_sentence": "That's a tricky sample.",
+        "learn_sentence_zh": "那個採樣有點難搞。",
+        "context_sentence": "I'm still practicing my sample.",
+        "context_sentence_zh": "我還在練我的採樣。"
     },
     {
         "word": "Acoustic",
@@ -2520,9 +2938,11 @@ const MUSIC_WORDS = [
         "definition_zh": "不插電",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：不插電。",
-        "example": "Practicing acoustic will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習不插電絕對能提升你的音感。"
+        "learn_sentence": "I struggle with acoustic.",
+        "learn_sentence_zh": "我對不插電超不拿手。",
+        "context_sentence": "That acoustic completely changed the mood.",
+        "context_sentence_zh": "那個不插電徹底改變了整體的氛圍。"
     },
     {
         "word": "Electric",
@@ -2532,9 +2952,11 @@ const MUSIC_WORDS = [
         "definition_zh": "插電",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：插電。",
-        "example": "The progressive shift built on electric gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在插電上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "That's a tricky electric.",
+        "learn_sentence_zh": "那個插電有點難搞。",
+        "context_sentence": "I'm still practicing my electric.",
+        "context_sentence_zh": "我還在練我的插電。"
     },
     {
         "word": "Semi-acoustic",
@@ -2544,9 +2966,11 @@ const MUSIC_WORDS = [
         "definition_zh": "半空心",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：半空心。",
-        "example": "Pay close attention to the semi-acoustic when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意半空心。"
+        "learn_sentence": "Watch out for the semi-acoustic.",
+        "learn_sentence_zh": "注意那邊的半空心。",
+        "context_sentence": "His solo was packed with cool semi-acoustic.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的半空心。"
     },
     {
         "word": "Fretless",
@@ -2556,9 +2980,11 @@ const MUSIC_WORDS = [
         "definition_zh": "無格",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：無格。",
-        "example": "Practicing fretless will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習無格絕對能提升你的音感。"
+        "learn_sentence": "Let's break down this fretless.",
+        "learn_sentence_zh": "我們來拆解這個無格。",
+        "context_sentence": "Can you hear the fretless in there?",
+        "context_sentence_zh": "你有聽出裡面的無格嗎？"
     },
     {
         "word": "Action",
@@ -2568,9 +2994,11 @@ const MUSIC_WORDS = [
         "definition_zh": "弦高",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：弦高。",
-        "example": "She spent hours analyzing the action of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的弦高。"
+        "learn_sentence": "I struggle with action.",
+        "learn_sentence_zh": "我對弦高超不拿手。",
+        "context_sentence": "That action completely changed the mood.",
+        "context_sentence_zh": "那個弦高徹底改變了整體的氛圍。"
     },
     {
         "word": "Neck",
@@ -2580,9 +3008,11 @@ const MUSIC_WORDS = [
         "definition_zh": "琴頸",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴頸。",
-        "example": "The composer's use of neck here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對琴頸的運用相當非傳統。"
+        "learn_sentence": "It's all about the neck.",
+        "learn_sentence_zh": "重點全在這個琴頸。",
+        "context_sentence": "Try adding some neck to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點琴頸。"
     },
     {
         "word": "Body",
@@ -2592,9 +3022,11 @@ const MUSIC_WORDS = [
         "definition_zh": "琴身",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：琴身。",
-        "example": "The composer's use of body here is quite unorthodox.",
         "level": "medium",
-        "example_zh": "作曲家在這裡對琴身的運用相當非傳統。"
+        "learn_sentence": "Watch out for the body.",
+        "learn_sentence_zh": "注意那邊的琴身。",
+        "context_sentence": "His solo was packed with cool body.",
+        "context_sentence_zh": "他的獨奏塞滿了很酷的琴身。"
     },
     {
         "word": "Scale length",
@@ -2604,9 +3036,11 @@ const MUSIC_WORDS = [
         "definition_zh": "弦長度",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：弦長度。",
-        "example": "Pay close attention to the Scale length when playing this section.",
         "level": "medium",
-        "example_zh": "在演奏這個段落時，請密切注意弦長度。"
+        "learn_sentence": "That's a tricky scale length.",
+        "learn_sentence_zh": "那個弦長度有點難搞。",
+        "context_sentence": "I'm still practicing my scale length.",
+        "context_sentence_zh": "我還在練我的弦長度。"
     },
     {
         "word": "Tuning",
@@ -2616,9 +3050,11 @@ const MUSIC_WORDS = [
         "definition_zh": "調音",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：調音。",
-        "example": "Practicing tuning will strictly improve your musical ear.",
         "level": "medium",
-        "example_zh": "練習調音絕對能提升你的音感。"
+        "learn_sentence": "I struggle with tuning.",
+        "learn_sentence_zh": "我對調音超不拿手。",
+        "context_sentence": "That tuning completely changed the mood.",
+        "context_sentence_zh": "那個調音徹底改變了整體的氛圍。"
     },
     {
         "word": "Drop D",
@@ -2628,9 +3064,11 @@ const MUSIC_WORDS = [
         "definition_zh": "降低D調",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：降低D調。",
-        "example": "She spent hours analyzing the Drop D of the classical piece.",
         "level": "medium",
-        "example_zh": "她花了好幾個小時分析這首古典樂曲的降低D調。"
+        "learn_sentence": "That's a tricky drop d.",
+        "learn_sentence_zh": "那個降低D調有點難搞。",
+        "context_sentence": "I'm still practicing my drop d.",
+        "context_sentence_zh": "我還在練我的降低D調。"
     },
     {
         "word": "Open Tuning",
@@ -2640,1211 +3078,2188 @@ const MUSIC_WORDS = [
         "definition_zh": "開放定弦",
         "definition_en": "Essential music term",
         "explanation": "樂手必須掌握的專業硬核術語：開放定弦。",
-        "example": "The progressive shift built on Open Tuning gives the song its tension.",
         "level": "medium",
-        "example_zh": "建立在開放定弦上的漸進變化賦予了這首歌張力。"
+        "learn_sentence": "It's all about the open tuning.",
+        "learn_sentence_zh": "重點全在這個開放定弦。",
+        "context_sentence": "Try adding some open tuning to the progression.",
+        "context_sentence_zh": "試著在和弦進行裡加點開放定弦。"
     }
 ];
 const CORE_WORDS = [
     {
-        "word": "Analyze",
-        "type": "word",
+        "word": "Figure out",
+        "type": "daily",
         "category": "行動描述",
-        "phonetic": "/analyze/",
-        "definition_zh": "分析",
-        "definition_en": "Core academic vocab",
-        "explanation": "研究事物的組成與脈絡。",
-        "example": "Management will analyze the new strategy next week.",
+        "phonetic": "/ˈfɪɡ.jɚ aʊt/",
+        "definition_zh": "想出 / 弄清楚",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "極為常見的片語，表示絞盡腦汁理解或找出答案。",
         "level": "medium",
-        "example_zh": "管理層下週將分析這項新策略。"
+        "learn_sentence": "Let's figure it out.",
+        "learn_sentence_zh": "我們來想辦法弄清楚。",
+        "context_sentence": "I gotta figure out what's wrong.",
+        "context_sentence_zh": "我得搞清楚哪裡出錯了。"
+    },
+    {
+        "word": "Wrap up",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/ræp ʌp/",
+        "definition_zh": "結束 / 收尾",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "通常在會議或專案即將結束時使用，意思是準備收尾。",
+        "level": "medium",
+        "learn_sentence": "Let's wrap this up.",
+        "learn_sentence_zh": "我們快點收尾吧。",
+        "context_sentence": "We wrapped up the meeting early.",
+        "context_sentence_zh": "我們會早點結束會議。"
+    },
+    {
+        "word": "Catch up",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/kætʃ ʌp/",
+        "definition_zh": "敘舊 / 趕上",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "指老朋友見面互相更新近況，或是趕上落後的工作進度。",
+        "level": "medium",
+        "learn_sentence": "Let's catch up soon.",
+        "learn_sentence_zh": "我們改天聚聚吧。",
+        "context_sentence": "I need to catch up on some work.",
+        "context_sentence_zh": "我得把積欠的工作趕完。"
+    },
+    {
+        "word": "Burn out",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/bɝːn aʊt/",
+        "definition_zh": "職業倦怠",
+        "definition_en": "Authentic Idiom",
+        "explanation": "形容因工作過度而產生的身心俱疲與倦怠感。",
+        "level": "medium",
+        "learn_sentence": "Don't burn yourself out.",
+        "learn_sentence_zh": "別把自己累壞了。",
+        "context_sentence": "I'm feeling so burnt out lately.",
+        "context_sentence_zh": "我最近覺得有夠筋疲力盡。"
+    },
+    {
+        "word": "Look forward to",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/lʊk ˈfɔːr.wɚd tuː/",
+        "definition_zh": "期待",
+        "definition_en": "Authentic Phrase",
+        "explanation": "信件結尾或口語中表達極度期盼某事發生，後面常接名詞或 V-ing。",
+        "level": "easy",
+        "learn_sentence": "I look forward to it.",
+        "learn_sentence_zh": "我很期待。",
+        "context_sentence": "I'm really looking forward to the trip.",
+        "context_sentence_zh": "我超期待這趟旅行的。"
+    },
+    {
+        "word": "On the same page",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/ɑːn ðə seɪm peɪdʒ/",
+        "definition_zh": "達成共識",
+        "definition_en": "Authentic Idiom",
+        "explanation": "比喻大家在同一頁，也就是對某件事有著相同的理解與共識。",
+        "level": "medium",
+        "learn_sentence": "Are we on the same page?",
+        "learn_sentence_zh": "我們有共識了嗎？",
+        "context_sentence": "I just want to make sure we're on the same page.",
+        "context_sentence_zh": "我只是想確認大家有一致的共識。"
+    },
+    {
+        "word": "Touch base",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/tʌtʃ beɪs/",
+        "definition_zh": "聯繫 / 交流一下",
+        "definition_en": "Authentic Idiom",
+        "explanation": "原為棒球術語，在職場用來表示快速而且簡單的聯繫或交換資訊。",
+        "level": "medium",
+        "learn_sentence": "Let's touch base next week.",
+        "learn_sentence_zh": "我們下週來討論交流一下。",
+        "context_sentence": "I'll touch base with you tomorrow.",
+        "context_sentence_zh": "我明天會跟你簡單通個氣。"
+    },
+    {
+        "word": "Play it by ear",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/pleɪ ɪt baɪ ɪr/",
+        "definition_zh": "見機行事",
+        "definition_en": "Authentic Idiom",
+        "explanation": "源自音樂上「憑聽力演奏(即興)」，引申為碰到事情不預先計畫，見機行事。",
+        "level": "hard",
+        "learn_sentence": "Let's play it by ear.",
+        "learn_sentence_zh": "我們見機行事吧。",
+        "context_sentence": "I don't have a plan, I'm just playing it by ear.",
+        "context_sentence_zh": "我沒啥計畫，就走一步算一步。"
+    },
+    {
+        "word": "Call it a day",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/kɑːl ɪt ə deɪ/",
+        "definition_zh": "收工 / 今天就到此為止",
+        "definition_en": "Authentic Idiom",
+        "explanation": "表示決定停止正在做的工作，準備休息或下班。",
+        "level": "easy",
+        "learn_sentence": "Let's call it a day.",
+        "learn_sentence_zh": "今天就到這吧。",
+        "context_sentence": "I'm tired, I think I'll call it a day.",
+        "context_sentence_zh": "我累了，今天大概就先這樣收工。"
+    },
+    {
+        "word": "Get the hang of it",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ɡet ðə hæŋ əv ɪt/",
+        "definition_zh": "掌握訣竅",
+        "definition_en": "Authentic Phrase",
+        "explanation": "指經過練習後，抓到某事情的方法或訣竅。",
+        "level": "medium",
+        "learn_sentence": "Hey, get the hang of it!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "It takes a little time to get the hang of this software.",
+        "context_sentence_zh": "要掌握這個軟體的訣竅需要花一點時間。"
+    },
+    {
+        "word": "Take for granted",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/teɪk fɔːr ˈɡræn.tɪd/",
+        "definition_zh": "視為理所當然",
+        "definition_en": "Authentic Idiom",
+        "explanation": "把人事物的存在當作理當如此而失去感激之情。",
+        "level": "hard",
+        "learn_sentence": "Hey, take for granted!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Don't take her help for granted.",
+        "context_sentence_zh": "不要把她的幫忙視為理所當然。"
+    },
+    {
+        "word": "Out of the blue",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/aʊt əv ðə bluː/",
+        "definition_zh": "突然 / 毫無預警",
+        "definition_en": "Authentic Idiom",
+        "explanation": "如同青天霹靂一樣，指事情發生得出乎意料。",
+        "level": "medium",
+        "learn_sentence": "It came out of the blue.",
+        "learn_sentence_zh": "這真的超突然。",
+        "context_sentence": "He showed up entirely out of the blue.",
+        "context_sentence_zh": "他毫無預警地就出現了。"
+    },
+    {
+        "word": "Bite the bullet",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/baɪt ðə ˈbʊl.ɪt/",
+        "definition_zh": "硬著頭皮做",
+        "definition_en": "Authentic Idiom",
+        "explanation": "勇敢面對或強忍痛苦去接受不得不做的事情。",
+        "level": "hard",
+        "learn_sentence": "Hey, bite the bullet!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "I'm just going to bite the bullet and tell him the truth.",
+        "context_sentence_zh": "我決定硬著頭皮去告訴他真相。"
+    },
+    {
+        "word": "So far, so good",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/soʊ fɑːr soʊ ɡʊd/",
+        "definition_zh": "到目前為止一切順利",
+        "definition_en": "Authentic Idiom",
+        "explanation": "被問到近況或進度時的極常見回答方式。",
+        "level": "easy",
+        "learn_sentence": "So far, so good.",
+        "learn_sentence_zh": "目前還行。",
+        "context_sentence": "How is it going? So far, so good.",
+        "context_sentence_zh": "最近過得怎樣？還算過得去啦。"
+    },
+    {
+        "word": "Rule of thumb",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/ruːl əv θʌm/",
+        "definition_zh": "經驗法則",
+        "definition_en": "Authentic Phrase",
+        "explanation": "基於實踐經驗而非精確科學計算所歸納出的實用準則。",
+        "level": "hard",
+        "learn_sentence": "Hey, rule of thumb!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "As a rule of thumb, you should drink two liters of water a day.",
+        "context_sentence_zh": "根據經驗法則，你每天應該喝兩公升的水。"
+    },
+    {
+        "word": "Heads up",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/hedz ʌp/",
+        "definition_zh": "預先告知 / 提醒",
+        "definition_en": "Authentic Phrase",
+        "explanation": "在事情發生前給予他人的一個警告或通知。",
+        "level": "medium",
+        "learn_sentence": "Hey, heads up!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Just giving you a heads up that tomorrow's meeting is delayed.",
+        "context_sentence_zh": "先跟你說一聲，明天的會議延後了。"
+    },
+    {
+        "word": "Under the weather",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ˈʌn.dɚ ðə ˈweð.ɚ/",
+        "definition_zh": "身體不適",
+        "definition_en": "Authentic Idiom",
+        "explanation": "非常道地的表達自己生病或感到不舒服的方式。",
+        "level": "easy",
+        "learn_sentence": "Hey, under the weather!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "I'm feeling a bit under the weather today.",
+        "context_sentence_zh": "我今天覺得身體有些不舒服。"
+    },
+    {
+        "word": "Up in the air",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/ʌp ɪn ðə er/",
+        "definition_zh": "懸而未決",
+        "definition_en": "Authentic Idiom",
+        "explanation": "計畫或決定尚未定案，充滿未知的狀態。",
+        "level": "medium",
+        "learn_sentence": "Hey, up in the air!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Our travel plans are still up in the air.",
+        "context_sentence_zh": "我們的旅行計畫目前還是懸而未決。"
+    },
+    {
+        "word": "Make sense",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/meɪk sens/",
+        "definition_zh": "有道理 / 說得通",
+        "definition_en": "Authentic Phrase",
+        "explanation": "美劇出現頻率極高！用來表示認同別人的解釋邏輯很合理。",
+        "level": "easy",
+        "learn_sentence": "That makes sense.",
+        "learn_sentence_zh": "那滿有道理的。",
+        "context_sentence": "Does this plan make any sense to you?",
+        "context_sentence_zh": "你覺得這個計畫哪裡說得通嗎？"
+    },
+    {
+        "word": "Take your time",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/teɪk jʊr taɪm/",
+        "definition_zh": "慢慢來 (不著急)",
+        "definition_en": "Authentic Phrase",
+        "explanation": "非常友善的禮貌表達，安撫對方不需要太倉促。",
+        "level": "easy",
+        "learn_sentence": "Take your time.",
+        "learn_sentence_zh": "慢慢來不急。",
+        "context_sentence": "No rush, just take your time.",
+        "context_sentence_zh": "真的不用趕，你慢慢來就好。"
+    },
+    {
+        "word": "Cut corners",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/kʌt ˈkɔːr.nɚz/",
+        "definition_zh": "偷工減料 / 抄捷徑",
+        "definition_en": "Authentic Idiom",
+        "explanation": "為了節省時間和金錢而忽視規則，常常會帶來反效果。",
+        "level": "medium",
+        "learn_sentence": "Hey, cut corners!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "You shouldn't cut corners when building a house.",
+        "context_sentence_zh": "在蓋房子的時候，絕對不應該偷工減料。"
+    },
+    {
+        "word": "A piece of cake",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ə piːs əv keɪk/",
+        "definition_zh": "輕而易舉 / 小事一樁",
+        "definition_en": "Authentic Idiom",
+        "explanation": "形容某件事情極度簡單且容易完成。",
+        "level": "easy",
+        "learn_sentence": "Hey, a piece of cake!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Don't worry about the exam, it will be a piece of cake.",
+        "context_sentence_zh": "別擔心那場考試，那絕對是小事一樁。"
+    },
+    {
+        "word": "Bring up",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/brɪŋ ʌp/",
+        "definition_zh": "提出 / 提起",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "在對話或會議中開始談論某個新的話題或意見。",
+        "level": "medium",
+        "learn_sentence": "Hey, bring up!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "I'm glad you brought up the budget issue.",
+        "context_sentence_zh": "我很高興你主動提起了預算的問題。"
+    },
+    {
+        "word": "Come up with",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/kʌm ʌp wɪθ/",
+        "definition_zh": "想出 / 提出",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "大腦產生了一個新的點子、靈感或是解決方案。",
+        "level": "medium",
+        "learn_sentence": "Hey, come up with!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "She came up with an amazing idea for the campaign.",
+        "context_sentence_zh": "她為這次的活動想出了一個很棒的點子。"
+    },
+    {
+        "word": "Point out",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/pɔɪnt aʊt/",
+        "definition_zh": "指出 / 點出",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "讓人注意到某個可能被忽略的事實或細節。",
+        "level": "easy",
+        "learn_sentence": "Hey, point out!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "He was quick to point out my obvious mistake.",
+        "context_sentence_zh": "他很快地就指出了我明顯的錯誤。"
+    },
+    {
+        "word": "Show up",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ʃoʊ ʌp/",
+        "definition_zh": "出現 / 露面",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "到達某個地方，或者指人在聚會中準時出現。",
+        "level": "easy",
+        "learn_sentence": "Hey, show up!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Half the guests didn't even show up.",
+        "context_sentence_zh": "有一半的賓客甚至連出現都沒有出現。"
+    },
+    {
+        "word": "Turn out",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/tɝːn aʊt/",
+        "definition_zh": "結果是 / 證明是",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "指事情最後發展的結論，通常帶有意外的語氣。",
+        "level": "medium",
+        "learn_sentence": "Hey, turn out!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "It turns out that he was right all along.",
+        "context_sentence_zh": "結果證明他一直以來都是對的。"
+    },
+    {
+        "word": "Stand out",
+        "type": "daily",
+        "category": "邏輯特徵",
+        "phonetic": "/stænd aʊt/",
+        "definition_zh": "脫穎而出 / 顯眼",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "比周遭的事物更優秀或是更容易被注意到。",
+        "level": "medium",
+        "learn_sentence": "Hey, stand out!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Her bright red dress made her stand out in the crowd.",
+        "context_sentence_zh": "她鮮紅色的洋裝讓她在人群中顯得格外耀眼。"
+    },
+    {
+        "word": "Pull off",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/pʊl ɑːf/",
+        "definition_zh": "成功完成 (困難的事)",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "在看似不可能或高難度的情況下成功辦到某件事。",
+        "level": "hard",
+        "learn_sentence": "Hey, pull off!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "I honestly never thought they would pull off that deal.",
+        "context_sentence_zh": "我老實說從沒想過他們居然能成功談成那筆交易。"
+    },
+    {
+        "word": "Take over",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/teɪk ˈoʊ.vɚ/",
+        "definition_zh": "接管 / 接手",
+        "definition_en": "Authentic Phrasal Verb",
+        "explanation": "取得控制權或繼續某人原本正在進行的工作。",
+        "level": "medium",
+        "learn_sentence": "Hey, take over!",
+        "learn_sentence_zh": "嗨",
+        "context_sentence": "Who will take over the project when she leaves?",
+        "context_sentence_zh": "當她離開後，誰會接手主導這個專案？"
+    },
+    {
+        "word": "Grab",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ɡræb/",
+        "definition_zh": "拿 / 去買 / 去做",
+        "definition_en": "American Daily Verb",
+        "level": "easy",
+        "learn_sentence": "I'll grab some coffee.",
+        "learn_sentence_zh": "我去弄點咖啡。",
+        "context_sentence": "Can you grab me a water real quick?",
+        "context_sentence_zh": "你能幫我快去拿個水嗎？"
+    },
+    {
+        "word": "Hang out",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/hæŋ aʊt/",
+        "definition_zh": "出去玩 / 一起混",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Let's hang out sometime.",
+        "learn_sentence_zh": "找時間出來玩吧。",
+        "context_sentence": "We used to hang out every weekend.",
+        "context_sentence_zh": "我們以前每個週末都會一起出去玩。"
+    },
+    {
+        "word": "Check out",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/tʃek aʊt/",
+        "definition_zh": "去看看 / 去試試",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Check this out.",
+        "learn_sentence_zh": "你看看這個。",
+        "context_sentence": "You've gotta check out that new place.",
+        "context_sentence_zh": "你一定要去看看那個新的地方。"
+    },
+    {
+        "word": "Deal with",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/diːl wɪð/",
+        "definition_zh": "處理 / 面對",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "I'll deal with it.",
+        "learn_sentence_zh": "我來處理這件事。",
+        "context_sentence": "I can't deal with this right now.",
+        "context_sentence_zh": "我現在真的沒辦法面對這件事。"
+    },
+    {
+        "word": "Work out",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/wɝːk aʊt/",
+        "definition_zh": "解決 / 健身 / 搞定",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "It'll work out.",
+        "learn_sentence_zh": "一切都會好的。",
+        "context_sentence": "I think we can work this out together.",
+        "context_sentence_zh": "我覺得我們可以一起把這事搞定的。"
+    },
+    {
+        "word": "Pick up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/pɪk ʌp/",
+        "definition_zh": "去接 / 買 / 學",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Pick me up at 7.",
+        "learn_sentence_zh": "七點來接我。",
+        "context_sentence": "I'll pick up some groceries on the way.",
+        "context_sentence_zh": "我回家途中去買點日用品。"
+    },
+    {
+        "word": "Skip",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/skɪp/",
+        "definition_zh": "跳過 / 不去",
+        "definition_en": "American Daily Verb",
+        "level": "easy",
+        "learn_sentence": "Let's just skip it.",
+        "learn_sentence_zh": "算了就跳過吧。",
+        "context_sentence": "I'm gonna skip class today.",
+        "context_sentence_zh": "我今天打算蹺課不去了。"
+    },
+    {
+        "word": "Hit up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/hɪt ʌp/",
+        "definition_zh": "聯絡 / 傳訊息",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "Hit me up later.",
+        "learn_sentence_zh": "晚點再聯絡我。",
+        "context_sentence": "Hit him up and see if he's free.",
+        "context_sentence_zh": "傳個訊息給他問他有沒有空。"
+    },
+    {
+        "word": "Drop by",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/drɑːp baɪ/",
+        "definition_zh": "順道過去",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Drop by anytime.",
+        "learn_sentence_zh": "隨時都可以來。",
+        "context_sentence": "I might drop by the office later.",
+        "context_sentence_zh": "我待會兒可能會順道去一下辦公室。"
+    },
+    {
+        "word": "Mess up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/mes ʌp/",
+        "definition_zh": "搞砸 / 弄亂",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "I totally messed up.",
+        "learn_sentence_zh": "我真的把這事搞砸了。",
+        "context_sentence": "Don't mess up this interview.",
+        "context_sentence_zh": "別把這場面試給搞砸了。"
+    },
+    {
+        "word": "Set up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/set ʌp/",
+        "definition_zh": "設置 / 安排",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "I'll set it up.",
+        "learn_sentence_zh": "我來設定好。",
+        "context_sentence": "Can you set up a meeting for Monday?",
+        "context_sentence_zh": "你可以安排一下週一的會議嗎？"
+    },
+    {
+        "word": "Freak out",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/friːk aʊt/",
+        "definition_zh": "崩潰 / 嚇到",
+        "definition_en": "American Daily Slang",
+        "level": "medium",
+        "learn_sentence": "Don't freak out.",
+        "learn_sentence_zh": "別崩潰。",
+        "context_sentence": "She totally freaked out when she heard.",
+        "context_sentence_zh": "她聽到的時候完全嚇壞了。"
+    },
+    {
+        "word": "Give up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ɡɪv ʌp/",
+        "definition_zh": "放棄",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Don't give up.",
+        "learn_sentence_zh": "別放棄。",
+        "context_sentence": "I'm not giving up on this.",
+        "context_sentence_zh": "這件事我絕對不打算放棄的。"
+    },
+    {
+        "word": "Chill",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/tʃɪl/",
+        "definition_zh": "放輕鬆",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "Just chill.",
+        "learn_sentence_zh": "放輕鬆就好。",
+        "context_sentence": "We were just chilling at home.",
+        "context_sentence_zh": "我們就在家裡放鬆消遣而已。"
+    },
+    {
+        "word": "Vibe",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/vaɪb/",
+        "definition_zh": "感覺 / 氛圍",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "The vibe is great.",
+        "learn_sentence_zh": "這裡的氛圍超好的。",
+        "context_sentence": "This place has such a good vibe.",
+        "context_sentence_zh": "這個地方的感覺真的超讚的。"
+    },
+    {
+        "word": "Nailed it",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/neɪld ɪt/",
+        "definition_zh": "超完美 / 太厲害了",
+        "definition_en": "American Daily Idiom",
+        "level": "easy",
+        "learn_sentence": "You nailed it!",
+        "learn_sentence_zh": "你太厲害了！",
+        "context_sentence": "The presentation was great, you totally nailed it.",
+        "context_sentence_zh": "報告太棒了，你這次真的完全超水準！"
+    },
+    {
+        "word": "Kill it",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/kɪl ɪt/",
+        "definition_zh": "表現完美 / 大殺四方",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "You're killing it!",
+        "learn_sentence_zh": "你現在太猛了！",
+        "context_sentence": "She's been killing it at her new job.",
+        "context_sentence_zh": "她在新工作上表現得非常亮眼。"
+    },
+    {
+        "word": "Snap",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/snæp/",
+        "definition_zh": "哎喲 / 厲害 (驚嘆詞)",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "Snap, that was close!",
+        "learn_sentence_zh": "哎喲，好險！",
+        "context_sentence": "Snap, I can't believe he said that.",
+        "context_sentence_zh": "哎呀，我真不敢相信他說了那句話。"
+    },
+    {
+        "word": "Literally",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ˈlɪt.ɚ.əl.i/",
+        "definition_zh": "真的 / 簡直",
+        "definition_en": "American Daily Intensifier",
+        "level": "easy",
+        "learn_sentence": "I literally just got here.",
+        "learn_sentence_zh": "我剛剛才到而已。",
+        "context_sentence": "This is literally the best thing I've ever eaten.",
+        "context_sentence_zh": "這真的是我這輩子吃過最好吃的東西。"
+    },
+    {
+        "word": "Totally",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ˈtoʊ.t̬əl.i/",
+        "definition_zh": "完全 / 超",
+        "definition_en": "American Daily Intensifier",
+        "level": "easy",
+        "learn_sentence": "I totally forgot.",
+        "learn_sentence_zh": "我完全忘掉了。",
+        "context_sentence": "Yeah, I totally get what you mean.",
+        "context_sentence_zh": "對，我完全懂你的意思。"
+    },
+    {
+        "word": "Honestly",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ˈɑː.nɪst.li/",
+        "definition_zh": "說真的 / 老實講",
+        "definition_en": "American Daily Discourse Marker",
+        "level": "easy",
+        "learn_sentence": "Honestly, it's fine.",
+        "learn_sentence_zh": "說真的，沒事的。",
+        "context_sentence": "Honestly, I have no idea what happened.",
+        "context_sentence_zh": "老實說，我完全不知道發生什麼事。"
+    },
+    {
+        "word": "Low-key",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ˌloʊˈkiː/",
+        "definition_zh": "有點 / 其實還挺",
+        "definition_en": "American Daily Slang",
+        "level": "medium",
+        "learn_sentence": "I'm low-key tired.",
+        "learn_sentence_zh": "我其實還挺累的。",
+        "context_sentence": "I low-key love that song.",
+        "context_sentence_zh": "我其實偷偷很喜歡那首歌。"
+    },
+    {
+        "word": "No worries",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/noʊ ˈwɝː.iz/",
+        "definition_zh": "沒問題 / 不客氣",
+        "definition_en": "American Daily Phrase",
+        "level": "easy",
+        "learn_sentence": "No worries at all.",
+        "learn_sentence_zh": "完全沒問題。",
+        "context_sentence": "Thanks for your help! No worries, anytime.",
+        "context_sentence_zh": "謝謝你的幫忙！沒問題的，隨時都可以。"
+    },
+    {
+        "word": "My bad",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/maɪ bæd/",
+        "definition_zh": "我的錯 / 我不好",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "My bad, I forgot.",
+        "learn_sentence_zh": "我的錯，我忘了。",
+        "context_sentence": "Oh my bad, I thought it was tomorrow.",
+        "context_sentence_zh": "哦不好意思，我以為是明天。"
+    },
+    {
+        "word": "For real",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/fɔːr riːl/",
+        "definition_zh": "說真的 / 真的嗎",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "For real though.",
+        "learn_sentence_zh": "說真的。",
+        "context_sentence": "I'm quitting my job. For real this time.",
+        "context_sentence_zh": "我要辭職了。這次是認真的。"
+    },
+    {
+        "word": "What's up",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/wʌts ʌp/",
+        "definition_zh": "你好 / 怎麼了",
+        "definition_en": "American Daily Greeting",
+        "level": "easy",
+        "learn_sentence": "Hey, what's up?",
+        "learn_sentence_zh": "嘿，你好！",
+        "context_sentence": "What's up man, haven't seen you in a while.",
+        "context_sentence_zh": "老兄你好啊，好久不見了。"
+    },
+    {
+        "word": "Go-to",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ɡoʊ tuː/",
+        "definition_zh": "首選 / 最愛用的",
+        "definition_en": "American Daily Expression",
+        "level": "medium",
+        "learn_sentence": "It's my go-to place.",
+        "learn_sentence_zh": "那是我的首選去處。",
+        "context_sentence": "That's my go-to answer when I don't know.",
+        "context_sentence_zh": "那是我在不知道的時候最慣用的答案。"
+    },
+    {
+        "word": "Back up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/bæk ʌp/",
+        "definition_zh": "備份 / 支援",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Back it up.",
+        "learn_sentence_zh": "幫備份一下。",
+        "context_sentence": "Always back up your files before updating.",
+        "context_sentence_zh": "更新前一定要先把資料備份起來。"
+    },
+    {
+        "word": "Stress out",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/stre s aʊt/",
+        "definition_zh": "很緊張 / 壓力很大",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Don't stress out.",
+        "learn_sentence_zh": "別那麼緊張。",
+        "context_sentence": "I've been super stressed out about the deadline.",
+        "context_sentence_zh": "我最近因為那個截止日期壓力超大的。"
+    },
+    {
+        "word": "Look into",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/lʊk ˈɪn.tuː/",
+        "definition_zh": "調查 / 研究看看",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "I'll look into it.",
+        "learn_sentence_zh": "我去研究一下這件事。",
+        "context_sentence": "Can you look into why the app is crashing?",
+        "context_sentence_zh": "你能查一下為什麼 app 一直閃退嗎？"
+    },
+    {
+        "word": "Run out",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/rʌn aʊt/",
+        "definition_zh": "用完了 / 跑光了",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "We ran out of time.",
+        "learn_sentence_zh": "我們時間用光了。",
+        "context_sentence": "I ran out of coffee this morning.",
+        "context_sentence_zh": "我今天早上咖啡就喝完了。"
+    },
+    {
+        "word": "Reach out",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/riːtʃ aʊt/",
+        "definition_zh": "主動聯絡",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "Reach out anytime.",
+        "learn_sentence_zh": "隨時都可以跟我聯絡。",
+        "context_sentence": "Feel free to reach out if you need help.",
+        "context_sentence_zh": "需要幫忙的話隨時聯絡我就好。"
+    },
+    {
+        "word": "Follow up",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/ˈfɑː.loʊ ʌp/",
+        "definition_zh": "後續追蹤",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "I'll follow up tomorrow.",
+        "learn_sentence_zh": "我明天會追一下進度。",
+        "context_sentence": "Don't forget to follow up on that email.",
+        "context_sentence_zh": "別忘了去追一下那封 email 的回應。"
+    },
+    {
+        "word": "Push back",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/pʊʃ bæk/",
+        "definition_zh": "反對 / 推遲",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "They pushed back hard.",
+        "learn_sentence_zh": "他們強烈反對。",
+        "context_sentence": "I'm going to push back on that idea.",
+        "context_sentence_zh": "我要對那個想法表達我的反對意見。"
+    },
+    {
+        "word": "Loop in",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/luːp ɪn/",
+        "definition_zh": "把…拉進來 / 知會",
+        "definition_en": "American Office Slang",
+        "level": "medium",
+        "learn_sentence": "Loop me in.",
+        "learn_sentence_zh": "讓我知道進度。",
+        "context_sentence": "Make sure you loop the manager in.",
+        "context_sentence_zh": "記得把主管也知會一聲。"
+    },
+    {
+        "word": "Take on",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/teɪk ɑːn/",
+        "definition_zh": "承擔 / 接受挑戰",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "I'll take that on.",
+        "learn_sentence_zh": "我來接這個。",
+        "context_sentence": "She decided to take on the challenge.",
+        "context_sentence_zh": "她決定接受那個挑戰。"
+    },
+    {
+        "word": "Check in",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/tʃek ɪn/",
+        "definition_zh": "確認一下 / 報到",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Just checking in.",
+        "learn_sentence_zh": "只是過來確認一下。",
+        "context_sentence": "Can you check in with her about the status?",
+        "context_sentence_zh": "你能去跟她確認一下目前進度嗎？"
+    },
+    {
+        "word": "Come through",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/kʌm θruː/",
+        "definition_zh": "來露臉 / 搞定了",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "He always comes through.",
+        "learn_sentence_zh": "他永遠都能搞定的。",
+        "context_sentence": "Thanks for coming through for me.",
+        "context_sentence_zh": "謝謝你這次幫我把事情搞定。"
+    },
+    {
+        "word": "Pump up",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/pʌmp ʌp/",
+        "definition_zh": "讓人興奮 / 炒熱氣氛",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "This song pumps me up!",
+        "learn_sentence_zh": "這首歌讓我超 high！",
+        "context_sentence": "She pumped the crowd up before the show.",
+        "context_sentence_zh": "她在演出前把台下的觀眾炒得超級熱。"
+    },
+    {
+        "word": "Back off",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/bæk ɔːf/",
+        "definition_zh": "退後 / 少管",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "Just back off.",
+        "learn_sentence_zh": "少管我的事。",
+        "context_sentence": "He needs to back off and give me space.",
+        "context_sentence_zh": "他需要讓一步，給我一點空間。"
+    },
+    {
+        "word": "Kick off",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/kɪk ɔːf/",
+        "definition_zh": "開踢 / 開始",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "easy",
+        "learn_sentence": "Let's kick this off.",
+        "learn_sentence_zh": "我們開始吧。",
+        "context_sentence": "The project kicks off next Monday.",
+        "context_sentence_zh": "這個專案下週一正式開始啟動。"
+    },
+    {
+        "word": "Pay off",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/peɪ ɔːf/",
+        "definition_zh": "有回報 / 值得",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "It'll pay off.",
+        "learn_sentence_zh": "這一切都是值得的。",
+        "context_sentence": "All that hard work finally paid off.",
+        "context_sentence_zh": "所有的努力終於都得到了回報。"
+    },
+    {
+        "word": "Blow up",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/bloʊ ʌp/",
+        "definition_zh": "爆紅 / 大發脾氣",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "That post blew up.",
+        "learn_sentence_zh": "那則貼文爆紅了。",
+        "context_sentence": "He blew up at me over nothing.",
+        "context_sentence_zh": "他無緣無故對著我大發脾氣。"
+    },
+    {
+        "word": "Give it a shot",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ɡɪv ɪt ə ʃɑːt/",
+        "definition_zh": "試試看",
+        "definition_en": "American Daily Idiom",
+        "level": "easy",
+        "learn_sentence": "Give it a shot!",
+        "learn_sentence_zh": "試試看吧！",
+        "context_sentence": "I've never cooked Thai food but I'll give it a shot.",
+        "context_sentence_zh": "我從來沒做過泰國菜，但我可以試試看。"
+    },
+    {
+        "word": "Run it by",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/rʌn ɪt baɪ/",
+        "definition_zh": "讓…先過目 / 對…說看看",
+        "definition_en": "American Office Phrase",
+        "level": "medium",
+        "learn_sentence": "Run it by me.",
+        "learn_sentence_zh": "說來讓我聽聽看。",
+        "context_sentence": "You should run the idea by your boss first.",
+        "context_sentence_zh": "你應該先把那個想法跟你老闆說一聲。"
+    },
+    {
+        "word": "Drag on",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/dræɡ ɑːn/",
+        "definition_zh": "拖拖拉拉 / 遲遲不結束",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "This is dragging on.",
+        "learn_sentence_zh": "這拖太久了。",
+        "context_sentence": "The meeting dragged on for two hours.",
+        "context_sentence_zh": "那個會議硬是拖了整整兩個小時。"
+    },
+    {
+        "word": "Be up for",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/biː ʌp fɔːr/",
+        "definition_zh": "想做 / 有興趣嗎",
+        "definition_en": "American Daily Phrase",
+        "level": "easy",
+        "learn_sentence": "I'm up for it.",
+        "learn_sentence_zh": "我很樂意啊。",
+        "context_sentence": "You up for grabbing food later?",
+        "context_sentence_zh": "你待會兒想去吃點東西嗎？"
+    },
+    {
+        "word": "Knock it off",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/nɑːk ɪt ɔːf/",
+        "definition_zh": "停下來 / 別鬧了",
+        "definition_en": "American Daily Idiom",
+        "level": "medium",
+        "learn_sentence": "Knock it off!",
+        "learn_sentence_zh": "夠了，停下來！",
+        "context_sentence": "You two need to knock it off right now.",
+        "context_sentence_zh": "你們兩個現在給我停下來。"
+    },
+    {
+        "word": "Level up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ˈlev.əl ʌp/",
+        "definition_zh": "升級 / 進步提升",
+        "definition_en": "American Daily Slang",
+        "level": "easy",
+        "learn_sentence": "Time to level up.",
+        "learn_sentence_zh": "是時候升級了。",
+        "context_sentence": "I've been trying to level up my cooking.",
+        "context_sentence_zh": "我最近一直在精進我的廚藝。"
+    },
+    {
+        "word": "Hustle",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ˈhʌs.əl/",
+        "definition_zh": "拼命努力 / 衝",
+        "definition_en": "American Daily Word",
+        "level": "medium",
+        "learn_sentence": "Hustle harder.",
+        "learn_sentence_zh": "更努力衝吧。",
+        "context_sentence": "She's always hustling to make ends meet.",
+        "context_sentence_zh": "她一直都在拼命努力只為了讓生活過下去。"
+    },
+    {
+        "word": "Go ahead",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ɡoʊ əˈhed/",
+        "definition_zh": "去吧 / 請便",
+        "definition_en": "American Daily Phrase",
+        "level": "easy",
+        "learn_sentence": "Go ahead, I'm listening.",
+        "learn_sentence_zh": "你說吧，我在聽。",
+        "context_sentence": "Can I ask you something? Yeah, go ahead.",
+        "context_sentence_zh": "我可以問你一件事嗎？當然，請說。"
+    },
+    {
+        "word": "Get rid of",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ɡet rɪd əv/",
+        "definition_zh": "丟掉 / 除掉 / 解決",
+        "definition_en": "American Daily Phrase",
+        "level": "medium",
+        "learn_sentence": "Get rid of it.",
+        "learn_sentence_zh": "把它丟掉。",
+        "context_sentence": "We need to get rid of this old software.",
+        "context_sentence_zh": "我們得把這個老舊的軟體淘汰掉。"
+    },
+    {
+        "word": "Clear up",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/klɪr ʌp/",
+        "definition_zh": "釐清 / 整理清楚",
+        "definition_en": "American Daily Phrasal Verb",
+        "level": "medium",
+        "learn_sentence": "Let me clear this up.",
+        "learn_sentence_zh": "讓我來解釋清楚。",
+        "context_sentence": "I just want to clear up this misunderstanding.",
+        "context_sentence_zh": "我只是想把這個誤會給澄清清楚。"
+    },
+    {
+        "word": "Analyze",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈæn.ə.laɪz/",
+        "definition_zh": "分析",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "Let's analyze the data.",
+        "learn_sentence_zh": "我們來分析一下這些數據。",
+        "context_sentence": "We need to analyze what went wrong.",
+        "context_sentence_zh": "我們得分析到底哪裡出問題了。"
     },
     {
         "word": "Approach",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/approach/",
-        "definition_zh": "方法",
-        "definition_en": "Core academic vocab",
-        "explanation": "處理問題的特定方式。",
-        "example": "Please approach the documents before the meeting starts.",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈproʊtʃ/",
+        "definition_zh": "方式 / 處理",
+        "definition_en": "Core Academic Word",
         "level": "medium",
-        "example_zh": "請在會議開始前方法這些文件。"
+        "learn_sentence": "Try a different approach.",
+        "learn_sentence_zh": "試試不同的方式。",
+        "context_sentence": "I like your approach to the problem.",
+        "context_sentence_zh": "我喜歡你對這個問題的處理方式。"
     },
     {
         "word": "Assess",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/assess/",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈses/",
         "definition_zh": "評估",
-        "definition_en": "Core academic vocab",
-        "explanation": "判定事物的價值或水準。",
-        "example": "Please assess the documents before the meeting starts.",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "請在會議開始前評估這些文件。"
+        "learn_sentence": "We need to assess this.",
+        "learn_sentence_zh": "我們需要先評估一下。",
+        "context_sentence": "Can you assess the risk for me?",
+        "context_sentence_zh": "你能幫我評估一下風險嗎？"
     },
     {
         "word": "Assume",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/assume/",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈsuːm/",
         "definition_zh": "假設",
-        "definition_en": "Core academic vocab",
-        "explanation": "在未經證實前認為某事是事實。",
-        "example": "It is a mistake to assume that everything will go as planned.",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "去假設一切都會按計畫進行，是個錯誤。"
+        "learn_sentence": "Don't assume that.",
+        "learn_sentence_zh": "別就這樣假設。",
+        "context_sentence": "I assumed she already knew about it.",
+        "context_sentence_zh": "我以為她早就知道了。"
     },
     {
         "word": "Authority",
-        "type": "word",
+        "type": "daily",
         "category": "職場社交",
-        "phonetic": "/authority/",
-        "definition_zh": "權威",
-        "definition_en": "Core academic vocab",
-        "explanation": "具備法律或專業決策權。",
-        "example": "She showed great authority during the negotiations.",
+        "phonetic": "/əˈθɔːr.ɪ.ti/",
+        "definition_zh": "權力 / 權威",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "她在談判中展現了極大的權威。"
+        "learn_sentence": "She has authority here.",
+        "learn_sentence_zh": "這裡她說了算。",
+        "context_sentence": "He doesn't have the authority to make that call.",
+        "context_sentence_zh": "他沒有權力做那個決定。"
     },
     {
         "word": "Available",
-        "type": "word",
+        "type": "daily",
         "category": "日常用語",
-        "phonetic": "/available/",
-        "definition_zh": "可用的",
-        "definition_en": "Core academic vocab",
-        "explanation": "現成且可以立即投入使用。",
-        "example": "Is the new software available for download yet?",
-        "level": "medium",
-        "example_zh": "這款新軟體已經開放提供可用的了嗎？"
+        "phonetic": "/əˈveɪ.lə.bəl/",
+        "definition_zh": "可用的 / 有空的",
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "Are you available now?",
+        "learn_sentence_zh": "你現在有空嗎？",
+        "context_sentence": "I'm available after 3 if that works.",
+        "context_sentence_zh": "我三點後有空，你看可以嗎？"
     },
     {
         "word": "Benefit",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/benefit/",
-        "definition_zh": "利益",
-        "definition_en": "Core academic vocab",
-        "explanation": "能帶來正面影響的因素。",
-        "example": "Is the new software benefit for download yet?",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈben.ɪ.fɪt/",
+        "definition_zh": "好處 / 受益",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "這款新軟體已經開放提供利益了嗎？"
+        "learn_sentence": "What's the benefit?",
+        "learn_sentence_zh": "好處是什麼？",
+        "context_sentence": "The benefit of this plan is the speed.",
+        "context_sentence_zh": "這個計畫的優勢在於速度。"
     },
     {
         "word": "Concept",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/concept/",
-        "definition_zh": "觀念",
-        "definition_en": "Core academic vocab",
-        "explanation": "抽象的想法或普遍原則。",
-        "example": "You need to grasp the concept vocabulary first.",
+        "phonetic": "/ˈkɑːn.sept/",
+        "definition_zh": "概念",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "你必須先掌握與觀念相關的詞彙。"
+        "learn_sentence": "Get the concept first.",
+        "learn_sentence_zh": "先抓住這個概念。",
+        "context_sentence": "The concept is simple but the execution is hard.",
+        "context_sentence_zh": "概念很簡單，但執行起來卻很難。"
     },
     {
         "word": "Consistent",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/consistent/",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kənˈsɪs.tənt/",
         "definition_zh": "一致的",
-        "definition_en": "Core academic vocab",
-        "explanation": "前後標準始終如一。",
-        "example": "The core consistent behind this theory is quite complex.",
+        "definition_en": "Core Academic Adjective",
         "level": "medium",
-        "example_zh": "這個理論背後的核心一致的相當複雜。"
+        "learn_sentence": "Just stay consistent.",
+        "learn_sentence_zh": "保持一致就好。",
+        "context_sentence": "You need to be more consistent with practice.",
+        "context_sentence_zh": "你的練習需要更有規律一點。"
     },
     {
         "word": "Context",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/context/",
-        "definition_zh": "脈絡",
-        "definition_en": "Core academic vocab",
-        "explanation": "影響事物意義的背景。",
-        "example": "The context remains perfectly unchanged.",
+        "phonetic": "/ˈkɑːn.tekst/",
+        "definition_zh": "背景 / 情境",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "這個脈絡法則仍然保持著完美的不變性。"
+        "learn_sentence": "Read the context.",
+        "learn_sentence_zh": "看一下背景。",
+        "context_sentence": "You need more context to understand this.",
+        "context_sentence_zh": "你需要更多背景資訊才能理解這件事。"
     },
     {
         "word": "Create",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/create/",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kriˈeɪt/",
         "definition_zh": "創造",
-        "definition_en": "Core academic vocab",
-        "explanation": "使原本不存在的事物誕生。",
-        "example": "It is difficult to create the exact impact of the policy.",
-        "level": "medium",
-        "example_zh": "很難精確地測量該政策帶來什麼樣的創造。"
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "Let's create something.",
+        "learn_sentence_zh": "讓我們來創造些東西。",
+        "context_sentence": "She created a whole new system from scratch.",
+        "context_sentence_zh": "她從零開始創建了一套全新的系統。"
     },
     {
         "word": "Data",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/data/",
+        "phonetic": "/ˈdeɪ.t̬ə/",
         "definition_zh": "數據",
-        "definition_en": "Core academic vocab",
-        "explanation": "用於分析的Facts與數字。",
-        "example": "The data remains perfectly unchanged.",
-        "level": "medium",
-        "example_zh": "這個數據法則仍然保持著完美的不變性。"
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Check the data.",
+        "learn_sentence_zh": "查一下數據。",
+        "context_sentence": "The data doesn't support that conclusion.",
+        "context_sentence_zh": "這些數據無法支撐那個結論。"
     },
     {
-        "word": "Definition",
-        "type": "word",
+        "word": "Define",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/definition/",
-        "definition_zh": "定義",
-        "definition_en": "Core academic vocab",
-        "explanation": "對事物範疇的精確說明。",
-        "example": "The definition remains perfectly unchanged.",
+        "phonetic": "/dɪˈfaɪn/",
+        "definition_zh": "定義 / 說清楚",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "這個定義法則仍然保持著完美的不變性。"
-    },
-    {
-        "word": "Derived",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/derived/",
-        "definition_zh": "衍生的",
-        "definition_en": "Core academic vocab",
-        "explanation": "從特定來源發展而成。",
-        "example": "It is a mistake to derived that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去衍生的一切都會按計畫進行，是個錯誤。"
-    },
-    {
-        "word": "Distribution",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/distribution/",
-        "definition_zh": "分配",
-        "definition_en": "Core academic vocab",
-        "explanation": "散播或分發的行為。",
-        "example": "It's important to maintain professional distribution at work.",
-        "level": "medium",
-        "example_zh": "在工作上保持專業的分配是很重要的。"
-    },
-    {
-        "word": "Economic",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/economic/",
-        "definition_zh": "經濟的",
-        "definition_en": "Core academic vocab",
-        "explanation": "與生產、分配和消費相關。",
-        "example": "He possesses the necessary economic to lead the project.",
-        "level": "medium",
-        "example_zh": "他具備領導這個專案所需的經濟的。"
+        "learn_sentence": "Define what you mean.",
+        "learn_sentence_zh": "把你的意思說清楚。",
+        "context_sentence": "We need to define what success looks like.",
+        "context_sentence_zh": "我們需要定義什麼叫做成功。"
     },
     {
         "word": "Environment",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/environment/",
+        "phonetic": "/ɪnˈvaɪ.rən.mənt/",
         "definition_zh": "環境",
-        "definition_en": "Core academic vocab",
-        "explanation": "自然與文化條件的總和。",
-        "example": "This concept represents the environment of the subject.",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "這個概念代表了這門學科的環境。"
-    },
-    {
-        "word": "Evidence",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/evidence/",
-        "definition_zh": "證據",
-        "definition_en": "Core academic vocab",
-        "explanation": "證明事實的相關資訊。",
-        "example": "We must examine the evidence before drawing conclusions.",
-        "level": "medium",
-        "example_zh": "在得出結論之前，我們必須檢驗這個證據。"
+        "learn_sentence": "It's a good environment.",
+        "learn_sentence_zh": "這是個不錯的環境。",
+        "context_sentence": "The work environment here is really healthy.",
+        "context_sentence_zh": "這裡的工作環境真的很好。"
     },
     {
         "word": "Establish",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/establish/",
-        "definition_zh": "建立",
-        "definition_en": "Core academic vocab",
-        "explanation": "使之被廣泛接受。",
-        "example": "We need to thoroughly establish the current situation.",
-        "level": "medium",
-        "example_zh": "我們需要徹底建立目前的狀況。"
-    },
-    {
-        "word": "Estimate",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/estimate/",
-        "definition_zh": "估計",
-        "definition_en": "Core academic vocab",
-        "explanation": "對數值的粗略計算。",
-        "example": "Statistical estimate plays a key role in the research.",
-        "level": "medium",
-        "example_zh": "統計分析在這項研究中扮演了包含估計的關鍵角色。"
-    },
-    {
-        "word": "Factor",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/factor/",
-        "definition_zh": "因素",
-        "definition_en": "Core academic vocab",
-        "explanation": "構成結果的其中一個條件。",
-        "example": "They built the app on a very stable factor.",
+        "phonetic": "/ɪˈstæb.lɪʃ/",
+        "definition_zh": "建立 / 確立",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的因素上。"
-    },
-    {
-        "word": "Financial",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/financial/",
-        "definition_zh": "財務的",
-        "definition_en": "Core academic vocab",
-        "explanation": "與資金資源管理相關。",
-        "example": "Building financial with your team is crucial for success.",
-        "level": "medium",
-        "example_zh": "與你的團隊建立良好的財務的對於成功至關重要。"
-    },
-    {
-        "word": "Formula",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/formula/",
-        "definition_zh": "公式",
-        "definition_en": "Core academic vocab",
-        "explanation": "達成特定結果的固定路徑。",
-        "example": "That specific formula makes the framework unique.",
-        "level": "medium",
-        "example_zh": "那個特定的公式讓這個框架與眾不同。"
-    },
-    {
-        "word": "Function",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/function/",
-        "definition_zh": "功能",
-        "definition_en": "Core academic vocab",
-        "explanation": "設計用來達成的用途。",
-        "example": "They built the app on a very stable function.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的功能上。"
-    },
-    {
-        "word": "Identify",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/identify/",
-        "definition_zh": "識別",
-        "definition_en": "Core academic vocab",
-        "explanation": "確認身份或特質。",
-        "example": "Please identify the documents before the meeting starts.",
-        "level": "medium",
-        "example_zh": "請在會議開始前識別這些文件。"
-    },
-    {
-        "word": "Income",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/income/",
-        "definition_zh": "收入",
-        "definition_en": "Core academic vocab",
-        "explanation": "所獲得的報酬。",
-        "example": "She showed great income during the negotiations.",
-        "level": "medium",
-        "example_zh": "她在談判中展現了極大的收入。"
-    },
-    {
-        "word": "Indicate",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/indicate/",
-        "definition_zh": "指出",
-        "definition_en": "Core academic vocab",
-        "explanation": "顯現跡象或導引注意力。",
-        "example": "You need to grasp the indicate vocabulary first.",
-        "level": "medium",
-        "example_zh": "你必須先掌握與指出相關的詞彙。"
-    },
-    {
-        "word": "Individual",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/individual/",
-        "definition_zh": "個人",
-        "definition_en": "Core academic vocab",
-        "explanation": "單一且獨立的對象。",
-        "example": "You need to grasp the individual vocabulary first.",
-        "level": "medium",
-        "example_zh": "你必須先掌握與個人相關的詞彙。"
-    },
-    {
-        "word": "Interpret",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/interpret/",
-        "definition_zh": "詮釋",
-        "definition_en": "Core academic vocab",
-        "explanation": "對事物含義的理解與說明。",
-        "example": "You need to grasp the interpret vocabulary first.",
-        "level": "medium",
-        "example_zh": "你必須先掌握與詮釋相關的詞彙。"
-    },
-    {
-        "word": "Involved",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/involved/",
-        "definition_zh": "涉及的",
-        "definition_en": "Core academic vocab",
-        "explanation": "參與到某項活動。",
-        "example": "Having a good involved makes all the difference.",
-        "level": "medium",
-        "example_zh": "擁有良好的涉及的能帶來巨大的改變。"
-    },
-    {
-        "word": "Issue",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/issue/",
-        "definition_zh": "議題",
-        "definition_en": "Core academic vocab",
-        "explanation": "重要的討論話題或問題。",
-        "example": "This approach has a significant issue for everyone.",
-        "level": "medium",
-        "example_zh": "這種方法對每個人都有顯著的議題。"
-    },
-    {
-        "word": "Labour",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/labour/",
-        "definition_zh": "勞務",
-        "definition_en": "Core academic vocab",
-        "explanation": "一定的體力或腦力工作。",
-        "example": "Building labour with your team is crucial for success.",
-        "level": "medium",
-        "example_zh": "與你的團隊建立良好的勞務對於成功至關重要。"
-    },
-    {
-        "word": "Legal",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/legal/",
-        "definition_zh": "法律的",
-        "definition_en": "Core academic vocab",
-        "explanation": "與法規體系相關。",
-        "example": "The manager will legal the responsibilities evenly.",
-        "level": "medium",
-        "example_zh": "經理將會平均地分配與法律的這些責任。"
-    },
-    {
-        "word": "Legislation",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/legislation/",
-        "definition_zh": "立法",
-        "definition_en": "Core academic vocab",
-        "explanation": "制定與通過法律的過程。",
-        "example": "It's important to maintain professional legislation at work.",
-        "level": "medium",
-        "example_zh": "在工作上保持專業的立法是很重要的。"
-    },
-    {
-        "word": "Major",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/major/",
-        "definition_zh": "主要的",
-        "definition_en": "Core academic vocab",
-        "explanation": "範圍廣或較重要的部分。",
-        "example": "They built the app on a very stable major.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的主要的上。"
-    },
-    {
-        "word": "Method",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/method/",
-        "definition_zh": "方法",
-        "definition_en": "Core academic vocab",
-        "explanation": "做某事的既定路徑。",
-        "example": "They built the app on a very stable method.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的方法上。"
-    },
-    {
-        "word": "Occur",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/occur/",
-        "definition_zh": "發生",
-        "definition_en": "Core academic vocab",
-        "explanation": "在特定時間地點出現。",
-        "example": "Can you clarify the occur for me once more?",
-        "level": "medium",
-        "example_zh": "你能再為我釐清一次這個發生嗎？"
-    },
-    {
-        "word": "Percent",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/percent/",
-        "definition_zh": "百分比",
-        "definition_en": "Core academic vocab",
-        "explanation": "每一百份中的佔比。",
-        "example": "You need to grasp the percent vocabulary first.",
-        "level": "medium",
-        "example_zh": "你必須先掌握與百分比相關的詞彙。"
-    },
-    {
-        "word": "Period",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/period/",
-        "definition_zh": "時期",
-        "definition_en": "Core academic vocab",
-        "explanation": "特定的時間長段或階段。",
-        "example": "This concept represents the period of the subject.",
-        "level": "medium",
-        "example_zh": "這個概念代表了這門學科的時期。"
-    },
-    {
-        "word": "Policy",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/policy/",
-        "definition_zh": "政策",
-        "definition_en": "Core academic vocab",
-        "explanation": "組織採取的方針準則。",
-        "example": "He possesses the necessary policy to lead the project.",
-        "level": "medium",
-        "example_zh": "他具備領導這個專案所需的政策。"
-    },
-    {
-        "word": "Principle",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/principle/",
-        "definition_zh": "原則",
-        "definition_en": "Core academic vocab",
-        "explanation": "基本的法律、真理或準則。",
-        "example": "Statistical principle plays a key role in the research.",
-        "level": "medium",
-        "example_zh": "統計分析在這項研究中扮演了包含原則的關鍵角色。"
-    },
-    {
-        "word": "Procedure",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/procedure/",
-        "definition_zh": "程序",
-        "definition_en": "Core academic vocab",
-        "explanation": "執行任務的正確順序。",
-        "example": "It is difficult to procedure the exact impact of the policy.",
-        "level": "medium",
-        "example_zh": "很難精確地測量該政策帶來什麼樣的程序。"
-    },
-    {
-        "word": "Process",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/process/",
-        "definition_zh": "過程",
-        "definition_en": "Core academic vocab",
-        "explanation": "達成結果的一系列變化。",
-        "example": "It is difficult to process the exact impact of the policy.",
-        "level": "medium",
-        "example_zh": "很難精確地測量該政策帶來什麼樣的過程。"
-    },
-    {
-        "word": "Required",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/required/",
-        "definition_zh": "必須的",
-        "definition_en": "Core academic vocab",
-        "explanation": "不可或缺的條件。",
-        "example": "Can you clarify the required for me once more?",
-        "level": "medium",
-        "example_zh": "你能再為我釐清一次這個必須的嗎？"
-    },
-    {
-        "word": "Research",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/research/",
-        "definition_zh": "研究",
-        "definition_en": "Core academic vocab",
-        "explanation": "深入調查與事實發現。",
-        "example": "We need to thoroughly research the current situation.",
-        "level": "medium",
-        "example_zh": "我們需要徹底研究目前的狀況。"
-    },
-    {
-        "word": "Response",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/response/",
-        "definition_zh": "反映",
-        "definition_en": "Core academic vocab",
-        "explanation": "對刺激或行為的答覆。",
-        "example": "It is difficult to response the exact impact of the policy.",
-        "level": "medium",
-        "example_zh": "很難精確地測量該政策帶來什麼樣的反映。"
-    },
-    {
-        "word": "Role",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/role/",
-        "definition_zh": "角色",
-        "definition_en": "Core academic vocab",
-        "explanation": "在特定情況下扮演的功能。",
-        "example": "It is relatively easy to role this device.",
-        "level": "medium",
-        "example_zh": "要角色這個設備相對容易。"
-    },
-    {
-        "word": "Section",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/section/",
-        "definition_zh": "部分",
-        "definition_en": "Core academic vocab",
-        "explanation": "整體中一個獨立區塊。",
-        "example": "Is the new software section for download yet?",
-        "level": "medium",
-        "example_zh": "這款新軟體已經開放提供部分了嗎？"
-    },
-    {
-        "word": "Sector",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/sector/",
-        "definition_zh": "部門",
-        "definition_en": "Core academic vocab",
-        "explanation": "社會活動的一個特定分區。",
-        "example": "Building sector with your team is crucial for success.",
-        "level": "medium",
-        "example_zh": "與你的團隊建立良好的部門對於成功至關重要。"
-    },
-    {
-        "word": "Significant",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/significant/",
-        "definition_zh": "顯著的",
-        "definition_en": "Core academic vocab",
-        "explanation": "具重大影響力。",
-        "example": "It is a mistake to significant that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去顯著的一切都會按計畫進行，是個錯誤。"
-    },
-    {
-        "word": "Similar",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/similar/",
-        "definition_zh": "相似的",
-        "definition_en": "Core academic vocab",
-        "explanation": "在某些特點上很接近的。",
-        "example": "It is relatively easy to similar this device.",
-        "level": "medium",
-        "example_zh": "要相似的這個設備相對容易。"
-    },
-    {
-        "word": "Source",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/source/",
-        "definition_zh": "來源",
-        "definition_en": "Core academic vocab",
-        "explanation": "事物的起始點處。",
-        "example": "A solid source is essential for future learning.",
-        "level": "medium",
-        "example_zh": "一個穩固的來源對於未來的學習不可或缺。"
-    },
-    {
-        "word": "Specific",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/specific/",
-        "definition_zh": "具體的",
-        "definition_en": "Core academic vocab",
-        "explanation": "精確、明確且方針性的。",
-        "example": "They built the app on a very stable specific.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的具體的上。"
-    },
-    {
-        "word": "Structure",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/structure/",
-        "definition_zh": "結構",
-        "definition_en": "Core academic vocab",
-        "explanation": "零件組合成整體的方式。",
-        "example": "They built the app on a very stable structure.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的結構上。"
-    },
-    {
-        "word": "Theory",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/theory/",
-        "definition_zh": "理論",
-        "definition_en": "Core academic vocab",
-        "explanation": "解釋事實的一套原則。",
-        "example": "That specific theory makes the framework unique.",
-        "level": "medium",
-        "example_zh": "那個特定的理論讓這個框架與眾不同。"
-    },
-    {
-        "word": "Variable",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/variable/",
-        "definition_zh": "變數",
-        "definition_en": "Core academic vocab",
-        "explanation": "會隨情況改變的元素。",
-        "example": "It is a mistake to variable that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去變數一切都會按計畫進行，是個錯誤。"
-    },
-    {
-        "word": "Achieve",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/achieve/",
-        "definition_zh": "達成",
-        "definition_en": "Core academic vocab",
-        "explanation": "透過努力獲得成功結果。",
-        "example": "They managed to achieve the problem efficiently.",
-        "level": "medium",
-        "example_zh": "他們有效地成功達成了這個問題。"
-    },
-    {
-        "word": "Acquisition",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/acquisition/",
-        "definition_zh": "獲取",
-        "definition_en": "Core academic vocab",
-        "explanation": "獲得某物或公司的行為。",
-        "example": "Building acquisition with your team is crucial for success.",
-        "level": "medium",
-        "example_zh": "與你的團隊建立良好的獲取對於成功至關重要。"
-    },
-    {
-        "word": "Administration",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/administration/",
-        "definition_zh": "行政",
-        "definition_en": "Core academic vocab",
-        "explanation": "組織的正式運行與管理。",
-        "example": "She showed great administration during the negotiations.",
-        "level": "medium",
-        "example_zh": "她在談判中展現了極大的行政。"
-    },
-    {
-        "word": "Affect",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/affect/",
-        "definition_zh": "影響",
-        "definition_en": "Core academic vocab",
-        "explanation": "對某事產生變化。",
-        "example": "Having a good affect makes all the difference.",
-        "level": "medium",
-        "example_zh": "擁有良好的影響能帶來巨大的改變。"
-    },
-    {
-        "word": "Appropriate",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/appropriate/",
-        "definition_zh": "適當的",
-        "definition_en": "Core academic vocab",
-        "explanation": "適合特定情況或用途。",
-        "example": "Is the new software appropriate for download yet?",
-        "level": "medium",
-        "example_zh": "這款新軟體已經開放提供適當的了嗎？"
-    },
-    {
-        "word": "Aspect",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/aspect/",
-        "definition_zh": "面向",
-        "definition_en": "Core academic vocab",
-        "explanation": "事物的一個特定特點。",
-        "example": "You need to grasp the aspect vocabulary first.",
-        "level": "medium",
-        "example_zh": "你必須先掌握與面向相關的詞彙。"
-    },
-    {
-        "word": "Assistance",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/assistance/",
-        "definition_zh": "協助",
-        "definition_en": "Core academic vocab",
-        "explanation": "提供幫忙或支持的行為。",
-        "example": "Can you clarify the assistance for me once more?",
-        "level": "medium",
-        "example_zh": "你能再為我釐清一次這個協助嗎？"
-    },
-    {
-        "word": "Category",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/category/",
-        "definition_zh": "類別",
-        "definition_en": "Core academic vocab",
-        "explanation": "根據共同特性劃分的手法。",
-        "example": "You need to grasp the category vocabulary first.",
-        "level": "medium",
-        "example_zh": "你必須先掌握與類別相關的詞彙。"
-    },
-    {
-        "word": "Chapter",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/chapter/",
-        "definition_zh": "章節",
-        "definition_en": "Core academic vocab",
-        "explanation": "書籍、時期的一個部分。",
-        "example": "This concept represents the chapter of the subject.",
-        "level": "medium",
-        "example_zh": "這個概念代表了這門學科的章節。"
-    },
-    {
-        "word": "Commission",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/commission/",
-        "definition_zh": "佣金",
-        "definition_en": "Core academic vocab",
-        "explanation": "委派的任務或酬金。",
-        "example": "Building commission with your team is crucial for success.",
-        "level": "medium",
-        "example_zh": "與你的團隊建立良好的佣金對於成功至關重要。"
-    },
-    {
-        "word": "Community",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/community/",
-        "definition_zh": "社區",
-        "definition_en": "Core academic vocab",
-        "explanation": "居住、利益共同體。",
-        "example": "Can you clarify the community for me once more?",
-        "level": "medium",
-        "example_zh": "你能再為我釐清一次這個社區嗎？"
-    },
-    {
-        "word": "Complex",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/complex/",
-        "definition_zh": "複雜的",
-        "definition_en": "Core academic vocab",
-        "explanation": "包含多個關聯部分。",
-        "example": "That specific complex makes the framework unique.",
-        "level": "medium",
-        "example_zh": "那個特定的複雜的讓這個框架與眾不同。"
-    },
-    {
-        "word": "Compute",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/compute/",
-        "definition_zh": "計算",
-        "definition_en": "Core academic vocab",
-        "explanation": "使用數學算出數值。",
-        "example": "They managed to compute the problem efficiently.",
-        "level": "medium",
-        "example_zh": "他們有效地成功計算了這個問題。"
-    },
-    {
-        "word": "Conclusion",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/conclusion/",
-        "definition_zh": "結論",
-        "definition_en": "Core academic vocab",
-        "explanation": "考慮事實後的決定。",
-        "example": "Statistical conclusion plays a key role in the research.",
-        "level": "medium",
-        "example_zh": "統計分析在這項研究中扮演了包含結論的關鍵角色。"
-    },
-    {
-        "word": "Conduct",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/conduct/",
-        "definition_zh": "實施",
-        "definition_en": "Core academic vocab",
-        "explanation": "組織執行一項活動研究。",
-        "example": "It is difficult to conduct the exact impact of the policy.",
-        "level": "medium",
-        "example_zh": "很難精確地測量該政策帶來什麼樣的實施。"
-    },
-    {
-        "word": "Consequence",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/consequence/",
-        "definition_zh": "後果",
-        "definition_en": "Core academic vocab",
-        "explanation": "行動導致的最終影響。",
-        "example": "It is a mistake to consequence that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去後果一切都會按計畫進行，是個錯誤。"
-    },
-    {
-        "word": "Construction",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/construction/",
-        "definition_zh": "建築",
-        "definition_en": "Core academic vocab",
-        "explanation": "搭建大型結構物的行為。",
-        "example": "Building construction with your team is crucial for success.",
-        "level": "medium",
-        "example_zh": "與你的團隊建立良好的建築對於成功至關重要。"
-    },
-    {
-        "word": "Consumer",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/consumer/",
-        "definition_zh": "消費者",
-        "definition_en": "Core academic vocab",
-        "explanation": "購買、使用商品服務者。",
-        "example": "The manager will consumer the responsibilities evenly.",
-        "level": "medium",
-        "example_zh": "經理將會平均地分配與消費者這些責任。"
-    },
-    {
-        "word": "Credit",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/credit/",
-        "definition_zh": "信用",
-        "definition_en": "Core academic vocab",
-        "explanation": "相信某項能力的保證。",
-        "example": "He possesses the necessary credit to lead the project.",
-        "level": "medium",
-        "example_zh": "他具備領導這個專案所需的信用。"
-    },
-    {
-        "word": "Cultural",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/cultural/",
-        "definition_zh": "文化的",
-        "definition_en": "Core academic vocab",
-        "explanation": "與藝術、傳統精神相關。",
-        "example": "They built the app on a very stable cultural.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的文化的上。"
-    },
-    {
-        "word": "Design",
-        "type": "word",
-        "category": "基礎核心",
-        "phonetic": "/design/",
-        "definition_zh": "設計",
-        "definition_en": "Core academic vocab",
-        "explanation": "事前規劃或製作草稿。",
-        "example": "The design remains perfectly unchanged.",
-        "level": "medium",
-        "example_zh": "這個設計法則仍然保持著完美的不變性。"
-    },
-    {
-        "word": "Distinct",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/distinct/",
-        "definition_zh": "明顯不同的",
-        "definition_en": "Core academic vocab",
-        "explanation": "易於區分的特點鮮明者。",
-        "example": "It is a mistake to distinct that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去明顯不同的一切都會按計畫進行，是個錯誤。"
-    },
-    {
-        "word": "Element",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/element/",
-        "definition_zh": "元素",
-        "definition_en": "Core academic vocab",
-        "explanation": "組成的最基本單位。",
-        "example": "Statistical element plays a key role in the research.",
-        "level": "medium",
-        "example_zh": "統計分析在這項研究中扮演了包含元素的關鍵角色。"
-    },
-    {
-        "word": "Equation",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/equation/",
-        "definition_zh": "方程式",
-        "definition_en": "Core academic vocab",
-        "explanation": "表示兩量相等的描述。",
-        "example": "It is a mistake to equation that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去方程式一切都會按計畫進行，是個錯誤。"
+        "learn_sentence": "Establish the basics first.",
+        "learn_sentence_zh": "先把基礎建立好。",
+        "context_sentence": "We need to establish trust before moving forward.",
+        "context_sentence_zh": "我們在往前走之前需要先建立信任。"
     },
     {
         "word": "Evaluate",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/evaluate/",
-        "definition_zh": "評價",
-        "definition_en": "Core academic vocab",
-        "explanation": "評量某事的優劣與價值。",
-        "example": "It is a mistake to evaluate that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去評價一切都會按計畫進行，是個錯誤。"
-    },
-    {
-        "word": "Feature",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/feature/",
-        "definition_zh": "特徵",
-        "definition_en": "Core academic vocab",
-        "explanation": "典型且顯著的功能特點。",
-        "example": "You need to grasp the feature vocabulary first.",
+        "phonetic": "/ɪˈvæl.ju.eɪt/",
+        "definition_zh": "評估 / 評鑑",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "你必須先掌握與特徵相關的詞彙。"
+        "learn_sentence": "Evaluate your options.",
+        "learn_sentence_zh": "評估一下你的選擇。",
+        "context_sentence": "Take time to evaluate before you decide.",
+        "context_sentence_zh": "在做決定之前先花時間評估。"
     },
     {
-        "word": "Final",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/final/",
-        "definition_zh": "最終的",
-        "definition_en": "Core academic vocab",
-        "explanation": "最後的決定或結果。",
-        "example": "Is the new software final for download yet?",
+        "word": "Evidence",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈev.ɪ.dəns/",
+        "definition_zh": "證據",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "這款新軟體已經開放提供最終的了嗎？"
+        "learn_sentence": "Show me the evidence.",
+        "learn_sentence_zh": "給我看看證據。",
+        "context_sentence": "There's no evidence to support that claim.",
+        "context_sentence_zh": "沒有任何證據能支持那個說法。"
+    },
+    {
+        "word": "Factor",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈfæk.tɚ/",
+        "definition_zh": "因素",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "That's a big factor.",
+        "learn_sentence_zh": "那是個很重要的因素。",
+        "context_sentence": "The weather was a major factor in the delay.",
+        "context_sentence_zh": "天氣是造成延誤的一個主要因素。"
     },
     {
         "word": "Focus",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/focus/",
-        "definition_zh": "重點",
-        "definition_en": "Core academic vocab",
-        "explanation": "注意力的集中核心。",
-        "example": "It is relatively easy to focus this device.",
+        "type": "daily",
+        "category": "行動描述",
+        "phonetic": "/ˈfoʊ.kəs/",
+        "definition_zh": "專注",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "Just focus.",
+        "learn_sentence_zh": "專心就好。",
+        "context_sentence": "I can't focus when it's this loud.",
+        "context_sentence_zh": "這麼吵我根本沒辦法專心。"
+    },
+    {
+        "word": "Function",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈfʌŋk.ʃən/",
+        "definition_zh": "功能 / 運作",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "要重點這個設備相對容易。"
+        "learn_sentence": "What's its function?",
+        "learn_sentence_zh": "它的功能是什麼？",
+        "context_sentence": "The app doesn't function properly on my phone.",
+        "context_sentence_zh": "這個 App 在我手機上運作不太正常。"
+    },
+    {
+        "word": "Identify",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/aɪˈden.t̬ɪ.faɪ/",
+        "definition_zh": "識別 / 找出",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "Identify the problem.",
+        "learn_sentence_zh": "先找出問題在哪。",
+        "context_sentence": "Can you identify what's causing this bug?",
+        "context_sentence_zh": "你能找出這個 bug 的原因嗎？"
     },
     {
         "word": "Impact",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/impact/",
-        "definition_zh": "衝擊",
-        "definition_en": "Core academic vocab",
-        "explanation": "強大的效果與震懾力。",
-        "example": "Having a good impact makes all the difference.",
-        "level": "medium",
-        "example_zh": "擁有良好的衝擊能帶來巨大的改變。"
-    },
-    {
-        "word": "Invest",
-        "type": "word",
-        "category": "職場社交",
-        "phonetic": "/invest/",
-        "definition_zh": "投資",
-        "definition_en": "Core academic vocab",
-        "explanation": "投入資金心力求回報。",
-        "example": "She showed great invest during the negotiations.",
-        "level": "medium",
-        "example_zh": "她在談判中展現了極大的投資。"
-    },
-    {
-        "word": "Item",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/item/",
-        "definition_zh": "項目",
-        "definition_en": "Core academic vocab",
-        "explanation": "清單中的單一物件內容。",
-        "example": "Is the new software item for download yet?",
-        "level": "medium",
-        "example_zh": "這款新軟體已經開放提供項目了嗎？"
-    },
-    {
-        "word": "Journal",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/journal/",
-        "definition_zh": "期刊",
-        "definition_en": "Core academic vocab",
-        "explanation": "專業學術定期刊物。",
-        "example": "You need to grasp the journal vocabulary first.",
+        "phonetic": "/ˈɪm.pækt/",
+        "definition_zh": "影響 / 衝擊",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "你必須先掌握與期刊相關的詞彙。"
+        "learn_sentence": "What's the impact?",
+        "learn_sentence_zh": "影響是什麼？",
+        "context_sentence": "This decision will have a huge impact.",
+        "context_sentence_zh": "這個決定將會造成非常大的影響。"
+    },
+    {
+        "word": "Indicate",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈɪn.dɪ.keɪt/",
+        "definition_zh": "顯示 / 表明",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "The results indicate yes.",
+        "learn_sentence_zh": "結果顯示是的。",
+        "context_sentence": "The numbers indicate things are improving.",
+        "context_sentence_zh": "這些數字顯示情況正在改善。"
+    },
+    {
+        "word": "Interpret",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ɪnˈtɝː.prɪt/",
+        "definition_zh": "詮釋 / 解讀",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "How do you interpret this?",
+        "learn_sentence_zh": "你怎麼解讀這個？",
+        "context_sentence": "It's easy to interpret that the wrong way.",
+        "context_sentence_zh": "這很容易被解讀錯方向。"
+    },
+    {
+        "word": "Issue",
+        "type": "daily",
+        "category": "日常用語",
+        "phonetic": "/ˈɪʃ.uː/",
+        "definition_zh": "問題 / 議題",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "We have an issue.",
+        "learn_sentence_zh": "我們有個問題。",
+        "context_sentence": "The main issue is we're running out of time.",
+        "context_sentence_zh": "主要的問題是我們時間不夠了。"
     },
     {
         "word": "Maintain",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/maintain/",
-        "definition_zh": "維持",
-        "definition_en": "Core academic vocab",
-        "explanation": "讓事物保持在原先狀態。",
-        "example": "The maintain remains perfectly unchanged.",
+        "phonetic": "/meɪnˈteɪn/",
+        "definition_zh": "維持 / 保持",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "這個維持法則仍然保持著完美的不變性。"
+        "learn_sentence": "Maintain the pace.",
+        "learn_sentence_zh": "保持這個速度。",
+        "context_sentence": "It's hard to maintain focus all day.",
+        "context_sentence_zh": "要整天保持專注真的很難。"
+    },
+    {
+        "word": "Major",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈmeɪ.dʒɚ/",
+        "definition_zh": "主要的 / 重大的",
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "That's a major issue.",
+        "learn_sentence_zh": "那是個重大的問題。",
+        "context_sentence": "We hit a major roadblock yesterday.",
+        "context_sentence_zh": "我們昨天遇到了一個重大的阻礙。"
+    },
+    {
+        "word": "Method",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈmeθ.əd/",
+        "definition_zh": "方法",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "Try this method.",
+        "learn_sentence_zh": "試試這個方法。",
+        "context_sentence": "What method did you use to solve it?",
+        "context_sentence_zh": "你用了什麼方法把它解決的？"
+    },
+    {
+        "word": "Occur",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈkɝː/",
+        "definition_zh": "發生",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "That shouldn't occur.",
+        "learn_sentence_zh": "那不應該發生才對。",
+        "context_sentence": "Errors like this occur when the system is overloaded.",
+        "context_sentence_zh": "系統過載時就會發生這樣的錯誤。"
+    },
+    {
+        "word": "Policy",
+        "type": "daily",
+        "category": "職場社交",
+        "phonetic": "/ˈpɑː.lɪ.si/",
+        "definition_zh": "政策 / 規定",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "That's company policy.",
+        "learn_sentence_zh": "那是公司的規定。",
+        "context_sentence": "The new policy kicks in next month.",
+        "context_sentence_zh": "新的規定從下個月開始生效。"
+    },
+    {
+        "word": "Principle",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈprɪn.sɪ.pəl/",
+        "definition_zh": "原則",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "Stick to your principles.",
+        "learn_sentence_zh": "堅守你的原則。",
+        "context_sentence": "The principle behind this design is simplicity.",
+        "context_sentence_zh": "這個設計背後的原則就是簡單。"
+    },
+    {
+        "word": "Process",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈprɑː.ses/",
+        "definition_zh": "過程 / 流程",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Trust the process.",
+        "learn_sentence_zh": "相信這個過程。",
+        "context_sentence": "The onboarding process takes about a week.",
+        "context_sentence_zh": "入職流程大概需要一個星期。"
+    },
+    {
+        "word": "Research",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈriː.sɝːtʃ/",
+        "definition_zh": "研究",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Do your research.",
+        "learn_sentence_zh": "做好你的功課。",
+        "context_sentence": "I did some research before the interview.",
+        "context_sentence_zh": "我在面試前做了一些功課調查。"
+    },
+    {
+        "word": "Respond",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/rɪˈspɑːnd/",
+        "definition_zh": "回應 / 回覆",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "Please respond ASAP.",
+        "learn_sentence_zh": "請盡快回覆。",
+        "context_sentence": "I'll respond to your email by end of day.",
+        "context_sentence_zh": "我今天下班前會回覆你的 email。"
+    },
+    {
+        "word": "Role",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/roʊl/",
+        "definition_zh": "角色 / 職責",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "What's your role here?",
+        "learn_sentence_zh": "你在這裡是什麼職責？",
+        "context_sentence": "Her role is to manage client relationships.",
+        "context_sentence_zh": "她的職責是管理客戶關係。"
+    },
+    {
+        "word": "Significant",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/sɪɡˈnɪf.ɪ.kənt/",
+        "definition_zh": "重要的 / 顯著的",
+        "definition_en": "Core Academic Adjective",
+        "level": "medium",
+        "learn_sentence": "That's significant.",
+        "learn_sentence_zh": "那很重要耶。",
+        "context_sentence": "There's been a significant improvement this week.",
+        "context_sentence_zh": "這個禮拜有了顯著的進步。"
+    },
+    {
+        "word": "Source",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/sɔːrs/",
+        "definition_zh": "來源",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "What's your source?",
+        "learn_sentence_zh": "你的消息來源是哪裡？",
+        "context_sentence": "Always check the source before sharing.",
+        "context_sentence_zh": "分享之前一定要查一下來源。"
+    },
+    {
+        "word": "Specific",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/spɪˈsɪf.ɪk/",
+        "definition_zh": "具體的 / 明確的",
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "Can you be more specific?",
+        "learn_sentence_zh": "你可以說得更具體嗎？",
+        "context_sentence": "Give me a specific example.",
+        "context_sentence_zh": "給我舉一個具體的例子。"
+    },
+    {
+        "word": "Structure",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈstrʌk.tʃɚ/",
+        "definition_zh": "結構 / 架構",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "The structure makes sense.",
+        "learn_sentence_zh": "這個架構說得通。",
+        "context_sentence": "The report needs a clearer structure.",
+        "context_sentence_zh": "這份報告需要更清晰的結構。"
+    },
+    {
+        "word": "Achieve",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈtʃiːv/",
+        "definition_zh": "達成",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "Go achieve it.",
+        "learn_sentence_zh": "去達成它吧。",
+        "context_sentence": "What goals are you hoping to achieve this year?",
+        "context_sentence_zh": "你今年希望達成哪些目標呢？"
+    },
+    {
+        "word": "Affect",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈfekt/",
+        "definition_zh": "影響",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "It affects everyone.",
+        "learn_sentence_zh": "它影響到每個人。",
+        "context_sentence": "The delay affected the whole schedule.",
+        "context_sentence_zh": "這次的延誤影響了整個時程。"
+    },
+    {
+        "word": "Appropriate",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈproʊ.pri.ɪt/",
+        "definition_zh": "適當的",
+        "definition_en": "Core Academic Adjective",
+        "level": "medium",
+        "learn_sentence": "Is that appropriate here?",
+        "learn_sentence_zh": "那個在這裡適合嗎？",
+        "context_sentence": "That's not really appropriate for a work meeting.",
+        "context_sentence_zh": "那樣的行為在工作會議上不太適當。"
+    },
+    {
+        "word": "Aspect",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈæs.pekt/",
+        "definition_zh": "面向 / 方面",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "Think about every aspect.",
+        "learn_sentence_zh": "每個面向都要想到。",
+        "context_sentence": "That's the best aspect of the whole plan.",
+        "context_sentence_zh": "那是整個計畫裡最好的部分。"
+    },
+    {
+        "word": "Category",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈkæt̬.ɪ.ɡɔːr.i/",
+        "definition_zh": "類別",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Put it in a category.",
+        "learn_sentence_zh": "把它分個類。",
+        "context_sentence": "Which category does this fall under?",
+        "context_sentence_zh": "這個屬於哪個類別？"
+    },
+    {
+        "word": "Community",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kəˈmjuː.nɪ.ti/",
+        "definition_zh": "社群 / 社區",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Build your community.",
+        "learn_sentence_zh": "建立你的社群。",
+        "context_sentence": "She's very involved in the local community.",
+        "context_sentence_zh": "她非常積極參與當地的社區活動。"
+    },
+    {
+        "word": "Complex",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈkɑːm.pleks/",
+        "definition_zh": "複雜的",
+        "definition_en": "Core Academic Adjective",
+        "level": "medium",
+        "learn_sentence": "It's more complex than that.",
+        "learn_sentence_zh": "這比你想的複雜多了。",
+        "context_sentence": "The situation is way more complex than it looks.",
+        "context_sentence_zh": "這個狀況比看起來複雜多了。"
+    },
+    {
+        "word": "Conclude",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kənˈkluːd/",
+        "definition_zh": "得出結論",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "So we can conclude...",
+        "learn_sentence_zh": "所以我們可以得出...",
+        "context_sentence": "I concluded that the plan needs to change.",
+        "context_sentence_zh": "我得出的結論是這個計畫需要改變。"
+    },
+    {
+        "word": "Conduct",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kənˈdʌkt/",
+        "definition_zh": "進行 / 執行",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "Conduct the test.",
+        "learn_sentence_zh": "進行測試吧。",
+        "context_sentence": "We conducted a survey across five cities.",
+        "context_sentence_zh": "我們在五個城市進行了調查。"
+    },
+    {
+        "word": "Consequence",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈkɑːn.sɪ.kwens/",
+        "definition_zh": "後果",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "Think about the consequences.",
+        "learn_sentence_zh": "想想後果。",
+        "context_sentence": "Every choice has consequences, good or bad.",
+        "context_sentence_zh": "每個選擇都有後果，不管好的還是壞的。"
+    },
+    {
+        "word": "Consumer",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kənˈsuː.mɚ/",
+        "definition_zh": "消費者",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "Know your consumer.",
+        "learn_sentence_zh": "了解你的消費者。",
+        "context_sentence": "Today's consumer expects things to be fast.",
+        "context_sentence_zh": "現今的消費者期待一切都很迅速。"
+    },
+    {
+        "word": "Credit",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈkred.ɪt/",
+        "definition_zh": "功勞 / 信用",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Give credit where due.",
+        "learn_sentence_zh": "肯定該被肯定的人。",
+        "context_sentence": "She never gets the credit she deserves.",
+        "context_sentence_zh": "她付出的努力從來沒有得到應有的肯定。"
+    },
+    {
+        "word": "Design",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/dɪˈzaɪn/",
+        "definition_zh": "設計",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "I love this design.",
+        "learn_sentence_zh": "我喜歡這個設計。",
+        "context_sentence": "We need to redesign the whole user flow.",
+        "context_sentence_zh": "我們需要重新設計整個使用者流程。"
+    },
+    {
+        "word": "Distinct",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/dɪˈstɪŋkt/",
+        "definition_zh": "明顯的 / 獨特的",
+        "definition_en": "Core Academic Adjective",
+        "level": "medium",
+        "learn_sentence": "It's very distinct.",
+        "learn_sentence_zh": "這個非常獨特。",
+        "context_sentence": "Her style is completely distinct from everyone else.",
+        "context_sentence_zh": "她的風格跟所有人都完全不同。"
+    },
+    {
+        "word": "Element",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈel.ɪ.mənt/",
+        "definition_zh": "元素 / 要素",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "That's a key element.",
+        "learn_sentence_zh": "那是個關鍵元素。",
+        "context_sentence": "Trust is an essential element of any relationship.",
+        "context_sentence_zh": "信任是任何一段關係的必要要素。"
+    },
+    {
+        "word": "Feature",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈfiː.tʃɚ/",
+        "definition_zh": "特色 / 功能",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "That's a cool feature.",
+        "learn_sentence_zh": "那個功能很酷。",
+        "context_sentence": "My favorite feature is the dark mode.",
+        "context_sentence_zh": "我最喜歡的功能就是深色模式。"
+    },
+    {
+        "word": "Invest",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ɪnˈvest/",
+        "definition_zh": "投資 / 投入",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "Invest in yourself.",
+        "learn_sentence_zh": "投資在自己身上。",
+        "context_sentence": "You should invest more time in this skill.",
+        "context_sentence_zh": "你應該在這個技能上多投入一些時間。"
     },
     {
         "word": "Normal",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/normal/",
+        "phonetic": "/ˈnɔːr.məl/",
         "definition_zh": "正常的",
-        "definition_en": "Core academic vocab",
-        "explanation": "符合標準或預期常規。",
-        "example": "The normal remains perfectly unchanged.",
-        "level": "medium",
-        "example_zh": "這個正常的法則仍然保持著完美的不變性。"
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "That's totally normal.",
+        "learn_sentence_zh": "那是完全正常的。",
+        "context_sentence": "Is it normal to feel this tired after work?",
+        "context_sentence_zh": "下班後這麼累是正常的嗎？"
     },
     {
         "word": "Obtain",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/obtain/",
-        "definition_zh": "獲得",
-        "definition_en": "Core academic vocab",
-        "explanation": "透過程序或努力得到。",
-        "example": "Management will obtain the new strategy next week.",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əbˈteɪn/",
+        "definition_zh": "取得 / 獲得",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "管理層下週將獲得這項新策略。"
+        "learn_sentence": "Obtain the permit first.",
+        "learn_sentence_zh": "先取得許可。",
+        "context_sentence": "How did you obtain this information?",
+        "context_sentence_zh": "你是怎麼取得這些資訊的？"
     },
     {
         "word": "Participate",
-        "type": "word",
-        "category": "行動描述",
-        "phonetic": "/participate/",
-        "definition_zh": "參加",
-        "definition_en": "Core academic vocab",
-        "explanation": "加入某項活動之中。",
-        "example": "We need to thoroughly participate the current situation.",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/pɑːrˈtɪs.ɪ.peɪt/",
+        "definition_zh": "參與",
+        "definition_en": "Core Academic Verb",
         "level": "medium",
-        "example_zh": "我們需要徹底參加目前的狀況。"
+        "learn_sentence": "Participate more.",
+        "learn_sentence_zh": "多多參與吧。",
+        "context_sentence": "Everyone is encouraged to participate in the discussion.",
+        "context_sentence_zh": "大家都被鼓勵積極參與討論。"
     },
     {
         "word": "Perceive",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/perceive/",
-        "definition_zh": "察覺",
-        "definition_en": "Core academic vocab",
-        "explanation": "感知到某事的存在。",
-        "example": "It is a mistake to perceive that everything will go as planned.",
-        "level": "medium",
-        "example_zh": "去察覺一切都會按計畫進行，是個錯誤。"
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/pɚˈsiːv/",
+        "definition_zh": "察覺 / 認為",
+        "definition_en": "Core Academic Verb",
+        "level": "hard",
+        "learn_sentence": "How do you perceive it?",
+        "learn_sentence_zh": "你怎麼看待這件事？",
+        "context_sentence": "She perceived the silence as a sign of disapproval.",
+        "context_sentence_zh": "她把沉默解讀為一種不認可的訊號。"
     },
     {
         "word": "Positive",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/positive/",
-        "definition_zh": "正面的",
-        "definition_en": "Core academic vocab",
-        "explanation": "充滿希望與支持者。",
-        "example": "This approach has a significant positive for everyone.",
-        "level": "medium",
-        "example_zh": "這種方法對每個人都有顯著的正面的。"
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈpɑː.zɪ.tɪv/",
+        "definition_zh": "正面的 / 積極的",
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "Stay positive.",
+        "learn_sentence_zh": "保持積極。",
+        "context_sentence": "The feedback has been really positive so far.",
+        "context_sentence_zh": "目前為止收到的回饋都是非常正面的。"
     },
     {
         "word": "Potential",
-        "type": "word",
-        "category": "邏輯特徵",
-        "phonetic": "/potential/",
-        "definition_zh": "潛力",
-        "definition_en": "Core academic vocab",
-        "explanation": "未來發展的能力可能。",
-        "example": "It is a mistake to potential that everything will go as planned.",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/pəˈten.ʃəl/",
+        "definition_zh": "潛力 / 潛在的",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "去潛力一切都會按計畫進行，是個錯誤。"
+        "learn_sentence": "You have real potential.",
+        "learn_sentence_zh": "你真的有潛力。",
+        "context_sentence": "There's massive potential in this market.",
+        "context_sentence_zh": "這個市場有非常大的潛力。"
     },
     {
         "word": "Previous",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/previous/",
-        "definition_zh": "先前的",
-        "definition_en": "Core academic vocab",
-        "explanation": "在此之前發生的。",
-        "example": "They built the app on a very stable previous.",
-        "level": "medium",
-        "example_zh": "他們將這個應用程式建立在一個非常穩定的先前的上。"
+        "phonetic": "/ˈpriː.vi.əs/",
+        "definition_zh": "之前的",
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "Unlike the previous version.",
+        "learn_sentence_zh": "跟之前的版本不一樣。",
+        "context_sentence": "My previous job was way more stressful.",
+        "context_sentence_zh": "我之前的工作壓力大多了。"
     },
     {
         "word": "Primary",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/primary/",
-        "definition_zh": "首要的",
-        "definition_en": "Core academic vocab",
-        "explanation": "最重要的第一位。",
-        "example": "A solid primary is essential for future learning.",
+        "phonetic": "/ˈpraɪ.mer.i/",
+        "definition_zh": "主要的 / 首要的",
+        "definition_en": "Core Academic Adjective",
         "level": "medium",
-        "example_zh": "一個穩固的首要的對於未來的學習不可或缺。"
+        "learn_sentence": "That's the primary goal.",
+        "learn_sentence_zh": "那才是首要目標。",
+        "context_sentence": "Our primary concern right now is speed.",
+        "context_sentence_zh": "我們現在最主要的考量是速度。"
     },
     {
         "word": "Purchase",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/purchase/",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈpɝː.tʃəs/",
         "definition_zh": "購買",
-        "definition_en": "Core academic vocab",
-        "explanation": "買下某物的交易行為。",
-        "example": "This approach has a significant purchase for everyone.",
-        "level": "medium",
-        "example_zh": "這種方法對每個人都有顯著的購買。"
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "Ready to purchase?",
+        "learn_sentence_zh": "準備好購買了嗎？",
+        "context_sentence": "I'll make the purchase once I get approval.",
+        "context_sentence_zh": "我等到得到批准之後再去買。"
     },
     {
         "word": "Range",
-        "type": "word",
-        "category": "日常用語",
-        "phonetic": "/range/",
-        "definition_zh": "範圍",
-        "definition_en": "Core academic vocab",
-        "explanation": "變化的界線範圍。",
-        "example": "Having a good range makes all the difference.",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/reɪndʒ/",
+        "definition_zh": "範圍 / 幅度",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "擁有良好的範圍能帶來巨大的改變。"
+        "learn_sentence": "It's within range.",
+        "learn_sentence_zh": "在範圍之內。",
+        "context_sentence": "The price range is way out of my budget.",
+        "context_sentence_zh": "這個價格範圍完全超出我的預算。"
     },
     {
         "word": "Region",
-        "type": "word",
+        "type": "daily",
         "category": "基礎核心",
-        "phonetic": "/region/",
+        "phonetic": "/ˈriː.dʒən/",
         "definition_zh": "地區",
-        "definition_en": "Core academic vocab",
-        "explanation": "地理上、特定的區塊。",
-        "example": "The region remains perfectly unchanged.",
+        "definition_en": "Core Academic Noun",
         "level": "medium",
-        "example_zh": "這個地區法則仍然保持著完美的不變性。"
+        "learn_sentence": "It depends on the region.",
+        "learn_sentence_zh": "依地區而有所不同。",
+        "context_sentence": "The app is only available in certain regions.",
+        "context_sentence_zh": "這個 App 目前只在特定地區開放使用。"
+    },
+    {
+        "word": "Require",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/rɪˈkwaɪɚ/",
+        "definition_zh": "需要 / 要求",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "What does it require?",
+        "learn_sentence_zh": "它需要什麼條件？",
+        "context_sentence": "The job requires a lot of patience.",
+        "context_sentence_zh": "這份工作需要很大的耐心。"
+    },
+    {
+        "word": "Similar",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈsɪm.ɪ.lɚ/",
+        "definition_zh": "類似的",
+        "definition_en": "Core Academic Adjective",
+        "level": "easy",
+        "learn_sentence": "It's similar to mine.",
+        "learn_sentence_zh": "這跟我的挺像的。",
+        "context_sentence": "I've seen a similar situation at my last job.",
+        "context_sentence_zh": "我在上份工作遇過類似的情況。"
+    },
+    {
+        "word": "Theory",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈθɪr.i/",
+        "definition_zh": "理論",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "That's just a theory.",
+        "learn_sentence_zh": "那只是個理論而已。",
+        "context_sentence": "In theory it works, but in practice it doesn't.",
+        "context_sentence_zh": "理論上是可行的，但實際上卻行不通。"
+    },
+    {
+        "word": "Outcome",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈaʊt.kʌm/",
+        "definition_zh": "結果 / 成果",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "What's the outcome?",
+        "learn_sentence_zh": "最後結果是什麼？",
+        "context_sentence": "The outcome depends on how hard we push.",
+        "context_sentence_zh": "最終的成果取決於我們有多賣力。"
+    },
+    {
+        "word": "Challenge",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈtʃæl.ɪndʒ/",
+        "definition_zh": "挑戰",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "That's a real challenge.",
+        "learn_sentence_zh": "那真的是個很大的挑戰。",
+        "context_sentence": "The biggest challenge is keeping everyone motivated.",
+        "context_sentence_zh": "最大的挑戰是讓所有人保持動力。"
+    },
+    {
+        "word": "Strategy",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈstræt̬.ɪ.dʒi/",
+        "definition_zh": "策略",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "We need a strategy.",
+        "learn_sentence_zh": "我們需要一個策略。",
+        "context_sentence": "What's the strategy going into Q4?",
+        "context_sentence_zh": "進入第四季的策略是什麼？"
+    },
+    {
+        "word": "Involve",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ɪnˈvɑːlv/",
+        "definition_zh": "涉及 / 包含",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "What does it involve?",
+        "learn_sentence_zh": "這涉及到什麼？",
+        "context_sentence": "The project involves a lot of coordination.",
+        "context_sentence_zh": "這個專案涉及到很多協調工作。"
+    },
+    {
+        "word": "Solution",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/səˈluː.ʃən/",
+        "definition_zh": "解決方案",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Find a solution.",
+        "learn_sentence_zh": "找個解決辦法。",
+        "context_sentence": "There's always a solution if you think creatively.",
+        "context_sentence_zh": "只要你有創意地去想，總是有解決方法的。"
+    },
+    {
+        "word": "Support",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/səˈpɔːrt/",
+        "definition_zh": "支持 / 協助",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "I support you on this.",
+        "learn_sentence_zh": "我在這件事上支持你。",
+        "context_sentence": "The team fully supports the new direction.",
+        "context_sentence_zh": "整個團隊完全支持這個新方向。"
+    },
+    {
+        "word": "Target",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈtɑːr.ɡɪt/",
+        "definition_zh": "目標",
+        "definition_en": "Core Academic Noun",
+        "level": "easy",
+        "learn_sentence": "Hit the target.",
+        "learn_sentence_zh": "達成目標。",
+        "context_sentence": "We're on track to hit our sales target.",
+        "context_sentence_zh": "我們正朝達成銷售目標的方向前進。"
+    },
+    {
+        "word": "Adjust",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈdʒʌst/",
+        "definition_zh": "調整",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "Adjust accordingly.",
+        "learn_sentence_zh": "照著調整一下。",
+        "context_sentence": "We may need to adjust the timeline.",
+        "context_sentence_zh": "我們可能需要調整一下時間表。"
+    },
+    {
+        "word": "Confirm",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/kənˈfɝːm/",
+        "definition_zh": "確認",
+        "definition_en": "Core Academic Verb",
+        "level": "easy",
+        "learn_sentence": "Can you confirm this?",
+        "learn_sentence_zh": "你能確認一下嗎？",
+        "context_sentence": "Please confirm your attendance by Friday.",
+        "context_sentence_zh": "請在週五前確認你是否出席。"
+    },
+    {
+        "word": "Clarify",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/ˈklær.ɪ.faɪ/",
+        "definition_zh": "釐清 / 說明",
+        "definition_en": "Core Academic Verb",
+        "level": "medium",
+        "learn_sentence": "Let me clarify that.",
+        "learn_sentence_zh": "讓我澄清一下這個。",
+        "context_sentence": "Can you clarify what you meant by that?",
+        "context_sentence_zh": "你能解釋一下你說的那個是什麼意思嗎？"
+    },
+    {
+        "word": "Priority",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/praɪˈɔːr.ɪ.ti/",
+        "definition_zh": "優先事項",
+        "definition_en": "Core Academic Noun",
+        "level": "medium",
+        "learn_sentence": "What's the priority?",
+        "learn_sentence_zh": "現在優先要做什麼？",
+        "context_sentence": "Customer satisfaction is our top priority.",
+        "context_sentence_zh": "客戶滿意度是我們首要的工作。"
+    },
+    {
+        "word": "Assume responsibility",
+        "type": "daily",
+        "category": "基礎核心",
+        "phonetic": "/əˈsuːm rɪˌspɑːn.sɪˈbɪl.ɪ.ti/",
+        "definition_zh": "承擔責任",
+        "definition_en": "Core Academic Phrase",
+        "level": "medium",
+        "learn_sentence": "Own up and assume responsibility.",
+        "learn_sentence_zh": "承認並且承擔起責任。",
+        "context_sentence": "A good leader assumes responsibility when things go wrong.",
+        "context_sentence_zh": "好的領導者在事情出問題時會承擔責任。"
     }
 ];
 const INITIAL_DATA = [...MUSIC_WORDS, ...CORE_WORDS];

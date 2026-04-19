@@ -1914,8 +1914,12 @@ const initShadowingView = () => {
             state.shadowingSessionCount++;
             saveToStorage(); // Persist daily progress
         }
-        
-        playSequence();
+        // 顯示待播放狀態，等待使用者手動播放
+        stepIndicator.classList.add('hidden');
+        activeChunkEl.innerHTML = applyStress(currentSentence.sentence);
+        ghostSentenceEl.classList.add('hidden');
+        textContainer.classList.add('hidden');
+        status.textContent = '按 🔄 播放 開始播放';
     };
 
     // UI Listeners

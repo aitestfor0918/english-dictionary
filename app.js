@@ -306,13 +306,19 @@ const getLearningStats = () => {
     const totalDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
 
     const allProgress = Object.values(state.progress);
-    const masteredCount = allProgress.filter(p => p.familiarity === 2).length;
+    const masteredCount = allProgress.filter(p => p.status === 'mastered').length;
 
     const getProgressForType = (type) => {
-        const typePool = INITIAL_DATA.filter(w => w.type === type);
+        const typePool = INITIAL_DATA.filter(w => {
+            if (type === 'word') return w.type === 'word' || w.type === 'daily';
+            return w.type === type;
+        });
         if (typePool.length === 0) return 0;
-        const masteredInPool = typePool.filter(w => state.progress[w.word]?.familiarity === 2).length;
-        return Math.round((masteredInPool / typePool.length) * 100);
+        const learnedInPool = typePool.filter(w => {
+            const s = state.progress[w.word]?.status;
+            return s === 'learning' || s === 'mastered';
+        }).length;
+        return Math.round((learnedInPool / typePool.length) * 100);
     };
 
     // 新的計分邏輯：各 1 分，總分 3 分
@@ -674,10 +680,7 @@ const updateSRSGlobal = (wordStr, rank, isCorrect = true) => {
     }
 
     if (prog.status === 'new') {
-        const added = new Date(prog.addedDate || now);
-        if ((now - added) >= 24 * 60 * 60 * 1000) {
-            prog.status = 'learning';
-        }
+        prog.status = 'learning';
     }
     
     if (isCorrect) {
@@ -2083,13 +2086,61 @@ const generateProReviewPool = () => {
     const config = state.proReviewConfig || { mode: 'smart', length: 5, context: 'full' };
     const maxCount = parseInt(config.length) || 5;
 
-    const wordCount = Math.round(maxCount * 0.7);
-    const musicCount = maxCount - wordCount;
+    // 從使用者的單字卡收藏中選取複習單字
+    if (state.collection.length === 0) {
+        showNotification('單字卡是空的，請先加入單字！');
+        return false;
+    }
 
-    let pool = [
-        ...getAdaptivePool(wordCount, 'word'),
-        ...getAdaptivePool(musicCount, 'music')
-    ].sort(() => Math.random() - 0.5);
+    const now = new Date();
+
+    // 為每個收藏單字計算優先度
+    let pool = state.collection.map(w => {
+        const prog = state.progress[w.word];
+        const weaknessScore = calculateWeaknessScore(w.word);
+
+        let priority = 0;
+
+        // 弱點模式：只收 weak 狀態的單字
+        if (config.mode === 'weak') {
+            if (!prog || prog.status !== 'weak') return null;
+            priority += 100;
+        }
+
+        // 到期的單字優先
+        if (prog && prog.nextReviewDate && new Date(prog.nextReviewDate) <= now) {
+            priority += 50;
+        }
+
+        // 新加入/從未測過的單字
+        if (!prog) priority += 30;
+
+        // 弱點加權
+        priority += weaknessScore * 5;
+
+        // 隨機擾動避免固定順序
+        priority += Math.random() * 10;
+
+        return { ...w, priority };
+    }).filter(Boolean);
+
+    if (pool.length === 0) {
+        showNotification(config.mode === 'weak' ? '沒有弱點單字！' : '沒有可複習的單字！');
+        return false;
+    }
+
+    // 按優先度排序後取前 maxCount 個
+    pool.sort((a, b) => b.priority - a.priority);
+    pool = pool.slice(0, maxCount);
+
+    // 打亂順序
+    pool.sort(() => Math.random() - 0.5);
+
+    // 嘗試從 INITIAL_DATA 取得完整資料（確保例句等欄位齊全）
+    pool = pool.map(w => {
+        const fullData = INITIAL_DATA.find(d => d.word.toLowerCase() === w.word.toLowerCase());
+        return fullData ? { ...fullData, ...w, priority: w.priority } : w;
+    });
 
     let initialWeakCount = 0;
     pool.forEach(w => {

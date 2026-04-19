@@ -154,6 +154,7 @@ h1 {
     border-radius: 12px;
     border: 1px solid var(--border);
     background: var(--secondary);
+    color: var(--text);
     font-size: 1rem;
     outline: none;
     transition: border-color 0.2s;
@@ -235,7 +236,7 @@ h1 {
     border-radius: 8px;
     font-style: italic;
     font-size: 0.9rem;
-    color: #444;
+    color: var(--muted);
 }
 
 /* Examples Section */
@@ -270,7 +271,7 @@ h1 {
 .example-text {
     font-size: 0.9rem;
     font-style: italic;
-    color: #444;
+    color: var(--muted);
     line-height: 1.4;
     flex: 1;
 }
@@ -292,7 +293,7 @@ h1 {
 .music-context {
     margin-top: 12px;
     font-size: 0.85rem;
-    color: #555;
+    color: var(--muted);
     border-left: 3px solid var(--accent);
     padding-left: 10px;
 }
@@ -447,7 +448,7 @@ h1 {
 .example-sentence {
     font-size: 0.85rem;
     font-style: italic;
-    color: #555;
+    color: var(--muted);
     line-height: 1.5;
     flex: 1;
 }
@@ -459,11 +460,11 @@ h1 {
     align-items: center;
     margin-top: 12px;
     padding: 10px 14px;
-    background: #fff5f5;
-    border: 1px solid #ffd0d0;
+    background: rgba(235, 87, 87, 0.1);
+    border: 1px solid rgba(235, 87, 87, 0.3);
     border-radius: 10px;
     font-size: 0.85rem;
-    color: #c0392b;
+    color: var(--error);
     font-weight: 600;
     animation: slideDown 0.2s ease-out;
 }
@@ -887,7 +888,7 @@ h1 {
     margin-top: 12px;
     line-height: 1.6;
     font-size: 0.95rem;
-    color: #333;
+    color: var(--text);
 }
 
 .item-detail .context {
@@ -896,7 +897,7 @@ h1 {
     background: var(--secondary);
     border-radius: 8px;
     font-size: 0.85rem;
-    color: #666;
+    color: var(--muted);
 }
 
 .item-detail .example-box {
@@ -913,7 +914,7 @@ h1 {
 .item-detail .example-text {
     font-style: italic;
     font-size: 0.9rem;
-    color: #444;
+    color: var(--muted);
 }
 
 .item-detail .detail-actions {
